@@ -1672,6 +1672,11 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 }
 
 
+@media (max-width: 48rem) {
+  .toolbar{padding-bottom:75px !important; flex-direction: column !important;}
+  .toolbar *{margin-bottom:10px !important;}
+  
+   }
 
 
 
