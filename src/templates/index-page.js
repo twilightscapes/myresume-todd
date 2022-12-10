@@ -112,8 +112,6 @@ export const pageQuery = graphql`
         portfolio{
           openText
           closeText
-          showSocial
-
         }
         svgImage{
           relativePath

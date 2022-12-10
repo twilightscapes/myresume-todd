@@ -7,6 +7,7 @@ showFeature: false
 showInfo: "1"
 showPosts: "1"
 showResume: "1"
+showSocial: true
 resume:
   highlightsText: <p><strong>Product Designer - Skilled web designer/developer with 21 years of professional experience.</strong></p><p>Successful product designer able to integrate both technical and creative skills to create cross-browser and cross-platform solutions with modern web architecture and navigation systems.</p><p>Proven record of completing bold, clean, and effective designs with consistent performance ahead of schedule and under budget.</p><p>Industry experience including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and direct marketing.</p>
   highlightsTitle: Highlights
@@ -36,7 +37,6 @@ cta:
 portfolio:
   openText: ""
   closeText: "Experience has taught me that good design is not created on a spur of the moment, nor does it come naturally. Good design is a thorough and interative process with site visitors in mind foremost. Good design is identifying a problem for those visitors and removing that problem."
-  showSocial: true
 officialname:
   nameText: Todd Lambert
   nameLink: /#posts
