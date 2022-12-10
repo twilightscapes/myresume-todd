@@ -999,12 +999,12 @@ display: none !important;
 
 .ReactModalPortal div.toppad{border:0px solid blue !important; display: none !important;}
 
-.ReactModalPortal {margin:0 19% !important; width:80% !important; z-index: 2;}
+.ReactModalPortal {margin:0 19% !important; width:75% !important; z-index: 2; border-radius: 12px;}
 
-.ReactModal__Overlay{background-color:transparent !important;   background: rgba(0,0,0,0.50);
+.ReactModal__Overlay{background-color:transparent !important;   background: rgba(0,0,0,0.30);
   backdrop-filter: blur(22px);}
 
-.ReactModal__Content{padding:0 !important; background:rgba(0, 0, 0, 0.9) !important; margin:0 auto ; padding:0 20px !important; overflow: auto !important; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5); box-shadow: none !important; color:#fff !important; font-size:clamp(1rem, 1.4vw, 3.2rem)}
+.ReactModal__Content{padding:0 !important; background:rgba(0, 0, 0, 0.9) !important; margin:0 auto ; padding:0 20px !important; overflow: auto !important; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.3); box-shadow: none !important; color:#fff !important;  border:0px solid blue !important; border-radius:12px !important; width:75vw !important;}
 
 
 .ReactModal__Body--open {
@@ -1110,6 +1110,7 @@ border: 0px solid red;
 
   @media (max-width: 48rem) {
     .homepage-bg{max-width: 200px;}
+    .ReactModal__Content{padding:0 0 !important; width:85vw !important;}
   }
 
 
