@@ -1,0 +1,357 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+
+# Uncomment local_backend when you need to develop in your local
+local_backend: true # run npx netlify-cms-proxy-server for local testing
+logo_url: https://myresume-ex1.netlify.app/assets/logo.svg
+media_folder: "static/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Posts" # Used in the UI
+    label_singular: "Post" # Used in the UI, ie: "New Post"
+    description: >
+      Create awesome stuff here.
+    folder: "src/content/posts"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{year}}/{{month}}/{{day}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {
+          label: "Template",
+          name: "template",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          hint: "Start slug with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+        }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          dateFormat: "YYYY-MM-DD",
+          timeFormat: "HH:mm",
+          format: "YYYY-MM-DD HH:mm",
+        }
+      - { label: "SEO Description", name: "description", widget: "text" }
+      - { label: "YouTube Url", name: "youtuber", widget: "string", required: false }
+      - { label: "YouTube AutoPlay", name: "youtubeautoplay", widget: "boolean", default: "false", required: false }
+      - { label: "YouTube Mute", name: "youtubemute", widget: "boolean", default: "true", required: false }
+      - { label: "YouTube Show Controls", name: "youtubecontrols", widget: "boolean", default: "false", required: false }
+      - { label: "YouTube Start", name: "youtubestart", widget: "string", hint: "This is measured in seconds - 32 would start the video at the 32-second mark", required: false }
+      - { label: "YouTube End", name: "youtubeend", widget: "string", hint: "This is measured in seconds - 102 would end the video at the 1-min  and 42-second mark", required: false }
+      - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: "true", required: false }
+
+
+      
+      - {
+          label: "Featured Image",
+          name: "featuredImage",
+          widget: "image",
+          hint: "The primary image used for all social media, blog previews and the feature image at the top of the post",
+          tagname: "",
+        }
+      - {
+          label: "Underlay Image",
+          name: "underlayImage",
+          widget: "image",
+          hint: "This is used to put a transparent png over the video but under the animation layer",
+          required: false,
+          tagname: "",
+        }
+      - {
+          label: "SVG",
+          name: "svgImage",
+          widget: "image",
+          hint: "This is the animation layer where your animated or static SVG image goes - it is on the top of the stack",
+          required: false,
+          tagname: "",
+        }
+      - { label: "SVG Z-Index", name: "svgzindex", widget: "string", required: false, tagname: "", }
+
+
+
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown",
+          hint: "Main content goes here.",
+        }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "src/content/pages/index.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Featured Image", name: "featuredImage", widget: "image" }
+          - { label: "Secondary Image", name: "secondaryImage", widget: "image", hint: "this image is used for the background on the homepage", required: false }
+          - { label: "Show Feature", name: "showFeature", widget: "boolean" }
+          - { label: "Show Info", name: "showInfo", widget: "boolean" }
+          - { label: "Show Posts", name: "showPosts", widget: "boolean" }
+          - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Official Name"
+            name: "officialname"
+            widget: "object"
+            fields:
+              - name: "nameText"
+                label: "Your Name"
+                widget: "string"
+              - name: "nameLink"
+                label: "Link to your website"
+                widget: "string"
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields:
+              - name: "addressText"
+                label: "Your Address"
+                widget: "string"
+          - label: "Address2"
+            name: "address2"
+            widget: "object"
+            fields:
+              - name: "addressText2"
+                label: "Your Address2"
+                widget: "string"
+          - label: "Resume"
+            name: "resume"
+            widget: "object"
+            fields:
+              - name: "highlightsTitle"
+                label: "Highlights/Summary Title"
+                widget: "string"
+              - name: "highlightsText"
+                label: "Highlights/Summary Text"
+                widget: "markdown"
+
+              - name: "profTitle"
+                label: "Proficiency/Skills Title"
+                widget: "string"
+              - name: "profText"
+                label: "Proficiency/Skills Text"
+                widget: "markdown"
+
+              - name: "eduTitle"
+                label: "Education Title"
+                widget: "string"
+              - name: "eduText"
+                label: "Education Text"
+                widget: "markdown"
+                
+              - name: "exTitle"
+                label: "Experience/Work History Title"
+                widget: "string"
+              - name: "exText"
+                label: "Experience/Work History Text"
+                widget: "markdown"
+      - label: "Cover Letter"
+        name: "cover"
+        file: "src/content/pages/about.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/cover" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Contact"
+        name: "contact"
+        file: "src/content/pages/contact.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - {
+              label: "Slug",
+              name: "slug",
+              widget: "hidden",
+              default: "/contact",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Disclaimer"
+        name: "disclaimer"
+        file: "src/content/pages/disclaimer.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "disclaimer-page",
+            }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/disclaimer" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Privacy"
+        name: "privacy"
+        file: "src/content/pages/privacy.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "privacy-page",
+            }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/privacy" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Terms of Use"
+        name: "terms"
+        file: "src/content/pages/terms.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "terms-page",
+            }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/terms" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+  - name: settings
+    label: Settings
+    files:
+      - name: general
+        label: General
+        file: "src/util/site.json"
+        fields:
+          - label: meta
+            name: meta
+            widget: object
+            fields:
+              - widget: string
+                name: title
+                label: Site Title
+                required: true
+              - widget: string
+                name: titleTemplate
+                label: Title Template (ignore)
+                default: "%s"
+                required: true
+              - widget: string
+                name: siteUrl
+                label: Website URL
+                required: true
+              - widget: text
+                name: description
+                label: Description
+                default: ""
+                required: false
+              - widget: image
+                name: image
+                label: Default OG Image
+                required: true
+                default: "/assets/default-og-image.jpg"
+              - widget: image
+                name: iconimage
+                label: Site Logo (should be SVG if at all possible)
+              - widget: image
+                name: favicon16x16
+                label: Site Favicon 16x16 (name image like 'favicon-16x16.png')
+                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+                default: "/assets/favicon-16x16.png"
+              - widget: image
+                name: favicon32x32
+                label: Site Favicon 32x32 (name image like 'favicon-16x16.png')
+                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+                default: "/assets/favicon-32x32.png"
+              - widget: image
+                name: icon192
+                label: Site Icon 192x192 (name image like 'icon-192x192.png')
+                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+                default: "/assets/icon-192x192.png"
+              - widget: image
+                name: icon512
+                label: Site Icon 512x512 (name image like 'icon-512x512.png')
+                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+                default: "/assets/icon-512x512.png"
+              - widget: string
+                name: twitterUsername
+                label: Twitter user (no '@' justthename)
+                required: false
+              - widget: string
+                name: companyname
+                label: Company Name or Site Name
+                required: true
+              - widget: boolean
+                name: showfooter
+                label: Show the Footer
+                required: false
+          - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
+            name: comments
+            widget: string
+            hint: "Add your CommentBox ID – should look like xxxxxxxxxxxxxxxx-proj"
+            required: false
+          - label: "Google Analytics"
+            name: ga
+            widget: string
+            hint: "Add your tracking ID, should look like UA-XXXXXXXXX-X or G-XXXXXXXXXX"
+      - label: Social Icons
+        name: socialIcons
+        file: "src/util/socialmedia.json"
+        fields:
+          - label: Social Icons
+            name: socialIcons
+            widget: list
+            collapsed: true
+            hint: "Here you can add social icons, Click on 'Add social icons'"
+            fields:
+              - label: "Icons"
+                name: "icon"
+                widget: "select"
+                options:
+                  [
+                    "facebook",
+                    "twitter",
+                    "linkedin",
+                    "youtube",
+                    "instagram",
+                    "rss",
+                    "github",
+                    "telegram",
+                    "pinterest",
+                    "snapchat",
+                    "skype",
+                    "wordpress",
+                    "dribbble",
+                    "medium",
+                    "behance",
+                    "vk",
+                  ]
+                hint: "Select the Icon"
+              - widget: string
+                name: url
+                label: url
+                required: true
+                hint: "Paste the 'URL' of your Social media"
+

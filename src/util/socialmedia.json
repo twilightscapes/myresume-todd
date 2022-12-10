@@ -1,0 +1,20 @@
+{
+  "socialIcons": [
+    {
+      "icon": "facebook",
+      "url": "https://facebook.com/"
+    },
+    {
+      "icon": "instagram",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/"
+    },
+    {
+      "icon": "twitter",
+      "url": "https://twitter.com/"
+    }
+  ]
+}
