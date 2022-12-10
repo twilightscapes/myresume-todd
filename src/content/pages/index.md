@@ -11,7 +11,7 @@ portfolio:
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
 showInfo: "1"
-showSocial: false
+showSocial: true
 showResume: "1"
 resume:
   highlightsText: <p><strong>Product Designer - Skilled web designer/developer
