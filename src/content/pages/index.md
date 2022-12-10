@@ -74,9 +74,9 @@ cta:
   ctaText: Contact Me
   ctaLink: ""
 showPosts: "1"
-officialname:
-  nameText: Todd Lambert
-  nameLink: /#posts
+coverletter:
+  coverText: "BooYa"
+  coverLink: "https://google.com"
 address:
   addressText: Gulf Coast, USA
 svgImage: /assets/transparent.png

@@ -89,9 +89,9 @@ export const pageQuery = graphql`
           ctaText
           ctaLink
         }
-        officialname {
-          nameText
-          nameLink
+        coverletter {
+          coverText
+          coverLink
         }
         address {
           addressText
@@ -174,7 +174,7 @@ const HomePage = ({ data }) => {
 
     // const { iconimage } = useSiteMetadata()
 
-
+    const { companyname } = useSiteMetadata()
     const { siteUrl } = useSiteMetadata()
 
     const YouTubeStart = frontmatter.youtubestart
@@ -192,6 +192,8 @@ const HomePage = ({ data }) => {
 
     // const showCTA = frontmatter.cta.ctaText
     const CtaLink = frontmatter.cta.ctaLink
+    const coverLink = frontmatter.coverletter.coverLink
+    
 
     const openQuote = frontmatter.portfolio.openText
     const closeQuote = frontmatter.portfolio.closeText
@@ -473,7 +475,7 @@ const YouTube = frontmatter.youtuber
 ) : (
   
   <div className="nameblock" style={{margin:'0 auto 0 auto', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
-<span style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</span>
+<span style={{color:'', fontSize:'160%'}}>{companyname}</span>
 {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2}
@@ -510,8 +512,19 @@ const YouTube = frontmatter.youtuber
           )}
 
 <br />
-<Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+
+{coverLink ? (
+          <a href={frontmatter.coverletter.coverLink} target="_blank" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</a>
+       
+          ) : (
+            <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+          )}
+
+
+
 <br />
+
+
 
 
 
