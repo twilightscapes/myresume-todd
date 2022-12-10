@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline: Front-end designer and developer
+tagline: Independent artist, photographer, designer/developer. I imagine things & make them come to life.
 featuredImage: /assets/default-og-image.jpg
 secondaryImage: /assets/og-image.png
 showFeature: false
