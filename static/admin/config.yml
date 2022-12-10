@@ -68,7 +68,7 @@ collections:
           label: "Underlay Image",
           name: "underlayImage",
           widget: "image",
-          hint: "This is used to put a transparent png over the video but under the animation layer",
+          hint: "This puts a background image behind the profile section of the site",
           required: false,
           tagname: "",
         }
@@ -109,7 +109,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
-          - { label: "Secondary Image", name: "secondaryImage", widget: "image", hint: "this image is used for the background on the homepage", required: false }
+          - { label: "Profile/Avatar", name: "secondaryImage", widget: "image", hint: "This is your profile picture or avatar", required: false }
           - { label: "Show Feature", name: "showFeature", widget: "boolean" }
           - { label: "Show Info", name: "showInfo", widget: "boolean" }
           - { label: "Show Posts", name: "showPosts", widget: "boolean" }
