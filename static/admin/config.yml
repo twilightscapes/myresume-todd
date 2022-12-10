@@ -19,7 +19,7 @@ collections:
     label: "Portfolio" # Used in the UI
     label_singular: "Post" # Used in the UI, ie: "New Post"
     description: >
-      Create awesome stuff here.
+      Create your portfolio here. Add images, youtube videos, layer multimedia svgs over image and video. Its a playground for your work. 
     folder: "src/content/posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
@@ -92,6 +92,8 @@ collections:
         }
   - label: "Pages"
     name: "pages"
+    description: >
+      Edit your home page. resume and cover letter here. You can also edit the privacy, terms and disclaimers and contact pages.
     files:
       - label: "Home"
         name: "home"
