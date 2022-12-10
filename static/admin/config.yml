@@ -140,6 +140,7 @@ collections:
               - name: "addressText2"
                 label: "Your Address2"
                 widget: "string"
+                required: false 
           - label: "Resume"
             name: "resume"
             widget: "object"
