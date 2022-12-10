@@ -463,7 +463,7 @@ paddingLeft:'2rem',
 {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2}
-<br /><br />
+<br />
 <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Contact Me</Link>
 
 {showSocial ? (
@@ -487,7 +487,7 @@ paddingLeft:'2rem',
 {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2}
-<br /><br />
+<br />
 {/* <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px'}}>Contact Me</Link> */}
 
 
