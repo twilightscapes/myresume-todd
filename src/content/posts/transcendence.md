@@ -4,7 +4,7 @@ title: Transcendence
 slug: /transcendence
 date: 2022-01-01 01:43
 description: A groovy animation floating through the cosmos
-youtuber: "iHxmNzMfDj4"
+youtuber: "1kIihY252eE"
 youtuber2: "mkYKF5hQQ6M"
 youtubeshoworiginal: ""
 youtubersuggestion1: ""
@@ -20,7 +20,7 @@ youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
 comments: ""
-shareable: "1"
+shareable: ""
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-6.jpg
 svgImage: /assets/transcendence.svg
