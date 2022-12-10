@@ -114,14 +114,15 @@ body::after{
 
       <ModalRoutingContext.Consumer closeTimeoutMS={300}>
     {({ modal, closeTo }) => (
-      <div style={{overflow:''}}>
+      <div style={{overflow:'', display:'flex', justifyContent:'center'}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'0', right:'0', padding:'10px', fontSize:'40px', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
-          <Link state={{noScroll: true }} to={closeTo} style={{color:'#fff'}}>
+          <div style={{position:'fixed', top:'5vh', right:'14vw', zIndex:'2', color:'inherit !important', fontSize:'30px'}}>
+          <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important'}}>
             <AiOutlineClose />
           </Link>
           </div>
+          <Link to="../" className="print" style={{position:'fixed', bottom:'40px', border:'0px solid red', background:'rgba(0,0,0,0.70) ', width:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link>
           </>
         ) : (
 ""

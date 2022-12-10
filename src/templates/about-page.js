@@ -45,7 +45,7 @@ const AboutPage = ({ data }) => {
 
 
       <GoBack />
-      <Link to="../" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'1rem 2rem', display:'grid', justifyContent:'center'}}>Return Home</Link>
+      {/* <Link to="../" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'1rem 2rem', display:'grid', justifyContent:'center'}}>Return Home</Link> */}
 
       <br />
       <br />
