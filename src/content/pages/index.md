@@ -1,57 +1,97 @@
 ---
 slug: /
-tagline: Independent artist, photographer, designer/developer. I imagine things & make them come to life.
+tagline: Independent artist, photographer, designer/developer. I imagine things
+  & make them come to life.
 featuredImage: /assets/default-og-image.jpg
 secondaryImage: /assets/og-image.png
-showFeature: false
-showInfo: "1"
-showPosts: "1"
-showResume: "1"
-showSocial: true
-resume:
-  highlightsText: <p><strong>Product Designer - Skilled web designer/developer with 21 years of professional experience.</strong></p><p>Successful product designer able to integrate both technical and creative skills to create cross-browser and cross-platform solutions with modern web architecture and navigation systems.</p><p>Proven record of completing bold, clean, and effective designs with consistent performance ahead of schedule and under budget.</p><p>Industry experience including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and direct marketing.</p>
-  highlightsTitle: Highlights
-  profTitle: Proficiency
-  profText: <ul>
-      <li>Veteran WordPress Theme/Plugin Developer</li>
-      <li>React JS Frontend Designer/Developer</li></ul><br />
-      <p>Responsive, Reactive, Adaptive Design, progressive enhancement, PWA development, object oriented CSS animation.</p>
-      <p>Analytics, SEO, UI design, Information Architecture & Content Management System integrations. Photo and Video production.</p>
-      <p><strong>I prefer JAM stack, React, Gatsby, Canon, Subaru and my Mac.</strong></p>
-      
-  eduTitle: Education
-  eduText: <ul className="edu"><li><strong>Cal State University Fullerton</strong><br>Web Design and Development - Degree</li><li><strong>Coastline Community College</     strong><br>Quality Assurance - Degree</li><li><strong>Golden West College</strong><br>Business Management - Degree</li><li><strong>Huntington Beach High School</strong><br>High School General Courses - Diploma</li></ul>
-  exTitle: Experience
-  exText: <p><strong>Todd Lambert Enterprises, 1999 - Present</strong><br><em>Sole Proprietor / Photographer</em></p><p>Conducted all facets of web development business including meeting with clients, selling web services, and developing methods for improved customer support. <br> I also like to travel all over the country and photograph spooky and abandoned places at night. <br>View @ TwilightScapes.com</a></p><p><strong>Primal Health, 2013 - 2014</strong><br><em>Creative Director / Associate Developer</em></p><p>Responsible for all graphic components and direct marketing efforts. Worked with various departments to advance reach through social marketing, engineering and analytics. Also performed SEO and conducted extensive AB testing.</p><p><strong>Texas Instruments, 2010 - 2013</strong><br><em>Style Architect / Front End Developer / Senior UI Designer</em></p><p>Worked on all aspects of TIs website, from new ad campaigns and interactive widgets to the core infrastructure including a new re-design and replacement of site navigation site-wide. Championed responsive design techniques and other modern architecture for use on corporate site. Utilized Jquery animation for replacing all of TIs legacy Flash files.</p><p><strong>AGJ Systems &amp; Networks, 2008 - 2010 </strong><br><em>Web Director / Lead Developer / Senior Designer</em></p><p>Solely responsible for all design and development aspects of web department. Interacted with customers and other departments to integrate designs into modern websites catered to customer needs.</p><p><strong>TeleVox Software, 2004 - 2007</strong><br><em>Director of Web Development</em></p><p>Responsible for site architecture, design, graphics, programming, copywriting/editing, project management of all TeleVox websites and online marketing campaigns. Supervised 25 designers and developers.</p></div>
-    
-underlayImage: 
-youtuber: https://youtu.be/WgXN0kO1JEA
-youtubeautostart: "1"
-youtubemute: "1"
-youtubestart: "1"
-youtubeend: ""
-youtubecontrols: "1"
-cta:
-  ctaText: "Contact Me"
-  ctaLink: ""
 portfolio:
   openText: ""
-  closeText: "Experience has taught me that good design is not created on a spur of the moment, nor does it come naturally. Good design is a thorough and interative process with site visitors in mind foremost. Good design is identifying a problem for those visitors and removing that problem."
+  closeText: Experience has taught me that good design is not created on a spur of
+    the moment, nor does it come naturally. Good design is a thorough and
+    interative process with site visitors in mind foremost. Good design is
+    identifying a problem for those visitors and removing that problem.
+showInfo: "1"
+showSocial: false
+showResume: "1"
+resume:
+  highlightsText: <p><strong>Product Designer - Skilled web designer/developer
+    with 21 years of professional experience.</strong></p><p>Successful product
+    designer able to integrate both technical and creative skills to create
+    cross-browser and cross-platform solutions with modern web architecture and
+    navigation systems.</p><p>Proven record of completing bold, clean, and
+    effective designs with consistent performance ahead of schedule and under
+    budget.</p><p>Industry experience including semiconductor, hospitality,
+    entertainment, health, publishing, finance, insurance, construction,
+    computer software, and direct marketing.</p>
+  highlightsTitle: Highlights
+  profTitle: Proficiency
+  profText: <ul> <li>Veteran WordPress Theme/Plugin Developer</li> <li>React JS
+    Frontend Designer/Developer</li></ul><br /> <p>Responsive, Reactive,
+    Adaptive Design, progressive enhancement, PWA development, object oriented
+    CSS animation.</p> <p>Analytics, SEO, UI design, Information Architecture &
+    Content Management System integrations. Photo and Video production.</p>
+    <p><strong>I prefer JAM stack, React, Gatsby, Canon, Subaru and my
+    Mac.</strong></p>
+  eduTitle: Education
+  eduText: <ul className="edu"><li><strong>Cal State University
+    Fullerton</strong><br>Web Design and Development -
+    Degree</li><li><strong>Coastline Community College</     strong><br>Quality
+    Assurance - Degree</li><li><strong>Golden West College</strong><br>Business
+    Management - Degree</li><li><strong>Huntington Beach High
+    School</strong><br>High School General Courses - Diploma</li></ul>
+  exTitle: Experience
+  exText: <p><strong>Todd Lambert Enterprises, 1999 - Present</strong><br><em>Sole
+    Proprietor / Photographer</em></p><p>Conducted all facets of web development
+    business including meeting with clients, selling web services, and
+    developing methods for improved customer support. <br> I also like to travel
+    all over the country and photograph spooky and abandoned places at night.
+    <br>View @ TwilightScapes.com</a></p><p><strong>Primal Health, 2013 -
+    2014</strong><br><em>Creative Director / Associate
+    Developer</em></p><p>Responsible for all graphic components and direct
+    marketing efforts. Worked with various departments to advance reach through
+    social marketing, engineering and analytics. Also performed SEO and
+    conducted extensive AB testing.</p><p><strong>Texas Instruments, 2010 -
+    2013</strong><br><em>Style Architect / Front End Developer / Senior UI
+    Designer</em></p><p>Worked on all aspects of TIs website, from new ad
+    campaigns and interactive widgets to the core infrastructure including a new
+    re-design and replacement of site navigation site-wide. Championed
+    responsive design techniques and other modern architecture for use on
+    corporate site. Utilized Jquery animation for replacing all of TIs legacy
+    Flash files.</p><p><strong>AGJ Systems &amp; Networks, 2008 - 2010
+    </strong><br><em>Web Director / Lead Developer / Senior
+    Designer</em></p><p>Solely responsible for all design and development
+    aspects of web department. Interacted with customers and other departments
+    to integrate designs into modern websites catered to customer
+    needs.</p><p><strong>TeleVox Software, 2004 - 2007</strong><br><em>Director
+    of Web Development</em></p><p>Responsible for site architecture, design,
+    graphics, programming, copywriting/editing, project management of all
+    TeleVox websites and online marketing campaigns. Supervised 25 designers and
+    developers.</p></div>
+underlayImage: null
+youtuber: https://youtu.be/WgXN0kO1JEA
+youtubeautostart: "1"
+cta:
+  ctaText: Contact Me
+  ctaLink: ""
+showPosts: "1"
 officialname:
   nameText: Todd Lambert
   nameLink: /#posts
 address:
   addressText: Gulf Coast, USA
-address2:
-  addressText2: ""
 svgImage: /assets/transparent.png
 title: Digital Product Designer
+youtubeend: ""
+showFeature: false
 shareable: ""
+youtubecontrols: "1"
 template: index-page
+youtubemute: "1"
 description: Todd Lambert - Independent artist, photographer, designer/developer
 svgzindex: ""
-
-
+address2:
+  addressText2: ""
+youtubestart: "1"
 ---
 
 
