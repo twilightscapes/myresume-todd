@@ -60,6 +60,7 @@ export const pageQuery = graphql`
         showPosts
         showInfo
         showResume
+        showSocial
         youtuber
         youtubestart
         youtubeend
@@ -188,6 +189,7 @@ const HomePage = ({ data }) => {
     const ShowInfo = frontmatter.showInfo
     const ShowPosts = frontmatter.showPosts
     const ShowResume = frontmatter.showResume
+    const showSocial = frontmatter.portfolio.showSocial
     const showfooter = useSiteMetadata()
 
     // const showCTA = frontmatter.cta.ctaText
@@ -195,7 +197,7 @@ const HomePage = ({ data }) => {
 
     const openQuote = frontmatter.portfolio.openText
     const closeQuote = frontmatter.portfolio.closeText
-    const showSocial = frontmatter.portfolio.showSocial
+    
 
     // const { siteColor } = useSiteMetadata()
 
@@ -395,17 +397,7 @@ const YouTube = frontmatter.youtuber
 
   <div className="flexcheek mob print" style={{padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 7px #000', background:'rgba(0,0,0,0.70)', color:'#fff', borderRadius:'10px'}}>
   
-  <h1 className="logofirst" style={{textAlign:'center', marginTop:'50px', 
-fontFamily: 'Lobster Two',
-letterSpacing: '2px',
-textTransform: 'lowercase',
-fontWeight: '400',
-textShadow:'0 1px 0 #eee',
-fontSize:'clamp(1.6rem, 6vw, 3.8rem)',
-paddingLeft:'2rem',
-}}>
-    {frontmatter.title}</h1>
-
+  <h1 className="title1">{frontmatter.title}</h1>
             <h2 className="tagline1">
               {frontmatter.tagline}
             </h2>
@@ -459,11 +451,11 @@ paddingLeft:'2rem',
 {UnderlayImage ? (
 
   <div className="nameblock" style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', color:'#fff', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', background:'rgba(0,0,0,0.50)', borderRadius:'10px', textShadow:'0 2px 7px #000', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
-<h3 className="font" style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</h3>
+<span style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</span>
 {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2}
-<br />
+<br /><br />
 <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Contact Me</Link>
 
 {showSocial ? (
@@ -483,11 +475,11 @@ paddingLeft:'2rem',
 ) : (
   
   <div className="nameblock" style={{margin:'0 auto 0 auto', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
-<h3 style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</h3>
+<span style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</span>
 {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2}
-<br />
+<br /><br />
 {/* <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px'}}>Contact Me</Link> */}
 
 
@@ -756,10 +748,10 @@ paddingLeft:'2rem',
   
 
 
- <div className="toolbar" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
+ <div className="" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
 
 
-<div className="" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
+<div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
 
 
   <div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
