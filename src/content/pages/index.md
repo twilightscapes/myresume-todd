@@ -75,8 +75,8 @@ cta:
   ctaLink: ""
 showPosts: "1"
 coverletter:
-  coverText: "BooYa"
-  coverLink: "https://google.com"
+  coverText: "Cover Letter"
+  coverLink: ""
 address:
   addressText: Gulf Coast, USA
 svgImage: /assets/transparent.png

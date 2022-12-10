@@ -513,12 +513,24 @@ const YouTube = frontmatter.youtuber
 
 <br />
 
+
+{/* {coverText ? (
+""
+) : (
+  ""
+)} */}
+
+
 {coverLink ? (
+
           <a href={frontmatter.coverletter.coverLink} target="_blank" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</a>
        
           ) : (
-            <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
-          )}
+            
+            <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
+
+)}
+
 
 
 
