@@ -485,9 +485,10 @@ const YouTube = frontmatter.youtuber
 
 {CtaLink ? (
            
-           <Link
-   to={frontmatter.cta.ctaLink}
+           <a
+   href={frontmatter.cta.ctaLink}
    className="button print"
+   target="_blank"
     style={{
     cursor:'pointer',
     textDecoration:'underline',
@@ -498,7 +499,7 @@ const YouTube = frontmatter.youtuber
     alignSelf:'center',
     color:''
     }}>{frontmatter.cta.ctaText}
-</Link>
+</a>
        
           ) : (
             <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px'}}>{frontmatter.cta.ctaText}</Link>
