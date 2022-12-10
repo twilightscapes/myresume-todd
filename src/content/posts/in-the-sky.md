@@ -1,7 +1,7 @@
 ---
 template: blog-post
-title: Transcendence
-slug: /transcendence
+title: In The Sky
+slug: /in-the-sky
 date: 2022-01-01 01:43
 description: A groovy animation floating through the cosmos
 youtuber: "iHxmNzMfDj4"
@@ -20,17 +20,17 @@ youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
 comments: ""
-shareable: "1"
-underlayImage: /assets/transparent.png
-featuredImage: /assets/Experiences-Header-6.jpg
-svgImage: /assets/transcendence.svg
+shareable: ""
+underlayImage: /assets/swd-foreground.png
+featuredImage: /assets/Experiences-Header-5.jpg
+svgImage: /assets/campfire.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
 ---
 Shot in the Valley of the Gods in southern Utah, the original image is comprised of 72 photos shot during time-lapse and then stacked together to illustrate the movement of the earth.
 
-May peace always be with you.
+May peace be with you, always.
 
 
 
