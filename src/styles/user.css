@@ -5,11 +5,6 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header label, .font{font-family: "Roboto", 
  }
 
 
- @media (max-width: 48rem) {
-.toolbar{padding-bottom:75px !important; flex-direction: column !important;}
-.toolbar *{margin-bottom:10px !important;}
-
- }
 
 
 
