@@ -116,6 +116,16 @@ collections:
           - { label: "Show Social Links", name: "showSocial", widget: "boolean", default: "true", required: false }
           - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
           - { label: "Body", name: "body", widget: "markdown" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - name: "ctaText"
+                label: "CTA text"
+                widget: "string"
+              - name: "ctaLink"
+                label: "CTA Link"
+                widget: "string"
           - label: "Official Name"
             name: "officialname"
             widget: "object"
