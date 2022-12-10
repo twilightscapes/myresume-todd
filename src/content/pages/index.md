@@ -13,11 +13,11 @@ resume:
   profTitle: Proficiency
   profText: <ul>
       <li>Veteran WordPress Theme/Plugin Developer</li>
-      <li>React JS Frontend Designer/Developer</li><br />
+      <li>React JS Frontend Designer/Developer</li></ul><br />
       <p>Responsive, Reactive, Adaptive Design, progressive enhancement, PWA development, object oriented CSS animation.</p>
       <p>Analytics, SEO, UI design, Information Architecture & Content Management System integrations. Photo and Video production.</p>
       <p><strong>I prefer JAM stack, React, Gatsby, Canon, Subaru and my Mac.</strong></p>
-      </ul>
+      
   eduTitle: Education
   eduText: <ul className="edu"><li><strong>Cal State University Fullerton</strong><br>Web Design and Development - Degree</li><li><strong>Coastline Community College</     strong><br>Quality Assurance - Degree</li><li><strong>Golden West College</strong><br>Business Management - Degree</li><li><strong>Huntington Beach High School</strong><br>High School General Courses - Diploma</li></ul>
   exTitle: Experience
