@@ -189,7 +189,7 @@ const HomePage = ({ data }) => {
     const ShowInfo = frontmatter.showInfo
     const ShowPosts = frontmatter.showPosts
     const ShowResume = frontmatter.showResume
-    const showSocial = frontmatter.portfolio.showSocial
+    const showSocial = frontmatter.showSocial
     const showfooter = useSiteMetadata()
 
     // const showCTA = frontmatter.cta.ctaText
