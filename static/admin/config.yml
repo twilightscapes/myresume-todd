@@ -116,15 +116,15 @@ collections:
           - { label: "Show Social Links", name: "showSocial", widget: "boolean", default: "true", required: false }
           - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
           - { label: "Body", name: "body", widget: "markdown" }
-          - label: "CTA"
+          - label: "Contact Button"
             name: "cta"
             widget: "object"
             fields:
               - name: "ctaText"
-                label: "CTA text"
+                label: "Button text"
                 widget: "string"
               - name: "ctaLink"
-                label: "CTA Link"
+                label: "Custom Link"
                 widget: "string"
           - label: "Cover Letter Link"
             name: "coverletter"
@@ -134,7 +134,7 @@ collections:
                 label: "Link Text"
                 widget: "string"
               - name: "coverLink"
-                label: "Link to your website"
+                label: "Custom Link"
                 widget: "string"
           - label: "Address"
             name: "address"
