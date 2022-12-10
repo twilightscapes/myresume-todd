@@ -242,6 +242,8 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
   - name: settings
     label: Settings
+    description: >
+      Modify all of the various settings for your site, such as SEO, default images, and Analytics account, social accounts, etc.
     files:
       - name: general
         label: General
