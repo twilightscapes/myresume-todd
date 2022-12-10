@@ -43,8 +43,11 @@ border:1px solid red;
 }
 
 body {
-  font-family: Lobster Two, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+
 
 /* .popped{display: none !important;} */
 
@@ -2059,6 +2062,84 @@ background: rgba(0,0,0,0.6);
           filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9));
        }
     
+
+       .font {
+        color: rgb(187 54 0) !important;
+       
+        /* color: rgb(141 41 0); */
+
+        position:relative;
+        filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+      }
+      
+      .font:before {
+        content: "{";
+        left:-12%
+      }
+      
+      .font:after, .font:before {
+        color: #666;
+        font-size: 120%;
+        position: absolute;
+        top: -30%;
+        font-weight:700
+      }
+      
+      .font:after {
+        content: "}";
+        right:-15%
+      }
+
+
+
+      .logofirst {
+        padding-right: 3%;
+        position: relative;
+        color:#666;
+        filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+      }
+      
+      .logofirst.mainlogo:before {
+        content: " . ";
+        color: #666;
+        position: absolute;
+        margin-left:-10%;
+      }
+      
+      .logotype {
+        font-family: Lobster Two;
+        color: rgb(187 54 0);
+        letter-spacing: 2px;
+        font-size: clamp(2.5rem, 5vw, 5rem) !important;
+        text-transform: lowercase;
+        font-weight: 400;
+        position: relative;
+        text-shadow:0 1px 0 #fff;
+        filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.5));
+      }
+      
+      .logotype:before {
+        content: ".todd {";
+        color: #666;
+        letter-spacing:2px;
+        word-spacing: -8px;
+      }
+      
+      
+      .logotype:after {
+        content: "}";
+        color: #666;
+        margin-left:3px;
+      }
+      
+      body.dark .logotype:after, body.dark .logotype:before {
+        color: #666;
+        text-shadow:0 1px 0 #fff;
+      }
+
+      .logofirst {
+        line-height:10vh,
+      }
     
     
      

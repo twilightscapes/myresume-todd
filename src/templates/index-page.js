@@ -395,7 +395,17 @@ const YouTube = frontmatter.youtuber
 
   <div className="flexcheek mob print" style={{padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 7px #000', background:'rgba(0,0,0,0.70)', color:'#fff', borderRadius:'10px'}}>
   
-  <h1 className="title1">{frontmatter.title}</h1>
+  <h1 className="logofirst" style={{textAlign:'center', marginTop:'50px', 
+fontFamily: 'Lobster Two',
+letterSpacing: '2px',
+textTransform: 'lowercase',
+fontWeight: '400',
+textShadow:'0 1px 0 #eee',
+fontSize:'clamp(1.6rem, 6vw, 3.8rem)',
+paddingLeft:'2rem',
+}}>
+    {frontmatter.title}</h1>
+
             <h2 className="tagline1">
               {frontmatter.tagline}
             </h2>
@@ -449,7 +459,7 @@ const YouTube = frontmatter.youtuber
 {UnderlayImage ? (
 
   <div className="nameblock" style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', color:'#fff', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', background:'rgba(0,0,0,0.50)', borderRadius:'10px', textShadow:'0 2px 7px #000', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
-<span style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</span>
+<h3 className="font" style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</h3>
 {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2}
@@ -473,7 +483,7 @@ const YouTube = frontmatter.youtuber
 ) : (
   
   <div className="nameblock" style={{margin:'0 auto 0 auto', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
-<span style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</span>
+<h3 style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</h3>
 {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2}
