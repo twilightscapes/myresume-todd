@@ -113,6 +113,7 @@ collections:
           - { label: "Show Feature", name: "showFeature", widget: "boolean" }
           - { label: "Show Info", name: "showInfo", widget: "boolean" }
           - { label: "Show Posts", name: "showPosts", widget: "boolean" }
+          - { label: "Show Social Links", name: "showSocial", widget: "boolean", default: "true", required: false }
           - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
           - { label: "Body", name: "body", widget: "markdown" }
           - label: "Official Name"
