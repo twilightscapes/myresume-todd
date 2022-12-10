@@ -997,14 +997,35 @@ display: none !important;
 
 }
 
-.ReactModalPortal div.toppad{border:0px solid blue !important; display: none !important;}
+.ReactModal__Overlay {
+	opacity: 0;
+	transition: opacity 1000ms ease-in-out;
+}
+.ReactModal__Overlay--after-open{
+	opacity: 1;
+	background:rgba(22, 24, 24, 0.8) !important;
+	text-shadow:1px 1px 0 #111;
+	color:#fff;
+}
+.ReactModal__Overlay--before-close{
+	opacity: 0;
+}
 
-.ReactModalPortal {margin:0 19% !important; width:75% !important; z-index: 2; border-radius: 12px;}
+.ReactModal__Overlay{
+	background:transparent !important;
+	backdrop-filter: blur(22px);
+}
+.ReactModal__Content{
+	padding:0 !important;
+	background:rgba(18, 20, 20, 0.7) !important;
+	margin:0 auto ;
+	border:none !important;
+	box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: none !important;
+  width:75vw;
+}
 
-.ReactModal__Overlay{background-color:transparent !important;   background: rgba(0,0,0,0.30);
-  backdrop-filter: blur(22px);}
 
-.ReactModal__Content{padding:0 !important; background:rgba(0, 0, 0, 0.9) !important; margin:0 auto ; padding:0 20px !important; overflow: auto !important; border:none !important; box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.3); box-shadow: none !important; color:#fff !important;  border:0px solid blue !important; border-radius:12px !important; width:75vw !important;}
 
 
 .ReactModal__Body--open {

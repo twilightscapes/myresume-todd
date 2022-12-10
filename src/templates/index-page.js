@@ -489,6 +489,7 @@ const YouTube = frontmatter.youtuber
    href={frontmatter.cta.ctaLink}
    className="button print"
    target="_blank"
+   rel="noreferrer"
     style={{
     cursor:'pointer',
     textDecoration:'underline',
@@ -524,7 +525,7 @@ const YouTube = frontmatter.youtuber
 
 {coverLink ? (
 
-          <a href={frontmatter.coverletter.coverLink} target="_blank" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</a>
+          <a href={frontmatter.coverletter.coverLink} rel="noreferrer" target="_blank" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</a>
        
           ) : (
             

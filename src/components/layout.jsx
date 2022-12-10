@@ -112,7 +112,7 @@ body::after{
 
 
 
-      <ModalRoutingContext.Consumer>
+      <ModalRoutingContext.Consumer closeTimeoutMS={300}>
     {({ modal, closeTo }) => (
       <div style={{overflow:''}}>
         {modal ? (
