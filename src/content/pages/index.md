@@ -68,8 +68,8 @@ resume:
     TeleVox websites and online marketing campaigns. Supervised 25 designers and
     developers.</p></div>
 underlayImage: null
-youtuber: https://youtu.be/WgXN0kO1JEA
-youtubeautostart: "1"
+youtuber: https://youtu.be/ESGJ42zshL8
+youtubeautostart: ""
 cta:
   ctaText: Contact Me
   ctaLink: ""
@@ -82,7 +82,7 @@ address:
 svgImage: /assets/transparent.png
 title: Digital Product Designer
 youtubeend: ""
-showFeature: false
+showFeature: true
 shareable: ""
 youtubecontrols: "1"
 template: index-page

@@ -3,6 +3,8 @@ template: about-page
 slug: /cover
 title: About Todd Lambert
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2_Noj7lS-tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 My name is Todd Lambert and I have been working professionally in the web industry since 1999. I have a lot of relevant experience in a variety of aspects of both the design and development sectors of the business. I've worked as a webmaster, web designer, front-end developer and user interface engineer within a wide array of clients and industries.
 
 Although I have worked for many companies as an employee, I started my career with my own company and as an independent contractor. Because of this, I have always considered client relationships as a unique partnership with the goal of obtaining the customers online objectives first and foremost.
