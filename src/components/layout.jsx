@@ -6,7 +6,7 @@ import React, { } from "react"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import { IoShareOutline } from 'react-icons/io5';
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 import { Seo } from "./seo"
 import "../styles/reset.css"
 // import "../styles/variables.css"
@@ -117,7 +117,7 @@ body::after{
       <div style={{overflow:'', display:'flex', justifyContent:'center'}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'5vh', right:'14vw', zIndex:'2', color:'inherit !important', fontSize:'30px'}}>
+          <div style={{position:'fixed', top:'8vh', right:'14vw', zIndex:'2', color:'inherit !important', fontSize:'30px'}}>
           <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important'}}>
             <AiOutlineClose />
           </Link>
@@ -231,7 +231,7 @@ body::after{
   {/* <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
   <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
 </button> */}
-<Theme  style={{}} />
+{/* <Theme  style={{}} /> */}
     </div>
 
   </div>
