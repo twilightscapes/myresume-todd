@@ -835,6 +835,7 @@ filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));  */
     margin-right: 10px;
   }
 
+  #installedbar {display: none;}
 
 .has-app{display:none !important;}
 .no-app{display:block !important;}
@@ -850,6 +851,7 @@ filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));  */
   /* All installed PWAs */
   #installer{display: none !important; border:10px solid yellow !important;}
   #info, #posts, .toolbar{display:none !important;}
+  #installedbar{display:flex !important;}
 
 }
 	
