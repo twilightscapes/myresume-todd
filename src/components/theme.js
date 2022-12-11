@@ -42,10 +42,10 @@ const themeStyles = {
   modeIcons: {
     display: "flex",
     alignItems: "center",
-    color: "#ccc",
+    color: "#888",
     mt: "10px",
     "&:hover": {
-      color: "color:var(--primary-color)",
+      color: "color:var(--sitecolor)",
     },
   },
   modeText: {

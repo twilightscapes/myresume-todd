@@ -9,6 +9,9 @@ import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { FaRegPlusSquare } from 'react-icons/fa'
+
+import Theme from "../components/theme"
+
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -776,8 +779,10 @@ const YouTube = frontmatter.youtuber
  <div className="toolbar" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
 
 
-<div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
+<div style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0', minHeight:'30px', maxHeight:'32px'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
 
+
+<div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
 
   <div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
 
