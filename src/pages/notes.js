@@ -19,8 +19,8 @@ import { Link } from "gatsby"
 
 
 
-const iOSCanInstall = 'standalone' in window.navigator
-const iOSIsInstalled = window.navigator.standalone === true
+// const iOSCanInstall = 'standalone' in window.navigator
+// const iOSIsInstalled = window.navigator.standalone === true
 
 
 
@@ -45,12 +45,12 @@ export default function NotesPage() {
 
 
 
-{iOSCanInstall ? (
+{/* {iOSCanInstall ? (
             <p>Its installed baby!</p>
        
           ) : (
             <p>Not installed honkeyboy!</p>
-          )}
+          )} */}
 
 
 
