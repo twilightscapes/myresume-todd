@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -43,8 +43,8 @@ const Disclaimer = ({ data }) => {
 
 
 
-
-      <GoBack />
+      <Link to="../" className="print" style={{position:'', bottom:'', border:'0px solid red', width:'200px', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link>
+      {/* <GoBack /> */}
       <br />
       <br />
       <br />

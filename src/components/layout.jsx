@@ -122,7 +122,7 @@ body::after{
             <AiOutlineClose />
           </Link>
           </div>
-          <Link to="../" className="print" style={{position:'fixed', bottom:'40px', border:'0px solid red', background:'rgba(0,0,0,0.70) ', width:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link>
+          {/* <Link to="../" className="print" style={{position:'fixed', bottom:'40px', border:'0px solid red', background:'rgba(0,0,0,0.70) ', width:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link> */}
           </>
         ) : (
 ""

@@ -113,7 +113,7 @@ const Contact = ({ data }) => {
         </p>
         </div>
 
-        <div style={{fontSize: '80%', padding: '1rem 3%', textAlign: 'center',}}><Link style={{textAlign: 'center', paddingTop: '0px', paddingBottom: '0', textDecoration: 'underline',}} state={{modal: true}} to="/privacy">Privacy Policy</Link>
+        <div style={{fontSize: '80%', padding: '1rem 3%', textAlign: 'center', display:'flex', justifyContent:'center'}}><Link className="print" style={{color:'', fontSize:'', margin:'', textAlign:'center', maxWidth:'', padding:'1rem 2rem', display:'', justifyContent:'', textDecoration: 'underline',}} state={{modal: true}} to="/privacy">Privacy Policy</Link><Link to="../" className="print" style={{color:'', fontSize:'', margin:'', textAlign:'center', maxWidth:'', padding:'1rem 2rem', display:'', justifyContent:'', textDecoration: 'underline',}}>Return Home</Link>
                 </div>
       </form>
     </div>

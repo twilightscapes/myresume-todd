@@ -841,14 +841,16 @@ filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));  */
 
 @media (display-mode: standalone) {
   /* All installed PWAs */
-.has-app{display: block !important;}
 .no-app{display: none !important;}
+.has-app{display: block !important;}
 }
 
 
 @media (display-mode: standalone) {
   /* All installed PWAs */
   #installer{display: none !important; border:10px solid yellow !important;}
+  #info, #posts, .toolbar{display:none !important;}
+
 }
 	
 
@@ -2909,3 +2911,6 @@ opacity:.8;
     place-content: center;
     text-align:center;
   } */
+
+
+  
