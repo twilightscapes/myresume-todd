@@ -6,13 +6,21 @@ import GoBack from "../components/goBack"
 import { Link } from "gatsby"
 
 
+// const IsInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone)
 
 
 
 
 
-const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone)
 
+
+
+
+
+
+
+const iOSCanInstall = 'standalone' in window.navigator
+const iOSIsInstalled = window.navigator.standalone === true
 
 
 
@@ -37,16 +45,15 @@ export default function NotesPage() {
 
 
 
+{iOSCanInstall ? (
+            <p>Its installed baby!</p>
+       
+          ) : (
+            <p>Not installed honkeyboy!</p>
+          )}
 
 
 
-
-
-{isInStandaloneMode ? (
-  <p>Not installed honkeyboy!</p>
-) : (
-  <p>Its installed baby!</p>
-)}
 
 
 

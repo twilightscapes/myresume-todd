@@ -212,6 +212,7 @@ module.exports = {
         theme_color: `#222`,
         display: `standalone`,
  icon: `static/assets/logo.svg`, // This path is relative to the root of the site.
+ cache_busting_mode: `query`, // `query`(default), `name`, or `none`
  icon_options: {
   purpose: `any maskable`,
 },
