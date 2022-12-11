@@ -11,7 +11,7 @@ import { Link } from "gatsby"
 
 
 
-
+const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone)
 
 
 
@@ -36,7 +36,19 @@ export default function NotesPage() {
     
 
 
-<p></p>
+
+
+
+
+
+
+{isInStandaloneMode ? (
+  <p>Not installed honkeyboy!</p>
+) : (
+  <p>Its installed baby!</p>
+)}
+
+
 
 
 <h3>You got this!</h3>
