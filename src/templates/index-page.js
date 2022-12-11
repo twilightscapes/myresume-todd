@@ -586,7 +586,7 @@ const YouTube = frontmatter.youtuber
 <div id="posts" name="posts">
 {/* <p style={{fontSize:'150%', textAlign:'center', margin:'0 0 0 0'}}>See it in action:</p> */}
 
-<div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'600px', overflow:'hidden', position:'relative',}}>
+<div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'60vh', overflow:'hidden', position:'relative',}}>
 
 <div className="RArrow"><span></span></div>
 
@@ -776,13 +776,25 @@ const YouTube = frontmatter.youtuber
   
 
 
- <div id="installedbar" className="toolbar hasapp" style={{display:'none', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
+ <div order="1" id="installedbar" className="toolbar hasapp" style={{display:'none', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
 
- <div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Link state={{modal: true}} to="/posts/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Portfolio</Link></span></div>
+ <div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+ <Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Cover Letter</Link>
+ </div>
 
- <div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
+ <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+ <Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Portfolio</Link>
+ </div>
+
+ <div className="themer" order="4" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
  
- <div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Cover Letter</Link></span></div>
+ <div order="5" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+  <Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
+  </div>
+
+ <div order="6" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+  <Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Tips</Link>
+  </div>
 
 
  </div>
