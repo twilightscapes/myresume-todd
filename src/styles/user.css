@@ -27,6 +27,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header label, .font{font-family: "Roboto", 
    }
 
    #resume{overflow: wrap !important;}
+   #resumename{display:block !important;}
     
  h3{text-align: left !important; font-size:20px !important;}
 

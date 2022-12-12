@@ -656,10 +656,10 @@ const YouTube = frontmatter.youtuber
 {ShowResume ? (
 
 
-<section id="resume" name="resume" style={{ display:'', height:'', overflow:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
+<section id="resume" name="resume" style={{ display:'', height:'', overflow:'',position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
 
 <article>
-<div style={{color:'', fontSize:'160%', padding:'0 0 2rem 4rem', textAlign:'center'}}>{companyname}<br />
+<div id="resumename" style={{display:'none', position:'absolute', top:'-4rem', fontSize:'160%', padding:'0 0 2rem 4rem', textAlign:'left', width:'100%',}}>{companyname}<br />
 {/* {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2} */}
@@ -781,7 +781,7 @@ const YouTube = frontmatter.youtuber
   
 
 
- <div order="1" id="installedbar" className="toolbar hasapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'1rem 0', }}>
+ <div order="1" id="installedbar" className="toolbar hasapp print" style={{display:'none', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'1rem 0', }}>
 
  <div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
  <Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Cover Letter</Link>
