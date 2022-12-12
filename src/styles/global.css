@@ -190,7 +190,7 @@ display: none !important;
 
   @media (min-width: 1200px) {
     /* .player-wrapper {padding-top: 45.25%} */
-    
+
   }
 
   .react-player {
@@ -1716,7 +1716,7 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 
 
   .signbox {flex-direction: row;}
-
+  #closeicon{right:6vw !important; border:0px solid red !important;}
 }
 
 
@@ -2961,4 +2961,33 @@ opacity:.8;
   } */
 
 
-  
+  @media print {
+    body {
+       color: #000 !important;
+       background: #fff !important;
+       /* border:1px solid red !important; */
+       /* width:105% !important; */
+       /* height:100vh !important; */
+       padding:0 20% 0 0 !important;
+       margin:0 0 0 0 !important;
+       /* width:auto !important; */
+       /* margin-left: -50px !important; */
+    }
+
+    body::after {
+      background: #fff !important;
+   }
+
+   #resume{overflow: wrap !important;}
+   #resumename{display:block !important;}
+    
+ h3{text-align: left !important; font-size:20px !important;}
+
+    .footerstyle, .sidebarIconToggle, .back, .taggage, .infomenu, .sidebart, #posts, #feature, .print, #consent, .commentbox, .avatar-frame, .makeStyles-container-1, .usability {display: none !important;}
+
+   #info{display:block !important;}
+    .nameblock{text-align:center !important; margin:0 auto; position:relative; }
+
+
+
+ }

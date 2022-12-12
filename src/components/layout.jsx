@@ -91,7 +91,7 @@ body::after{
 
 { !font1 ? (
   
-  document.body.style = 'background: red;'
+''
 
   ) : (
 
@@ -117,7 +117,7 @@ body::after{
       <div style={{overflow:'', display:'flex', justifyContent:'center'}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'8vh', right:'14vw', zIndex:'2', color:'inherit !important', fontSize:'30px'}}>
+          <div id="closeicon" style={{position:'fixed', top:'6vh', right:'10vw', zIndex:'2', color:'inherit !important', fontSize:'40px'}}>
           <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important'}}>
             <AiOutlineClose />
           </Link>
