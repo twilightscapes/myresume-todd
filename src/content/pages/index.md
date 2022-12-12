@@ -82,7 +82,7 @@ address:
 svgImage: /assets/transparent.png
 title: Digital Product Designer
 youtubeend: ""
-showFeature: true
+showFeature: false
 shareable: ""
 youtubecontrols: "1"
 template: index-page

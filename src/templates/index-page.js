@@ -268,7 +268,8 @@ const YouTube = frontmatter.youtuber
     <CustomBox style={{}}>
     <Layout>
     <Helmet>
-  <body className="homepage" style={{ }} />
+  <body className="homepage" />
+  {/* <link rel="stylesheet" href={frontmatter.portfolio.closeText} /> */}
 </Helmet>
        <Seo
         title={frontmatter.title}
@@ -506,7 +507,7 @@ const YouTube = frontmatter.youtuber
 </a>
        
           ) : (
-            <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px'}}>{frontmatter.cta.ctaText}</Link>
+            <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px', padding:'1rem'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 {showSocial ? (
@@ -780,7 +781,7 @@ const YouTube = frontmatter.youtuber
   
 
 
- <div order="1" id="installedbar" className="toolbar hasapp print" style={{display:'none', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
+ <div order="1" id="installedbar" className="toolbar hasapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'1rem 0', }}>
 
  <div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
  <Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Cover Letter</Link>
@@ -790,7 +791,7 @@ const YouTube = frontmatter.youtuber
  <Link state={{modal: true}} to="/posts/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Portfolio</Link>
  </div>
 
- <div className="themer" order="4" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
+ <div className="themer" order="4" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto', verticalAlign:'center'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
  
  <div order="5" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
   <Link state={{modal: true}} to="/notes/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
@@ -804,15 +805,15 @@ const YouTube = frontmatter.youtuber
  </div>
 
 
- <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
+ <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'1rem 0', }}>
 
 
-<div style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0', minHeight:'30px', maxHeight:'32px'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
+<div order="1" style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0', minHeight:'30px', maxHeight:'32px'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
 
 
-<div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
+<div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto', verticalAlign:'center'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
 
-  <div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
+  <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
 
 </div>
       {/* show footer */}

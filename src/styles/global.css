@@ -805,7 +805,7 @@ filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));  */
 .button {
   display: inline-flex;
   align-items: center;
-  padding: 1.2rem 4.5vw;
+  /* padding: 1.2rem 4.5vw; */
   border-radius: 12px;
   text-decoration: none;
   appearance: none;
@@ -816,6 +816,12 @@ filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));  */
   background: linear-gradient(180deg, #333 1%, #111 80%);
   /* transition: background 0.3s linear; */
 }
+.button:hover {
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.8) !important; */
+  background: rgba(0, 0, 0, 0.4);
+  color:#fff !important;
+  border:1px solid #777;
+}
 .button.-outline {
     /* color: var(--primary-color); */
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
@@ -824,12 +830,33 @@ filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));  */
   }
 
 
+  #installedbar{
+    /* background: rgb(241, 245, 249) ; */
+       /* background: rgb(31, 34, 37) ; */
+  }
+
+
+  
+  .button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    appearance: none;
+    border: 1px solid #111;;
+    font-size: 16px;
+    line-height: 1;
+    color:#fff !important;
+    background: linear-gradient(180deg, rgb(58, 67, 71) 80%, rgb(146, 181, 192) 130%);
+    /* transition: background 0.3s linear; */
+  }
   .button:hover {
-      /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.8) !important; */
-      background: rgba(0, 0, 0, 0.4);
-      color:#fff !important;
-      border:1px solid #777;
-    }
+    /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.8) !important; */
+    background: rgba(0, 0, 0, 0.5);
+    color:#fff !important;
+    border:1px solid #222;
+  }
 
     
 
