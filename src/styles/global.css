@@ -877,7 +877,8 @@ filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8));  */
   #installedbar {display: none;}
 
   @media (max-width: 48rem) {
-    #installedbar .themer{order:8 !important}
+  .themer{order:8 !important}
+  .keyboard{height:40px !important;}
   }
 
 .has-app{display:none !important;}
@@ -2129,6 +2130,7 @@ background: rgba(0,0,0,0.6);
             /* line-height:120% !important; */
         }
 
+        .keyboard{height:30px;}
         
 
        /* .print{ border: 1px solid red !important} */
@@ -2891,6 +2893,7 @@ opacity:.8;
                             }
                             .mob {order:2;}
                             .mob2 {order:1;}
+
 
                             /* @media (pointer: coarse) {
                               .horizontal-scroll-wrapper {
