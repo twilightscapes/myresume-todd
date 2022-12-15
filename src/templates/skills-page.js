@@ -26,7 +26,7 @@ const Skills = ({ data }) => {
       <Seo title={frontmatter.title} description={excerpt} />
 
 
-      <div className="container" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
+      <div className="container" style={{padding:'2rem 0', maxWidth:'1024px'}}>
 
 
       {/* <div className="mobile"><GoBack /></div> */}

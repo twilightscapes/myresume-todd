@@ -13,11 +13,14 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header label, .font{font-family: "Roboto", 
   display: flex;
   background-color: transparent;
   flex-direction: column;
-  width: 75%;
   max-width: 700px;
   position: relative;
   padding: 0;
   
+}
+
+@media (max-width: 48rem) {
+  dl {width: 55%;}
 }
 
 dt {
