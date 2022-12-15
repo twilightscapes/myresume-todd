@@ -95,7 +95,7 @@ collections:
     description: >
       Edit your home page. resume and cover letter here. You can also edit the privacy, terms and disclaimers and contact pages.
     files:
-      - label: "Home"
+      - label: "Profile and Resume"
         name: "home"
         file: "src/content/pages/index.md"
         fields:
@@ -105,27 +105,38 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
+
+
+
+   
+
+
           - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page and SEO Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Featured Image", name: "featuredImage", widget: "image" }
-          - { label: "Profile/Avatar", name: "secondaryImage", widget: "image", hint: "This is your profile picture or avatar", required: false }
           - { label: "Show Feature", name: "showFeature", widget: "boolean" }
           - { label: "Show Info", name: "showInfo", widget: "boolean" }
           - { label: "Show Posts", name: "showPosts", widget: "boolean" }
           - { label: "Show Social Links", name: "showSocial", widget: "boolean", default: "true", required: false }
-          - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - label: "Contact Button"
-            name: "cta"
-            widget: "object"
-            fields:
-              - name: "ctaText"
-                label: "Button text"
-                widget: "string"
-              - name: "ctaLink"
-                label: "Custom Link"
-                widget: "string"
+          - { label: "Show Skills", name: "showSkills", widget: "boolean", default: "true", required: false }
+          - { label: "Featured Image", name: "featuredImage", widget: "image" }
+          - { label: "YouTube Url", name: "youtuber", hint: "Add YouTube video to hero section", widget: "string", required: false }
+          - { label: "Profile/Avatar", name: "secondaryImage", widget: "image", hint: "This is your profile picture or avatar", required: false }
+          - { label: "Profile Background", name: "underlayImage", widget: "image", hint: "This is your profile section background", required: false }
+          
+
+          - { label: "Profile Title", name: "profTitle", widget: "string",
+           required: false }
+
+          - { label: "Profile text (intro)", name: "profText", widget: "string", required: false }
+
+          - { label: "Your Address", name: "addressText", widget: "string", required: false }
+          - { label: "Your Address 2", name: "addressText2", widget: "string", required: false }
+
+
+          - { label: "Resume", name: "body", widget: "markdown" }
+
+
           - label: "Cover Letter Link"
             name: "coverletter"
             widget: "object"
@@ -136,55 +147,36 @@ collections:
               - name: "coverLink"
                 label: "Custom Link"
                 widget: "string"
-          - label: "Address"
-            name: "address"
-            widget: "object"
-            fields:
-              - name: "addressText"
-                label: "Your Address"
-                widget: "string"
-          - label: "Address2"
-            name: "address2"
-            widget: "object"
-            fields:
-              - name: "addressText2"
-                label: "Your Address2"
-                widget: "string"
                 required: false 
-          - label: "Resume"
-            name: "resume"
+
+          - label: "Contact Button"
+            name: "cta"
             widget: "object"
             fields:
-              - name: "highlightsTitle"
-                label: "Highlights/Summary Title"
+              - name: "ctaText"
+                label: "Button text"
                 widget: "string"
-              - name: "highlightsText"
-                label: "Highlights/Summary Text"
-                widget: "markdown"
+              - name: "ctaLink"
+                label: "Custom Link"
+                widget: "string"
+                required: false
 
-              - name: "profTitle"
-                label: "Proficiency/Skills Title"
-                widget: "string"
-              - name: "profText"
-                label: "Proficiency/Skills Text"
-                widget: "markdown"
-
-              - name: "eduTitle"
-                label: "Education Title"
-                widget: "string"
-              - name: "eduText"
-                label: "Education Text"
-                widget: "markdown"
-                
-              - name: "exTitle"
-                label: "Experience/Work History Title"
-                widget: "string"
-              - name: "exText"
-                label: "Experience/Work History Text"
-                widget: "markdown"
       - label: "Cover Letter"
         name: "cover"
         file: "src/content/pages/about.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/notes" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Interview Notes"
+        name: "notes"
+        file: "src/content/pages/notes.md"
         fields:
           - {
               label: "Template",
@@ -269,7 +261,7 @@ collections:
                 name: title
                 label: Site Title
                 required: true
-              - widget: string
+              - widget: hidden
                 name: titleTemplate
                 label: Title Template (ignore)
                 default: "%s"
@@ -280,7 +272,7 @@ collections:
                 required: true
               - widget: text
                 name: description
-                label: Description
+                label: SEO Description
                 default: ""
                 required: false
               - widget: image

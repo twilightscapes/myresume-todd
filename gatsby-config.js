@@ -141,6 +141,7 @@ module.exports = {
     `gatsby-remark-responsive-iframe`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
@@ -148,7 +149,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `MyResume CMS`,
-        htmlFavicon: `static/assets/logo.svg`,
+        // htmlFavicon: `/src/img/logo.svg`,
         includeRobots: false,
       },
     },
@@ -184,22 +185,22 @@ module.exports = {
 
 
     `gatsby-plugin-sitemap`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://myresume-ex1.netlify.app',
-        sitemap: 'https://myresume-ex1.netlify.app/sitemap.xml',
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{ userAgent: '*', allow: ['/'] }]
-          },
-          production: {
-            policy: [{ userAgent: '*', allow: '/' }]
-          }
-        }
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-robots-txt',
+    //   options: {
+    //     host: 'https://deighleen.com',
+    //     sitemap: 'https://deighleen.com/sitemap.xml',
+    //     resolveEnv: () => process.env.GATSBY_ENV,
+    //     env: {
+    //       development: {
+    //         policy: [{ userAgent: '*', allow: ['/'] }]
+    //       },
+    //       production: {
+    //         policy: [{ userAgent: '*', allow: '/' }]
+    //       }
+    //     }
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -212,7 +213,6 @@ module.exports = {
         theme_color: `#222`,
         display: `standalone`,
  icon: `static/assets/logo.svg`, // This path is relative to the root of the site.
- cache_busting_mode: `query`, // `query`(default), `name`, or `none`
  icon_options: {
   purpose: `any maskable`,
 },

@@ -746,6 +746,41 @@ height:0;
 
 .flexbutt {display:flex; }
 
+
+#resume { 
+  border:0px solid yellow;
+  padding:0 10px;
+}
+
+#resume span{display:flex; position:sticky; top:0;
+  gap:40px;
+  flex-direction: row;
+}
+
+
+#resume span div { 
+ border:0px solid green;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width:50%;
+}
+
+@media (max-width: 48rem) {
+  #resume span div{
+    display:block !important; width:100% !important;
+  }
+  #resume span{display:flex; position:sticky; top:0;
+    gap:20px;
+    flex-direction: column;
+  }
+
+}
+
+
+#resume h2{text-align: left !important; font-size:30px !important; border:0px solid red !important;}
+
+
 .flexcheek {width:50%; position:sticky; top:0;}
 
 .introspace{padding-top:60vh;}
@@ -1019,10 +1054,13 @@ background-size: cover; */
 /* border:1px solid white; */
 clip-path: circle();
 border-radius: 58%;
-background:rgba(0,0,0,.3);
+background:transparent !important;
 margin:1%;
 background-position:top;
+opacity:0;
+transition: opacity 1200ms ease-in-out;
 }
+
 
 .avatar-frame{
   filter: drop-shadow(0px 0px 4px #999);
@@ -1047,7 +1085,7 @@ display: none !important;
 
 .ReactModal__Overlay {
 	opacity: 0;
-	transition: opacity 1000ms ease-in-out;
+	transition: opacity 400ms ease-in-out;
 }
 .ReactModal__Overlay--after-open{
 	opacity: 1;
@@ -1947,6 +1985,7 @@ border:1px solid #222;
 
     #resume ul li{
       margin-left:1rem;
+      margin-bottom:.5rem;
     }
 
     /* .pagination a{  text-shadow: 1px 2px 1px black;} */
@@ -2521,8 +2560,8 @@ opacity:.8;
       
     
 
-            @import "animate.css";
-            @import "user.css";
+            /* @import "animate.css"; */
+            /* @import "user.css"; */
 
 
 
@@ -2982,7 +3021,9 @@ opacity:.8;
    #resume{overflow: wrap !important;}
    #resumename{display:block !important;}
     
- h3{text-align: left !important; font-size:20px !important;}
+   .flexcheek {width:50%; position:relative !important; top:0;}
+
+
 
     .footerstyle, .sidebarIconToggle, .back, .taggage, .infomenu, .sidebart, #posts, #feature, .print, #consent, .commentbox, .avatar-frame, .makeStyles-container-1, .usability {display: none !important;}
 

@@ -11,6 +11,7 @@ import { Seo } from "./seo"
 import "../styles/reset.css"
 // import "../styles/variables.css"
 import "../styles/global.css"
+import "../styles/user.scss"
 // import "../assets/scss/style.scss"
 // import LogoText from "../../static/assets/logotext.svg"
 import { Link } from 'gatsby-plugin-modal-routing-3'
