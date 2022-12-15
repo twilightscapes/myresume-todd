@@ -2,32 +2,37 @@
 slug: /
 tagline: Independent artist, photographer, designer/developer. I imagine things
   & make them come to life.
+showInfo: "1"
+showSocial: true
 featuredImage: /assets/default-og-image.jpg
+youtuber: https://youtu.be/ESGJ42zshL8
 secondaryImage: /assets/og-image.png
+underlayImage: null
+profText: Todd Lambert is an award-winning web designer and photographer that
+  trained in Southern California and has traveled and lived in over 16 Western
+  states.<br /><br />Todd's skills include all facets of online and multimedia
+  creation including HTML emails, online ads, user interface design, information
+  architecture, web navigation, branding, web graphics, cross-platform and
+  cross-browser web applications, web template creation & CMS
+  implementations.<br /><br />When Todd is not online, he is often found pushing
+  the boundaries of night photography. You can usually find him in the middle of
+  the night shooting astrophotography which is his favorite subject.<br /><br
+  />Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes
+  up most of his free time.
+addressText: Gulf Coast, USA
 portfolio:
   openText: ""
   closeText: Experience has taught me that good design is not created on a spur of
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
-profTitle: Digital Product Designer
-profText: Todd Lambert is an award-winning web designer and photographer that trained in Southern California and has traveled and lived in over 16 Western states.<br /><br />Todd's skills include all facets of online and multimedia creation including HTML emails, online ads, user interface design, information architecture, web navigation, branding, web graphics, cross-platform and cross-browser web applications, web template creation & CMS implementations.<br /><br />When Todd is not online, he is often found pushing the boundaries of night photography. You can usually find him in the middle of the night shooting astrophotography which is his favorite subject.<br /><br />Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes up most of his free time.
-showInfo: "1"
-showSocial: true
 showResume: "1"
-showSkills: true
-showCover: true
-underlayImage: null
-youtuber: https://youtu.be/ESGJ42zshL8
 youtubeautostart: ""
+showPosts: "1"
+addressText2: ""
 cta:
   ctaText: Contact Me
   ctaLink: ""
-showPosts: "1"
-coverletter:
-  coverText: "Cover Letter"
-  coverLink: ""
-addressText: Gulf Coast, USA
 svgImage: /assets/transparent.png
 title: Digital Product Designer
 youtubeend: ""
@@ -35,17 +40,23 @@ showFeature: false
 shareable: ""
 youtubecontrols: "1"
 template: index-page
+showCover: true
 youtubemute: "1"
 description: Todd Lambert - Independent artist, photographer, designer/developer
 svgzindex: ""
-addressText2: ""
+showSkills: true
+profTitle: Digital Product Designer
+coverletter:
+  coverText: Cover Letter
+  coverLink: ""
 youtubestart: "1"
 ---
 <!-- Do not delete -->
+
 <div>
 <!-- Do not delete -->
 
-## Highlights
+## **Highlights**
 
 Product Designer - Skilled web designer/developer with 21 years of professional experience.
 
@@ -59,19 +70,18 @@ Certified Digital Marketer 2016, Udacity
 
 Received Employee of the Year Award at ABC Company 2018 and 2019
 
-## Proficiency
+## **Proficiency**
 
- *Veteran WordPress Theme/Plugin Developer
- *React JS Frontend Designer/Developer
+ *Veteran WordPress Theme/Plugin Developer*
+ React JS Frontend Designer/Developer
 
 Responsive, Reactive, Adaptive Design, progressive enhancement, PWA development, object oriented CSS animation.
 
 Analytics, SEO, UI design, Information Architecture & Content Management System integrations. Photo and Video production.
 
-I prefer JAM stack, React, Gatsby, Canon, Subaru and my Mac.
-      
+**I prefer JAM stack, React, Gatsby, Canon, Subaru and my Mac.**
 
-## Education
+## **Education**
 
 Cal State University Fullerton
 Web Design and Development - Degree
@@ -82,14 +92,13 @@ Business Management - Degree
 Huntington Beach High School
 High School General Courses - Diploma
 
-
-
 <!-- Do not delete -->
+
 </div>
 <div>
 <!-- Do not delete -->
 
-## Experience
+## **Experience**
 
 **Todd Lambert Enterprises, 1999 - Present**
 
@@ -123,5 +132,6 @@ Director of Web Development
 Responsible for site architecture, design, graphics, programming, copywriting/editing, project management of all TeleVox websites and online marketing campaigns. Supervised 25 designers and developers.
 
 <!-- Do not delete -->
+
 </div>
 <!-- Do not delete -->
