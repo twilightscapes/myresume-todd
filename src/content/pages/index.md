@@ -56,7 +56,7 @@ youtubestart: "1"
 
 ## **Highlights**
 
-Product Designer - Skilled web designer/developer with 21 years of professional experience.
+**Product Designer - Skilled web designer/developer with 21 years of professional experience.**
 
 Successful product designer able to integrate both technical and creative skills to create cross-browser and cross-platform solutions with modern web architecture and navigation systems.
 
@@ -64,14 +64,10 @@ Proven record of completing bold, clean, and effective designs with consistent p
 
 Industry experience including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and direct marketing.
 
-Certified Digital Marketer 2016, Udacity
-
-Received Employee of the Year Award at ABC Company 2018 and 2019
-
 ## **Proficiency**
 
- *Veteran WordPress Theme/Plugin Developer*
- React JS Frontend Designer/Developer
+* Veteran WordPress Theme/Plugin Developer
+* React JS Frontend Designer/Developer
 
 Responsive, Reactive, Adaptive Design, progressive enhancement, PWA development, object oriented CSS animation.
 
@@ -81,13 +77,13 @@ Analytics, SEO, UI design, Information Architecture & Content Management System 
 
 ## **Education**
 
-Cal State University Fullerton
+* Cal State University Fullerton
 Web Design and Development - Degree
-Coastline Community College
+* Coastline Community College
 Quality Assurance - Degree
-Golden West College
+* Golden West College
 Business Management - Degree
-Huntington Beach High School
+* Huntington Beach High School
 High School General Courses - Diploma
 
 <!-- Do not delete -->
