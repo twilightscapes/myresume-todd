@@ -171,6 +171,19 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/skills" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Skills"
+        name: "skill"
+        file: "src/content/pages/skills.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "skills-page",
+            }
           - { label: "Slug", name: "slug", widget: "hidden", default: "/notes" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -182,7 +195,7 @@ collections:
               label: "Template",
               name: "template",
               widget: "hidden",
-              default: "about-page",
+              default: "notes-page",
             }
           - { label: "Slug", name: "slug", widget: "hidden", default: "/cover" }
           - { label: "Title", name: "title", widget: "string" }
