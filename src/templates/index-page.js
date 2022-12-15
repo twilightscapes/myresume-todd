@@ -21,7 +21,7 @@ import ReactPlayer from 'react-player/lazy'
 
 import styled from "styled-components"
 import { Social } from "../components/social"
-import Skills from "../templates/skills-page"
+// import Skills from "../templates/skills-page"
 // import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"

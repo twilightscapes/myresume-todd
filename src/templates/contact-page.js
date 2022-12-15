@@ -77,7 +77,7 @@ const Contact = ({ data }) => {
         </p>
         <p style={{margin:'0 1rem'}}>
           <label>
-          <input type="hidden" name="subject" placeholder="Subject" value="Coast Web Form Post" />
+          <input type="hidden" name="subject" placeholder="Subject" value="MyResume form response" />
           </label>
         </p>
         </div>
