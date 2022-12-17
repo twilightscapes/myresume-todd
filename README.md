@@ -1,17 +1,14 @@
-> **Update** VidSocks are now built with Gatsby V3
+> **Update** My Resume is now built with the latest version of Gatsby
 
 ---
 
 
 
-# VidSocks
+# MyResume
 
-A complete website/app platform with multimedia blog and customizable home page, about and contact pages with integrated contact forms.
+A complete website/app platform with multimedia blog and customizable resume, cover letter and skills and notes pages with integrated contact forms. 
 
-Built for artists, photographers, musicians, clubs & restaurants and other small businesses.
-
-VIDSOCKS OPERATE FOR FREE
-using FREE Cloud Based Services
+MyResume is built to OPERATE FOR FREE using FREE Cloud Based Services
 
 ## 👌 Features
 
@@ -19,23 +16,16 @@ using FREE Cloud Based Services
 - State-of-the-art multimdedia/animation layering
 - FULL animated SVG support
 - User-installable PWA (Progressive Web Apps)
-- Built-in commenting, social sharing, and interactive video system
-- Full support for NFT sale and promotion
 - Responsive Web Design
 - Dark / Light Mode
-- Customize theme color and all site aspects from CMS
-- Customize content of Homepage, About and Contact page.
-- Add / Modify / Delete blog posts.
-- Edit website settings, Add Google Analytics change colors, settings, logos, etc all from  within the CMS.
-- SEO Optimized (100 scores on LightHouse)
+- Customize Resume, Profile, Cover Letter, Skils, Interview Notes and Contact page.
+- Add / Modify / Delete posts - no limitations.
+- Edit website settings, Add Google Analytics, seo settings, logos, etc all from  within the CMS.
+- SEO Optimized (Scores 100 on PageSpeed)
 - Social media icons
 - OpenGraph structured data
 - Twitter Cards meta
 - XML Sitemaps
-- Netlify Contact and Newsletter Forms
-
-
-
 
 ## ⚙ Access to Netlify CMS
 
@@ -59,11 +49,9 @@ You can find all the website settings such website Site title, Website URL, Goog
 
 ## 🙏 Thank you
 
-We really appreciate you choosing to build your website with VidSocks!
+We really appreciate you choosing to build your resume and portfolio with MyResume!
 
-
+[myresume]: https://myresume.site
 [gatsby]: https://gatsbyjs.org
 [netlifycms]: https://www.netlifycms.org
-[vidsock]: https://vidsock.com
-[twitter]: https://twitter.com/vidsocks
-[custom-domain]: https://vidsock.com/adding-custom-domain-netlify
+[custom-domain]: https:/myresume.site/adding-custom-domain-netlify
