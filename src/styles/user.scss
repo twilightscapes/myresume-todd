@@ -105,6 +105,17 @@ dt {
  }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .horizontal-scroll-wrapper::before{
   content:' \2329  swipe ';
   position:absolute;
@@ -142,7 +153,7 @@ animation: fadeout .5s forwards;
 
 
 .horizontal-scroll-wrapper::after{
-  content:'\276E \276E  swipe';
+  content:'swipe \276F \276F ';
   position:relative;
   z-index: 1;
   display: inline-block;
@@ -202,6 +213,48 @@ animation: fadeout .5s forwards;
 }
 
   
+
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+ }
+ 99% {
+    opacity: 0.9;
+ }
+ 100% {
+    opacity:1;
+ }
+}
+
+@keyframes fadeout {
+  0%{
+    opacity: 1;
+ }
+ /* 60% {
+    opacity: 0.6;
+ } */
+ 100% {
+    opacity:0;
+ }
+}
+
+/* @keyframes move {
+  0% {
+    transform-origin: top -80%;
+    transform: scale(0);
+    opacity: 0;
+    z-index: -3;
+  }
+  
+  100% {
+    transform: scale(1.0);
+    transform-origin: 50% 0%;
+    opacity: 1;
+    z-index: 1;
+  }
+} */
+
 @keyframes move {
   0% {
     opacity: 1;
