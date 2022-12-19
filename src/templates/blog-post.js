@@ -290,7 +290,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
             image={Image}
             alt={frontmatter.title + " - Featured image"}
             className="featured-image1 layer1 homepage-bg1"
-            style={{height:'auto', width:'100vw', height:'100vh',maxHeight:'100vh', position:'absolute', top:'', zIndex:'', objectFit:'cover', overflow:'hidden', border:'0px solid red !important'}}
+            style={{width:'100vw', height:'100vh',maxHeight:'100vh', position:'absolute', top:'', zIndex:'', objectFit:'cover', overflow:'hidden', border:'0px solid red !important'}}
           />
           ) : (
 
