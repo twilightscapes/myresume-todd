@@ -129,7 +129,7 @@ dt {
   flex-direction:column;
   justify-content:center;
   border-radius:12px;
-  bottom:30px; right:12vh;
+  bottom:60px; right:22vh;
   color:#fff;
   transform: rotate(90deg);
   font-size:clamp(2rem, 3.5vw, 3.8rem);
@@ -142,7 +142,7 @@ animation: move 1.2s forwards;
 }
 
 .sliderholder1:hover::before{
-animation: fadeout .5s forwards; 
+animation: move 1.5s forwards; 
 }
 
 
