@@ -130,7 +130,7 @@ opacity:.8;
       font-size:'2rem' !important;
     }
     .clickplay span{
-      font-size:2rem !important;
+      font-size:1.2rem !important;
       color:#fff !important; 
     }
 
@@ -2314,7 +2314,7 @@ background: rgba(0,0,0,0.6);
         font-size: clamp(18px, calc(1rem + 2vw), 36px);
         font-size:clamp(2rem, 2.5vw, 2.8rem);
    
-        width:100%;
+        width:auto;
         transition: all .6s ease-out;
         display:block !important;
 

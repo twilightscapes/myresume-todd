@@ -37,7 +37,7 @@ const Pagination = props => (
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
           <Link state={{modal: true}} to= {props.previous.frontmatter.slug + "/"} rel="prev">
-            {/* <p
+            <p
               style={{
                 color: "inherit",
               }}
@@ -46,7 +46,7 @@ const Pagination = props => (
                 <RiArrowLeftLine />
               </span>{" "}
               
-            </p> */}
+            </p>
             <span className="page-title">
               {props.previous.frontmatter.title}
             </span>
