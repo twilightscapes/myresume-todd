@@ -37,7 +37,7 @@ const Pagination = props => (
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
           <Link state={{modal: true}} to= {props.previous.frontmatter.slug + "/"} rel="prev">
-            <p
+            {/* <p
               style={{
                 color: "inherit",
               }}
@@ -45,11 +45,11 @@ const Pagination = props => (
               <span className="icon -left">
                 <RiArrowLeftLine />
               </span>{" "}
-              Previous
-            </p>
-            {/* <span className="page-title">
+              
+            </p> */}
+            <span className="page-title">
               {props.previous.frontmatter.title}
-            </span> */}
+            </span>
           </Link>
         </li>
       )}
@@ -59,17 +59,17 @@ Go Back
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li>
           <Link state={{modal: true}} to={props.next.frontmatter.slug + "/"} rel="next">
-            <p
+            {/* <p
               style={{
                 color: "inherit",
               }}
             >
-              Next{" "}
+              {" "}
               <span className="icon -right">
                 <RiArrowRightLine />
               </span>
-            </p>
-            {/* <span className="page-title">{props.next.frontmatter.title}</span> */}
+            </p> */}
+            <span className="page-title">{props.next.frontmatter.title}</span>
           </Link>
         </li>
       )}
