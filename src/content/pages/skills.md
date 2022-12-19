@@ -12,7 +12,7 @@ title: Skills & Capabilities
 
 <dl>
 
-<dt><h2>Should I go or should I stay?</h2></dt>
+<dt><h2>Should I go or should I stay?</h2><span>100%</span></dt>
 
   <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
   <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
