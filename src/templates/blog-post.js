@@ -369,7 +369,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
           // ]}
           width="100%"
           height=""
-          style={{marginTop:'80px', position:'relative'}}
+          style={{marginTop:'0px', position:'relative'}}
           config={{
             youtube: {
               playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0,  }
