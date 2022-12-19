@@ -142,7 +142,7 @@ animation: fadeout .5s forwards;
 
 
 .horizontal-scroll-wrapper::after{
-  content:'\276E \276E  scroll';
+  content:'\276E \276E  swipe';
   position:relative;
   z-index: 1;
   display: inline-block;
@@ -197,7 +197,7 @@ animation: fadeout .5s forwards;
   }
   
   .horizontal-scroll-wrapper::after{
-    content:'\276E \276E  swipe'; color:red;
+    content:'\276E \276E  scroll';
   }
 }
 
