@@ -25,7 +25,7 @@ const PostCard = ({ data }) => (
 
 
     {data.frontmatter.featuredImage ? (
-      <Link to={data.frontmatter.slug}>
+      <Link state={{modal: true}} to={data.frontmatter.slug}>
         <GatsbyImage
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
@@ -68,7 +68,7 @@ const PostCard = ({ data }) => (
       </Link>
       
     ) : (
-      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
+      <Link state={{modal: true}}  to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
 
 
