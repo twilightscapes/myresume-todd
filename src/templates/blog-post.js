@@ -284,18 +284,36 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'', margin:'0 auto'}}>
               
     
-              <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+              <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important', minHeight:''}}>
 
               {/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
 
 
-      <img className="homepage-bg1" src={iconimage} width="" height="" alt="MyResume" style={{ width:'', height:'', maxHeight:'45vh',  background:'transparent !important',}} />
+      {/* <img className="homepage-bg1" src={iconimage} width="" height="" alt="MyResume" style={{ width:'', height:'', maxHeight:'45vh',  background:'transparent !important',}} /> */}
+
+
+      {Image ? (
+            <GatsbyImage
+            image={Image}
+            alt={frontmatter.title + " - Featured image"}
+            className="featured-image1 layer1 homepage-bg1"
+            style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'', objectFit:'cover', overflow:'hidden', border:'0px solid red !important'}}
+          />
+          ) : (
+
+            ""
+                 // <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'',border:'0px solid !important', objectFit:'contain',}} />
+       
+               )}
       <br /><br />
     </div>
           
-              <div style={{width:'', margin:'0 auto 0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
-      {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
+              <div style={{display:'grid', flexDirection:'column', placeContent:'center', placeSelf:'center', justifyContent:'center', alignContent:'center', alignItem:'center', verticalAlign:'center', height:'20vh', margin:'0 auto 0 auto',}}>
+                <div style={{ background:'#111', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)', filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</div>
+                </div>
+  
               </div>
+              
               </button>}
                 light="../assets/transparent.png"
               />
