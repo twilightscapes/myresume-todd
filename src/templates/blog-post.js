@@ -277,21 +277,21 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               playing
               playsinline
               playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100%', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100%', height:'100%', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'', alignItem:'', paddingTop:''}}>
     
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'', margin:'0 auto'}}>
               
     
-              <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'none', justifyContent:'center', background:'transparent !important',}}>
+              <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
 
               {/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
 
 
-      <img className="homepage-bg1" src={iconimage} width="" height="" alt="MyResume" style={{ width:'', height:'', maxHeight:'30vh',  background:'transparent !important',}} />
+      <img className="homepage-bg1" src={iconimage} width="" height="" alt="MyResume" style={{ width:'', height:'', maxHeight:'20vh',  background:'transparent !important',}} />
       <br /><br />
     </div>
           
-              <div style={{width:'', margin:'2rem auto 0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
+              <div style={{width:'', margin:'0 auto 0 auto', fontWeight:'bold', padding:'0 1rem', fontSize:'2rem',  borderRadius:'12px', border:'1px solid #333',filter:'drop-shadow(2px 2px 2px #000)'}}><span style={{filter:'drop-shadow(2px 2px 2px #000)'}}>Click To Play</span></div>
       {/* <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /> */}
               </div>
               </button>}
