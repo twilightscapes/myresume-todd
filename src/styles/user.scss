@@ -135,15 +135,7 @@ animation: fadeout .5s forwards;
 }
 
 
-@media (hover: hover) {
-.horizontal-scroll-wrapper::before, .sliderholder1::before{
-  content:' scroll \276F \276F ' !important;
-}
 
-.horizontal-scroll-wrapper::after{
-  content:'\276E \276E  swipe';
-}
-}
 
 
 
@@ -198,6 +190,18 @@ animation: fadeout .5s forwards;
 
 }
 
+
+@media (hover: hover) {
+  .horizontal-scroll-wrapper::before, .sliderholder1::before{
+    content:' scroll \276F \276F ' !important;
+  }
+  
+  .horizontal-scroll-wrapper::after{
+    content:'\276E \276E  swipe'; color:red;
+  }
+}
+
+  
 @keyframes move {
   0% {
     opacity: 1;
