@@ -233,8 +233,8 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
               
     
-              <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxHeight:'200px', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+              <div style={{position:'relative', maxWidth:'30vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxHeight:'200px', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', display:'none'}} />
     </div>
           
               <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
@@ -282,7 +282,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
             <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'', margin:'0 auto'}}>
               
     
-              <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+              <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'none', justifyContent:'center', background:'transparent !important',}}>
 
               {/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
 
