@@ -636,7 +636,7 @@ height:0;
 }
 }
 
-.fade {animation: fade 4s forwards;}
+.fade {animation: fade 1s forwards;}
 
 @keyframes fade {
   0%{
@@ -2940,7 +2940,7 @@ opacity:.8;
                            
        
              .RArrow span::before{
-               content:"scroll \276F \276F";
+               content:"\276F \276F";
              }
              .RArrow{
                position:absolute;
