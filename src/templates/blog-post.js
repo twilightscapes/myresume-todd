@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
-import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+// import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -36,7 +36,7 @@ const Pagination = props => (
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
-          <Link state={{modal: true}} to= {props.previous.frontmatter.slug + "/"} rel="prev">
+      <Link state={{modal: true}} to={props.previous.frontmatter.slug + "/"} rel="prev">
             {/* <p
               style={{
                 color: "inherit",
@@ -58,7 +58,7 @@ Go Back
 </Link>
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li>
-          <Link state={{modal: true}} to= {props.next.frontmatter.slug + "/"} rel="next">
+          <Link state={{modal: true}} to={props.next.frontmatter.slug + "/"} rel="next">
             {/* <p
               style={{
                 color: "inherit",

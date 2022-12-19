@@ -123,6 +123,9 @@ opacity:.8;
   }
 
 
+  .featured-image {
+    max-height:400px ;
+  }
 
   @media (max-width: 48rem) {
     .clickplay{
@@ -132,6 +135,10 @@ opacity:.8;
     .clickplay span{
       font-size:1.2rem !important;
       color:#fff !important; 
+    }
+
+    .featured-image {
+      max-height:250px !important;
     }
 
   }
@@ -2611,6 +2618,7 @@ opacity:.8;
     margin-left: auto;
     margin-right: auto;
     }
+
   
   
   .blog-post-content blockquote, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5{
