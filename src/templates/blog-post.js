@@ -58,7 +58,7 @@ Go Back
 </Link>
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li>
-          <Link state={{modal: true}} to={props.next.frontmatter.slug + "/"} rel="next">
+          <Link state={{modal: true}} to= {props.next.frontmatter.slug + "/"} rel="next">
             {/* <p
               style={{
                 color: "inherit",
