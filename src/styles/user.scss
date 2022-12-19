@@ -21,6 +21,12 @@ dl {
 
 @media (max-width: 48rem) {
  dl {width: 55%;}
+
+ img.homepage-bg1{
+  max-height:10vh !important;
+  // border:1px solid red !important; 
+ } 
+
 }
 
 .percentage{display:flex; justify-content: space-between; margin-bottom: 20px;}
