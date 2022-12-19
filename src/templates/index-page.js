@@ -241,7 +241,7 @@ const YouTube = frontmatter.youtuber
   style={{zIndex:'3'}}
       config={{
         youtube: {
-          playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+          playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
         },
       }}
       loop

@@ -5,7 +5,7 @@ tagline: Independent artist, photographer, designer/developer. I imagine things
 showInfo: "1"
 showSocial: true
 featuredImage: /assets/default-og-image.jpg
-youtuber: https://youtu.be/ESGJ42zshL8
+youtuber: "https://youtu.be/Izukxr-SfsM"
 secondaryImage: /assets/og-image.png
 underlayImage: null
 profText: <p>Todd Lambert is an award-winning web designer and photographer that trained in Southern California and has traveled and lived in over 16 Western states.</p>
