@@ -53,6 +53,9 @@ const Pagination = props => (
           </Link>
         </li>
       )}
+       <Link title="Go Back" className="navbar-item txtshadow" to="/">
+Go Back
+</Link>
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li>
           <Link state={{modal: true}} to={props.next.frontmatter.slug + "/"} rel="next">
@@ -287,7 +290,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
               {/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
 
 
-      <img className="homepage-bg1" src={iconimage} width="" height="" alt="MyResume" style={{ width:'', height:'', maxHeight:'35vh',  background:'transparent !important',}} />
+      <img className="homepage-bg1" src={iconimage} width="" height="" alt="MyResume" style={{ width:'', height:'', maxHeight:'45vh',  background:'transparent !important',}} />
       <br /><br />
     </div>
           
@@ -614,11 +617,11 @@ const { iconimage } = useSiteMetadata()
 
 
 
-        <div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><Link title="Go Back" className="navbar-item txtshadow" to="/">
-Go Back
-</Link></div>
+  
 
-
+<div style={{padding:'0 5vw', color:'inherit !important'}}>
+      {(previous || next) && <Pagination {...props} />}
+      </div>
       {/* <span className="mobile"><GoBack /></span> */}
  <br />
 
@@ -829,9 +832,9 @@ Go Back
    <br />
    {/* <GoBack /> */}
 
-   <div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><Link title="Go Back" className="navbar-item txtshadow " to="/">
+   {/* <div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><Link title="Go Back" className="navbar-item txtshadow " to="/">
 Go Back
-</Link></div>
+</Link></div> */}
 
 
 
