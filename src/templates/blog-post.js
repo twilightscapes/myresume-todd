@@ -613,17 +613,19 @@ const { iconimage } = useSiteMetadata()
 
   
 
-<div style={{padding:'0 5vw', color:'inherit !important'}}>
-      {(previous || next) && <Pagination {...props} />}
-      </div>
+
       {/* <span className="mobile"><GoBack /></span> */}
       <header>
           <section className="article-header" style={{textAlign:'center', margin:'0 4%', height:'auto', color:''}}>
+          
             <h1>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
             {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
           </section>
         </header>
+        <div style={{padding:'0 5vw', color:'inherit !important'}}>
+      {(previous || next) && <Pagination {...props} />}
+      </div>
  <br />
 
 
