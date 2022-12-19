@@ -1,7 +1,6 @@
 ---
 slug: /
-tagline: Independent artist, photographer, designer/developer. I imagine things
-  & make them come to life.
+tagline: Independent artist, photographer, designer and developer. Todd imagines things & makes them come to life.
 showInfo: "1"
 showSocial: true
 featuredImage: /assets/default-og-image.jpg
