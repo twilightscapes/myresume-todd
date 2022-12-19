@@ -118,7 +118,7 @@ dt {
   flex-direction:column;
   justify-content:center;
   border-radius:12px;
-  bottom:80px; right:12vh;
+  bottom:30px; right:12vh;
   color:#fff;
   transform: rotate(90deg);
   font-size:clamp(2rem, 3.5vw, 3.8rem);
@@ -140,6 +140,9 @@ animation: fadeout .5s forwards;
   content:' scroll \276F \276F ' !important;
 }
 
+.horizontal-scroll-wrapper::after{
+  content:'\276E \276E  swipe';
+}
 }
 
 
@@ -159,13 +162,14 @@ animation: fadeout .5s forwards;
   flex-direction:column;
   justify-content:center;
   border-radius:12px;
-  bottom:50vh; right:12vh;
+  // bottom:50vh; right:12vh;
   color:#fff;
   transform: rotate(90deg);
   font-size:clamp(2rem, 3vw, 3rem);
   text-shadow:2px 2px 2px #333;
-  top:375px;
-  left:30vw;
+  top:0;
+  // left:30vw;
+  // border:1px solid red;
 
 }
 /* content:' scroll \276F \276F '; */
