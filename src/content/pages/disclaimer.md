@@ -3,98 +3,36 @@ template: disclaimer-page
 slug: /disclaimer
 title: Disclaimer
 ---
-DWIGHT K. SCHRUTE III
+The materials on this website(s) also known as {siteUrl},  are provided “as is”. {companyname} makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, {companyname} does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on his Internet web site(s) or otherwise relating to such materials or on any sites linked to this site(s).
 
-Scranton, PA • dschrute@schrutefarms.com • (570) 555-1212
+<h3>Limitations</h3>
 
-EXPERIENCE
+<p>In no event shall {companyname} or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on {companyname}’s Internet site(s), even if {companyname} or a {companyname} authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
 
-Dunder Mifflin
+<h3>Intellectual Property</h3>
 
-Regional Manager
+<p>All photos on this website(s) are owned by {companyname}. All of the content featured or displayed on the website(s), including, but not limited to, still images, text, pictorial works, video images, still images of video, graphic designs, audio recordings, multimedia combinations, and computer programs, including web-based programs (“Content”) is owned or licensed by {companyname}.</p>
 
-Scranton, PA
+<p>Advertisements for third-party entities are not considered Content for the purposes of this Section. However, these advertisements are owned or licensed by their respective third-party entities and are subject to protections similar to those set forth in these Terms.</p>
 
-May 2013 Present
+<p>Pursuant to the copyright and trademark laws of the United States, you agree:</p>
 
-* ﻿﻿Maintained the highest sales average, despite the weak economy and obsolete product.
-* ﻿﻿Managed, inspired, and protected the Scranton branch from criminals and raccoons.
-* ﻿﻿Led the office to obtain immeasurable success and glory.
+<ol style="margin:2em;"><li>That you may only download Content that {companyname} designates as offered for download to any single computer a single copy of any Content for personal and noncommercial use.</li><li>To not reproduce, distribute, modify, re-post on another Service (regardless of the server on which the Content is stored), or sell any Content without specific written authorization from {companyname}.</li><li>To maintain any and all copyright or other proprietary notices embedded in or attached to any Content.</li><li>To refrain from framing, inline linking, or mirroring any portion of the website.</li></ol>
 
-Dunder Mifflin
+<h3>Revisions and Errata</h3>
 
-Assistant (to the Regional Manager
+<p>The materials appearing on {companyname}’s web site(s) could include technical, typographical, or photographic errors. {companyname} does not warrant that any of the materials on its web site(s) are accurate, complete, or current. {companyname} may make changes to the materials contained on its web site(s) at any time without notice. {companyname} does not, however, make any commitment to update the materials.</p>
 
-Scranton, PA
+<h3>Links</h3>
 
-Mar 2008 Mar 2013
+<p>{companyname} has not reviewed all of the sites linked to its Internet web site(s) and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by {companyname} or the web site(s). Use of any such linked web site is at the user’s own risk.</p>
 
-* ﻿﻿Closed more sales with revenues totaling more profit than any other employee - past, present, and future (projected).
-* ﻿﻿Served as self-appointed enforcer of The Rules (policies and procedures manual).
-* ﻿﻿Instituted "Schrute Bucks" reward system, immeasurably raising office morale.
+<h3>Site Terms of Use Modifications</h3>
 
-Staples
+<p>{companyname} may revise these terms of use for its web site(s) at any time without notice. By using this web site(s) you are agreeing to be bound by the then current version of these Terms and Conditions of Use.</p>
 
-Sale's Associate
+<h3>Governing Law</h3>
 
-Scranton, PA
+<p>Any claim relating to the {siteUrl} web site(s) shall be governed by the laws of the State that {companyname} is currently conducting business in and without regard to its conflict of law provisions.</p>
 
-Mar 2008 | Mar 2008
-
-* ﻿﻿Became the top salesman of the store within a one-month timespan.
-* ﻿﻿Made a record-high sales figure despite having an unfunny boss.
-* ﻿﻿Provided extraordinary and exceptional customer service to the masses.
-
-Dunder Mifflin
-
-Assistant (to the) Regional Manager
-
-Scranton, PA
-
-Mar 2005 | Mar 2008
-
-* ﻿﻿Acted as Regional Manager's eyes, ears, and right hand, overseeing and reporting on employee conduct, productivity, and arrival departure times.
-* ﻿﻿Provided services to the office such as martial arts and surveillance.
-* ﻿﻿Introduced new linen paper lines into the market, often closing sight-unseen sales of newly released products.
-
-SKILLS
-
-Traits:
-
-Hardworking, Alpha Male, Jackhammer, Merciless, Insatiable
-
-Talents: Karate (Purple Belt), Jujitsu, Werewolf hunting, Table Making
-
-PROJECTS
-
-Schrute Farms (Bed and Breakfast)
-
-A beautiful resort that provides fun activities like tablemaking and mattress making.
-
-Dwight Schrute's Gym for Muscles
-
-A built-in gym inside the Dunder Mifflin office that will make you shredded.
-
-Sesame Avenue Daycare Center for Infants and Toddlers
-
-A great daycare for infants with a focus on cognitive development.
-
-AWARDS
-
-Salesman of the Month
-
-13-time award winner - honored for having the most sales of the month.
-
-EDUCATION
-
-Scranton University
-
-BA Business Administration
-
-Dunder Mifflin
-
-2005
-
-Scranton, PA
-
-1998 - 1992
+<p>General Terms and Conditions applicable to Use of a Web Site.</p>
