@@ -182,7 +182,25 @@ module.exports = {
     //   },
     // },
 
+    {
+			resolve: 'gatsby-plugin-pdf',
+			options: {
+        outputPath: 'static/assets/',
+				// allPages: true,
+        paths: ['/', '/cover', '/skills'],
+				// styleTagOptions: {
+				// 	content: 'header{display:none;} footer{display:none;} .cookie-bar{display:none;}'
+				// }
+			},
+		},
 
+    // {
+		// 	resolve: 'gatsby-plugin-pdf',
+		// 	options: {
+		// 		paths: ['/'],
+		// 		outputPath: 'static/assets/',
+		// 	},
+		// },
 
     `gatsby-plugin-sitemap`,
     // {

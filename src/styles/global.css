@@ -777,6 +777,11 @@ height:0;
 }
 
 
+.nameblock{
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
 #resume h2{text-align: left !important; font-size:30px !important; border:0px solid red !important;}
 
 
