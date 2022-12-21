@@ -36,112 +36,105 @@ const CustomBox = styled.div`
 
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String! ) {
-    
-    site {
-      siteMetadata {
-        title
-        titleDefault
-        siteUrl
-        description
-        image
-        twitterUsername
-        companyname
-        showfooter
-        siteColor
-      }
-
+query HomeQuery($id: String!) {
+  site {
+    siteMetadata {
+      title
+      titleDefault
+      siteUrl
+      description
+      image
+      twitterUsername
+      companyname
+      showfooter
+      siteColor
     }
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 148)
-      frontmatter {
-        date(formatString: "YYYY-MM-DD-HH-MM-SS")
-        slug
-        title
-        description
-        showFeature
-        showPosts
-        showInfo
-        showResume
-        showSocial
-        showSkills
-        showCover
-        youtuber
-        youtubestart
-        youtubeend
-        youtubemute
-        youtubecontrols
-        youtubeautostart
-        profTitle
-        profText
-        addressText
-        addressText2
-        svgzindex
-        tagline
-        featuredImage {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        secondaryImage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        underlayImage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        cta {
-          ctaText
-          ctaLink
-        }
-        coverletter {
-          coverText
-          coverLink
-        }
-        portfolio{
-          openText
-          closeText
-        }
-        svgImage{
-          relativePath
+  }
+  markdownRemark(id: {eq: $id}) {
+    id
+    html
+    excerpt(pruneLength: 148)
+    frontmatter {
+      date(formatString: "YYYY-MM-DD-HH-MM-SS")
+      slug
+      title
+      description
+      showFeature
+      showPosts
+      showInfo
+      showResume
+      showSocial
+      showSkills
+      showCover
+      youtuber
+      youtubestart
+      youtubeend
+      youtubemute
+      youtubecontrols
+      youtubeautostart
+      profTitle
+      profText
+      addressText
+      addressText2
+      svgzindex
+      tagline
+      featuredImage {
+        publicURL
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
+      secondaryImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      underlayImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      cta {
+        ctaText
+        ctaLink
+      }
+      coverletter {
+        coverText
+        coverLink
+      }
+      portfolio {
+        openText
+        closeText
+      }
+      svgImage {
+        relativePath
+      }
     }
-
-
- 
-    
-
-    posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 9
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "YYYY-MM-DD-HH-MM-SS")
-            slug
-            title
-            featuredImage {
-              publicURL
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
+  }
+  posts: allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {template: {eq: "blog-post"}}}
+    limit: 9
+  ) {
+    edges {
+      node {
+        id
+        excerpt(pruneLength: 250)
+        frontmatter {
+          date(formatString: "YYYY-MM-DD-HH-MM-SS")
+          slug
+          title
+          featuredImage {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }
       }
     }
   }
+}
 `
 
 
