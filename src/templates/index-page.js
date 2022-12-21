@@ -394,6 +394,7 @@ const YouTube = frontmatter.youtuber
 
   <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
   background:'rgba(0,0,0,0.50)', 
+  backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
   
   <h1 className="title1">{frontmatter.title}</h1>
@@ -467,6 +468,7 @@ const YouTube = frontmatter.youtuber
   maxWidth:'80%', paddingTop:'1rem', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
   background:'rgba(0,0,0,0.50)',
+  backdropFilter:'blur(8px)',
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
   }} >
