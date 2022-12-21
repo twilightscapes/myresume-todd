@@ -6,7 +6,7 @@ showSocial: true
 featuredImage: /assets/default-og-image.jpg
 youtuber: "https://youtu.be/Izukxr-SfsM"
 secondaryImage: /assets/og-image.png
-underlayImage: null
+underlayImage: /assets/IMG_1019.webp
 profText: <p>Todd Lambert is an award-winning web designer and photographer that trained in Southern California and has traveled and lived in over 16 Western states.</p>
   <p>Todd's skills include all facets of online and multimedia
   creation including HTML emails, online ads, user interface design, information
@@ -15,7 +15,7 @@ profText: <p>Todd Lambert is an award-winning web designer and photographer that
   implementations.</p><p>When Todd is not online, he is often found pushing
   the boundaries of night photography. You can usually find him in the middle of
   the night shooting astrophotography which is his favorite subject.</p>
-  <p>Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes up most of his free time.</p>
+  # <p>Todd is single and has a dog-child and playful Boxer named “Zoe”, that takes up most of his free time.</p>
 addressText: Gulf Coast, USA
 portfolio:
   openText: ""

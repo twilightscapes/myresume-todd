@@ -345,20 +345,20 @@ const YouTube = frontmatter.youtuber
 
 
 
-
+<div style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
 {UnderlayImage ? (
             <GatsbyImage
             image={UnderlayImage}
             alt={frontmatter.title + " - image"}
             className="mcboaty print"
             placeholder="blurred" loading="eager"
-              style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'', zIndex:'-1', objectFit:'cover', overflow:'', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important'}}
           />
        
           ) : (
             ""
           )}
-
+</div>
 
 
 
@@ -392,7 +392,7 @@ const YouTube = frontmatter.youtuber
 {UnderlayImage ? (
   // custom image in effect //
 
-  <div className="flexcheek mob print" style={{marginTop:'', padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
+  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
   background:'rgba(0,0,0,0.50)', 
   borderRadius:'10px'}}>
   
@@ -587,7 +587,7 @@ const YouTube = frontmatter.youtuber
 {/* end show Posts */}
 {ShowPosts ? (
 
-<div id="posts" name="posts" style={{marginTop:'10vh'}}>
+<div id="posts" name="posts" style={{margin:'20vh 0', background:'inherit'}}>
 
 
 <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'60vh', overflow:'hidden', position:'relative',}}>

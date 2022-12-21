@@ -771,6 +771,8 @@ height:0;
     flex-direction: column;
   }
 
+  .nameblock{background:transparent !important; color:inherit !important; text-shadow:none !important;}
+
 
 }
 
