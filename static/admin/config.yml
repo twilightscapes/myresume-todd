@@ -119,6 +119,8 @@ collections:
           - { label: "Show Posts", name: "showPosts", widget: "boolean" }
           - { label: "Show Social Links", name: "showSocial", widget: "boolean", default: "true", required: false }
           - { label: "Show Skills", name: "showSkills", widget: "boolean", default: "true", required: false }
+          - { label: "Show Resume", name: "showResume", widget: "boolean", default: "true", required: false }
+          - { label: "Show Cover Letter", name: "showCover", widget: "boolean", default: "true", required: false }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
           - { label: "YouTube Url", name: "youtuber", hint: "Add YouTube video to hero section", widget: "string", required: false }
           - { label: "Profile/Avatar", name: "secondaryImage", widget: "image", hint: "This is your profile picture or avatar", required: false }

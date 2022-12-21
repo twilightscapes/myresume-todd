@@ -67,6 +67,7 @@ export const pageQuery = graphql`
         showResume
         showSocial
         showSkills
+        showCover
         youtuber
         youtubestart
         youtubeend
@@ -179,10 +180,11 @@ const HomePage = ({ data }) => {
     const ShowResume = frontmatter.showResume
     const showSocial = frontmatter.showSocial
     const showSkills = frontmatter.showSkills
+    const ShowCover = frontmatter.showCover
     const showfooter = useSiteMetadata()
     // const showCTA = frontmatter.cta.ctaText
     const CtaLink = frontmatter.cta.ctaLink
-    const coverLink = frontmatter.coverletter.coverLink
+    // const coverLink = frontmatter.coverletter.coverLink
     
     
     const ProfText = frontmatter.profText
@@ -344,22 +346,13 @@ const YouTube = frontmatter.youtuber
 
 
 
-
- {/* show Info */}
- {ShowInfo ? (
-
-<section id="info" name="info" style={{ display:'', height:'', position:'', zIndex:'2', overflow:'',}}>
-  <article>
-
-  <div id="" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'', alignItems:"center", padding:'0 4%'}}>
-
-
-  {UnderlayImage ? (
+{UnderlayImage ? (
             <GatsbyImage
             image={UnderlayImage}
             alt={frontmatter.title + " - image"}
-            className="mcboaty"
-            style={{width:'100vw', height:'90vh', overflow:'hidden', maxHeight:'', position:'absolute', left:'0', top:'', zIndex:'-1', objectFit:'cover', opacity:'.8', border:'0px solid red !important'}}
+            className="mcboaty print"
+            placeholder="blurred" loading="eager"
+              style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'', zIndex:'-1', objectFit:'cover', overflow:'', border:'0px solid red !important'}}
           />
        
           ) : (
@@ -368,23 +361,47 @@ const YouTube = frontmatter.youtuber
 
 
 
-          
+
+ {/* show Info */}
+ {ShowInfo ? (
+
+<section id="info" name="info" style={{ display:'', minHeight:'', height:'', position:'', zIndex:'2', overflow:'', border:'0px solid red'}}>
+  <article style={{ margin:'0 0 10vh 0'}}>
 
 
-      
+
+
+
+{/* {UnderlayImage ? (
+""
+) : (
+  ""
+)} */}
+             
+             <div id="" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 4%',
+  padding:'2% 4% 0 4%',
+  // textShadow:'0 2px 3px #000',
+  //  background:'rgba(0,0,0,0.70)',
+  //  color:'#fff', 
+   borderRadius:'0 0 10px 10px',}}>
+
+
+
 
 
 {UnderlayImage ? (
-  
+  // custom image in effect //
 
-  <div className="flexcheek mob print" style={{padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 7px #000', background:'rgba(0,0,0,0.70)', color:'#fff', borderRadius:'10px'}}>
+  <div className="flexcheek mob print" style={{marginTop:'', padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
+  background:'rgba(0,0,0,0.50)', 
+  borderRadius:'10px'}}>
   
   <h1 className="title1">{frontmatter.title}</h1>
             <h2 className="tagline1">
               {frontmatter.tagline}
             </h2>
             <div
-            style={{}}
+            style={{paddingBottom:'2rem'}}
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
             />
@@ -392,7 +409,7 @@ const YouTube = frontmatter.youtuber
   
             ) : (
           
-            <div className="flexcheek mob print" style={{padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
+            <div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
   
               <h1 className="title1">{frontmatter.profTitle}</h1>
             <h2 className="tagline1">
@@ -404,9 +421,6 @@ const YouTube = frontmatter.youtuber
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
             />
-
-            
-           
             </div>
 
 
@@ -416,7 +430,9 @@ const YouTube = frontmatter.youtuber
         
 
 
-      <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'5vh', }}>
+      <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'0vh', borderRadius:'0 0 10px 10px',
+      // textShadow:'0 2px 7px #000', 
+      }}>
 
 
 
@@ -427,7 +443,7 @@ const YouTube = frontmatter.youtuber
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'', maxHeight:'40vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', zIndex:''}}
+              style={{ maxWidth:'', height:'', maxHeight:'35vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', zIndex:''}}
             />
           ) : (
             ""
@@ -445,41 +461,50 @@ const YouTube = frontmatter.youtuber
 
 {UnderlayImage ? (
 
-  <div className="nameblock" style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', color:'#fff', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', background:'rgba(0,0,0,0.50)', borderRadius:'10px', textShadow:'0 2px 7px #000', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
+  <div className="nameblock" style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
+  color:'#fff',
+  border:'0px solid red', 
+  maxWidth:'80%', paddingTop:'1rem', 
+  fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
+  background:'rgba(0,0,0,0.50)',
+  borderRadius:'10px',
+  textShadow:'0 2px 7px #000',
+  }} >
+
 <span style={{color:'', fontSize:'160%'}}>{companyname}</span>
 {frontmatter.addressText}
 <br />
 {frontmatter.addressText2}
-<br /><br />
+<br />
 <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Contact Me</Link>
 
 {showSocial ? (
            <Social />
-       
           ) : (
             ""
           )}
-
 <br />
-<Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+{ShowCover ? (
+  <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+) : (
+  ""
+)}
 <br />
+</div> // end nameblock
 
 
-</div>
 
 ) : (
+
+
   
   <div className="nameblock" style={{margin:'0 auto 0 auto', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
 <span style={{color:'', fontSize:'160%'}}>{companyname}</span>
 {frontmatter.addressText}
 <br />
 {frontmatter.addressText2}
-<br /><br />
-
-
-
+<br />
 {CtaLink ? (
-           
            <a
    href={frontmatter.cta.ctaLink}
    className="button print"
@@ -496,10 +521,10 @@ const YouTube = frontmatter.youtuber
     color:''
     }}>{frontmatter.cta.ctaText}
 </a>
-       
           ) : (
             <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px', padding:'1rem'}}>{frontmatter.cta.ctaText}</Link>
           )}
+
 
 {showSocial ? (
            <Social />
@@ -507,63 +532,38 @@ const YouTube = frontmatter.youtuber
           ) : (
             ""
           )}
-
 <br />
 
-
-{/* {coverText ? (
+{/* {ShowCover ? (
 ""
 ) : (
   ""
 )} */}
 
+{ShowCover? (
 
-{coverLink ? (
+<Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
 
-          <a href={frontmatter.coverletter.coverLink} rel="noreferrer" target="_blank" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</a>
-       
-          ) : (
-            
-            <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
+) : (
+  
+""
 
 )}
 
+</div> // end nameblock
 
-
-
-<br />
-
-
+      // custom image in effect //
+)}
 
 
 
 
 
 </div>
-
-    
-)}
-
-
-
-
-</div>
-
 </div> 
-
-
-      
-
-
-
+{/* <div style={{height:'100px', border:'1px solid red'}}>&nbsp;</div> */}
 </article>
 </section>
-
-
-
-
-
-
 
 ) : (
   ""
@@ -572,10 +572,22 @@ const YouTube = frontmatter.youtuber
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 {/* end show Posts */}
 {ShowPosts ? (
 
-<div id="posts" name="posts">
+<div id="posts" name="posts" style={{marginTop:'10vh'}}>
 
 
 <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'60vh', overflow:'hidden', position:'relative',}}>
@@ -659,11 +671,12 @@ const YouTube = frontmatter.youtuber
  
 
 
-<section id="resume" name="resume" style={{ display:'', height:'', overflow:'', margin:'1rem', position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
+<section  style={{ display:'', height:'', overflow:'', margin:'10vh 0 0 0', position:'relative'}}>
 
 
 
-<article>
+<article className="hasapp"  style={{ display:'', height:'', overflow:'', padding:'1.6rem', margin:'0', position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
+
 <div id="resumename" style={{display:'none', position:'absolute', top:'-4rem', fontSize:'160%', padding:'0 0 2rem 4rem', textAlign:'left', width:'100%',}}>{companyname}<br />
 {/* {frontmatter.address.addressText}
 <br />
@@ -677,6 +690,7 @@ const YouTube = frontmatter.youtuber
             className=""
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          
 </div>
 
   
@@ -685,10 +699,15 @@ const YouTube = frontmatter.youtuber
 
 
 
-
-
+ <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'5px 0 0 0', }}>
+<div className="keyboard" order="1" style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0',}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
+{/* <div order="2" className="themer" style={{display:'flex', justifyContent:'center', border:'0px solid red', minWidth:'400px', margin:'0 auto', verticalAlign:'center'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important',}} /></span></div> */}
+  <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'auto !important', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
+  </div>
 
 </section>
+
+
 ) : (
   ""
 )}
@@ -702,54 +721,82 @@ const YouTube = frontmatter.youtuber
 
 
 
-  
-
-
-  
-  
-
-
- <div order="1" id="installedbar" className="toolbar hasapp print" style={{display:'none', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'1rem 0', }}>
-
- <div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
- <Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Cover Letter</Link>
- </div>
-
- <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
- <Link state={{modal: true}} to="/posts/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Portfolio</Link>
- </div>
-
- <div className="themer" order="4" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto', verticalAlign:'center'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
  
-  <div order="5" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
-  <Link state={{modal: true}} to="/notes/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
-  </div>
 
 
- <div order="6" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
-  <Link state={{modal: true}} to="/login/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
-  </div>
-
- {/* <div order="7" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
-  <Link state={{modal: true}} to="/tips/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Tips</Link>
-  </div> */}
+  
+  
 
 
+
+<div id="installedbar" className="toolbar print hasapp" style={{position:'relative', bottom:'', width:'100vw', display:'none', flexDirection:'', gap:'', borderTop:'0px solid #555', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', marginTop:'', padding:'2rem 0 3rem 0', zIndex:'', }}>
+
+
+<div className="" order="1" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+ <Link state={{modal: true}} to="/login/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
  </div>
 
 
- <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'1rem 0', }}>
+ <div className="" order="5" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+ <Link state={{modal: true}} to="/notes/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
+ </div>
 
 
-<div className="keyboard" order="1" style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0',}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
+
+ {ShowPosts ? (
+  <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+<Link state={{modal: true}} to="/posts/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Portfolio</Link>
+</div>
+) : (
+  ""
+)}
 
 
-<div order="2" className="themer" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto', verticalAlign:'center'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important'}} /></span></div>
+{/* {ShowResume ? (
+  <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+<Link state={{modal: true}} to="/resume/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Resume</Link>
+</div>
+) : (
+  ""
+)} */}
 
-  <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
+{ShowCover ? (
+  <div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+<Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Cover Letter</Link>
+</div>
+) : (
+  ""
+)}
+
+
+
+
+
+
+{showSkills ? (
+  <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+<Link state={{modal: true}} to="/skills/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Skills</Link>
+</div>
+) : (
+  ""
+)}
+
+
+
+{/* <div order="7" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
+ <Link state={{modal: true}} to="/tips/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Tips</Link>
+ </div> */}
 
 </div>
-      {/* show footer */}
+
+
+
+<div className="usability" style={{position:'relative', zIndex:'2', bottom:'20px', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
+<Theme />
+</div>
+
+
+{/* show footer */}
 {showfooter ? (
 
 

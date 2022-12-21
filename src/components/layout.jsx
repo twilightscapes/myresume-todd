@@ -226,18 +226,17 @@ body::after{
 
 
         {children}
-        <div className="usability" style={{ display:'flex', width:'100%', margin:'0 auto', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
-{/* <span style={{fontSize:'80%'}}>Site Preferences:</span> */}
 
-  <div style={{position:'absolute', bottom:'0', zIndex:'2', justifyContent:'', padding:'2px 12px', background:'rgba(0,0,0,0.60)', borderRadius:'12px 12px 0 0', width:'200px', margin:'0'}}>
-  {/* <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
-  <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
-</button> */}
-{/* <Theme  style={{}} /> */}
-    </div>
+        {/* <Theme  style={{position:'relative', bottom:'4px', zIndex:'2', justifyContent:'', width:'200px', margin:'0', display:'flex', width:'100%', margin:'0 auto', justifyContent:'center', border:'1px solid red'}} /> */}
 
-  </div>
+        
+        {/* <div className="usability" style={{ display:'flex', width:'100%', margin:'0 auto', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
+
+<Theme  style={{}} />
+
+  </div> */}
       
+
         
   </>
   </CustomBox>
