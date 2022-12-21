@@ -9,20 +9,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogList = path.resolve(`./src/templates/blog-list.js`)
 
   const result = await graphql(`
-  {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
-      edges {
-        node {
-          id
-          frontmatter {
-            slug
-            template
-            title
+    {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              slug
+              template
+              title
+            }
           }
         }
       }
     }
-  }
   `)
 
   // Handle errors
@@ -89,15 +89,3 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
-  if (stage === 'build-javascript') {
-    const config = getConfig()
-    const miniCssExtractPlugin = config.plugins.find(
-      plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
-    )
-    if (miniCssExtractPlugin) {
-      miniCssExtractPlugin.options.ignoreOrder = true
-    }
-    actions.replaceWebpackConfig(config)
-  }
-}

@@ -51,32 +51,32 @@ const styles = {
 }
 
 export const blogListQuery = graphql`
-query blogListQuery($skip: Int!, $limit: Int!) {
-  allMarkdownRemark(
-    sort: {frontmatter: {date: DESC}}
-    filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: $limit
-    skip: $skip
-  ) {
-    edges {
-      node {
-        id
-        excerpt(pruneLength: 250)
-        frontmatter {
-          date(formatString: "YYYY-MM-DD-HH-MM-SS")
-          slug
-          title
-          nftdrop
-          featuredImage {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
+  query blogListQuery($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { template: { eq: "blog-post" } } }
+      limit: $limit
+      skip: $skip
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "YYYY-MM-DD-HH-MM-SS")
+            slug
+            title
+            nftdrop
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
           }
         }
       }
     }
   }
-}
 `
 const Pagination = props => (
   <div className="pagination" sx={styles.pagination}>
