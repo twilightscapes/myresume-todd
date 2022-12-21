@@ -6,7 +6,9 @@ const AboutPagePreview = ({ entry, widgetFor }) => (
   <AboutPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
+    style={{border:'2px dotted red'}}
   />
+  
 )
 
 AboutPagePreview.propTypes = {
