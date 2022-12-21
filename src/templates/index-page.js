@@ -350,7 +350,7 @@ const YouTube = frontmatter.youtuber
             <GatsbyImage
             image={UnderlayImage}
             alt={frontmatter.title + " - image"}
-            className="mcboaty print"
+            className="mcboaty print noapp"
             placeholder="blurred" loading="eager"
               style={{height:'auto', width:'100vw', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important'}}
           />
