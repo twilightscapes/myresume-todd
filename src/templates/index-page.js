@@ -181,7 +181,7 @@ const HomePage = ({ data }) => {
     const showSocial = frontmatter.showSocial
     const showSkills = frontmatter.showSkills
     const ShowCover = frontmatter.showCover
-    const showfooter = useSiteMetadata()
+    const Showfooter = useSiteMetadata()
     // const showCTA = frontmatter.cta.ctaText
     const CtaLink = frontmatter.cta.ctaLink
     // const coverLink = frontmatter.coverletter.coverLink
@@ -799,7 +799,7 @@ const YouTube = frontmatter.youtuber
 
 
 {/* show footer */}
-{showfooter ? (
+{Showfooter ? (
 
 
 <Footer />
