@@ -181,9 +181,9 @@ body::after{
 
 
 
-              <div className="has-app" order="5" style={{display:'none', justifyContent:'center', border:'0px solid red', width:'',}}>
- <Link state={{modal: true}} to="/notes" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
- </div>
+              <li className="has-app" order="5" style={{display:'none', justifyContent:'center', border:'0px solid red', width:'',}}>
+ <Link state={{modal: true}} to="/notes" className="print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
+ </li>
 
 
           
@@ -223,7 +223,7 @@ body::after{
 
 
 {showSkills ? (
-              <li className="" style={{position:'relative',}}>
+              <li className="no-app" style={{position:'relative',}}>
               {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
                 Contact <span className="mobilehide">Me</span>
               </AnchorLink> */}
