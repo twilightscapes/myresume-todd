@@ -1156,7 +1156,7 @@ body.carto .carta {
 .ReactModal__Content {
 	padding: 0 !important;
 	background: rgba(18, 20, 20, 0.7) !important;
-	margin: 0 auto;
+	margin: 5vh auto 0 auto;
 	border: none !important;
 	box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.5);
 	box-shadow: none !important;
