@@ -388,7 +388,7 @@ const YouTube = frontmatter.youtuber
 
 
 {showFeature ? (
-  <div style={{height:'10vh'}} />
+  <div style={{height:'7vh'}} />
 ) : (
   ""
 )}
@@ -638,7 +638,11 @@ const YouTube = frontmatter.youtuber
 
 
 
-
+{UnderlayImage ? (
+  <div style={{height:'10vh'}} />
+) : (
+  ""
+)}
 
 
 
