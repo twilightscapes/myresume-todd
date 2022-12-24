@@ -181,8 +181,8 @@ body::after{
 
 
 
-              <li className="has-app" order="5" style={{display:'none', justifyContent:'center', border:'0px solid red', width:'',}}>
- <Link state={{modal: true}} to="/notes" className="navbar-item" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
+              <li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
  </li>
 
 

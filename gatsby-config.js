@@ -226,7 +226,7 @@ module.exports = {
         short_name: `My Resume`,
         start_url: `/?user_mode=app`,
         description: `My Resume`,
-        background_color: `#222`,
+        background_color: `#ddd`,
         lang: `en`,
         theme_color: `#222`,
         display: `standalone`,
@@ -236,12 +236,12 @@ module.exports = {
 },
       icons: [
         {
-          src: `static/assets/icon-192x192.png`,
+          src: `static/assets/icon.png`,
           sizes: `192x192`,
           type: `image/png`,
         },
         {
-          src: `static/assets/icon-512x512.png`,
+          src: `static/assets/icon.png`,
           sizes: `512x512`,
           type: `image/png`,
         },

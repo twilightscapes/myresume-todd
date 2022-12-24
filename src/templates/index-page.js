@@ -26,7 +26,8 @@ import { Social } from "../components/social"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-// import Highlights from "../templates/highlights-page"
+
+
 
 
 const CustomBox = styled.div`
@@ -389,7 +390,7 @@ const YouTube = frontmatter.youtuber
 
 
 {showFeature ? (
-  <div style={{height:'7vh'}} />
+  <div className="no-app" style={{height:'7vh'}} />
 ) : (
   ""
 )}
@@ -796,6 +797,10 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 <section id="skills" style={{ display:'', height:'', overflow:'', margin:'0 0 10vh 0', position:'relative'}}>
+
+{/* <Skills /> */}
+
+
 {showSkills ? (
            <Link state={{modal: true}} stripHash to="/skills#skills" className="button print no-app" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>View Skills &amp; Capabilities</Link>
        
