@@ -871,7 +871,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 
-<div id="installedbar" className="toolbar print hasapp" style={{position:'relative', bottom:'', width:'100vw', display:'none', flexDirection:'', gap:'', borderTop:'0px solid #555', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', marginTop:'', padding:'2rem 0 3rem 0', zIndex:'', }}>
+{/* <div id="installedbar" className="toolbar print hasapp" style={{position:'relative', bottom:'', width:'100vw', display:'none', flexDirection:'', gap:'', borderTop:'0px solid #555', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', marginTop:'', padding:'2rem 0 3rem 0', zIndex:'', }}>
 
 
 <div className="" order="1" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
@@ -893,14 +893,6 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
   ""
 )}
 
-
-{/* {showResume ? (
-  <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
-<Link state={{modal: true}} to="/resume/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Resume</Link>
-</div>
-) : (
-  ""
-)} */}
 
 {showCover ? (
   <div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
@@ -925,11 +917,9 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 
-{/* <div order="7" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
- <Link state={{modal: true}} to="/tips/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Tips</Link>
- </div> */}
 
-</div>
+
+</div> */}
 
 
 

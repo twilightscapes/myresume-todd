@@ -73,7 +73,7 @@ export function Footer() {
 
 
 
-    <footer className="footerstyle" style={{padding:'1rem 0', marginTop:'', position:'relative', zIndex:'', display:'flex', flexDirection:'column'}}>
+    <footer className="footerstyle no-app" style={{padding:'1rem 0', marginTop:'', position:'relative', zIndex:'', display:'flex', flexDirection:'column'}}>
 
     
     
