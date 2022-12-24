@@ -330,7 +330,7 @@ const YouTube = frontmatter.youtuber
 
   {showFeature ? (
           
-<section id="feature" name="feature" style={{ display:'', margin:''}}>
+<section id="feature" name="feature" className="print no-app" style={{ display:'', margin:''}}>
   <article>
 
 
