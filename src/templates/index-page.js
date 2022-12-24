@@ -48,6 +48,14 @@ export const pageQuery = graphql`
         twitterUsername
         companyname
         showfooter
+        showInfo
+        showCover
+        showFeature
+        showPosts
+        showResume
+        showSocial
+        showSkills
+        showNav
         siteColor
       }
 
@@ -61,13 +69,6 @@ export const pageQuery = graphql`
         slug
         title
         description
-        showFeature
-        showPosts
-        showInfo
-        showResume
-        showSocial
-        showSkills
-        showCover
         youtuber
         youtubestart
         youtubeend
@@ -167,6 +168,7 @@ const HomePage = ({ data }) => {
 
     const { companyname } = useSiteMetadata()
     const { siteUrl } = useSiteMetadata()
+    const { showInfo } = useSiteMetadata()
 
     const YouTubeStart = frontmatter.youtubestart
     const YouTubeEnd = frontmatter.youtubeend
@@ -174,14 +176,16 @@ const HomePage = ({ data }) => {
     const YouTubeControls = frontmatter.youtubecontrols
     const YouTubeAutostart = frontmatter.youtubeautostart
 
-    const ShowFeature = frontmatter.showFeature
-    const ShowInfo = frontmatter.showInfo
-    const ShowPosts = frontmatter.showPosts
-    const ShowResume = frontmatter.showResume
-    const showSocial = frontmatter.showSocial
-    const showSkills = frontmatter.showSkills
-    const ShowCover = frontmatter.showCover
-    const Showfooter = useSiteMetadata()
+    const showFeature = useSiteMetadata()
+ 
+    const showPosts = useSiteMetadata()
+    const showResume = useSiteMetadata()
+    const showSocial = useSiteMetadata()
+    const showSkills = useSiteMetadata()
+    const showCover = useSiteMetadata()
+    const showfooter = useSiteMetadata()
+
+
     // const showCTA = frontmatter.cta.ctaText
     const CtaLink = frontmatter.cta.ctaLink
     // const coverLink = frontmatter.coverletter.coverLink
@@ -317,7 +321,8 @@ const YouTube = frontmatter.youtuber
 <div name="container21" className="container21" style={{height:'',}}>
 {/* { sitecolor } */}
 {/* show feature */}
-        {ShowFeature ? (
+
+        {showFeature ? (
           
 <section id="feature" name="feature" style={{ display:'', margin:''}}>
   <article>
@@ -376,14 +381,14 @@ const YouTube = frontmatter.youtuber
 
 
 
-{ShowFeature ? (
+{showFeature ? (
   <div className="spacer33" />
 ) : (
   ""
 )}
 
-{ShowInfo ? (
-  <div className="spacer33" />
+{showInfo ? (
+  ""
 ) : (
   ""
 )}
@@ -408,7 +413,7 @@ const YouTube = frontmatter.youtuber
 
 
  {/* show Info */}
- {ShowInfo ? (
+ {showInfo ? (
 
 <section id="info" name="info" style={{ display:'', minHeight:'', height:'', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
@@ -531,7 +536,7 @@ const YouTube = frontmatter.youtuber
             ""
           )}
 <br />
-{ShowCover ? (
+{showCover ? (
   <Link state={{modal: true}} to="/cover/#cover" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
 ) : (
   ""
@@ -587,7 +592,7 @@ const YouTube = frontmatter.youtuber
   ""
 )} */}
 
-{ShowCover? (
+{showCover? (
 
 <Link state={{modal: true}} to="/cover#info" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
 
@@ -632,7 +637,7 @@ const YouTube = frontmatter.youtuber
 
 
 {/* end show Posts */}
-{ShowPosts ? (
+{showPosts ? (
 
 <div id="posts" name="posts" style={{margin:'20vh 0', background:'inherit'}}>
 
@@ -792,7 +797,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 {/* end show Resume */}
-{ShowResume ? (
+{showResume ? (
 
  
 
@@ -869,7 +874,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 
- {ShowPosts ? (
+ {showPosts ? (
   <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
 <Link state={{modal: true}} to="/posts" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Portfolio</Link>
 </div>
@@ -878,7 +883,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 )}
 
 
-{/* {ShowResume ? (
+{/* {showResume ? (
   <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
 <Link state={{modal: true}} to="/resume/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'200px', justifyContent:'center',fontWeight:'bold', }}>Resume</Link>
 </div>
@@ -886,7 +891,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
   ""
 )} */}
 
-{ShowCover ? (
+{showCover ? (
   <div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
 <Link state={{modal: true}} to="/cover" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Cover Letter</Link>
 </div>
@@ -923,7 +928,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 {/* show footer */}
-{Showfooter ? (
+{showfooter ? (
 
 
 <Footer />

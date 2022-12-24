@@ -15,9 +15,18 @@ export const useSiteMetadata = () => {
           companyname
           comments
           showfooter
+          showInfo
+          showCover
+          showFeature
+          showPosts
+          showResume
+          showSocial
+          showSkills
+          showNav
           menu1
           menu2
           menu3
+          menu4
           font1
           siteColor
           }

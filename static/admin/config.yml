@@ -114,13 +114,6 @@ collections:
           - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
           - { label: "Page and SEO Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Show Feature", name: "showFeature", widget: "boolean" }
-          - { label: "Show Info", name: "showInfo", widget: "boolean" }
-          - { label: "Show Posts", name: "showPosts", widget: "boolean" }
-          - { label: "Show Social Links", name: "showSocial", widget: "boolean", default: "true", required: false }
-          - { label: "Show Skills", name: "showSkills", widget: "boolean", default: "true", required: false }
-          - { label: "Show Resume", name: "showResume", widget: "boolean", default: "true", required: false }
-          - { label: "Show Cover Letter", name: "showCover", widget: "boolean", default: "true", required: false }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
           - { label: "YouTube Url", name: "youtuber", hint: "Add YouTube video to hero section", widget: "string", required: false }
           - { label: "Profile/Avatar", name: "secondaryImage", widget: "image", hint: "This is your profile picture or avatar", required: false }
@@ -330,6 +323,35 @@ collections:
                 name: showfooter
                 label: Show the Footer
                 required: false
+              - widget: boolean
+                name: showFeature
+                label: Show Feature
+                required: false
+              - widget: boolean
+                name: showInfo
+                label: Show Profile
+                required: false
+              - widget: boolean
+                name: showPosts
+                label: Show Portfolio/Posts
+                required: false
+              - widget: boolean
+                name: showSocial
+                label: Show Social Links
+                required: false
+              - widget: boolean
+                name: showSkills
+                label: Show Skills
+                required: false
+              - widget: boolean
+                name: showResume
+                label: Show Resume
+                required: false
+              - widget: boolean
+                name: showCover
+                label: Show Cover Letter
+                required: false
+  
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
             name: comments
             widget: string

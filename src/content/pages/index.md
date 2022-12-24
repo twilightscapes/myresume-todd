@@ -1,8 +1,6 @@
 ---
 slug: /
 tagline:  An artist, photographer, designer and developer; Todd imagines things & makes them come to life.
-showInfo: true
-showSocial: true
 featuredImage: /assets/challenger.webp
 youtuber: "https://youtu.be/ESGJ42zshL8"
 secondaryImage: /assets/og-image.png
@@ -23,9 +21,7 @@ portfolio:
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
-showResume: true
 youtubeautostart: "1"
-showPosts: "1"
 addressText2: ""
 cta:
   ctaText: Contact Me
@@ -33,15 +29,12 @@ cta:
 svgImage: /assets/transparent.png
 title: Digital Product Designer
 youtubeend: "90"
-showFeature: false
 shareable: ""
 youtubecontrols: "1"
 template: index-page
-showCover: true
 youtubemute: "1"
 description: Todd Lambert - Independent artist, photographer, designer/developer
 svgzindex: ""
-showSkills: true
 profTitle: Digital Product Designer
 coverletter:
   coverText: Cover Letter

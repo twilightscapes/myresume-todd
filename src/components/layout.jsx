@@ -39,7 +39,8 @@ import Theme from "../components/theme"
 
 // import Consent from './Consent'
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-// 
+
+
 // import { BiLeftArrow } from "react-icons/bi"
 // import { navigate } from "gatsby";
 import styled from "styled-components"
@@ -53,9 +54,6 @@ import { Helmet } from "react-helmet"
 
 
 export function Layout({ children }) {
-
-
-  const { companyname } = useSiteMetadata()
   const CustomBox = styled.div`
 
  
@@ -68,10 +66,23 @@ export function Layout({ children }) {
 // const SiteLogo = iconimage
 
 // const SiteLogo = "../../assets/icon-512x512.png"
+  const { showNav } = useSiteMetadata()
+  const { companyname } = useSiteMetadata()
   const { iconimage } = useSiteMetadata()
-  // const { menu1 } = useSiteMetadata()
-  // const { menu2 } = useSiteMetadata()
-  // const { menu3 } = useSiteMetadata()
+  const { showInfo } = useSiteMetadata()
+
+  const showFeature = useSiteMetadata()
+  const showPosts = useSiteMetadata()
+  const showResume = useSiteMetadata()
+  const showSocial = useSiteMetadata()
+  const showSkills = useSiteMetadata()
+  const showCover = useSiteMetadata()
+  const showfooter = useSiteMetadata()
+ 
+  const { menu1 } = useSiteMetadata()
+  const { menu2 } = useSiteMetadata()
+  const { menu3 } = useSiteMetadata()
+  const { menu4 } = useSiteMetadata()
   const { font1 } = useSiteMetadata()
   // const { siteColor } = useSiteMetadata()
   
@@ -145,57 +156,70 @@ body::after{
 
   
 {/* <header name="pagetop" className={isVisible ? 'left' : ''} > */}
-<header id="top" className="print" name="pagetop" style={{}} >
+
+{showNav ? (
 
 <ul id="menu" className="menu" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center', background:'radial-gradient(#111 14%,#222 140%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'60px'}}>
       
-<li className="grad" style={{position:'relative', maxHeight:'60px', width:'auto'}}>
-      <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
-
-      {iconimage ? (
-        
-// <SiteLogo style={{maxHeight:'60px'}} />
-<img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
-          ) : (
-            companyname
-          )}
-
-          {/* {SiteLogo} */}
-          
-      {/* <SiteLogo style={{maxHeight:'60px'}} /> */}
-{/* 
-      <img className="" src={SiteLogo} alt="Logo" style={{maxHeight:'60px'}} /> */}
-      </AnchorLink>
-    </li>
-
-
-<li className="grad" style={{position:'relative',}}>
-        <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
-          About <span className="mobilehide">Me</span> 
-        </AnchorLink>
-        </li>
-      <li className="grad" style={{position:'relative',}}>
-      <AnchorLink className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
-      <span className="mobilehide">My</span> Portfolio 
-      </AnchorLink>
-      </li>
- 
-      <li className="grad" style={{position:'relative',}}>
-        <AnchorLink className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
-          My <span className="mobilehide">Resume</span> 
-        </AnchorLink>
-        </li>
-        <li className="grad" style={{position:'relative',}}>
-        {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
-          Contact <span className="mobilehide">Me</span>
-        </AnchorLink> */}
-
-        <AnchorLink className="navbar-item" to="/#skills" style={{paddingRight:'',}}><span className="mobilehide">My</span> Skills</AnchorLink>
-        </li>
+      <li className="grad" style={{position:'relative', maxHeight:'60px', width:'auto'}}>
+            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+            {iconimage ? (
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
+                ) : (
+                  companyname
+                )}
+            </AnchorLink>
+          </li>
       
-     
+      
+          
+          {showInfo ? (
+            <li className="grad" style={{position:'relative',}}>
+              <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+              {menu1}
+              </AnchorLink>
+              </li>
+) : (
+  ""
+)}
+      
 
-      </ul>
+
+      {showPosts ? (
+            <li className="grad" style={{position:'relative',}}>
+            <AnchorLink className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
+            {menu2}
+            </AnchorLink>
+            </li>
+            ) : (
+  ""
+)}
+       
+            <li className="grad" style={{position:'relative',}}>
+              <AnchorLink className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+              {menu3}
+              </AnchorLink>
+              </li>
+              <li className="grad" style={{position:'relative',}}>
+              {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
+                Contact <span className="mobilehide">Me</span>
+              </AnchorLink> */}
+      
+              <AnchorLink className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</AnchorLink>
+              </li>
+            
+           
+      
+            </ul>
+
+
+) : (
+  ""
+)}
+
+<header id="top" className="print" name="pagetop" style={{}} >
+
+
 
 
 
