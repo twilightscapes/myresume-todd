@@ -8,6 +8,7 @@
     "siteUrl": "https://toddlambert.myresume.site/",
     "twitterUsername": "toddlambert",
     "titleDefault": "Todd Lambert",
+    "showInfo": true,
     "postcount": "1",
     "icon192": "/assets/tle-icon.png",
     "titleTemplate": "%s",
