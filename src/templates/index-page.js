@@ -168,14 +168,16 @@ const HomePage = ({ data }) => {
 
     const { companyname } = useSiteMetadata()
     const { siteUrl } = useSiteMetadata()
-    const { showInfo } = useSiteMetadata()
+
 
     const YouTubeStart = frontmatter.youtubestart
     const YouTubeEnd = frontmatter.youtubeend
     const YouTubeMute = frontmatter.youtubemute
     const YouTubeControls = frontmatter.youtubecontrols
     const YouTubeAutostart = frontmatter.youtubeautostart
-
+    
+    const { showNav } = useSiteMetadata()
+    const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
     const { showPosts } = useSiteMetadata()
     const { showResume } = useSiteMetadata()
@@ -314,7 +316,11 @@ const YouTube = frontmatter.youtuber
       
 
         
-
+{showNav ? (
+  <div style={{height:'60px'}} />
+) : (
+  ""
+)}
 
 
 <div name="container21" className="container21" style={{height:'',}}>
@@ -380,11 +386,12 @@ const YouTube = frontmatter.youtuber
 
 
 
-{/* {showFeature ? (
-  <div className="spacer33" />
+
+{showFeature ? (
+  <div style={{height:'10vh'}} />
 ) : (
   ""
-)} */}
+)}
 
 {/* {showInfo ? (
   ""
@@ -536,7 +543,7 @@ const YouTube = frontmatter.youtuber
           )}
 <br />
 {showCover ? (
-  <Link state={{modal: true}} to="/cover/#cover" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+  <Link state={{modal: true}} to="/cover/#info" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
 ) : (
   ""
 )}

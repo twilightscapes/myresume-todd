@@ -97,7 +97,7 @@ const Post = ({ data, pageContext }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
-
+    const { showNav } = useSiteMetadata()
     const NftLink = frontmatter.nftlink
     const NftRedeem = frontmatter.nftredeem
     const NftDrop = frontmatter.nftdrop
@@ -481,6 +481,11 @@ const { iconimage } = useSiteMetadata()
 {/* <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}> */}
 
 
+{showNav ? (
+  <div style={{height:'20px'}} />
+) : (
+  ""
+)}
 
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 

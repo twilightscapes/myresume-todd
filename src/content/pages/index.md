@@ -4,7 +4,7 @@ tagline:  An artist, photographer, designer and developer; Todd imagines things 
 featuredImage: /assets/challenger.webp
 youtuber: "https://youtu.be/ESGJ42zshL8"
 secondaryImage: /assets/og-image.png
-underlayImage: 
+underlayImage: /assets/IMG_1019.webp
 profText: <p>Todd Lambert is an award-winning web designer and photographer that trained in Southern California and has traveled and lived in over 16 Western states.</p>
   <p>Todd's skills include all facets of online and multimedia
   creation including HTML emails, online ads, user interface design, information
