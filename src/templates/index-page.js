@@ -249,19 +249,30 @@ const YouTube = frontmatter.youtuber
       loop
       playsinline
       playIcon={
-        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'200px'}}>
+        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
 
 
 
     <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'5vh auto'}}>
     
     <div style={{position:'relative', maxWidth:'100vw', margin:'0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'20vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+
+
+
+    {iconimage ? (
+        
+        <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'20vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+                  ) : (
+                    ""
+                  )}
+
+
+
 </div>
 
 
-<div style={{display:'flex', flexDirection:'', height:'', margin:'1vh auto 0 auto', width:'100%', border:'0px solid yellow'}}>
-                <div style={{ background:'rgba(0,0,0,0.30)', fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)', }}>Play <ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} /></div>
+<div style={{display:'flex', flexDirection:'', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
+                <div style={{ background:'rgba(0,0,0,0.30)', fontWeight:'bold', padding:'0', margin:'0 auto', fontSize:'clamp(1rem, 2vw, 3.4rem)',  borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)', }}>Play <ImPlay style={{margin:'0 auto', width:'100px', fontSize:'50px'}} /></div>
                 
             </div>
 
@@ -308,7 +319,7 @@ const YouTube = frontmatter.youtuber
 {/* show feature */}
         {ShowFeature ? (
           
-<section id="feature" name="feature" style={{ display:'',}}>
+<section id="feature" name="feature" style={{ display:'', margin:''}}>
   <article>
 
 
@@ -365,6 +376,19 @@ const YouTube = frontmatter.youtuber
 
 
 
+{ShowFeature ? (
+  <div className="spacer33" />
+) : (
+  ""
+)}
+
+{ShowInfo ? (
+  <div className="spacer33" />
+) : (
+  ""
+)}
+
+
 <div className="no-app" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
 {UnderlayImage ? (
             <GatsbyImage
@@ -382,11 +406,12 @@ const YouTube = frontmatter.youtuber
 
 
 
+
  {/* show Info */}
  {ShowInfo ? (
 
-<section id="info" name="info" style={{ display:'', minHeight:'', height:'', position:'', zIndex:'2', overflow:'', border:'0px solid red'}}>
-  <article style={{ margin:'0 0 10vh 0'}}>
+<section id="info" name="info" style={{ display:'', minHeight:'', height:'', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
+  <article style={{ margin:'0 0 0 0'}}>
 
 
 
@@ -498,7 +523,7 @@ const YouTube = frontmatter.youtuber
 <br />
 {frontmatter.addressText2}
 <br />
-<Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Contact Me</Link>
+<Link state={{modal: true}} to="/contact#info" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Contact Me</Link>
 
 {showSocial ? (
            <Social />
@@ -507,7 +532,7 @@ const YouTube = frontmatter.youtuber
           )}
 <br />
 {ShowCover ? (
-  <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+  <Link state={{modal: true}} to="/cover/#cover" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
 ) : (
   ""
 )}
@@ -544,7 +569,7 @@ const YouTube = frontmatter.youtuber
     }}>{frontmatter.cta.ctaText}
 </a>
           ) : (
-            <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px', padding:'1rem'}}>{frontmatter.cta.ctaText}</Link>
+            <Link state={{modal: true}} to="/contact#info" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px', padding:'1rem'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
@@ -564,7 +589,7 @@ const YouTube = frontmatter.youtuber
 
 {ShowCover? (
 
-<Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
+<Link state={{modal: true}} to="/cover#info" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
 
 ) : (
   
@@ -756,7 +781,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 <section id="skills" style={{ display:'', height:'', overflow:'', margin:'0 0 10vh 0', position:'relative'}}>
 {showSkills ? (
-           <Link state={{modal: true}} to="/skills/" className="button print no-app" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>View Skills &amp; Capabilities</Link>
+           <Link state={{modal: true}} to="/skills#skills" className="button print no-app" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>View Skills &amp; Capabilities</Link>
        
           ) : (
             ""
@@ -834,19 +859,19 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 <div className="" order="1" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
- <Link state={{modal: true}} to="/login/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
+ <Link state={{modal: true}} to="/login" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
  </div>
 
 
  <div className="" order="5" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
- <Link state={{modal: true}} to="/notes/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
+ <Link state={{modal: true}} to="/notes" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Notes</Link>
  </div>
 
 
 
  {ShowPosts ? (
   <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
-<Link state={{modal: true}} to="/posts/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Portfolio</Link>
+<Link state={{modal: true}} to="/posts" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Portfolio</Link>
 </div>
 ) : (
   ""
@@ -863,7 +888,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 {ShowCover ? (
   <div order="2" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
-<Link state={{modal: true}} to="/cover/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Cover Letter</Link>
+<Link state={{modal: true}} to="/cover" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Cover Letter</Link>
 </div>
 ) : (
   ""
@@ -876,7 +901,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 {showSkills ? (
   <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
-<Link state={{modal: true}} to="/skills/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Skills</Link>
+<Link state={{modal: true}} to="/skills#skills" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Skills</Link>
 </div>
 ) : (
   ""
@@ -892,7 +917,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 
-<div className="usability" style={{position:'relative', zIndex:'2', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
+<div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
 <Theme />
 </div>
 

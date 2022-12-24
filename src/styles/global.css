@@ -928,9 +928,9 @@ p {
 	margin-right: 10px;
 }
 
-footer {
+/* footer {
 	display: none !important;
-}
+} */
 
 @media (max-width: 48rem) {
 	.themer {
@@ -2533,8 +2533,8 @@ footer {
 	justify-content: center;
 	color: #fff !important;
 	position: relative;
-	bottom: 0;
-	z-index: 2;
+	/* bottom: 0; */
+	z-index: 0;
 	opacity: 1;
 	background: linear-gradient(
  0deg,

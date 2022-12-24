@@ -1,12 +1,12 @@
 ---
 slug: /
 tagline:  An artist, photographer, designer and developer; Todd imagines things & makes them come to life.
-showInfo: "1"
+showInfo: true
 showSocial: true
 featuredImage: /assets/challenger.webp
 youtuber: "https://youtu.be/ESGJ42zshL8"
 secondaryImage: /assets/og-image.png
-underlayImage: /assets/IMG_1019.webp
+underlayImage: 
 profText: <p>Todd Lambert is an award-winning web designer and photographer that trained in Southern California and has traveled and lived in over 16 Western states.</p>
   <p>Todd's skills include all facets of online and multimedia
   creation including HTML emails, online ads, user interface design, information
@@ -23,7 +23,7 @@ portfolio:
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
-showResume: "1"
+showResume: true
 youtubeautostart: "1"
 showPosts: "1"
 addressText2: ""
@@ -33,7 +33,7 @@ cta:
 svgImage: /assets/transparent.png
 title: Digital Product Designer
 youtubeend: "90"
-showFeature: true
+showFeature: false
 shareable: ""
 youtubecontrols: "1"
 template: index-page

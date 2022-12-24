@@ -28,7 +28,7 @@ import { AiOutlineClose } from "react-icons/ai"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import SiteLogo from "../../static/assets/logo.svg"
-import Bug from "../../static/assets/logo.svg"
+// import Bug from "../../static/assets/logo.svg"
 import Theme from "../components/theme"
 
 // import '@fontsource/roboto'
@@ -41,10 +41,10 @@ import Theme from "../components/theme"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // 
 // import { BiLeftArrow } from "react-icons/bi"
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
 import styled from "styled-components"
 import { Helmet } from "react-helmet"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 
 
@@ -67,11 +67,11 @@ export function Layout({ children }) {
 
 // const SiteLogo = iconimage
 
-const SiteLogo = "../../assets/icon-512x512.png"
+// const SiteLogo = "../../assets/icon-512x512.png"
   const { iconimage } = useSiteMetadata()
-  const { menu1 } = useSiteMetadata()
+  // const { menu1 } = useSiteMetadata()
   // const { menu2 } = useSiteMetadata()
-  const { menu3 } = useSiteMetadata()
+  // const { menu3 } = useSiteMetadata()
   const { font1 } = useSiteMetadata()
   // const { siteColor } = useSiteMetadata()
   
@@ -190,7 +190,7 @@ body::after{
           Contact <span className="mobilehide">Me</span>
         </AnchorLink> */}
 
-        <Link to="/#skills"  className="navbar-item" style={{}}><span className="mobilehide">My</span> Skills</Link>
+        <AnchorLink className="navbar-item" to="/#skills" style={{paddingRight:'',}}><span className="mobilehide">My</span> Skills</AnchorLink>
         </li>
       
      

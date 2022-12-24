@@ -73,7 +73,7 @@ export function Footer() {
 
 
 
-    <footer className="footerstyle" style={{padding:'1rem 0', marginTop:'', position:'relative', zIndex:'1', display:'flex', flexDirection:'column'}}>
+    <footer className="footerstyle" style={{padding:'1rem 0', marginTop:'', position:'relative', zIndex:'', display:'flex', flexDirection:'column'}}>
 
     
     
@@ -106,7 +106,7 @@ export function Footer() {
       <nav className="footerlinks" aria-label="footer">
         <br />
       <Consent />
-      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/">Home</Link> | <Link state={{modal: true}} to="/disclaimer/">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy/">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms/">Terms of Use</Link></div>
+      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/">Home</Link> | <Link state={{modal: true}} to="/disclaimer#bottom">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy#bottom">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms#bottom">Terms of Use</Link></div>
   
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}
