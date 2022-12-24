@@ -243,15 +243,16 @@ const YouTube = frontmatter.youtuber
       <ReactPlayer
       className='react-player66'
       url={Url}
+      loop="true"
       width="100%"
       height="100%"
   style={{zIndex:'3'}}
       config={{
         youtube: {
-          playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+          playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:true  }
         },
       }}
-      loop
+      playing
       playsinline
       playIcon={
         <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
