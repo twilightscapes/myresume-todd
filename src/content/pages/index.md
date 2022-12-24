@@ -32,7 +32,7 @@ cta:
   ctaLink: ""
 svgImage: /assets/transparent.png
 title: Digital Product Designer
-youtubeend: "50"
+youtubeend: "90"
 showFeature: true
 shareable: ""
 youtubecontrols: "1"
