@@ -176,14 +176,13 @@ const HomePage = ({ data }) => {
     const YouTubeControls = frontmatter.youtubecontrols
     const YouTubeAutostart = frontmatter.youtubeautostart
 
-    const showFeature = useSiteMetadata()
- 
-    const showPosts = useSiteMetadata()
-    const showResume = useSiteMetadata()
-    const showSocial = useSiteMetadata()
-    const showSkills = useSiteMetadata()
-    const showCover = useSiteMetadata()
-    const showfooter = useSiteMetadata()
+    const { showFeature } = useSiteMetadata()
+    const { showPosts } = useSiteMetadata()
+    const { showResume } = useSiteMetadata()
+    const { showSocial } = useSiteMetadata()
+    const { showSkills } = useSiteMetadata()
+    const { showCover } = useSiteMetadata()
+    const { showfooter } = useSiteMetadata()
 
 
     // const showCTA = frontmatter.cta.ctaText
@@ -322,7 +321,7 @@ const YouTube = frontmatter.youtuber
 {/* { sitecolor } */}
 {/* show feature */}
 
-        {showFeature ? (
+  {showFeature ? (
           
 <section id="feature" name="feature" style={{ display:'', margin:''}}>
   <article>
@@ -381,17 +380,17 @@ const YouTube = frontmatter.youtuber
 
 
 
-{showFeature ? (
+{/* {showFeature ? (
   <div className="spacer33" />
 ) : (
   ""
-)}
+)} */}
 
-{showInfo ? (
+{/* {showInfo ? (
   ""
 ) : (
   ""
-)}
+)} */}
 
 
 <div className="no-app" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>

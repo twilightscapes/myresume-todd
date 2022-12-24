@@ -66,18 +66,19 @@ export function Layout({ children }) {
 // const SiteLogo = iconimage
 
 // const SiteLogo = "../../assets/icon-512x512.png"
-  const { showNav } = useSiteMetadata()
+
   const { companyname } = useSiteMetadata()
   const { iconimage } = useSiteMetadata()
-  const { showInfo } = useSiteMetadata()
 
-  const showFeature = useSiteMetadata()
-  const showPosts = useSiteMetadata()
-  const showResume = useSiteMetadata()
-  const showSocial = useSiteMetadata()
-  const showSkills = useSiteMetadata()
-  const showCover = useSiteMetadata()
-  const showfooter = useSiteMetadata()
+  const { showNav } = useSiteMetadata()
+  const { showInfo } = useSiteMetadata()
+  // const { showFeature } = useSiteMetadata()
+  const { showPosts } = useSiteMetadata()
+  const { showResume } = useSiteMetadata()
+  // const { showSocial } = useSiteMetadata()
+  const { showSkills } = useSiteMetadata()
+  // const { showCover } = useSiteMetadata()
+  // const { showfooter } = useSiteMetadata()
  
   const { menu1 } = useSiteMetadata()
   const { menu2 } = useSiteMetadata()
@@ -194,12 +195,21 @@ body::after{
             ) : (
   ""
 )}
+
        
+{showResume ? (
             <li className="grad" style={{position:'relative',}}>
               <AnchorLink className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
               {menu3}
               </AnchorLink>
               </li>
+            ) : (
+              ""
+            )}
+
+
+
+{showSkills ? (
               <li className="grad" style={{position:'relative',}}>
               {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
                 Contact <span className="mobilehide">Me</span>
@@ -207,6 +217,10 @@ body::after{
       
               <AnchorLink className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</AnchorLink>
               </li>
+
+              ) : (
+  ""
+)}
             
            
       
