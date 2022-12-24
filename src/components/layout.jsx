@@ -27,7 +27,7 @@ import { AiOutlineClose } from "react-icons/ai"
 // import Menu from "../components/menu1"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import SiteLogo from "../../static/assets/logo.svg"
+// import SiteLogo from "../../static/assets/logo.svg"
 import Bug from "../../static/assets/logo.svg"
 import Theme from "../components/theme"
 
@@ -54,8 +54,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export function Layout({ children }) {
 
-  
 
+  const { companyname } = useSiteMetadata()
   const CustomBox = styled.div`
 
  
@@ -65,6 +65,9 @@ export function Layout({ children }) {
 
 `
 
+// const SiteLogo = iconimage
+
+const SiteLogo = "../../assets/icon-512x512.png"
   const { iconimage } = useSiteMetadata()
   const { menu1 } = useSiteMetadata()
   // const { menu2 } = useSiteMetadata()
@@ -146,7 +149,26 @@ body::after{
 
 <ul id="menu" className="menu" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center', background:'radial-gradient(#111 14%,#222 140%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center'}}>
       
-      
+<li className="grad" style={{position:'relative', maxHeight:'60px', width:'auto'}}>
+      <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+
+      {iconimage ? (
+        
+companyname
+          ) : (
+            // <SiteLogo style={{maxHeight:'60px'}} />
+       <img className="" src={SiteLogo} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
+          )}
+
+          {/* {SiteLogo} */}
+          
+      {/* <SiteLogo style={{maxHeight:'60px'}} /> */}
+{/* 
+      <img className="" src={SiteLogo} alt="Logo" style={{maxHeight:'60px'}} /> */}
+      </AnchorLink>
+    </li>
+
+
 <li className="grad" style={{position:'relative',}}>
         <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
           About <span className="mobilehide">Me</span> 
@@ -157,12 +179,7 @@ body::after{
       <span className="mobilehide">My</span> Portfolio 
       </AnchorLink>
       </li>
-      <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
-      <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'1px solid'}}  aria-label="Link to Home" title="Back to Home">
-      <SiteLogo style={{maxHeight:'60px'}} />
-      {/* <img className="" src={iconimage} alt="Logo" style={{maxHeight:'60px'}} /> */}
-      </AnchorLink>
-    </li>
+ 
       <li className="grad" style={{position:'relative',}}>
         <AnchorLink className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
           My <span className="mobilehide">Resume</span> 
@@ -173,7 +190,7 @@ body::after{
           Contact <span className="mobilehide">Me</span>
         </AnchorLink> */}
 
-        <Link state={{modal: true}} to="/contact/"  className="navbar-item" style={{}}>Contact <span className="mobilehide">Me</span></Link>
+        <Link to="/#skills"  className="navbar-item" style={{}}><span className="mobilehide">My</span> Skills</Link>
         </li>
       
      
@@ -226,7 +243,7 @@ This is 2nd menu
 
     <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
     <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'0px solid'}}></Link>
-<SiteLogo />
+{/* <SiteLogo /> */}
  </li>
 
 
