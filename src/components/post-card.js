@@ -25,7 +25,7 @@ const PostCard = ({ data }) => (
 
 
     {data.frontmatter.featuredImage ? (
-      <Link state={{modal: true}} to={data.frontmatter.slug + "#posts"}>
+      <Link to={data.frontmatter.slug}>
         <GatsbyImage
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
