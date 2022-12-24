@@ -173,9 +173,16 @@ body::after{
           </li>
       
       
+
+   
+            <li className="hasapp" style={{position:'relative', display:'none'}}>
+            <Link to="/login" className="button" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
+              </li>
+
+
           
           {showInfo ? (
-            <li className="grad" style={{position:'relative',}}>
+            <li className="noapp" style={{position:'relative',}}>
               <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
               {menu1}
               </AnchorLink>
