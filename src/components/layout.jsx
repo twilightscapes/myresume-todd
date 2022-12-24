@@ -26,6 +26,10 @@ import { AiOutlineClose } from "react-icons/ai"
 // import Fullscreen from "../components/FullScreen"
 // import Menu from "../components/menu1"
 
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import SiteLogo from "../../static/assets/logo.svg"
+import Bug from "../../static/assets/logo.svg"
+import Theme from "../components/theme"
 
 // import '@fontsource/roboto'
 
@@ -118,7 +122,7 @@ body::after{
       <div style={{overflow:'', display:'flex', justifyContent:'center'}}>
         {modal ? (
           <>
-          <div id="closeicon" style={{position:'fixed', top:'2vh', right:'10vw', zIndex:'2', color:'inherit !important', }}>
+          <div id="closeicon" style={{position:'fixed', top:'80px', right:'10vw', zIndex:'103005', color:'inherit !important', }}>
           <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important',  }}>
             <AiOutlineClose style={{fontSize:'', textShadow:'4px 4px 0px #111', filter:'drop-shadow(2px 2px 0px #000)', fontWeight:'bold', border:'2px solid', width:'30px', height:'30px', borderRadius:'100%'}}/>
             {/* <span style={{fontSize:'0px', textShadow:'4px 4px 4px #111', filter:'drop-shadow(2px 2px 4px #000) !important', fontWeight:'bold', border:'2px solid', width:'50px', borderRadius:'100%'}}>X</span> */}
@@ -138,85 +142,175 @@ body::after{
 
   
 {/* <header name="pagetop" className={isVisible ? 'left' : ''} > */}
-<header name="pagetop" className="">
+<header id="top" className="print" name="pagetop" style={{}} >
+
+<ul id="menu" className="menu" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center', background:'radial-gradient(#111 14%,#222 140%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center'}}>
+      
+      
+<li className="grad" style={{position:'relative',}}>
+        <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+          About <span className="mobilehide">Me</span> 
+        </AnchorLink>
+        </li>
+      <li className="grad" style={{position:'relative',}}>
+      <AnchorLink className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
+      <span className="mobilehide">My</span> Portfolio 
+      </AnchorLink>
+      </li>
+      <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
+      <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'1px solid'}}  aria-label="Link to Home" title="Back to Home">
+      <SiteLogo style={{maxHeight:'60px'}} />
+      {/* <img className="" src={iconimage} alt="Logo" style={{maxHeight:'60px'}} /> */}
+      </AnchorLink>
+    </li>
+      <li className="grad" style={{position:'relative',}}>
+        <AnchorLink className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+          My <span className="mobilehide">Resume</span> 
+        </AnchorLink>
+        </li>
+        <li className="grad" style={{position:'relative',}}>
+        {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
+          Contact <span className="mobilehide">Me</span>
+        </AnchorLink> */}
+
+        <Link state={{modal: true}} to="/contact/"  className="navbar-item" style={{}}>Contact <span className="mobilehide">Me</span></Link>
+        </li>
+      
+     
+
+      </ul>
+
+
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
-  <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle" style={{display:'none'}}>
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'80px', color:'#fff', borderRadius:'12px'}}>
-<StaticImage className="" src="../../static/assets/icon-512x512.png" alt="Logo" style={{borderRadius:'12px'}} /></div>
-  </label>
+<div id="secondMenu" className="" style={{marginTop:'5rem', display:'none'}}>
+<ul className="sidebarMenuInner post-card" style={{}}>
+{/* <Install /> */}
+{/* <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+Woot
+</li>
+<li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+This is 2nd menu
+</li> */}
 
-  {/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle popped">
-<div className="spinner diagonal part-1"></div>
-    <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div>
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 2px #000'}}>MENU</div>
+</ul>
+</div>
+
+<>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
+  <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /></label>
+
+{/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
+
+<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'none' }}/> 
+
+</div>
   </label> */}
 
+  
+  {/* <Install /> */}
 
- <label aria-label="Background clicks close menu" id="menubgcloser" htmlFor="openSidebarMenu" className="backdrop1" ></label>
 
- <div id="sidebarMenu" className="" style={{minWidth:'', width:''}}>
+
+
+   <div id="sidebarMenu" style={{minWidth:'', width:'',}}>
+  
+{/* <div className="no-app promocode">
+30% OFF CODE: <span style={{color:'var(--primary-color)', fontWeight:'bold'}}>LoveTheNight</span>
+</div> */}
+
   
 
-  <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'', display:'', justifyContent:''}}>
+    <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
-     {/* <li className="carta" style={{border:'none', margin:'1rem 0', textAlign:'center'}}>
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
- </li> */}
- <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-
- {/* <Link to="/">
-<img src={iconimage} alt="Logo" width="100%" height="100%" />
-</Link> */}
-
-<Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
-
-{/* <img src={iconimage} alt="Logo" width="100%" height="100%" /> */}
-
-
-{/* <Link to="/">
-<StaticImage src="../../static/assets/icon-512x512.png" alt="Logo" width="100%" height="100%" />
-</Link> */}
-
-<object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="VidSocks Animated Logo" title="VidSocks Animated Logo" >VidSocks Animated Logo</object>
-{/* <Link to="/">
-<LogoText style={{width:'100%', height:''}} />
-</Link> */}
+    <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+    <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'0px solid'}}></Link>
+<SiteLogo />
  </li>
 
 
 
-  <li className="carto no-app" style={{textAlign:'center'}}>
- <Link className="navbar-item txtshadow" to="/contact/">
- {menu1}
-</Link>
+
+
+
+
+
+
+
+
+
+{/* <li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
+              <Link className="navbar-item txtshadow" to="/about/">
+
+              About Us
+
+              </Link>
+      </li>  */}
+
+
+
+<li className="carto" style={{textAlign:'', pointerEvents:''}}>
+      <Link className="navbar-item txtshadow" to="/minutes/">
+
+      Latest Posts
+
+        </Link>
 </li>
 
-{/* <li className="carto no-app" style={{textAlign:'center'}}>
- <Link className="navbar-item txtshadow" to="/about/">
- {menu2}
-</Link>
+<li className="carto" style={{textAlign:'', pointerEvents:''}}>
+      <Link className="navbar-item txtshadow" to="/minutes/">
+
+      Archived Posts
+
+        </Link>
+</li>
+
+
+
+{/* <li className="carto" style={{textAlign:'', pointerEvents:''}}>
+      <Link state={{modal: true}} className="navbar-item txtshadow" to="/contact/">
+
+      Contact Us
+
+        </Link>
 </li> */}
 
-      <li className="carto" style={{textAlign:'center', paddingTop:'1rem'}}>
-              <Link title="Examples" className="navbar-item txtshadow neonText" to="/posts/">
-              {menu3}
-              </Link>
-      </li>
 
- 
-      <li className="carta">
-      <div style={{display:'flex', justifyContent:'center'}}>
-<button className="back" onClick={()=>navigate(-1)} style={{padding:'4px 8px', borderRadius:'12px'}}>
-        {" "} Continue Choosing 
-</button>
-</div>
-      </li>
+
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
+  
+      <Theme  style={{padding:'0'}} />
+   {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
+    <span className="carto"><SearchIcon /></span>
+   </Link>
    
-</ul>
-    </div>
+   <CartButton quantity={quantity} /> */}
+
+
+        </li>
+
+    </ul>
+
+  </div>
+
+      {/* <Toast show={loading || didJustAddToCart} >
+        {!didJustAddToCart ? (
+          "Updating…"
+        ) : (
+          <>
+            Added to cart{" "}
+            <div style={{fontSize:'30px', marginLeft:'10px'}}><ImArrowRight /></div>
+          </>
+        )}
+      </Toast> */}
+ 
+      {/* <Link to="/search" style={{display:'flex', verticalAlign:'center', marginTop:'12px', marginRight:'20px'}}>
+    <span><SearchIcon /></span>
+   </Link>
+
+  <div style={{marginTop:'5px'}}><CartButton quantity={quantity} /></div> */}
+     
 </header>
 
 

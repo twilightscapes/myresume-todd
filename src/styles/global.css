@@ -5,6 +5,7 @@ body {
 
 	overflow-x: hidden !important;
 	width: 100vw;
+  margin-top:7vh;
 }
 
 
@@ -706,11 +707,18 @@ p {
 	}
 }
 
+
+
+
+
+
 .mobilefix {
 	margin: -120px 0 30px 0;
 	z-index: 1;
 	position: relative;
 }
+
+
 
 .flexbutt {
 	display: flex;
@@ -784,6 +792,8 @@ p {
 	border: 0px solid #ad04a5 !important;
 }
 
+
+
 @media (max-width: 48rem) {
 	.flexbutt {
 	flex-direction: column !important;
@@ -807,6 +817,8 @@ p {
 	padding-top: 40vh;
 	}
 }
+
+
 
 .hover .flexcheek:hover {
 	background: rgba(0,0,0,0.70) !important;
@@ -2737,7 +2749,7 @@ article img {
 }
 
 
-
+#menu ul, #menu li{list-style: none;  }
 
 .frontcontent {
 	width: 100%;
