@@ -1,10 +1,10 @@
 ---
 slug: /
-tagline: Independent artist, photographer, designer and developer. Todd imagines things & makes them come to life.
+tagline:  An artist, photographer, designer and developer; Todd imagines things & makes them come to life.
 showInfo: "1"
 showSocial: true
-featuredImage: /assets/default-og-image.jpg
-youtuber: "https://youtu.be/Izukxr-SfsM"
+featuredImage: /assets/challenger.webp
+youtuber: "https://youtu.be/ESGJ42zshL8"
 secondaryImage: /assets/og-image.png
 underlayImage: /assets/IMG_1019.webp
 profText: <p>Todd Lambert is an award-winning web designer and photographer that trained in Southern California and has traveled and lived in over 16 Western states.</p>
@@ -24,7 +24,7 @@ portfolio:
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
 showResume: "1"
-youtubeautostart: ""
+youtubeautostart: "1"
 showPosts: "1"
 addressText2: ""
 cta:
@@ -32,8 +32,8 @@ cta:
   ctaLink: ""
 svgImage: /assets/transparent.png
 title: Digital Product Designer
-youtubeend: ""
-showFeature: false
+youtubeend: "50"
+showFeature: true
 shareable: ""
 youtubecontrols: "1"
 template: index-page
@@ -46,7 +46,7 @@ profTitle: Digital Product Designer
 coverletter:
   coverText: Cover Letter
   coverLink: ""
-youtubestart: "1"
+youtubestart: "42"
 ---
 <!-- Do not delete -->
 
