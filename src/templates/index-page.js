@@ -535,7 +535,7 @@ const YouTube = frontmatter.youtuber
 <br />
 {frontmatter.addressText2}
 <br />
-<Link state={{modal: true}} to="/contact#info" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Contact Me</Link>
+<Link state={{modal: true}} to="/contact#info" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center' }}>Contact Me</Link>
 
 {showSocial ? (
            <Social />
@@ -581,7 +581,7 @@ const YouTube = frontmatter.youtuber
     }}>{frontmatter.cta.ctaText}
 </a>
           ) : (
-            <Link state={{modal: true}} to="/contact#info" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px', padding:'1rem'}}>{frontmatter.cta.ctaText}</Link>
+            <Link state={{modal: true}} to="/contact#info" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
@@ -650,16 +650,16 @@ const YouTube = frontmatter.youtuber
 {/* end show Posts */}
 {showPosts ? (
 
-<div id="posts" name="posts" style={{margin:'20vh 0', background:'inherit'}}>
+<div id="posts" name="posts" style={{margin:'20vh 0 0 0', background:'inherit'}}>
 
 
-<div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'60vh', overflow:'hidden', position:'relative',}}>
+<div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'80vh', overflow:'hidden', position:'relative',}}>
 
 <div className="RArrow"><span></span></div>
 
 
 
-<div className="horizontal-scroll-wrapper squares" style={{margin:'0 auto 0 auto', width:'calc(60vw + 1px)', transform: 'rotate(-90deg) translateY(-60vw)', padding:'20px'}}>
+<div className="horizontal-scroll-wrapper squares" style={{margin:'0 auto 0 auto', width:'calc(80vw + 1px)', transform: 'rotate(-90deg) translateY(-80vw)', padding:'0'}}>
 
 
 
