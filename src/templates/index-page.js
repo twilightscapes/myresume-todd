@@ -249,19 +249,21 @@ const YouTube = frontmatter.youtuber
       loop
       playsinline
       playIcon={
-        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'200px'}}>
 
-<div style={{display:'flex', flexDirection:'', height:'', margin:'20vh auto 0 auto', width:'100%', border:'0px solid yellow'}}>
+
+
+    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'5vh auto'}}>
+    
+    <div style={{position:'relative', maxWidth:'100vw', margin:'0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'20vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
+
+
+<div style={{display:'flex', flexDirection:'', height:'', margin:'1vh auto 0 auto', width:'100%', border:'0px solid yellow'}}>
                 <div style={{ background:'rgba(0,0,0,0.30)', fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)', }}>Play <ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} /></div>
                 
             </div>
-
-    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
-    
-
-      <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div>
 
 
       </div>
@@ -310,7 +312,7 @@ const YouTube = frontmatter.youtuber
   <article>
 
 
-  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
     
 

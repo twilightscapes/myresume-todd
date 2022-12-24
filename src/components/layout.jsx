@@ -154,10 +154,10 @@ body::after{
 
       {iconimage ? (
         
-companyname
+// <SiteLogo style={{maxHeight:'60px'}} />
+<img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
           ) : (
-            // <SiteLogo style={{maxHeight:'60px'}} />
-       <img className="" src={SiteLogo} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
+            companyname
           )}
 
           {/* {SiteLogo} */}
