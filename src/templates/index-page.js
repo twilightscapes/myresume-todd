@@ -267,7 +267,7 @@ const YouTube = frontmatter.youtuber
 
     {iconimage ? (
         
-        <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'20vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+        <img className="homepage-bg" src={iconimage} width="500px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'40vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
                   ) : (
                     ""
                   )}
