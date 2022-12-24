@@ -637,26 +637,26 @@ const YouTube = frontmatter.youtuber
 
 
 <div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <a className="noexit" href="https://twilightscapes.com"  target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>
     <StaticImage src="../../static/assets/twilightscapes-button.jpg" alt="Todd Lambert Night photos"  /></a>
    
     <p style={{padding:'1rem 2rem 0 2rem'}}>Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the night like you&apos;ve never seen it before.</p>
    <br />
-    <div style={{textAlign:'center',}}><a className="post-card button " href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>Twilightscapes.com</a></div>
+    <div style={{textAlign:'center',}}><a className="" href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>Twilightscapes.com</a></div>
     
     </div>
 
 
 
     <div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://tron.allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <a className="noexit" href="https://tron.allin60.com"  target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>
     <StaticImage src="../../static/assets/tronin60.jpg" alt="TRON movie in only 60 seconds"  /></a>
     
     <p style={{padding:'1rem 2rem 0 2rem'}}>
     TRON, recreated in a dynamic multimedia format and it's all in 60 seconds. Rediscover your favorite movie in just 60 seconds. Enter the Grid - now.
 </p>
    <br />
-    <div style={{textAlign:'center',}}><a className="post-card button " href="https://tron.allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>Tron.Allin60.com</a></div>
+    <div style={{textAlign:'center',}}><a className="" href="https://tron.allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>Tron.Allin60.com</a></div>
     
     </div>
 
@@ -666,13 +666,13 @@ const YouTube = frontmatter.youtuber
 
 
     <div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
+    <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>
     <StaticImage src="../../static/assets/vidsock-promo.jpg" alt="Todd builds Web Apps"  /></a>
    
     <p style={{padding:'1rem 2rem 0 2rem'}}>
 Todd sells exceptionally fast and well-built multimedia web apps called VidSocks. They are a complete website solution that get top ranks in Google!
     </p><br />
-    <div style={{textAlign:'center',}}><a className="post-card button " href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>VidSocks.com</a></div>
+    <div style={{textAlign:'center',}}><a className="" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>VidSocks.com</a></div>
     
     </div>
 
@@ -680,14 +680,14 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
     <div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <a className="noexit" href="https://allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>
     <StaticImage src="../../static/assets/allin60seconds.jpg" alt="Popular movies in only 60 seconds"  /></a>
 
     <p style={{padding:'1rem 2rem 0 2rem'}}>
     Today's most popular movies are recreated in a dynamic multimedia format and it's all in 60 seconds. Experience your favorite movies again in fast 60 second snippets.
 </p>
    <br />
-    <div style={{textAlign:'center',}}><a className="post-card button " href="https://allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>Allin60.com</a></div>
+    <div style={{textAlign:'center',}}><a className="" href="https://allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>Allin60.com</a></div>
     
     </div>
 
@@ -704,7 +704,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
     <p style={{padding:'1rem 2rem 0 2rem'}}>
     Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
     </p><br />
-    <div style={{textAlign:'center',}}><a className="post-card button " href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>UrbanFetish.com</a></div>
+    <div style={{textAlign:'center',}}><a className="" href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>UrbanFetish.com</a></div>
     
     </div>
 
