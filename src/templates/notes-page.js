@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import GoBack from "../components/goBack"
+// import GoBack from "../components/goBack"
 import { Footer } from "../components/footer"
 export const pageQuery = graphql`
   query notesQuery($id: String!) {
