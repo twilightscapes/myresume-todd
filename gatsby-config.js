@@ -145,7 +145,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        modulePath: ``, // default: undefined
+        modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `MyResume CMS`,
