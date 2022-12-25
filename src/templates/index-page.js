@@ -655,10 +655,10 @@ const YouTube = frontmatter.youtuber
 {/* end show Posts */}
 {showPosts ? (
 
-<div id="posts" name="posts" style={{margin:'20vh 0 0 0', background:'inherit'}}>
+<div id="posts" name="posts" style={{margin:'20vh 0 0 0', background:'inherit', maxHeight:'70vh'}}>
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'100vh', marginTop:'100px'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', marginTop:'0'}}>
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
@@ -689,7 +689,7 @@ const YouTube = frontmatter.youtuber
           )}
 
 
-<div style={{ fontWeight:'bold', marginLeft:'5rem', padding:'0 0 0 30%', fontSize:'2rem', borderLeft:'3px dotted #666', display:'flex', flexDirection:'column', justifyContent: 'center', height:'55vh'}}>
+<div style={{ fontWeight:'bold', marginLeft:'5rem', padding:'0 0 0 30%', fontSize:'2rem', borderLeft:'3px dotted #666', display:'flex', flexDirection:'column', justifyContent: 'center', height:'100vh'}}>
   <div style={{}}>LIVE EXAMPLES:</div>
 </div>
 
@@ -806,7 +806,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 {showSkills ? (
-  <section className="no-app" id="skills" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'2rem auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
+  <section className="no-app" id="skills" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'20vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
            <dl>
            <dt>
            <h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>

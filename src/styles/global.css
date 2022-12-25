@@ -942,9 +942,9 @@ p {
 	height: 40px !important;
 	}
 
-	#info {
+	/* #info {
 	margin-bottom: 155px !important;
-	}
+	} */
 }
 
 .has-app {
@@ -2018,7 +2018,7 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 }
 
 ::-webkit-scrollbar-track {
-	background: #111;
+	background: inherit;
 
  ;
 }
