@@ -13,7 +13,7 @@ const Login = () => (
       style={{
         textAlign: "center",
         width:'80%',
-        margin:'0 auto',
+        margin:'60px auto 0 auto',
         minHeight:'100vh'
       }}
     >
