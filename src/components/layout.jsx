@@ -198,9 +198,13 @@ body::after{
 )}
       
 
+<li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/posts" className="navbar-item" style={{paddingRight:'',}}>{menu2}</Link>
+ </li>
+
 
       {showPosts ? (
-            <li className="" style={{position:'relative',}}>
+            <li className="no-app" style={{position:'relative',}}>
             <AnchorLink className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
             {menu2}
             </AnchorLink>

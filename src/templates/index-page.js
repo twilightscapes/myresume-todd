@@ -641,7 +641,7 @@ const YouTube = frontmatter.youtuber
 
 
 {UnderlayImage ? (
-  <div style={{height:'10vh'}} />
+  <div className="no-app" style={{height:'10vh'}} />
 ) : (
   ""
 )}
