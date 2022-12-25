@@ -1,11 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
 
-
+import styled from "styled-components"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 
+const CustomBox = styled.div`
+#nc-root iframe main{
+  background-color:#ff0000 !important;
+}
+
+`
+
 const Login = () => (
+  <CustomBox style={{}}>
   <Layout className="thanks-page">
     <Seo title="Login" />
 
@@ -25,6 +33,7 @@ const Login = () => (
     
     {/* <div className="spacer66"></div>  */}
   </Layout>
+  </CustomBox>
 )
 
 export default Login
