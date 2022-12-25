@@ -18,7 +18,7 @@ profText: <p>Todd Lambert is an award-winning web designer and photographer that
   night shooting astrophotography which is his favorite subject.</p>
 addressText: Gulf Coast, USA
 portfolio:
-  openText: ""
+  openText: "Bad Mojo Rising"
   closeText: Experience has taught me that good design is not created on a spur of
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is

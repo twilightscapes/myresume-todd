@@ -129,6 +129,12 @@ collections:
           - { label: "Your Address", name: "addressText", widget: "string", required: false }
           - { label: "Your Address 2", name: "addressText2", widget: "string", required: false }
 
+          - { label: "Portfolio Quote - Opening", name: "openQuote", widget: "string",
+           required: false }
+
+          - { label: "Portfolio Quote - Closing", name: "closeQuote", widget: "string",
+           required: false }
+
 
           - { label: "Resume", name: "body", widget: "markdown" }
 
