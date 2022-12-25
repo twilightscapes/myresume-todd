@@ -1,38 +1,24 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React from 'react'
+// import React, { useState, useRef } from "react";
+import React from "react"
 // import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 // import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { StaticImage } from "gatsby-plugin-image"
-
+import { ImPlay } from "react-icons/im"
+import ReactPlayer from 'react-player/lazy'
+// import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
-
+// import { Footer } from "../components/footer"
 
 import PostCard from "../components/post-card"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 
 
-// import { Slide } from 'react-slideshow-image'
-// import 'react-slideshow-image/dist/styles.css'
-
-
-// import Gall1 from '../components/gallery1'
-
-// const properties = {
-//   duration: 4000,
-//   transitionDuration: 500,
-//   infinite: true,
-//   indicators: false,
-//   easing: 'easeIn',
-//   arrows: true,
-
-//   prevArrow: <div style={{width: "40px", marginRight: "10px", zIndex:'1', cursor:'pointer', dropShadow:'(30px 10px 4px #4444dd)', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z"/></svg></div>,
-//   nextArrow: <div style={{width: "40px", marginLeft: "10px", zIndex:'0', cursor:'pointer', filter:'drop-shadow(0px 0px 10px rgba(0,0,0,.5))'}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#fff"><path d="M512 256L270 42.6v138.2H0v150.6h270v138z"/></svg></div>
-// };
 
 
 
@@ -79,10 +65,16 @@ export const blogListQuery = graphql`
   }
 `
 const Pagination = props => (
-  <div className="pagination" sx={styles.pagination}>
-    <ul>
+
+
+
+
+
+  <div className="pagination" sx={styles.pagination} style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
+    <h1>Archive of Posts:</h1>
+    <ul style={{background:'#222', width:'80vw', position:'relative', top:'', margin:'0 auto', padding:'0 10%', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
       {!props.isFirst && (
-        <li>
+        <li style={{}}>
           <Link to={props.prevPage} rel="prev">
             <span className="icon -left">
               <RiArrowLeftLine />
@@ -118,7 +110,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/archive/"
+    const blogSlug = "/posts/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -138,305 +130,111 @@ class BlogIndex extends React.Component {
       nextPage,
     }
 
+
+
+
+    
+    
+
+
     return (
       <Layout className="blog-page1">
 <Helmet>
   <body className="bloglist" />
 </Helmet>
         <Seo
-          title={"Archive — Page " + currentPage + " of " + numPages}
+          title={"TRON Archive — Page " + currentPage + " of " + numPages}
           description={
-            "Archive page " + currentPage + " of " + numPages
+            "TRON Archive page " + currentPage + " of " + numPages
           }
         />
         
 
-{/* <h1 style={{padding:'10px', margin:'0'}}>Articles</h1> */}
 
-
-
-        
-
-
-{/* <Gall1 /> */}
-
-<br />
-{/* <div style={{ maxHeight:'30%'}}>
-<Slide {...properties} style={{zIndex:'-1'}}>
-<article
-    className="post-card1 each-slide"
-    sx={{
-      // bg: "cardBg",
-      position: 'relative',
-      border:'0px solid blue'
-    }}
-  >
-
-<Link
-      className=""
-      to="/favorites/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Popular Favorites"
-    >
-    
-    <div >
-      <StaticImage src="../img/homepage.jpg" alt="Popular Favorites" />
-    </div>
-    
-
-  <div style={{position:'absolute', top:'30%', right:'10vw', border:'0px solid green', fontSize:'8vw'}}>Popular Favorites</div>
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
-    <Link
-            to="/favorites/"
-            className="button box-shadow"
-            sx={{
-              variant: "variants.button",
+        <div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>
+<ReactPlayer
+         className='frontbg'
+         url=""
+         width="100%"
+         height="100vh"
+         playing
+            controls={false}
+            light={false}
+            loop={true}
+            muted={true}
+            config={{
+              file: {
+                attributes: {
+                  crossorigin: "anonymous",
+                },
+              },
+              youtube: {
+                playerVars: { showinfo:0, controls:0, start:20, end:41, mute:1 }
+              },
             }}
-          >
-       View the Gallery
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-</div>
+
+          playsinline
+            playIcon={
+              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'5', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+  
+          <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+            
+  
+            <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+    {/* <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
+  </div>
         
-
-</Link>
-</article>
-
-
-
-
-<article
-    className="post-card1 each-slide"
-    sx={{
-      // bg: "cardBg",
-      position: 'relative',
-    }}
-  >
-
-<Link
-      className=""
-      to="/cars/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Relics of Rust"
-    >
-    
-    <div >
-    <StaticImage src="../img/cars/night400.jpg" alt="Abandoned car in Paris TX" />
-    </div>
-    
-
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Relics of Rust</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
-    <Link
-            to="/cars/"
-            className="button box-shadow"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-       View the Gallery
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-</div>
-
-
-</Link>
-</article>
+            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+            </div>
+            </button>}
+         
+          /></div>
 
 
 
 
+{/* <div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0', marginTop:'0', padding:'4%'}}> */}
 
 
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'100vh', marginTop:'100px'}}>
 
-
-
-
-
-
-
-<article
-    className="post-card1 each-slide"
-    sx={{
-      // bg: "cardBg",
-      position: 'relative',
-    }}
-  >
-
-<Link
-      className=""
-      to="/ghosttowns/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Ghost Towns"
-    >
-    
-    <div >
-    <StaticImage src="../img/ghosttowns/night305.jpg" alt="Todd photographs ghost towns" />
-    </div>
-    
-
-  <div style={{position:'absolute', top:'30%', right:'10vw', fontSize:'8vw'}}>Ghost Towns</div>
-
-
-  <div style={{position:'absolute', top:'50%', right:'10vw', fontSize:'8vw'}}>
-    <Link
-            to="/ghosttowns/"
-            className="button box-shadow"
-            sx={{
-              variant: "variants.button",
-            }}
-          >
-       View the Gallery
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-</div>
-
-
-</Link>
-</article>
-
-
-
-
-
-
-
-
-
-
-</Slide>
-</div>
-
-<br />
-
-
-
-
-
-
-<div className="grids col-1 sm-2 lg-3" style={{display:'none'}}>
-      
-    <article
-    className="post-card"
-    sx={{
-      bg: "cardBg",
-      position:'relative'
-    }}
-  >
-     <Link
-      className=""
-      to="/favorites/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Popular Favorites"
-    >
-      
-      <div >
-      <StaticImage src="../img/homepage.jpg" alt="Popular Favorites" />
-        </div><div className="post-content"><h2 className="title">Popular Favorites</h2><p className="meta">If you're new here, start here!</p></div>
-        
-       <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
-</Link>
-    </article>
-
-    <article
-    className="post-card"
-    sx={{
-      bg: "cardBg",
-      position:'relative'
-    }}
-  >
-    <Link
-      className=""
-      to="/cars/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Relics of Rust"
-    >
-<div >
-      <StaticImage src="../img/cars/night400.jpg" alt="Abandoned car in paris TX" />
-        </div><div className="post-content"><h2 className="title">Relics of Rust</h2><p className="meta">Todd's favorite subject matter</p></div>
-        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
-</Link>
-    </article>
-
-
-   
-
-
-    <article
-    className="post-card"
-    sx={{
-      bg: "cardBg",
-      position:'relative'
-    }}
-  >
-    <Link
-      className=""
-      to="/ghosttowns/"
-      sx={{
-        variant: "variants.button",
-      }}
-      title="Ghost Towns"
-    >
-     <div >
-
-      <StaticImage src="../img/ghosttowns/night305.jpg" alt="Ghosttowns" />
-        </div><div className="post-content"><h2 className="title">Ghost Towns</h2><p className="meta">The real Old West comes alive at night</p></div>
-        <div style={{position:'absolute', top:'30px', right:'30px', fontSize:'20px'}}><RiStarLine /></div>
-        </Link>
-    </article>
-
-
-
-    
-    </div> */}
-
-
-<div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'60px 0 0 0', marginTop:'0', padding:'4%'}}>
-
-
-<h1 className="headline neonText" style={{fontSize:'250%', textAlign:'center', margin:'0', padding:'0'}}>Portfolio</h1>
+{/* <h1 className="headline neonText" style={{fontSize:'250%', textAlign:'center', margin:'0', padding:'0'}}>Archive</h1> */}
 {/* VidSock - The World's First Multimedia 3D Blog for creating, hosting and marketing the next generation of NFTs. */}
 
 {/* onFocus={disableBodyScroll()} */}
-<Pagination {...props} />
+
  {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
 
 
- {/* <section style={{height:'auto'}}>
-  <Link to="/#posts" style={{display:'block', width:'100%'}}><article className="post-card" style={{height:'50%', display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', padding:'2rem', fontSize:'200%', textAlign:'center' }}>
-  <RiArrowLeftLine style={{fontSize:'50px'}} /> View Newest 
-    </article></Link>
-    </section> */}
+ <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
 
+
+ <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
+ {/* <article style={{textAlign:'center',}}><Link className="post-card button " to="/#posts" style={{textDecoration:'none', color:'inherit',}}><RiArrowLeftLine style={{fontSize:'20px'}} />  View Newest</Link></article> */}
+
+
+  {/* <Link to="/#posts" style={{display:'block',}}>
+    <article className="post-card button" style={{ display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', textAlign:'center' }}>
+  <RiArrowLeftLine style={{fontSize:'20px'}} /> View Newest 
+    </article></Link> */}
+
+
+    
+{/* 
  <section style={{height:'auto'}}>
-  <article className="" style={{height:'auto'}}>
+  <article className="" style={{height:'auto'}}> */}
+
+{/* <Pagination {...props} /> */}
+
 
  {posts}
 
-</article>
-</section>
+{/* </article>
+</section> */}
 
         <Pagination {...props} />
-
+</div>
 
         
 
@@ -448,7 +246,8 @@ class BlogIndex extends React.Component {
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation> */}
- <br /><br />
+{/* 
+ <Footer /> */}
       </Layout>
     )
   }

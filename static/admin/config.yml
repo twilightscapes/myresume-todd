@@ -124,7 +124,7 @@ collections:
           - { label: "Profile Title", name: "profTitle", widget: "string",
            required: false }
 
-          - { label: "Profile text (intro)", name: "profText", widget: "string", required: false }
+          - { label: "Profile text (intro)", name: "profText", widget: "markdown", required: false }
 
           - { label: "Your Address", name: "addressText", widget: "string", required: false }
           - { label: "Your Address 2", name: "addressText2", widget: "string", required: false }

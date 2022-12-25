@@ -80,6 +80,8 @@ export const pageQuery = graphql`
         profText
         addressText
         addressText2
+        skillsTitle
+        skillsText
         svgzindex
         tagline
         featuredImage {
@@ -123,7 +125,7 @@ export const pageQuery = graphql`
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 9
+      limit: 5
     ) {
       edges {
         node {
@@ -176,6 +178,8 @@ const HomePage = ({ data }) => {
     const YouTubeMute = frontmatter.youtubemute
     const YouTubeControls = frontmatter.youtubecontrols
     const YouTubeAutostart = frontmatter.youtubeautostart
+    // const SkillsTitle = frontmatter.skillsTitle
+    const SkillsText = frontmatter.skillsText
     
     const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
@@ -654,17 +658,9 @@ const YouTube = frontmatter.youtuber
 <div id="posts" name="posts" style={{margin:'20vh 0 0 0', background:'inherit'}}>
 
 
-<div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'80vh', overflow:'hidden', position:'relative',}}>
-
-<div className="RArrow"><span></span></div>
-
-
-
-<div className="horizontal-scroll-wrapper squares" style={{margin:'0 auto 0 auto', width:'calc(80vw + 1px)', transform: 'rotate(-90deg) translateY(-80vw)', padding:'0'}}>
-
-
-
-<div className="introspacer" style={{}}></div>
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'100vh', marginTop:'100px'}}>
+ <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
+ <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 {openQuote ? (
             
@@ -679,7 +675,8 @@ const YouTube = frontmatter.youtuber
 
 
         <BlogListHome data={posts} />
-        
+        <div style={{textAlign:'center'}}><Link className="button " to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+        </div>
 
 {closeQuote ? (
 
@@ -796,18 +793,36 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 
-<section className="no-app" id="skills" style={{ display:'', height:'', overflow:'', margin:'0 0 0 0', position:'relative'}}>
 
-{/* <Skills /> */}
+
+
+
+
+
+            
+
+
+{/* <Link state={{modal: true}} stripHash to="/skills#skills" className="button print no-app" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>View Skills &amp; Capabilities</Link> */}
 
 
 {showSkills ? (
-           <Link state={{modal: true}} stripHash to="/skills#skills" className="button print no-app" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>View Skills &amp; Capabilities</Link>
-       
+  <section className="no-app" id="skills" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
+           <dl>
+           <dt>
+           <h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>
+           </dt>
+                 <div
+                     style={{paddingBottom:'2rem'}}
+                       className="description"
+                       dangerouslySetInnerHTML={{ __html: SkillsText }}
+                     />
+                 </dl>
+                 </section>
           ) : (
             ""
           )}
-</section>
+
+
 
 
 
