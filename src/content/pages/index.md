@@ -7,18 +7,27 @@ featuredImage: /assets/challenger.webp
 youtuber: https://youtu.be/ESGJ42zshL8
 secondaryImage: /assets/og-image.png
 underlayImage: /assets/IMG_1019.webp
-profText: <p>Todd Lambert is an award-winning web designer and photographer that
-  trained in Southern California and has traveled and lived in over 16 Western
+profText: >-
+  <p>Todd Lambert is an award-winning web designer and photographer that trained
+  in Southern California and has traveled and lived in over 16 Western
   states.</p> <p>Todd's skills include all facets of online and multimedia
   creation including HTML emails, online ads, user interface design, information
   architecture, web navigation, branding, web graphics, cross-platform and
   cross-browser web applications, web template creation & CMS
   implementations.</p><p>When Todd is not online, he is often found pushing the
   boundaries of night photography. You can usually find him in the middle of the
-  night shooting astrophotography which is his favorite subject.</p>
+  night shooting astrophotography which is his favorite subject.</p><dl>
+
+  <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
+    <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
+    <dd class="percentage percentage-85"><span class="text">WordPress</span> <span class="percent">85%</span></dd>
+    <dd class="percentage percentage-75"><span class="text">Javascript</span> <span class="percent">75%</span></dd>
+    <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
+    <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
+    </dl>
 addressText: Gulf Coast, USA
 portfolio:
-  openText: "Bad Mojo Rising"
+  openText: Bad Mojo Rising
   closeText: Experience has taught me that good design is not created on a spur of
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is
