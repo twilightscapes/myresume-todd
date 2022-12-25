@@ -194,60 +194,15 @@ class BlogIndex extends React.Component {
 
 
 
-{/* <div id="contentscroll" name="container2" className="container" style={{display:'', justifySelf:'', width:'100%', maxWidth:'100%', height:'', border:'0px solid #000 !important', margin:'0', marginTop:'0', padding:'4%'}}> */}
-
-
 <div className="horizontal-holder allin60panel" style={{position:'relative', height:'100vh', marginTop:'100px'}}>
-
-{/* <h1 className="headline neonText" style={{fontSize:'250%', textAlign:'center', margin:'0', padding:'0'}}>Archive</h1> */}
-{/* VidSock - The World's First Multimedia 3D Blog for creating, hosting and marketing the next generation of NFTs. */}
-
-{/* onFocus={disableBodyScroll()} */}
-
- {/* <div className="home-posts grids col-1 sm-2 lg-3" style={{clear:'both', textAlign:'left'}}> */}
-
-
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
-
-
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
- {/* <article style={{textAlign:'center',}}><Link className="post-card button " to="/#posts" style={{textDecoration:'none', color:'inherit',}}><RiArrowLeftLine style={{fontSize:'20px'}} />  View Newest</Link></article> */}
-
-
-  {/* <Link to="/#posts" style={{display:'block',}}>
-    <article className="post-card button" style={{ display:'flex', flexDirection:'row', justifyContent:'center', border:'1px solid', textAlign:'center' }}>
-  <RiArrowLeftLine style={{fontSize:'20px'}} /> View Newest 
-    </article></Link> */}
-
-
-    
-{/* 
- <section style={{height:'auto'}}>
-  <article className="" style={{height:'auto'}}> */}
-
-{/* <Pagination {...props} /> */}
-
-
  {posts}
-
-{/* </article>
-</section> */}
-
-        <Pagination {...props} />
-</div>
-
-        
-
+<Pagination {...props} />
+</div> 
 </div>
 
 
-{/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a suggestion for an article?</h3>
-
-<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation> */}
-{/* 
- <Footer /> */}
       </Layout>
     )
   }

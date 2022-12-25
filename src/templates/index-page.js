@@ -806,7 +806,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 {showSkills ? (
-  <section className="no-app" id="skills" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
+  <section className="no-app" id="skills" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'2rem auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
            <dl>
            <dt>
            <h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>

@@ -16,14 +16,14 @@ profText: <p>Todd Lambert is an award-winning web designer and photographer that
   night shooting astrophotography which is his favorite subject.</p>
 addressText: Gulf Coast, USA
 portfolio:
-  openText: "Bad Mojo Rising"
+  openText: ""
   closeText: Experience has taught me that good design is not created on a spur of
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
 youtubeautostart: "1"
 addressText2: ""
-skillsTitle: "Mad Skills Yo"
+skillsTitle: "Mad Skills Yo!"
 skillsText: <dl>
   <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
   <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
