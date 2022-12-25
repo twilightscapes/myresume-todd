@@ -796,7 +796,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 
 
 
-<section id="skills" style={{ display:'', height:'', overflow:'', margin:'0 0 10vh 0', position:'relative'}}>
+<section className="no-app" id="skills" style={{ display:'', height:'', overflow:'', margin:'0 0 0 0', position:'relative'}}>
 
 {/* <Skills /> */}
 
@@ -818,7 +818,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
  
 
 
-<section  style={{ display:'', height:'', overflow:'', margin:'10vh 0 0 0', position:'relative'}}>
+<section  style={{ display:'', height:'', overflow:'', margin:'0 0 0 0', position:'relative'}}>
 
 
 

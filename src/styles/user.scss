@@ -34,7 +34,6 @@ dl {
 dt {
  align-self: flex-start;
  width: 100%;
- display: block;
  text-align: right;
  font-size: 1.2em;
  font-weight: 700;
@@ -45,7 +44,8 @@ dt {
  border-radius: 12px;
 display:flex;
 justify-content: space-between;
-
+flex-direction:row;
+gap:30px;
 } 
 
 

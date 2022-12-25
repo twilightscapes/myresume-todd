@@ -1,8 +1,10 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
+import { Seo } from "../components/seo"
+import { Layout } from "../components/layout"
 // import GoBack from "../components/goBack"
-
+import { Footer } from "../components/footer"
 export const skillspageQuery = graphql`
   query skillsQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -20,8 +22,9 @@ const Skills = ({ data }) => {
   const { frontmatter, html, excerpt } = markdownRemark
 
   return (
+    <Layout className="page">
+      <Seo title={frontmatter.title} description={excerpt} />
 
-<>
 
       <div className="container" style={{padding:'2rem 0', maxWidth:'1024px'}}>
 
@@ -31,7 +34,7 @@ const Skills = ({ data }) => {
 
       <dl>
   <dt>
-  <h2>{frontmatter.title}</h2><span>100%</span>
+  <h2 style={{}}>{frontmatter.title}</h2><div>100%</div>
   </dt>
         <article dangerouslySetInnerHTML={{ __html: html }} />
         </dl>
@@ -39,14 +42,14 @@ const Skills = ({ data }) => {
 
 
 
-      {/* <Link to="../" className="print" style={{position:'', bottom:'', border:'0px solid red', width:'200px', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link>
-
+      <Link to="../" className="print" style={{position:'', bottom:'', border:'0px solid red', width:'200px', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link>
+      {/* <GoBack /> */}
       <br />
       <br />
       <br />
       <br />
-      <Footer /> */}
-</>
+      <Footer />
+    </Layout>
   )
 }
 
