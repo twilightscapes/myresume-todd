@@ -312,7 +312,7 @@ const YouTube = frontmatter.youtuber
   function Iframer3() {
     const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
     return (
-<div style={{marginTop:'0px', position:'relative', zIndex:'4',
+<div style={{marginTop:'10px', position:'relative', zIndex:'4',
 display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'100px', border:'0px solid yellow', width:'100%'
 }}>
 <ReactPlayer
@@ -625,7 +625,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
           )}
 
 {showCover ? (
-  <Link state={{modal: true}} to="/cover/#info" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+  <Link state={{modal: true}} to="/cover/#info" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
 ) : (
   ""
 )}
@@ -691,7 +691,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {showCover? (
 
-<Link state={{modal: true}} to="/cover#info" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
+<Link state={{modal: true}} to="/cover#info" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
 
 ) : (
   
@@ -890,15 +890,17 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 <article className="hasapp"  style={{ display:'', height:'', overflow:'', padding:'1.6rem', margin:'0', position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
 
 <div id="resumename" style={{display:'none', position:'relative', top:'', fontSize:'160%', padding:'0 0 2rem 0', textAlign:'left', width:'100%',}}>{companyname}<br />
-{/* {frontmatter.address.addressText}
+{frontmatter.addressText}
 <br />
-{frontmatter.address2.addressText2} */}
+{frontmatter.addressText2}
 </div>
 
 <div id="resume" className="">
 
 <span
-          style={{}}
+          style={{  columnCount:'2',
+            columnGap:'20px',
+            columnWidth:'100%'}}
             className=""
             dangerouslySetInnerHTML={{ __html: html }}
           />
@@ -912,7 +914,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
  <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'5px 0 5px 0', }}>
-<div className="keyboard" order="1" style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0',}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
+<div className="keyboard" order="1" style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0',}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> &nbsp;OR&nbsp; <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
 {/* <div order="2" className="themer" style={{display:'flex', justifyContent:'center', border:'0px solid red', minWidth:'400px', margin:'0 auto', verticalAlign:'center'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important',}} /></span></div> */}
   <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'auto !important', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
   </div>

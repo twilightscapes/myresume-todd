@@ -20,7 +20,7 @@
     "showfooter": true,
     "showNav": true,
     "showInfo": true,
-    "showCover": false,
+    "showCover": true,
     "showFeature": true,
     "showPosts": true,
     "showResume": true,
