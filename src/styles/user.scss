@@ -29,11 +29,13 @@ dl {
   margin-left:-44vw !important;
   font-size:90% !important;
 }
-
  img.homepage-bg1{
   max-height:10vh !important;
   // border:1px solid red !important; 
  } 
+
+
+
 
 }
 
@@ -135,101 +137,10 @@ gap:30px;
 
 
 
-.horizontal-scroll-wrapper::before{
-  content:' \2329  swipe ';
-  position:absolute;
-  z-index: 1;
-  display: inline-block;
-  margin:auto;
-  padding:10px 10px;
-  background:rgba(0, 0, 0, .7);
-  opacity:.7;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  border-radius:12px;
-  bottom:40px; right:12vh;
-  color:#fff;
-  transform: rotate(90deg);
-  font-size:clamp(2rem, 3.5vw, 3.8rem);
-  text-shadow:2px 2px 2px #333;
-
-}
-.horizontal-scroll-wrapper:hover::before{
-animation: move 1.2s forwards; 
-/* animation-delay:1s; */
-}
-
-.sliderholder1:hover::before{
-animation: move 1.5s forwards; 
-}
 
 
 
 
-
-
-
-
-.horizontal-scroll-wrapper::after{
-  content:'swipe \276F \276F ';
-  position:relative;
-  z-index: 1;
-  display: inline-block;
-  margin:auto;
-  padding:10px 10px;
-  background:rgba(0, 0, 0, .7);
-  opacity:.7;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  border-radius:12px;
-  // bottom:50vh; right:12vh;
-  color:#fff;
-  transform: rotate(90deg);
-  font-size:clamp(2rem, 3vw, 3rem);
-  text-shadow:2px 2px 2px #333;
-  top:0;
-  // left:30vw;
-  // border:1px solid red;
-
-}
-/* content:' scroll \276F \276F '; */
-
-.sliderholder1::before{
-  content:' \2329  swipe ';
-  position:absolute;
-  z-index: 1;
-  display: inline-block;
-  margin:auto;
-  padding:10px 10px;
-  background:rgba(0, 0, 0, .7);
-  opacity:1;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  border-radius:12px;
-  top:30%;
-  right:10px;
-  /* bottom:50vh; right:42vh; */
-  color:#fff;
-  /* transform: rotate(90deg); */
-  /* font-size:clamp(2rem, 3.5vw, 3.8rem); */
-  text-shadow:2px 2px 2px #333;
-  /* border:2px solid red !important; */
-
-}
-
-
-@media (hover: hover) {
-  .horizontal-scroll-wrapper::before, .sliderholder1::before{
-    content:' scroll \276F \276F ' !important;
-  }
-  
-  .horizontal-scroll-wrapper::after{
-    content:'\276E \276E  scroll';
-  }
-}
 
   
 
@@ -250,29 +161,11 @@ animation: move 1.5s forwards;
   0%{
     opacity: 1;
  }
- /* 60% {
-    opacity: 0.6;
- } */
  100% {
     opacity:0;
  }
 }
 
-/* @keyframes move {
-  0% {
-    transform-origin: top -80%;
-    transform: scale(0);
-    opacity: 0;
-    z-index: -3;
-  }
-  
-  100% {
-    transform: scale(1.0);
-    transform-origin: 50% 0%;
-    opacity: 1;
-    z-index: 1;
-  }
-} */
 
 @keyframes move {
   0% {

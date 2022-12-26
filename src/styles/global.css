@@ -1357,7 +1357,16 @@ body.homepage .mobilespace {
 	width: 100vw;
 	height: 40vh !important;
 	}
+
+  .container21{display: flex; flex-direction: column;}
+  #feature{order:2 !important;}
+  #info{order:1 !important; margin-top: 60px !important;}
+
 }
+
+
+
+
 
 [aria-roledescription] {
 	z-index: 0 !important;
@@ -2510,14 +2519,14 @@ kbd {
 	}
 }
 
-.container21{
-  /* scroll-snap-points-y: repeat(300px); */
+/* .container21{
+  scroll-snap-points-y: repeat(300px);
   scroll-snap-type: y mandatory;
 }
 
 .container21 section{
   scroll-snap-align: start;
-}
+} */
 
 
 
