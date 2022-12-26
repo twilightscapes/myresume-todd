@@ -2,7 +2,7 @@
 template: blog-post
 title: Crude Addiction
 slug: /crude-addiction
-date: 2021-08-19 10:43
+date: 2021-02-01 01:43
 description: Life is not always what it seems
 youtuber: ""
 youtubestart: "0"
@@ -13,7 +13,7 @@ youtubeshoworiginal: ""
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/7vz43MYaCA0"
-comments: "1"
+comments: ""
 shareable: "1"
 isnftforsale: "1"
 nftlink: ""

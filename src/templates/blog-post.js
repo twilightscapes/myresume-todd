@@ -36,7 +36,7 @@ const Pagination = props => (
     <ul>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         <li>
-      <Link to={props.previous.frontmatter.slug + "/"} rel="prev">
+      <Link className="button" to={props.previous.frontmatter.slug + "/"} rel="prev">
             {/* <p
               style={{
                 color: "inherit",
@@ -53,12 +53,12 @@ const Pagination = props => (
           </Link>
         </li>
       )}
-       <Link title="Go Back" className="navbar-item txtshadow" to="/#posts">
+       <Link title="Go Back" className="button " to="/#posts" style={{}}>
 Go Back
 </Link>
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li>
-          <Link to={props.next.frontmatter.slug + "/"} rel="next">
+          <Link className="button" to={props.next.frontmatter.slug + "/"} rel="next">
             {/* <p
               style={{
                 color: "inherit",

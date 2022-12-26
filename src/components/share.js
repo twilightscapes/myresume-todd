@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const CustomBox = styled.div`
 
-
+#share *{background:transparent !important;}
 
 `
 
@@ -26,11 +26,12 @@ const Foo = () => {
 
   return (
 <CustomBox style={{}}>
-<h4 style={{textAlign:'center', fontSize:'130%', marginTop:'2rem'}}>Sharing IS Caring!</h4>
+{/* <h4 style={{textAlign:'center', fontSize:'130%', marginTop:'2rem'}}>Sharing IS Caring!</h4> */}
     <ShareSocial
+    id="share"
     style={style}
     url ={url}
-    // title="Sharing IS Caring!"
+    title="Sharing IS Caring!"
     socialTypes={['facebook','twitter','reddit','linkedin']}>
 
       </ShareSocial>
