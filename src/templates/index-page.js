@@ -510,7 +510,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {UnderlayImage ? (
   // custom image in effect //
 
-  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'2rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
+  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
