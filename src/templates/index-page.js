@@ -813,13 +813,13 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/*  show Skills */}
 {showSkills ? (
-  <section className="no-app print" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', width:'40%', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
+  <section className="no-app print" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', padding:'0', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', width:'', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
 
 
 
 
 
-<div className="flexbutt" style={{display:'flex', marginLeft:'-24vw', columnGap:'100px', }}>
+<div className="flexbutt" style={{display:'flex', marginLeft:'-15vw', columnGap:'100px', }}>
 <dl className="flexcheek" style={{border:'0px solid',}}>
 
 <dt style={{border:'0px solid red'}}>
