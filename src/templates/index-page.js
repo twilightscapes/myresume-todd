@@ -181,7 +181,7 @@ const HomePage = ({ data }) => {
     // const SkillsTitle = frontmatter.skillsTitle
     const SkillsText = frontmatter.skillsText
     
-    const { showNav } = useSiteMetadata()
+    // const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
     const { showPosts } = useSiteMetadata()
@@ -322,11 +322,11 @@ const YouTube = frontmatter.youtuber
       
 
         
-{showNav ? (
+{/* {showNav ? (
   <div style={{height:'60px'}} />
 ) : (
   ""
-)}
+)} */}
 
 
 <div name="container21" className="container21" style={{height:'',}}>
@@ -335,11 +335,11 @@ const YouTube = frontmatter.youtuber
 
   {showFeature ? (
           
-<section id="feature" name="feature" className="print no-app" style={{ display:'', margin:''}}>
+<section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:''}}>
   <article>
 
 
-  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
     
 
@@ -393,20 +393,27 @@ const YouTube = frontmatter.youtuber
 
 
 
-{showFeature ? (
+{/* {showFeature ? (
   <div className="no-app" style={{height:'7vh'}} />
-) : (
-  ""
-)}
-
-{/* {showInfo ? (
-  ""
 ) : (
   ""
 )} */}
 
 
-<div className="no-app" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
+
+
+
+
+
+
+
+{/* show Info */}
+{showInfo ? (
+
+<section id="info" order="3" name="info" style={{ display:'', minHeight:'', height:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
+  <article style={{ margin:'0 0 0 0'}}>
+
+  <div className="no-app" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
 {UnderlayImage ? (
             <GatsbyImage
             image={UnderlayImage}
@@ -420,17 +427,6 @@ const YouTube = frontmatter.youtuber
             ""
           )}
 </div>
-
-
-
-
- {/* show Info */}
- {showInfo ? (
-
-<section id="info" name="info" style={{ display:'', minHeight:'', height:'', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
-  <article style={{ margin:'0 0 0 0'}}>
-
-
 
 
 
@@ -454,7 +450,7 @@ const YouTube = frontmatter.youtuber
 {UnderlayImage ? (
   // custom image in effect //
 
-  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
+  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'2rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
@@ -644,18 +640,14 @@ const YouTube = frontmatter.youtuber
 
 
 
-{UnderlayImage ? (
-  <div className="no-app" style={{height:'10vh'}} />
-) : (
-  ""
-)}
+
 
 
 
 {/* end show Posts */}
 {showPosts ? (
 
-<div id="posts" name="posts" style={{margin:'20vh 0 0 0', background:'inherit', maxHeight:'70vh'}}>
+<div id="posts" order="2" name="posts" style={{margin:'20vh 0 0 0', background:'inherit', height:'100vh'}}>
 
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', marginTop:'0'}}>
@@ -672,10 +664,12 @@ const YouTube = frontmatter.youtuber
             ""
           )}
 
-
+{/* <div className="introspacer" style={{border:'0px solid', height:''}}></div> */}
 
         <BlogListHome data={posts} />
-        <div style={{textAlign:'center'}}><Link className="button " to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+
+        <div style={{justifyContent:'center', alignContent:'center', margin:'20vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
+          <Link className=" " to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'1px solid red',}}>View More </Link>
         </div>
 
 {closeQuote ? (
@@ -689,84 +683,6 @@ const YouTube = frontmatter.youtuber
           )}
 
 
-<div style={{ fontWeight:'bold', marginLeft:'5rem', padding:'0 0 0 30%', fontSize:'2rem', borderLeft:'3px dotted #666', display:'flex', flexDirection:'column', justifyContent: 'center', height:'100vh'}}>
-  <div style={{}}>LIVE EXAMPLES:</div>
-</div>
-
-
-
-<div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://twilightscapes.com"  target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>
-    <StaticImage src="../../static/assets/twilightscapes-button.jpg" alt="Todd Lambert Night photos"  /></a>
-   
-    <p style={{padding:'1rem 2rem 0 2rem'}}>Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the night like you&apos;ve never seen it before.</p>
-   <br />
-    <div style={{textAlign:'center',}}><a className="" href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>Twilightscapes.com</a></div>
-    
-    </div>
-
-
-
-    <div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://tron.allin60.com"  target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>
-    <StaticImage src="../../static/assets/tronin60.jpg" alt="TRON movie in only 60 seconds"  /></a>
-    
-    <p style={{padding:'1rem 2rem 0 2rem'}}>
-    TRON, recreated in a dynamic multimedia format and it's all in 60 seconds. Rediscover your favorite movie in just 60 seconds. Enter the Grid - now.
-</p>
-   <br />
-    <div style={{textAlign:'center',}}><a className="" href="https://tron.allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>Tron.Allin60.com</a></div>
-    
-    </div>
-
-
-
-
-
-
-    <div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>
-    <StaticImage src="../../static/assets/vidsock-promo.jpg" alt="Todd builds Web Apps"  /></a>
-   
-    <p style={{padding:'1rem 2rem 0 2rem'}}>
-Todd sells exceptionally fast and well-built multimedia web apps called VidSocks. They are a complete website solution that get top ranks in Google!
-    </p><br />
-    <div style={{textAlign:'center',}}><a className="" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>VidSocks.com</a></div>
-    
-    </div>
-
-
-
-
-    <div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>
-    <StaticImage src="../../static/assets/allin60seconds.jpg" alt="Popular movies in only 60 seconds"  /></a>
-
-    <p style={{padding:'1rem 2rem 0 2rem'}}>
-    Today's most popular movies are recreated in a dynamic multimedia format and it's all in 60 seconds. Experience your favorite movies again in fast 60 second snippets.
-</p>
-   <br />
-    <div style={{textAlign:'center',}}><a className="" href="https://allin60.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'underline', color:'inherit',}}>Allin60.com</a></div>
-    
-    </div>
-
-
-
-
-
-
-
-
-    <div className="post-card" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between', borderRadius:'12px', overflow:'hidden'}}>
-    <a className="noexit" href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
-    <StaticImage src="../../static/assets/urban-fetish-button.jpg" alt="Todd Lambert Night photos"  /></a>
-    <p style={{padding:'1rem 2rem 0 2rem'}}>
-    Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
-    </p><br />
-    <div style={{textAlign:'center',}}><a className="" href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>UrbanFetish.com</a></div>
-    
-    </div>
-
    </div>
 
   </div>
@@ -776,6 +692,56 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
     ""
   )}
 {/* end show Posts */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* {showInfo ? (
+  ""
+) : (
+  ""
+)} */}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+{/* {UnderlayImage ? (
+  <div className="no-app" style={{height:'10vh'}} />
+) : (
+  ""
+)} */}
+
+
+
+
 
 
 
@@ -802,38 +768,20 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
             
 
 
-{/* <Link state={{modal: true}} stripHash to="/skills#skills" className="button print no-app" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>View Skills &amp; Capabilities</Link> */}
-
-
-{showSkills ? (
-  <section className="no-app" id="skills" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'20vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
-           <dl>
-           <dt>
-           <h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>
-           </dt>
-                 <div
-                     style={{paddingBottom:'2rem'}}
-                       className="description"
-                       dangerouslySetInnerHTML={{ __html: SkillsText }}
-                     />
-                 </dl>
-                 </section>
-          ) : (
-            ""
-          )}
 
 
 
 
 
 
-{/* end show Resume */}
+
+{/*  show Resume */}
 {showResume ? (
 
  
 
 
-<section  style={{ display:'', height:'', overflow:'', margin:'0 0 0 0', position:'relative'}}>
+<section id="resume" order="4" style={{ display:'', minHeight:'100vh', overflow:'', margin:'10vh 0 0 0', position:'relative'}}>
 
 
 
@@ -875,6 +823,30 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
 )}
 {/* end show Resume */}
 
+
+
+
+
+
+{/* <Link state={{modal: true}} stripHash to="/skills#skills" className="button print no-app" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>View Skills &amp; Capabilities</Link> */}
+
+
+{showSkills ? (
+  <section className="no-app" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'20vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
+           <dl>
+           <dt>
+           <h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>
+           </dt>
+                 <div
+                     style={{paddingBottom:'2rem'}}
+                       className="description"
+                       dangerouslySetInnerHTML={{ __html: SkillsText }}
+                     />
+                 </dl>
+                 </section>
+          ) : (
+            ""
+          )}
 
 
 

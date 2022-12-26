@@ -44,7 +44,7 @@ const Contact = ({ data }) => {
 
 
 
-      <div className="wrapper" style={{padding:'0 1rem'}}>
+      <div className="wrapper" style={{padding:'20px 1rem 0 1rem'}}>
         <br /><br />
         <h1 style={{fontSize:'130%'}}>{frontmatter.title}</h1>
         <div

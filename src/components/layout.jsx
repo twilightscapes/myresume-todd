@@ -52,7 +52,6 @@ import { Helmet } from "react-helmet"
 
 
 
-
 export function Layout({ children }) {
   const CustomBox = styled.div`
 
@@ -134,8 +133,11 @@ body::after{
 
       <ModalRoutingContext.Consumer closeTimeoutMS={300}>
     {({ modal, closeTo }) => (
+ 
+
       <div style={{overflow:'', display:'flex', justifyContent:'center'}}>
         {modal ? (
+          
           <>
           <div id="closeicon" style={{position:'fixed', top:'80px', right:'10vw', zIndex:'103005', color:'inherit !important', }}>
           <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important',  }}>

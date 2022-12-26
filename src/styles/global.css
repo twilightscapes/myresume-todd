@@ -614,13 +614,13 @@ p {
 
 @keyframes zoomer {
 	0% {
-	height: 100%;
-	opacity: 100;
+	height: 9;
+	opacity: 0;
 	}
 
 	100% {
-	height: 0;
-	opacity: 0;
+	height: 100%;
+	opacity: 1;
 	}
 }
 
@@ -1129,13 +1129,14 @@ body.carto .carta {
 	font-size: 1.2rem;
 }
 
-.ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .back, .ReactModalPortal .usability {
+.ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .back, .ReactModalPortal .usability, .ReactModalPortal #menu {
 	display: none !important;
 }
 
 .ReactModal__Overlay {
 	opacity: 0;
-	transition: opacity 400ms ease-in-out;
+	/* transition: opacity 1000ms ease-in-out; */
+  animation: touchup 1s forwards;
 }
 
 .ReactModal__Overlay--after-open {
@@ -1889,45 +1890,26 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 
 @keyframes touchup {
 	0% {
-	height: 8vh;
-	opacity: .8;
-	transform: scale(1);
+	height: 0vh;
+	opacity: 0;
+	transform: scale(.1);
 	}
 
 	10% {
 	opacity: .8;
 	height: 6vh;
-	transform: scale(.8);
-	z-index: 1;
+	transform: scale(.5);
+  filter: blur(10px);
 	}
 
-	15% {
-	opacity: 1;
-	height: 5vh;
-	transform: scale(1);
-	z-index: 1;
-	}
 
-	20% {
-	opacity: .8;
-	height: 7vh;
-	transform: scale(1);
-	z-index: 1;
-	}
-
-	85% {
-	height: 40vh;
-	opacity: 1;
-	transform: scale(1);
-	z-index: 1;
-	}
 
 	100% {
-	opacity: 0;
-	height: 42vh;
-	transform: scale(1.4);
-	filter: blur(1px);
-	z-index: 0;
+	opacity: 1;
+	height: 100vh;
+	transform: scale(1);
+
+
 	}
 }
 
@@ -2200,6 +2182,14 @@ body.homepage footer {
 	#intro {
 	order: 1;
 	}
+
+
+#info{order:1 !important;}
+#feature{order:2;}
+#posts{order: 3;}
+#resume{order:4;}
+#skills{order:5;}
+
 }
 
 #logointro {
@@ -2440,7 +2430,7 @@ kbd {
 	}
 
 	100% {
-	opacity: 0;
+	opacity: 1;
 	transform: translateY(0);
 	}
 }
@@ -2493,7 +2483,7 @@ kbd {
 	}
 
 	100% {
-	opacity: 0;
+	opacity: 1;
 	}
 }
 

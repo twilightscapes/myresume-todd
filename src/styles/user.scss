@@ -40,7 +40,7 @@ dt {
  margin-bottom: 20px;
  margin-left: 140px;
  padding:20px;
- background-color: rgba(12, 12, 12, 0.5);
+ background-color: rgba(12, 12, 12, 0.3);
  border-radius: 12px;
 display:flex;
 justify-content: space-between;
@@ -62,7 +62,7 @@ gap:30px;
  justify-content: flex-end;
 }
 
-.percent{left:165px; padding-top:13px; position:absolute; font-weight: bold; font-size: 120%; text-shadow: 2px 2px 2px #000; z-index: 1; border: 0px solid red;}
+.percent{left:165px; padding-top:13px; position:absolute; font-weight: bold; font-size: 120%; z-index: 1; border: 0px solid red;}
 
 .percentage {
  font-size: .8em;
@@ -82,8 +82,8 @@ gap:30px;
  &:after {
    content: "";
    display: block;
-   background-color: rgba(221, 215, 215, 0.3);
-   width: 50px;
+   background-color: rgba(78, 74, 74, 0.3);
+   width: 20px;
    margin-bottom: 10px;
    border-radius: 5px;
    height: 90%;
@@ -95,6 +95,7 @@ gap:30px;
    animation: slide 2s forwards;
    animation-direction: reverse;
    animation-iteration-count: 1;
+   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px inset;
  }
  &:hover,
  &:focus {
