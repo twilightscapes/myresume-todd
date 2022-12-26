@@ -15,9 +15,10 @@ dl {
  flex-direction: column;
  min-width:48%;
  max-width: 700px;
+ width:400px;
  position: relative;
  padding: 0;
- 
+ border:0px solid purple;
 }
 
 @media (max-width: 48rem) {
