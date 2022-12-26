@@ -24,9 +24,6 @@ shareable: "1"
 underlayImage: /assets/PillowTalkBG.png
 featuredImage: /assets/Experiences-Header-8.jpg
 svgImage: /assets/lindell.svg
-nftlink: ""
-nftdrop: "2021-10-31T14:00:00"
-nftredeem: "https://secure3.myshopify.com/cart/40775459569824:1?channel=buy_button"
 ---
 America's Favorite Pillow Guy has a brand new show out, called PillowTalk! You as a viewer get to help Mike find True Love™ and a great night's sleep. 
 

@@ -482,7 +482,7 @@ const { iconimage } = useSiteMetadata()
 
 
 {showNav ? (
-  <div style={{height:'20px'}} />
+  <div style={{height:'38px'}} />
 ) : (
   ""
 )}
@@ -767,7 +767,7 @@ const { iconimage } = useSiteMetadata()
 <br />
  {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
-<div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
+<div style={{maxWidth:'70vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px', background:'rgba(78, 74, 74, 0.3)'}}>
   
                     <Iframer2 />
                     
@@ -822,7 +822,7 @@ const { iconimage } = useSiteMetadata()
 
 
 {ShareThis ? (
-<div style={{width:'100%', padding:'0', margin:'0 auto'}}>
+<div style={{width:'100%', padding:'0', margin:'0 auto',display:'flex', justifyContent:'center',}}>
 
 
   
@@ -848,7 +848,7 @@ const { iconimage } = useSiteMetadata()
 
 
 {Comments ? (
-<div style={{width:'80%', padding:'0', margin:'0 auto'}}>
+<div style={{width:'80%', padding:'0', margin:'0 auto', display:'flex', justifyContent:'center',}}>
   
 <CommentBox />
     
