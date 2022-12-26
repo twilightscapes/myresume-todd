@@ -3200,4 +3200,18 @@ body.homepage .horizontal-holder .gatsby-image-wrapper {max-height: 550px;}
 	margin: 0 auto;
 	position: relative;
 	}
-}
+  section:not(#resume) {color:red !important; border:0px solid red !important; display: none !important;}
+  /* *{border:1px solid red !important;} */
+  #resume{border: 1px solid green; width: 1000px;}
+  #resume span div {
+    border: 1px solid green;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 1000px !important;
+    column-count: 2;
+  }
+  /* #resume span {width: 1000px !important;} */
+} 
+
+

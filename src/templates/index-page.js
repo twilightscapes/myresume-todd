@@ -289,7 +289,7 @@ const YouTube = frontmatter.youtuber
 
 
 <div style={{display:'flex', flexDirection:'', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
-                <div style={{ background:'rgba(0,0,0,0.30)', fontWeight:'bold', padding:'0', margin:'0 auto', fontSize:'clamp(1rem, 2vw, 3.4rem)',  borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)', }}>Play <ImPlay style={{margin:'0 auto', width:'100px', fontSize:'50px'}} /></div>
+                <div style={{  fontWeight:'bold', padding:'0', margin:'0 auto', fontSize:'clamp(1rem, 2vw, 3.4rem)',  borderRadius:'12px', border:'0px solid #333', filter:'drop-shadow(2px 2px 2px #000)', }}><ImPlay style={{margin:'0 auto', width:'100px', fontSize:'50px'}} />Play</div>
                 
             </div>
 
@@ -886,9 +886,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
+
 <article className="hasapp"  style={{ display:'', height:'', overflow:'', padding:'1.6rem', margin:'0', position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
 
-<div id="resumename" style={{display:'none', position:'absolute', top:'-4rem', fontSize:'160%', padding:'0 0 2rem 4rem', textAlign:'left', width:'100%',}}>{companyname}<br />
+<div id="resumename" style={{display:'none', position:'relative', top:'', fontSize:'160%', padding:'0 0 2rem 0', textAlign:'left', width:'100%',}}>{companyname}<br />
 {/* {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2} */}
@@ -933,7 +934,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 {showSkills ? (
-  <section className="no-app" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', width:'40%', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
+  <section className="no-app print" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', width:'40%', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
 
 
 {/* <dl style={{border:'0px solid red', width:'500px', margin:'2rem auto 2rem auto'}}>
