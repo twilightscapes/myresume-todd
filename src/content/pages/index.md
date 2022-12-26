@@ -6,6 +6,7 @@ youtuber: "https://youtu.be/ESGJ42zshL8"
 youtuber2: "https://youtu.be/RGT4V6JmINA"
 audiostart: "1"
 audioend: "5000"
+audiotitle: "The Cure - The Forest"
 secondaryImage: /assets/og-image.png
 underlayImage: /assets/IMG_1019.webp
 profText: <p>Todd Lambert is an award-winning web designer and photographer that

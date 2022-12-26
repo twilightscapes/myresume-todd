@@ -76,6 +76,7 @@ export const pageQuery = graphql`
         youtubestart
         youtubeend
         audiostart
+        audiotitle
         audioend
         youtubemute
         youtubecontrols
@@ -306,6 +307,7 @@ const YouTube = frontmatter.youtuber
   const YouTube2 = frontmatter.youtuber2
   const AudioStart = frontmatter.audiostart
   const AudioEnd = frontmatter.audioend
+  const AudioTitle = frontmatter.audiotitle
 
   function Iframer3() {
     const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
@@ -345,14 +347,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
           <div className="popped" style={{display:'flex', minWidth:'200px', margin:'0 auto', fontWeight:'bold', padding:'.2rem .4rem', fontSize:'2rem', background:'rgba(0,0,0,0.30)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)',}}>
             
             <div style={{fontSize:'.8rem', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', textAlign:'center'}}>
-            I'm listening to:<br />
+            I'm listening now to:<br />
 
 
 
-            <div style={{fontSize:'1rem', fontWeight:'bold', marginTop:'5px' }}>The Cure - The Forest on youtube</div>
+            <div style={{fontSize:'1rem', fontWeight:'bold', marginTop:'5px' }}>{ AudioTitle }</div>
       
             <div style={{display:'flex', justifyContent:'center', marginTop:'5px'}}>
-            <div><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000),', color:'green'}} /></div> &nbsp; <div>Click to listen now</div>
+            <div><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000),', color:'#06f21a'}} /></div> &nbsp; <div>Click to listen </div>
             
             </div>
             </div>
