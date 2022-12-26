@@ -660,7 +660,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
     }}>{frontmatter.cta.ctaText}
 </a>
           ) : (
-            <Link state={{modal: true}} to="/contact#info" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
+            <Link state={{modal: true}} to="/contact#info" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
@@ -670,13 +670,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
           ) : (
             ""
           )}
-<br />
 
-{/* {ShowCover ? (
-""
-) : (
-  ""
-)} */}
+
 
 {showCover? (
 
