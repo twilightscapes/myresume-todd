@@ -656,7 +656,7 @@ const YouTube = frontmatter.youtuber
 
 {openQuote ? (
             
-            <div style={{display:'grid', placeContent:'center'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)', }}><div style={{padding:'2rem 10% 0px', }}>{openQuote}</div>
+            <div style={{display:'grid', placeContent:'center'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)', }}><div style={{padding:'2rem 10% 0px', }}>{openQuote} lorem lorem lorem lorem ipsum</div>
         {/* <div className="logofirst" style={{textAlign:'right', margin:'2rem 30% 0px 0px'}}>- Todd Lambert</div> */}
         </blockquote></div>
 
@@ -664,7 +664,9 @@ const YouTube = frontmatter.youtuber
             ""
           )}
 
-{/* <div className="introspacer" style={{border:'0px solid', height:''}}></div> */}
+<div className="introspacer" style={{border:'1px solid', width:''}}></div>
+
+
 
         <BlogListHome data={posts} />
 
