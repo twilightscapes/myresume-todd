@@ -377,6 +377,13 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
   
   return (
+
+
+
+
+
+
+    // TOP OF HOME
     <CustomBox style={{}}>
     <Layout>
     <Helmet>
@@ -391,13 +398,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
    image={ siteUrl + getSrc(frontmatter.featuredImage) }
       />
 
-      
-
-
-
-
-      
-
+    
         
 {/* {showNav ? (
   <div style={{height:'60px'}} />
@@ -406,12 +407,21 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 )} */}
 
 
-<div name="container21" className="container21" style={{height:'',}}>
+<div name="container21" className="container21" style={{
+ 	// overflowY: 'auto',
+  //  overflowX: 'hidden',
+  //  overscrollBehavior: 'contain',
+  //  scrollSnapAlign: 'center',
+  //  scrollPadding: '0 5%',
+  //  scrollSnapType: 'y mandatory',
+
+}}>
 {/* { sitecolor } */}
 {/* show feature */}
 
-  {showFeature ? (
-          
+
+
+  {showFeature ? (   
 <section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:''}}>
   <article>
 
@@ -462,34 +472,13 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
       </div>
   </article>
 </section>
-
 ) : (
   ""
 )}
 {/* end show feature */}
 
-
-
-
-{/* {showFeature ? (
-  <div className="no-app" style={{height:'7vh'}} />
-) : (
-  ""
-)} */}
-
-
-
-
-
-
-
-
-
-
-
 {/* show Info */}
 {showInfo ? (
-
 <section id="info" order="3" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
@@ -723,30 +712,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* <div style={{height:'100px', border:'1px solid red'}}>&nbsp;</div> */}
 </article>
 </section>
-
 ) : (
   ""
 )}
 {/* end show Info */}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {/* end show Posts */}
 {showPosts ? (
-
-<div id="posts" order="2" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
+<section id="posts" order="2" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'600px', margin:'5vh 0', border:'0px solid red'}}>
@@ -787,101 +760,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
    </div>
 
   </div>
-</div>
-
+</section>
    ) : (
     ""
   )}
 {/* end show Posts */}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* {showInfo ? (
-  ""
-) : (
-  ""
-)} */}
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-{/* {UnderlayImage ? (
-  <div className="no-app" style={{height:'10vh'}} />
-) : (
-  ""
-)} */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <StaticImage src="../../static/assets/yourphoto.jpg" alt="your alt text" style={{height:'auto', width:'100vw', maxHeight:'100%', position:'', left:'0', top:'', zIndex:'', margin:'2vh 0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}  /> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-
-
-
-
 {/*  show Resume */}
 {showResume ? (
-
- 
-
-
 <section id="resume" order="4" style={{ display:'', minHeight:'100vh', overflow:'', margin:'0 0 0 0', position:'relative', border:'0px solid blue'}}>
 
 
@@ -920,33 +806,20 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
   </div>
 
 </section>
-
-
 ) : (
   ""
 )}
 {/* end show Resume */}
 
-
-
-
-
-
-{/* <Link state={{modal: true}} stripHash to="/skills#skills" className="button print no-app" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'2rem auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>View Skills &amp; Capabilities</Link> */}
-
-
+{/*  show Skills */}
 {showSkills ? (
   <section className="no-app print" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', width:'40%', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
 
 
-{/* <dl style={{border:'0px solid red', width:'500px', margin:'2rem auto 2rem auto'}}>
-<dt><h2>Should I go or should I stay?</h2><span>100%</span></dt>
-  <dd class="percentage percentage-62"><span class="text">Yes!</span> <span class="percent">62%</span></dd>
-  <dd class="percentage percentage-58"><span class="text">No!</span> <span class="percent">58%</span></dd>
-</dl>  */}
 
 
-<div className="flexbutt" style={{display:'flex', gap:'100px', marginLeft:'-24vw' }}>
+
+<div className="flexbutt" style={{display:'flex', marginLeft:'-24vw', columnGap:'100px', }}>
 <dl className="flexcheek" style={{border:'0px solid',}}>
 
 <dt style={{border:'0px solid red'}}>
@@ -979,11 +852,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-                 </section>
+  </section>
           ) : (
             ""
           )}
-
+{/* end show Skills */}
 
 
 
@@ -1031,10 +904,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 )}
 
 
-
-
-
-
 {showSkills ? (
   <div order="3" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}>
 <Link state={{modal: true}} to="/skills#skills" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Skills</Link>
@@ -1042,9 +911,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 ) : (
   ""
 )}
-
-
-
 
 
 </div> */}
