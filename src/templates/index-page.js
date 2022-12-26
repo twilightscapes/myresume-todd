@@ -833,9 +833,17 @@ const YouTube = frontmatter.youtuber
 
 
 {showSkills ? (
-  <section className="no-app" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
+  <section className="no-app" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', width:'40%', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
 
-<div className="flexbutt" style={{display:'flex', gap:'100px', marginLeft:'-20vw' }}>
+
+{/* <dl style={{border:'0px solid red', width:'500px', margin:'2rem auto 2rem auto'}}>
+<dt><h2>Should I go or should I stay?</h2><span>100%</span></dt>
+  <dd class="percentage percentage-62"><span class="text">Yes!</span> <span class="percent">62%</span></dd>
+  <dd class="percentage percentage-58"><span class="text">No!</span> <span class="percent">58%</span></dd>
+</dl>  */}
+
+
+<div className="flexbutt" style={{display:'flex', gap:'100px', marginLeft:'-24vw' }}>
 <dl className="flexcheek" style={{border:'0px solid',}}>
 
 <dt style={{border:'0px solid red'}}>
@@ -865,7 +873,8 @@ const YouTube = frontmatter.youtuber
       </dl>
 
 </div>
-           
+
+
 
                  </section>
           ) : (
