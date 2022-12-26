@@ -650,7 +650,7 @@ const YouTube = frontmatter.youtuber
 <div id="posts" order="2" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'650px', margin:'12% 0', border:'0px solid red'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'600px', margin:'5vh 0', border:'0px solid red'}}>
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
