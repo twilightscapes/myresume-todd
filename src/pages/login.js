@@ -163,7 +163,7 @@ body{padding-top:100px !important;}
 <div className='player-wrapper' style={{position:'relative', width:'100vw', height:'100vh',  bottom:'0', border:'0px solid blue', zIndex:'1', height:'content-fill', overflow:'hidden' }}>
 
 
-<iframe title="VidSock" id="youtube2" className="blog-video1" width="100%" height="400" src="/admin/" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'100vh', borderRadius:'12px', margin:'60px 0 0 0'  }} />
+<iframe title="VidSock" id="youtube2" className="blog-video1" width="100%" height="400" src="/admin/" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'100vh', border:'1px solid yellow', borderRadius:'12px', margin:'60px 0 0 0'  }} />
 
 {/* <div className='stack-layout' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'' }}> */}
 
@@ -238,7 +238,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 </div> */}
 {/* <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} /> */}
 
-<div className="" style={{display:'block', justifyContent:'center', width:'100%', margin:'0 auto', flexDirection:'row', maxWidth:'1000px', border:'0px solid red', position:'relative', top:'-15vh', height:''}}>
+<div className="" style={{display:'flex', alignSelf:'center', justifyContent:'center', width:'100vw', margin:'0 auto', flexDirection:'row', maxWidth:'', border:'0px solid red', position:'absolute', maxHeight:'100vh', bottom:'-100vh', height:'100vh'}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid #333', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'center', alignItems:'center'  }}>
 
     <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Paste YouTube Link:
@@ -272,7 +272,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   : 
 
   
-<div className="" style={{display:'flex', justifyContent:'space-around', width:'100%', margin:'0 auto', flexDirection:'row', maxHeight:'80vh'}}>
+<div className="" style={{display:'flex', justifyContent:'space-around', width:'100%', margin:'0 auto', flexDirection:'row', maxHeight:'100vh'}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid red', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'5px auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'space-between', alignItems:'center'  }}>
 
     <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Paste YouTube Link:
