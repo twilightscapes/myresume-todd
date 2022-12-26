@@ -410,7 +410,7 @@ const YouTube = frontmatter.youtuber
 {/* show Info */}
 {showInfo ? (
 
-<section id="info" order="3" name="info" style={{ display:'', minHeight:'', height:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
+<section id="info" order="3" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
   <div className="no-app" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
@@ -647,10 +647,10 @@ const YouTube = frontmatter.youtuber
 {/* end show Posts */}
 {showPosts ? (
 
-<div id="posts" order="2" name="posts" style={{margin:'20vh 0 0 0', background:'inherit', height:'', overflow:'hidden'}}>
+<div id="posts" order="2" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'', marginTop:'0'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'650px', margin:'12% 0', border:'0px solid red'}}>
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
@@ -783,7 +783,7 @@ const YouTube = frontmatter.youtuber
  
 
 
-<section id="resume" order="4" style={{ display:'', minHeight:'100vh', overflow:'', margin:'10vh 0 0 0', position:'relative'}}>
+<section id="resume" order="4" style={{ display:'', minHeight:'100vh', overflow:'', margin:'0 0 0 0', position:'relative', border:'0px solid blue'}}>
 
 
 
