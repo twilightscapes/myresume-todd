@@ -647,16 +647,16 @@ const YouTube = frontmatter.youtuber
 {/* end show Posts */}
 {showPosts ? (
 
-<div id="posts" order="2" name="posts" style={{margin:'20vh 0 0 0', background:'inherit', height:'100vh'}}>
+<div id="posts" order="2" name="posts" style={{margin:'20vh 0 0 0', background:'inherit', height:'', overflow:'hidden'}}>
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', marginTop:'0'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'', marginTop:'0'}}>
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 {openQuote ? (
             
-            <div style={{display:'grid', placeContent:'center'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)', }}><div style={{padding:'2rem 10% 0px', }}>{openQuote} lorem lorem lorem lorem ipsum</div>
+            <div style={{display:'grid', placeContent:'center'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)', }}><div style={{padding:'2rem 10% 0px', }}>{openQuote}</div>
         {/* <div className="logofirst" style={{textAlign:'right', margin:'2rem 30% 0px 0px'}}>- Todd Lambert</div> */}
         </blockquote></div>
 
@@ -664,7 +664,7 @@ const YouTube = frontmatter.youtuber
             ""
           )}
 
-<div className="introspacer" style={{border:'1px solid', width:''}}></div>
+<div className="introspacer" style={{border:'0px solid', width:''}}></div>
 
 
 

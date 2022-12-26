@@ -2170,7 +2170,20 @@ body.homepage footer {
 
 
 
-
+@keyframes movingBG {
+	0% { background-position: 0 0; }
+	50% { background-position: 90% 0; }
+	100% { background-position: 0 0; }
+  }
+  
+  @keyframes fadeIn{
+	0% { opacity:0;}
+	100% { opacity:1;}
+  }
+  @keyframes txtFlyIn{
+	0% { transform:translateX(-100%); }
+	100% { transform:translateX(0%); }
+  }
 
 
 @media (max-width: 58rem) {
@@ -2996,6 +3009,46 @@ article img {
 
 
 
+/* undetermined SNAP */
+@media (hover: none) {
+	.horizontal-scroll-wrapper, .horizontal-scroll, .horizontal-holder {
+		scroll-snap-type:y mandatory;
+	}
+}
+
+/* No Mouse SNAP */
+@media (hover: hover) {
+	.horizontal-scroll-wrapper, .horizontal-scroll, .horizontal-holder {
+		scroll-snap-type:y mandatory;
+	}
+}
+
+/* MOBILE SNAP */
+@media (pointer: coarse) {
+	.horizontal-scroll-wrapper, .horizontal-scroll, .horizontal-holder {
+		scroll-snap-type: y mandatory !important;
+	}
+	.RArrow span::before{
+		content:"swipe \21E1" !important;
+	}
+}
+
+
+
+/* Safari Desktop NO SNAP */
+@supports(font:-apple-system-body) and (not(-webkit-touch-callout:default)){
+	 .horizontal-scroll-wrapper, .horizontal-scroll, .horizontal-holder {
+ 	scroll-snap-type:none !important;
+}
+	
+}
+/* iOS ONLY browsers */
+@supports(font:-apple-system-body) and (-webkit-touch-callout:default){
+}
+
+
+body.homepage .horizontal-holder .gatsby-image-wrapper {max-height: 550px;}
+
 
 
 .introspacer {
@@ -3031,6 +3084,8 @@ article img {
 	.sliderholder {
 	height: 45vh !important;
 	}
+
+  #feature .stack-layout{max-height:50vh;}
 
 	.horizontal-scroll-wrapper {
 	margin: 0 auto 0 auto !important;
