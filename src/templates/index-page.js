@@ -4,6 +4,7 @@ import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
+import { AiOutlineAudioMuted } from "react-icons/ai"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
@@ -71,8 +72,11 @@ export const pageQuery = graphql`
         title
         description
         youtuber
+        youtuber2
         youtubestart
         youtubeend
+        audiostart
+        audioend
         youtubemute
         youtubecontrols
         youtubeautostart
@@ -230,6 +234,8 @@ function AddSvg(){
 
 
 
+
+
 const YouTube = frontmatter.youtuber
 
   if (!YouTube) {
@@ -297,6 +303,76 @@ const YouTube = frontmatter.youtuber
   
 
 
+  const YouTube2 = frontmatter.youtuber2
+  const AudioStart = frontmatter.audiostart
+  const AudioEnd = frontmatter.audioend
+
+  function Iframer3() {
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
+    return (
+<div style={{marginTop:'0px', position:'relative', zIndex:'4',
+display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'100px', border:'0px solid yellow', width:'100%'
+}}>
+<ReactPlayer
+          className='react-player67'
+          url={iframeUrl3}
+          // url={[
+          //   iframeUrl,
+          //   Suggestion1,
+          //   Suggestion2,
+          //   Suggestion3
+          // ]}
+          width="250px"
+          height="100%"
+          style={{
+            border:'0px solid red'
+        }}
+          config={{
+            youtube: {
+              playerVars: { showinfo:0, autoplay:1, controls:0, start:AudioStart, end:AudioEnd, mute:0,  }
+            },
+          }}
+          loop
+          playing
+          playsinline
+          playIcon={
+            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'0', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+          
+        <div className="" style={{position:'absolute', top:'-40px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+          
+    
+
+          <div className="popped" style={{display:'flex', minWidth:'200px', margin:'0 auto', fontWeight:'bold', padding:'.2rem .4rem', fontSize:'2rem', background:'rgba(0,0,0,0.30)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)',}}>
+            
+            <div style={{fontSize:'.8rem', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', textAlign:'center'}}>
+            I'm listening to:<br />
+
+
+
+            <div style={{fontSize:'1rem', fontWeight:'bold', marginTop:'5px' }}>The Cure - The Forest on youtube</div>
+      
+            <div style={{display:'flex', justifyContent:'center', marginTop:'5px'}}>
+            <div><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000),', color:'green'}} /></div> &nbsp; <div>Click to listen now</div>
+            
+            </div>
+            </div>
+
+          </div>
+         
+          </div>
+          </button>}
+   
+            light="../assets/transparent.png"
+          />
+     </div>
+
+
+
+
+    )
+  }
+
+
   
   return (
     <CustomBox style={{}}>
@@ -336,6 +412,7 @@ const YouTube = frontmatter.youtuber
           
 <section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:''}}>
   <article>
+
 
 
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
@@ -397,6 +474,8 @@ const YouTube = frontmatter.youtuber
 ) : (
   ""
 )} */}
+
+
 
 
 
@@ -501,7 +580,7 @@ const YouTube = frontmatter.youtuber
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'', maxHeight:'35vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', zIndex:''}}
+              style={{ maxWidth:'', height:'', maxHeight:'30vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', zIndex:''}}
             />
           ) : (
             ""
@@ -522,7 +601,7 @@ const YouTube = frontmatter.youtuber
   <div className="nameblock" style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
   border:'0px solid red', 
-  maxWidth:'80%', paddingTop:'1rem', 
+  maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
   background:'rgba(0,0,0,0.50)',
   backdropFilter:'blur(8px)',
@@ -542,13 +621,22 @@ const YouTube = frontmatter.youtuber
           ) : (
             ""
           )}
-<br />
+
 {showCover ? (
   <Link state={{modal: true}} to="/cover/#info" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
 ) : (
   ""
 )}
-<br />
+
+{ !YouTube2 ? (
+            ""
+       
+          ) : (
+            
+            <Iframer3 />
+            
+          )}
+          <br />
 </div> // end nameblock
 
 
@@ -609,6 +697,16 @@ const YouTube = frontmatter.youtuber
 
 )}
 
+
+{ !YouTube2 ? (
+            ""
+       
+          ) : (
+            
+            <Iframer3 />
+            
+          )}
+<br />
 </div> // end nameblock
 
       // custom image in effect //

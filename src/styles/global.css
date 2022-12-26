@@ -162,7 +162,7 @@ article iframe {
 	aspect-ratio: 3 / 2 !important;
 	width: 100% !important;
 	margin: 0 0 2rem 0;
-	min-height: 50vh !important;
+	/* min-height: 50vh ; */
 }
 
 
