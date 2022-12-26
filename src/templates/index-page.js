@@ -248,7 +248,6 @@ const YouTube = frontmatter.youtuber
       <ReactPlayer
       className='react-player66'
       url={Url}
-      loop="true"
       width="100%"
       height="100%"
   style={{zIndex:'3'}}
@@ -834,17 +833,40 @@ const YouTube = frontmatter.youtuber
 
 
 {showSkills ? (
-  <section className="no-app" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'20vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center'}}>
-           <dl>
-           <dt>
-           <h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>
-           </dt>
-                 <div
-                     style={{paddingBottom:'2rem'}}
-                       className="description"
-                       dangerouslySetInnerHTML={{ __html: SkillsText }}
-                     />
-                 </dl>
+  <section className="no-app" id="skills" order="5" style={{ width:'', overflow:'', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'1000px', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
+
+<div className="flexbutt" style={{display:'flex', gap:'100px', marginLeft:'-20vw' }}>
+<dl className="flexcheek" style={{border:'0px solid',}}>
+
+<dt style={{border:'0px solid red'}}>
+<h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>
+</dt>
+
+      <div
+          style={{paddingBottom:'2rem', border:'0px solid yellow'}}
+            className="description"
+            dangerouslySetInnerHTML={{ __html: SkillsText }}
+          />
+
+      </dl>
+
+<dl className="flexcheek" style={{border:'0px solid',marginLeft:''}}>
+
+<dt style={{border:'0px solid red'}}>
+<h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>
+</dt>
+
+      <div
+          style={{paddingBottom:'2rem', border:'0px solid yellow'}}
+            className="description"
+            dangerouslySetInnerHTML={{ __html: SkillsText }}
+          />
+
+      </dl>
+
+</div>
+           
+
                  </section>
           ) : (
             ""

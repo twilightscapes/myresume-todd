@@ -952,7 +952,7 @@ p {
 }
 
 .no-app {
-	display: block !important;
+	display: block ;
 }
 
 @media (display-mode: standalone) {
@@ -2954,7 +2954,7 @@ article img {
 .horizontal-holder{
 	position:relative;
 	overflow:hidden;
-	height:80vh;
+	/* height:80vh; */
 }
 .horizontal-scroll{
 	position: relative;
