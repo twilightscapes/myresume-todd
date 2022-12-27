@@ -1145,8 +1145,8 @@ body.carto .carta {
 
 .ReactModal__Overlay {
 	opacity: 0;
-	/* transition: opacity 1000ms ease-in-out; */
-  animation: touchup 1s forwards;
+	transition: opacity 600ms ease-in-out;
+  /* animation: touchup 1s forwards; */
 }
 
 .ReactModal__Overlay--after-open {
@@ -1716,6 +1716,8 @@ blockquote {
 	position: relative;
  ;
 }
+
+.horizontal-scroll blockquote{color:#fff;}
 
 blockquote:before {
 	quotes: "“" "”" "‘" "’";
