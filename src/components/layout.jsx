@@ -188,7 +188,7 @@ body::after{
 
           
           {showInfo ? (
-            <li className="has-app" style={{position:'relative',}}>
+            <li className="" style={{position:'relative',}}>
               <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
               {menu1}
               </AnchorLink>
