@@ -730,7 +730,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
         <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
 
-          <Link className=" " to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'1px solid red',}}>View More </Link>
+          <Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>View More </Link>
 
         </div>
 

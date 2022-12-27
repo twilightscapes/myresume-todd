@@ -361,6 +361,24 @@ collections:
                 name: showCover
                 label: Show Cover Letter
                 required: false
+
+              - widget: string
+                name: menu1
+                label: Menu - Profile Title
+                required: false
+              - widget: string
+                name: menu2
+                label: Menu - Posts/Portfolio Title
+                required: false
+              - widget: string
+                name: menu3
+                label: Menu - Resume Title
+                required: false
+              - widget: string
+                name: menu4
+                label: Menu - Skills Title
+                required: false
+
   
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
             name: comments
