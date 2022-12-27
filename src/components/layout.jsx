@@ -183,14 +183,12 @@ body::after{
 
 
 
-              <li className="has-app" order="5" style={{display:'none',}}>
- <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
- </li>
+
 
 
           
           {showInfo ? (
-            <li className="no-app" style={{position:'relative',}}>
+            <li className="has-app" style={{position:'relative',}}>
               <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
               {menu1}
               </AnchorLink>
@@ -199,6 +197,12 @@ body::after{
   ""
 )}
       
+
+      <li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
+ </li>
+
+
 
 <li className="has-app" order="5" style={{display:'none',}}>
  <Link state={{modal: true}} to="/posts" className="navbar-item" style={{paddingRight:'',}}>{menu2}</Link>

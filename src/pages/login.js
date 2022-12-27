@@ -160,10 +160,10 @@ body{padding-top:100px !important;}
    
 
 
-<div className='player-wrapper' style={{position:'relative', width:'100vw',   bottom:'0', border:'0px solid blue', zIndex:'1', height:'100vh', overflow:'hidden' }}>
+<div className='player-wrapper' style={{position:'relative', width:'100vw',   bottom:'0', border:'0px solid blue', zIndex:'1', height:'100vh', overflow:'hidden', paddingTop:'' }}>
 
 
-<iframe title="VidSock" id="youtube2" className="blog-video1" width="100%" height="400" src="/admin/" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100vh', minHeight:'100vh', border:'1px solid yellow', borderRadius:'12px', margin:'60px 0 0 0'  }} />
+<iframe title="VidSock" id="youtube2" className="blog-video1" width="100%" height="400" src="/admin/" frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100vh', minHeight:'100vh', border:'0px solid yellow', borderRadius:'12px', padding:'60px 0 0 0' }} />
 
 {/* <div className='stack-layout' style={{position:'relative', width:'100vw', height:'100%', top:'', zIndex:'0', height:'content-fill', overflow:'' }}> */}
 

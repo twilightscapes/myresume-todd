@@ -112,7 +112,8 @@ export function Footer() {
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}
 <br /><br />
 <a href="https://myresume.site" target="_blank" rel="noreferrer">Web App by MyResume</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a>
-
+<br /><br />
+<Link to="/login">Admin</Link>
 </div>
 
 
