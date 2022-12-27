@@ -365,18 +365,22 @@ collections:
               - widget: string
                 name: menu1
                 label: Menu - Profile Title
+                default: "Profile"
                 required: false
               - widget: string
                 name: menu2
                 label: Menu - Posts/Portfolio Title
+                default: "Posts"
                 required: false
               - widget: string
                 name: menu3
                 label: Menu - Resume Title
+                default: "Resume"
                 required: false
               - widget: string
                 name: menu4
                 label: Menu - Skills Title
+                default: "Skills"
                 required: false
 
   
