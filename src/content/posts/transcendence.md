@@ -20,7 +20,7 @@ youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
 comments: ""
-shareable: ""
+sharethis: true
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-6.jpg
 svgImage: /assets/transcendence.svg

@@ -42,7 +42,7 @@ cta:
 svgImage: /assets/transparent.png
 title: Digital Product Designer
 youtubeend: "90"
-shareable: ""
+sharethis: 
 youtubecontrols: "0"
 template: index-page
 youtubemute: "1"

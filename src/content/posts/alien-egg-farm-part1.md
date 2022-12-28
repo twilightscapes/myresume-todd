@@ -14,7 +14,7 @@ underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-3.jpg
 svgImage: /assets/nebula.svg
 comments: ""
-shareable: "true"
+sharethis: true
 ---
 
 

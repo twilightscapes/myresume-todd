@@ -14,7 +14,7 @@ youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/7vz43MYaCA0"
 comments: ""
-shareable: "1"
+sharethis:
 isnftforsale: "1"
 nftlink: ""
 nftdrop: ""

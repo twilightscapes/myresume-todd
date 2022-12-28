@@ -18,7 +18,7 @@ youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
 comments: ""
-shareable: ""
+sharethis:
 underlayImage: /assets/transparent.png
 featuredImage: /assets/TheyLive-Header.jpg
 svgImage: /assets/TheyLive.svg

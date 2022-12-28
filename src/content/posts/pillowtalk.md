@@ -20,7 +20,7 @@ youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
 comments: ""
-shareable: "1"
+sharethis: true
 underlayImage: /assets/PillowTalkBG.png
 featuredImage: /assets/Experiences-Header-8.jpg
 svgImage: /assets/lindell.svg
