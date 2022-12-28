@@ -293,42 +293,48 @@ collections:
                 label: SEO Description
                 default: ""
                 required: false
+
               - widget: image
                 name: image
-                label: Default OG Image
+                label: Default Image
+                hint: "This image is used for social/search previews of the site and its posts"
                 required: true
                 default: "/assets/default-og-image.jpg"
+
               - widget: image
                 name: iconimage
                 required: false
-                label: Site Logo (should be SVG if at all possible)
+                label: Your Logo
+
               - widget: image
                 name: favicon16x16
                 label: Site Favicon 16x16 (name image like 'favicon-16x16.png')
                 hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
                 default: "/assets/favicon-16x16.png"
-              - widget: image
-                name: favicon32x32
-                label: Site Favicon 32x32 (name image like 'favicon-16x16.png')
-                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
-                default: "/assets/favicon-32x32.png"
-              - widget: image
-                name: icon192
-                label: Site Icon 192x192 (name image like 'icon-192x192.png')
-                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
-                default: "/assets/icon-192x192.png"
-              - widget: image
-                name: icon512
-                label: Site Icon 512x512 (name image like 'icon-512x512.png')
-                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
-                default: "/assets/icon-512x512.png"
+
+              # - widget: image
+              #   name: favicon32x32
+              #   label: Site Favicon 32x32 (name image like 'favicon-16x16.png')
+              #   hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+              #   default: "/assets/favicon-32x32.png"
+              # - widget: image
+              #   name: icon192
+              #   label: Site Icon 192x192 (name image like 'icon-192x192.png')
+              #   hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+              #   default: "/assets/icon-192x192.png"
+              # - widget: image
+              #   name: icon512
+              #   label: Site Icon 512x512 (name image like 'icon-512x512.png')
+              #   hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+              #   default: "/assets/icon-512x512.png"
+              
               - widget: string
                 name: twitterUsername
                 label: Twitter user (no '@' justthename)
                 required: false
               - widget: string
                 name: companyname
-                label: Company Name or Site Name
+                label: Your Name
                 required: true
               - widget: boolean
                 name: showfooter

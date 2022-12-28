@@ -30,6 +30,7 @@ export const useSiteMetadata = () => {
           menu4
           font1
           siteColor
+          
           }
         }
       }
