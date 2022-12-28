@@ -5,14 +5,14 @@
     "favicon32x32": "/assets/icon.svg",
     "favicon16x16": "/assets/icon.svg",
     "showNav": true,
-    "showNav2": true,
     "companyname": "Todd Lambert",
     "siteUrl": "https://toddlambert.myresume.site/",
     "twitterUsername": "toddlambert",
     "titleDefault": "Todd Lambert",
     "showSocial": true,
     "showResume": true,
-    "showInfo": true,
+    "showInfo": false,
+    "showNav2": false,
     "postcount": "1",
     "icon192": "/assets/icon.svg",
     "menu1": "Profile",
@@ -32,5 +32,8 @@
     "icon512": "/assets/icon.svg",
     "showSkills": true
   },
-  "ga": "G-FRM0PVXTRX"
+  "ga": "G-FRM0PVXTRX",
+  "switches": {
+    "showPosts": true
+  }
 }
