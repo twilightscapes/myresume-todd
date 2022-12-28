@@ -70,6 +70,7 @@ export function Layout({ children }) {
   const { iconimage } = useSiteMetadata()
 
   const { showNav } = useSiteMetadata()
+  const { showNav2 } = useSiteMetadata()
   const { showInfo } = useSiteMetadata()
   // const { showFeature } = useSiteMetadata()
   const { showPosts } = useSiteMetadata()
@@ -276,6 +277,15 @@ This is 2nd menu
 </div>
 
 <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
+
+
+
+
+
+
+{showNav2 ? (
+
+<>
   <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /></label>
 
 <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
@@ -292,7 +302,7 @@ This is 2nd menu
   </label>
 
   
-  {/* <Install /> */}
+
 
 
 
@@ -404,6 +414,12 @@ This is 2nd menu
     </ul>
 
   </div>
+  </>
+
+) : (
+  ""
+)}
+      
 
       {/* <Toast show={loading || didJustAddToCart} >
         {!didJustAddToCart ? (

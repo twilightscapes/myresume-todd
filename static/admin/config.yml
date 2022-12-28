@@ -362,6 +362,17 @@ collections:
                 label: Show Cover Letter
                 required: false
 
+              - widget: boolean
+                name: showNav
+                label: Show Nav Bar at top
+                default: true
+                required: false
+              - widget: boolean
+                name: showNav2
+                label: Show floating Nav Bar on side
+                default: true
+                required: false
+
               - widget: string
                 name: menu1
                 label: Menu - Profile Title
@@ -382,6 +393,9 @@ collections:
                 label: Menu - Skills Title
                 default: "Skills"
                 required: false
+
+
+               
 
   
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "

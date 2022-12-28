@@ -23,6 +23,7 @@ export const useSiteMetadata = () => {
           showSocial
           showSkills
           showNav
+          showNav2
           menu1
           menu2
           menu3

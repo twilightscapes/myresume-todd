@@ -605,7 +605,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
   textShadow:'0 2px 7px #000',
   }} >
 
-<span style={{color:'', fontSize:'160%'}}>{companyname}</span>
+<span style={{marginTop:'10px', fontSize:'160%'}}>{companyname}</span>
 {frontmatter.addressText}
 <br />
 {frontmatter.addressText2}
