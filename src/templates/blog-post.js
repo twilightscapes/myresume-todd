@@ -609,9 +609,9 @@ const { iconimage } = useSiteMetadata()
 
 
       {frontmatter.sharethis ? (
-        <div style={{width:'500px', padding:'0', margin:'0 auto',display:'flex', alignSelf:'center', justifyContent:'center', borderRadius:'', overflow:'hidden', border:'0px solid red'}}>
-            <ShareSocial />
-            </div>
+       <div style={{maxWidth:'70vw', padding:'0', margin:'0 auto',display:'flex', alignSelf:'center', justifyContent:'center', borderRadius:'', overflow:'hidden', border:'0px solid red'}}>
+       <ShareSocial />
+       </div>
           ) : (
             ""
           )}
@@ -622,7 +622,7 @@ const { iconimage } = useSiteMetadata()
 
 
 {frontmatter.comments ? (
-<div style={{width:'80%', padding:'0', margin:'0 auto', display:'flex', justifyContent:'center',}}>
+<div style={{width:'80%', padding:'0', margin:'0 auto', display:'flex', justifyContent:'center'}}>
   
 {/* <CommentBox /> */}
 

@@ -13,25 +13,27 @@ const style = {
     background: 'transparent',
     borderRadius: '12px',
     border: 0,
-    color: 'inherit',
+    color: '#fff',
     display:'flex',
     justifyContent:'center',
     flexDirection:'column'
   },
   copyContainer: {
     border: '1px solid',
-    background: 'rgb(0,0,0,0.1)',
+    background: 'rgb(0,0,0,0.5)',
     color: 'inherit !important',
+    width:'100%',
+    maxWidth:'50vw'
   },
   copyIcon: {
-    color:'#fff',
+    color:'#fff !important',
     border:'1px solid red'
   },
   copyContainerbefore: {
     content: 'please share this link:',
     position: 'absolute',
     left: '0',
-    top: '-24px',
+    top: '-54px',
 },
  iconContainer: {
 textAlign:'center !important',
