@@ -90,6 +90,7 @@ collections:
           name: "body",
           widget: "markdown",
           hint: "Main content goes here.",
+          required: false
         }
   - label: "Pages"
     name: "pages"
@@ -327,7 +328,7 @@ collections:
               #   label: Site Icon 512x512 (name image like 'icon-512x512.png')
               #   hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
               #   default: "/assets/icon-512x512.png"
-              
+
               - widget: string
                 name: twitterUsername
                 label: Twitter user (no '@' justthename)

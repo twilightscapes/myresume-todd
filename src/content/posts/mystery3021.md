@@ -17,7 +17,6 @@ youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
 comments: ""
-shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-7.jpg
 svgImage: /assets/MysteryScience3000.svg
