@@ -299,8 +299,16 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
                )}
 
                
-            <div style={{display:'flex', flexDirection:'', placeContent:'center', placeSelf:'center', justifyContent:'center', alignContent:'center', alignItem:'center', verticalAlign:'center', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
-                <div style={{ background:'rgba(0,0,0,0.30)', fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)', }}>Play <ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} /></div>
+            <div style={{display:'flex', flexDirection:'column', placeContent:'center', placeSelf:'center', justifyContent:'center', alignContent:'center', alignItem:'center', verticalAlign:'center', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
+
+            {iconimage ? (
+        
+        <img className="" src={iconimage} width="" height="" alt="Logo" style={{ width:'50vw', maxWidth:'30vw', maxHeight:'', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', objectFit:'contain', backgroundSize:'contain', border:'0px solid yellow', display:'flex', justifyContent:'center', margin:'0 auto'}} />
+                  ) : (
+                    ""
+                  )}
+
+                <div style={{ fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'0px solid #333', filter:'drop-shadow(2px 2px 2px #000)', }}>Play <ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} /></div>
                 
             </div>
 
