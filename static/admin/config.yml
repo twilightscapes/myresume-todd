@@ -300,6 +300,7 @@ collections:
                 default: "/assets/default-og-image.jpg"
               - widget: image
                 name: iconimage
+                required: false
                 label: Site Logo (should be SVG if at all possible)
               - widget: image
                 name: favicon16x16
