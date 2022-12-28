@@ -278,13 +278,18 @@ This is 2nd menu
 <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
   <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /></label>
 
-{/* <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
+<label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
 
-<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'none' }}/> 
+{/* <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'none' }}/>  */}
+{iconimage ? (
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', maxWidth:'120px', border:'none'}} />
+                ) : (
+                  companyname
+                )}
 
 </div>
-  </label> */}
+  </label>
 
   
   {/* <Install /> */}
@@ -302,58 +307,86 @@ This is 2nd menu
 
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
-    <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-    <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'0px solid'}}></Link>
-{/* <SiteLogo /> */}
+    <li className="grad" style={{position:'relative', maxHeight:'60px', width:'auto'}}>
+            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+            {iconimage ? (
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
+                ) : (
+                  companyname
+                )}
+            </AnchorLink>
+          </li>
+      
+      
+
+   
+            <li className="has-app" style={{position:'relative', display:'none'}}>
+            <Link to="/login" className="button" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
+              </li>
+
+
+
+
+
+
+          
+          {showInfo ? (
+            <li className="" style={{position:'relative',}}>
+              <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+              {menu1}
+              </AnchorLink>
+              </li>
+) : (
+  ""
+)}
+      
+
+      <li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
  </li>
 
 
 
+<li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/posts" className="navbar-item" style={{paddingRight:'',}}>{menu2}</Link>
+ </li>
+
+
+      {showPosts ? (
+            <li className="no-app" style={{position:'relative',}}>
+            <AnchorLink className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
+            {menu2}
+            </AnchorLink>
+            </li>
+            ) : (
+  ""
+)}
+
+       
+{showResume ? (
+            <li className="no-app" style={{position:'relative',}}>
+              <AnchorLink className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+              {menu3}
+              </AnchorLink>
+              </li>
+            ) : (
+              ""
+            )}
 
 
 
+{showSkills ? (
+              <li className="no-app" style={{position:'relative',}}>
+              {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
+                Contact <span className="mobilehide">Me</span>
+              </AnchorLink> */}
+      
+              <AnchorLink className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</AnchorLink>
+              </li>
 
-
-
-
-
-
-{/* <li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
-              <Link className="navbar-item txtshadow" to="/about/">
-
-              About Us
-
-              </Link>
-      </li>  */}
-
-
-
-<li className="carto" style={{textAlign:'', pointerEvents:''}}>
-      <Link className="navbar-item txtshadow" to="/minutes/">
-
-      Latest Posts
-
-        </Link>
-</li>
-
-<li className="carto" style={{textAlign:'', pointerEvents:''}}>
-      <Link className="navbar-item txtshadow" to="/minutes/">
-
-      Archived Posts
-
-        </Link>
-</li>
-
-
-
-{/* <li className="carto" style={{textAlign:'', pointerEvents:''}}>
-      <Link state={{modal: true}} className="navbar-item txtshadow" to="/contact/">
-
-      Contact Us
-
-        </Link>
-</li> */}
-
+              ) : (
+  ""
+)}
 
 
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>

@@ -190,7 +190,7 @@ const HomePage = ({ data }) => {
     // const SkillsTitle = frontmatter.skillsTitle
     const SkillsText = frontmatter.skillsText
     
-    // const { showNav } = useSiteMetadata()
+    const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
     const { showPosts } = useSiteMetadata()
@@ -472,7 +472,16 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
+{showNav ? (
+  <div style={{height:'60px'}}></div>
+      ) : (
+        ""
+      )}
+
 {showInfo ? (
+
+
+
 <section id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
@@ -486,9 +495,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
               style={{height:'auto', width:'100vw', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important'}}
           />
        
+          
           ) : (
             ""
           )}
+       
 </div>
 
 
