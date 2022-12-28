@@ -24,12 +24,12 @@
     "title": "Todd Lambert",
     "showfooter": true,
     "showFeature": false,
-    "showCover": true,
+    "showCover": false,
     "image": "/assets/transparent.png",
     "siteColor": "#ff0000",
     "description": "My Resume and Portfolio - always online and always with me.",
     "icon512": "/assets/tle-icon.png",
-    "showSkills": true
+    "showSkills": false
   },
   "ga": "G-FRM0PVXTRX"
 }
