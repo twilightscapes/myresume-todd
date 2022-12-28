@@ -274,7 +274,7 @@ function Iframer() {
 
 
 
-    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'5vh auto'}}>
+    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', height:'100vh', margin:'5vh auto', border:'0px solid red'}}>
     
     <div style={{position:'relative', maxWidth:'100vw', margin:'0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
 
@@ -282,7 +282,7 @@ function Iframer() {
 
     {iconimage ? (
         
-        <img className="homepage-bg" src={iconimage} width="500px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'40vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+        <img className="homepage-bg" src={iconimage} width="" height="" alt="Logo" style={{ width:'50vw', maxWidth:'30vw', maxHeight:'', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', objectFit:'contain', backgroundSize:'contain'}} />
                   ) : (
                     ""
                   )}
