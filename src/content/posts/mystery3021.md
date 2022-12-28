@@ -16,7 +16,7 @@ youtubecontrols: "0"
 youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
-comments: "1"
+comments: ""
 shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-7.jpg
