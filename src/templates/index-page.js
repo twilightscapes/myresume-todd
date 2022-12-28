@@ -180,7 +180,7 @@ const HomePage = ({ data }) => {
 
     const { companyname } = useSiteMetadata()
     const { siteUrl } = useSiteMetadata()
-		const { showNav } = useSiteMetata()
+		
 
     const YouTubeStart = frontmatter.youtubestart
     const YouTubeEnd = frontmatter.youtubeend
@@ -470,15 +470,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/* show Info */}
 
-{showNav ? (
-  <>
-nav is here
-</>
-) : (
-  <>
-no nav
-</>
-)}
 
 
 {showInfo ? (
