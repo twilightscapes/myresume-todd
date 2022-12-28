@@ -52,7 +52,6 @@ export const blogListQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
-            nftdrop
             featuredImage {
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)

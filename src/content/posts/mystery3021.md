@@ -14,11 +14,10 @@ title: Mystery Science Theater remade with svg/video
 youtubemute: "1"
 youtubecontrols: "0"
 youtubeend: "266"
-shareable: "1"
+sharethis: true
 svgImage: /assets/MysteryScience3000.svg
 svgzindex: "0"
 youtubersuggestion1: ""
-isnftforsale: ""
 youtubersuggestion2: https://youtu.be/3lyudrx1pJo
 youtubestart: "33"
 ---

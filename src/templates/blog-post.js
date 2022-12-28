@@ -98,9 +98,9 @@ const Post = ({ data, pageContext }) => {
     : ""
 
     const { showNav } = useSiteMetadata()
-    const NftLink = frontmatter.nftlink
-    const NftRedeem = frontmatter.nftredeem
-    const NftDrop = frontmatter.nftdrop
+    // const NftLink = frontmatter.nftlink
+    // const NftRedeem = frontmatter.nftredeem
+    // const NftDrop = frontmatter.nftdrop
 
 
 
@@ -125,7 +125,7 @@ function AddSvg(){
 
 const IsNft = frontmatter.isnftforsale
 const ShowOriginal = frontmatter.youtubeshoworiginal
-const ShareThis = frontmatter.shareable
+// const ShareThis = frontmatter.sharethis
 const Comments = frontmatter.comments
 
 const YouTubeStart = frontmatter.youtubestart
@@ -452,15 +452,15 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
   const { siteUrl } = useSiteMetadata()
 
-const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:'100vw', }}>
-  { NftRedeem ? (
-      ""
+// const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:'100vw', }}>
+//   { NftRedeem ? (
+//       ""
       // <a href={NftRedeem} style={{fontSize:'1.4rem', display:'flex', alignSelf:'center', justifySelf:'center', width:'', maxWidth:'400px',  margin:'10px auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666',}}>REDEEM UNLOCKABLE CONTENT</a>
-      ) : (
-        ""
-      )}
+      // ) : (
+      //   ""
+      // )}
   {/* <nft-card style={{}} contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183187330132344833"> </nft-card> */}
-  </div>
+  // </div>
 
 const { iconimage } = useSiteMetadata()
 
@@ -675,12 +675,12 @@ const { iconimage } = useSiteMetadata()
 
 <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
 
-{IsNft ? (
+{/* {IsNft ? (
             <strong style={{padding:'2rem 1rem'}}>Artist's Notes:</strong>
        
           ) : (
             ""
-          )}
+          )} */}
 
 
 
@@ -695,63 +695,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-{IsNft ? (
 
-        <div style={{minWidth:'50%', width:'100%', maxWidth:'1000px', maxHeight:'', position:'relative', right:'0', border:'0px solid red', margin:'0 auto'}}>
-            {/* <NFTDetails /> */}
-            
-
-  
-
-
-
-{NftLink ? (
- <div className='NFTiframer-wrapper' style={{position:'relative', top:'0', zIndex:'0', width:'100%', maxWidth:'60vw', margin:'0 auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', background:'#fff', borderRadius:'12px' }}>
-
- <iframe title="VidSock" id="youtube2" className="blog-video1" width="100%" height="400" src={NftLink} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', zIndex:'0', width:'100%', height:'100%', minHeight:'40vh', borderRadius:'12px'  }} />
- </div>
-       
-          ) : (
-            ""
-          )}
-
-
-
-
-
-
-
-       
-
-       { NftDrop ? (
-
-         
-            <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
-  <Countdown daysInHours date={NftDrop} >
-<Completionist />
-  </Countdown>
-
-
-
-  
-
-
-</div>
-
-
-       
-          ) : (
-""
-       
-
-          )}
-
-</div>
-
-
-          ) : (
-            ""
-          )}
 
 
        
@@ -770,12 +714,18 @@ const { iconimage } = useSiteMetadata()
 
 
 
-      {!ShareThis ? (
-""
-          ) : (
-            <div style={{width:'500px', padding:'0', margin:'0 auto',display:'flex', alignSelf:'center', justifyContent:'center', borderRadius:'', overflow:'hidden', border:'0px solid red'}}>
+
+      {/* { ShareThis && (<div style={{width:'500px', padding:'0', margin:'0 auto',display:'flex', alignSelf:'center', justifyContent:'center', borderRadius:'', overflow:'hidden', border:'0px solid red'}}>
+            <ShareSocial />
+            </div>)} */}
+
+
+      {frontmatter.sharethis ? (
+        <div style={{width:'500px', padding:'0', margin:'0 auto',display:'flex', alignSelf:'center', justifyContent:'center', borderRadius:'', overflow:'hidden', border:'0px solid red'}}>
             <ShareSocial />
             </div>
+          ) : (
+            ""
           )}
 
 <br />
@@ -922,12 +872,8 @@ export const pageQuery = graphql`
         youtubecontrols
         youtubeautostart
         comments
-        shareable
-        isnftforsale
-        nftdrop
+        sharethis
         svgzindex
-        nftlink
-        nftredeem
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
