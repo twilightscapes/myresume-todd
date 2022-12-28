@@ -20,7 +20,7 @@ youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
 comments: true
-sharethis:
+sharethis: true
 underlayImage: /assets/swd-foreground.png
 featuredImage: /assets/Experiences-Header-5.jpg
 svgImage: /assets/campfire.svg
