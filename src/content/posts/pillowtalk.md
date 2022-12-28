@@ -6,7 +6,7 @@ date: 2021-01-01 01:43
 description: Let's Find Mike A Woman
 youtuber: "SD0EKkyuakY"
 youtuber2: "VgdB9QYKeyM"
-youtubeshoworiginal: true
+youtubeshoworiginal: false
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
@@ -15,7 +15,7 @@ audioend: "5000"
 youtubecontrols: "0"
 youtubeautostart: "1"
 svgzindex: "0"
-comments: true
+comments: false
 sharethis: true
 underlayImage: /assets/PillowTalkBG.png
 featuredImage: /assets/Experiences-Header-8.jpg
