@@ -180,7 +180,7 @@ const HomePage = ({ data }) => {
 
     const { companyname } = useSiteMetadata()
     const { siteUrl } = useSiteMetadata()
-
+		const { showNav } = useSiteMetata()
 
     const YouTubeStart = frontmatter.youtubestart
     const YouTubeEnd = frontmatter.youtubeend
@@ -469,6 +469,18 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* end show feature */}
 
 {/* show Info */}
+
+{showNav ? (
+  <>
+nav is here
+</>
+) : (
+  <>
+no nav
+</>
+)}
+
+
 {showInfo ? (
 <section id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
