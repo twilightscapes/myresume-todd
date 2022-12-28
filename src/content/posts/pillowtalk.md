@@ -15,7 +15,7 @@ audioend: "5000"
 youtubecontrols: "0"
 youtubeautostart: "1"
 svgzindex: "0"
-comments: true
+comments: false
 sharethis: true
 underlayImage: /assets/PillowTalkBG.png
 featuredImage: /assets/Experiences-Header-8.jpg
