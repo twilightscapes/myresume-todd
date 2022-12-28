@@ -138,17 +138,20 @@ class BlogIndex extends React.Component {
 
 
     return (
+      
       <Layout className="blog-page1">
 <Helmet>
   <body className="bloglist" />
 </Helmet>
         <Seo
-          title={"TRON Archive — Page " + currentPage + " of " + numPages}
+          title={"Archive — Page " + currentPage + " of " + numPages}
           description={
-            "TRON Archive page " + currentPage + " of " + numPages
+            "Archive page " + currentPage + " of " + numPages
           }
         />
-        
+ 
+  <div style={{height:'10px', border:'0px solid yellow'}}></div>
+
 
 
         <div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>
