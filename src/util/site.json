@@ -11,7 +11,7 @@
     "titleDefault": "Todd Lambert",
     "showSocial": true,
     "showResume": true,
-    "showInfo": true,
+    "showInfo": false,
     "showNav2": true,
     "postcount": "1",
     "icon192": "/assets/icon.svg",
