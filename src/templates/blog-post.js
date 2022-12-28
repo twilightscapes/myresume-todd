@@ -819,9 +819,9 @@ const { iconimage } = useSiteMetadata()
           )}
 
 
-      <div style={{padding:'0 5vw', color:'inherit !important'}}>
+      {/* <div style={{padding:'0 5vw', color:'inherit !important'}}>
       {(previous || next) && <Pagination {...props} />}
-      </div>
+      </div> */}
 
 
 
