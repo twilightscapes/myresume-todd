@@ -413,7 +413,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/* show feature */}
   {showFeature ? (   
-<section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:''}}>
+<section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0'}}>
   <article>
 
 
@@ -473,7 +473,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 {showNav ? (
-  <div style={{height:'60px'}}></div>
+  <div style={{height:'50px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
@@ -482,7 +482,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-<section id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', border:'0px solid red'}}>
+<section id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
   <div className="no-app" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
