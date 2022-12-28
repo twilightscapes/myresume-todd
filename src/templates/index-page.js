@@ -274,7 +274,7 @@ function Iframer() {
 
 
 
-    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', height:'30vh', margin:'5vh auto', border:'0px solid red', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', flexDirection:'column'}}>
+    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', height:'90vh', margin:'5vh auto', border:'0px solid red', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', flexDirection:'column'}}>
     
     {/* <div style={{position:'relative', maxWidth:'100vw', margin:'0', zIndex:'0', background:'transparent !important',}}>
 
@@ -292,8 +292,8 @@ function Iframer() {
 </div> */}
 
 
-<div style={{display:'flex', flexDirection:'', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
-<div style={{ fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'0px solid #333', filter:'drop-shadow(2px 2px 2px #000)', }}><ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} />Play</div>
+<div style={{display:'flex', justifyContent:'center', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
+<div style={{ fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'0px solid #333', filter:'drop-shadow(2px 2px 2px #000)', opacity:'.7' }}><ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} />Play</div>
                 
             </div>
 
