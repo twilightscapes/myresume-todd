@@ -16,13 +16,10 @@ youtubecontrols: "0"
 youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
-comments: ""
-shareable: ""
+comments: "1"
+shareable: "true"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-7.jpg
 svgImage: /assets/MysteryScience3000.svg
-nftlink: ""
-nftdrop: "2021-10-31T14:00:00"
-nftredeem: ""
 ---
 

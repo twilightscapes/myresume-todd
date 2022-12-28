@@ -762,19 +762,52 @@ const { iconimage } = useSiteMetadata()
 
 
 
- <br />
-<br />
-<br />
 
       {/* <object data="/art/boatswains-blunder" width="100%" height="1000"></object> */}
 
 
+      </article>
 
-      <br />
+
+
+      {!ShareThis ? (
+""
+          ) : (
+            <div style={{width:'500px', padding:'0', margin:'0 auto',display:'flex', alignSelf:'center', justifyContent:'center', borderRadius:'', overflow:'hidden', border:'0px solid red'}}>
+            <ShareSocial />
+            </div>
+          )}
+
 <br />
-<br />
- {ShowOriginal ? (
-          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
+
+{Suggestion1 ? (
+            <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
+            Find a good one? Post your link Below and then Share it Above. 
+      
+           </div>
+       
+          ) : (
+            ""
+          )}
+
+
+{Comments ? (
+<div style={{width:'80%', padding:'0', margin:'0 auto', display:'flex', justifyContent:'center',}}>
+  
+<CommentBox />
+    
+       </div>
+       
+          ) : (
+            ""
+          )}
+
+
+
+
+
+{ShowOriginal ? (
+          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'2rem auto 0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
 <div style={{maxWidth:'70vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px', background:'rgba(78, 74, 74, 0.3)'}}>
   
                     <Iframer2 />
@@ -784,12 +817,6 @@ const { iconimage } = useSiteMetadata()
           ) : (
             ""
           )}
-        
-        
-
-
-      </article>
-
 
 
       <div style={{padding:'0 5vw', color:'inherit !important'}}>
@@ -829,48 +856,13 @@ const { iconimage } = useSiteMetadata()
 
 
 
-{ShareThis ? (
-<div style={{width:'100%', padding:'0', margin:'0 auto',display:'flex', justifyContent:'center',}}>
 
-
-  
-                    <ShareSocial />
-    
-       </div>
-       
-          ) : (
-            ""
-          )}
-
-<br />
-
-{Suggestion1 ? (
-            <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
-            Find a good one? Post your link Below and then Share it Above. 
-      
-           </div>
-       
-          ) : (
-            ""
-          )}
-
-
-{Comments ? (
-<div style={{width:'80%', padding:'0', margin:'0 auto', display:'flex', justifyContent:'center',}}>
-  
-<CommentBox />
-    
-       </div>
-       
-          ) : (
-            ""
-          )}
       
 
       
 
    
-   <br />
+
    {/* <GoBack /> */}
 
    {/* <div style={{display:'flex', justifyContent:'center', color:'#ccc'}}><Link title="Go Back" className="navbar-item txtshadow " to="/">
@@ -878,12 +870,6 @@ Go Back
 </Link></div> */}
 
 
-
-
-
-
-   <br />
-   <br />
 
 
    <Footer />

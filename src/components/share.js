@@ -4,19 +4,42 @@ import styled from "styled-components"
 
 const CustomBox = styled.div`
 
-#share *{background:transparent !important;}
+
 
 `
 
 const style = {
-  background: 'transparent',
-  borderRadius: 3,
-  border: 0,
-  color: 'white',
-  padding: '0 30px',
-  display:'block',
-  margin:'0 auto',
-  align:'center'
+  root: {
+    background: 'transparent',
+    borderRadius: '12px',
+    border: 0,
+    color: 'inherit',
+    display:'flex',
+    justifyContent:'center',
+    flexDirection:'column'
+  },
+  copyContainer: {
+    border: '1px solid',
+    background: 'rgb(0,0,0,0.1)',
+    color: 'inherit !important',
+  },
+  copyIcon: {
+    color:'#fff',
+    border:'1px solid red'
+  },
+  copyContainerbefore: {
+    content: 'please share this link:',
+    position: 'absolute',
+    left: '0',
+    top: '-24px',
+},
+ iconContainer: {
+textAlign:'center !important',
+border:'1px solid blue'
+ },
+ copyUrl: {
+color:'#ff0000'
+ },
 
 };
 
@@ -30,8 +53,9 @@ const Foo = () => {
     <ShareSocial
     id="share"
     style={style}
+    // style={{background:'transparent !important'}}
     url ={url}
-    title="Sharing IS Caring!"
+    // title="Sharing IS Caring!"
     socialTypes={['facebook','twitter','reddit','linkedin']}>
 
       </ShareSocial>
