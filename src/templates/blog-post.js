@@ -126,7 +126,7 @@ function AddSvg(){
 const IsNft = frontmatter.isnftforsale
 const ShowOriginal = frontmatter.youtubeshoworiginal
 // const ShareThis = frontmatter.sharethis
-const Comments = frontmatter.comments
+// const Comments = frontmatter.comments
 
 const YouTubeStart = frontmatter.youtubestart
 const YouTubeEnd = frontmatter.youtubeend
@@ -741,7 +741,7 @@ const { iconimage } = useSiteMetadata()
           )}
 
 
-{Comments ? (
+{frontmatter.comments ? (
 <div style={{width:'80%', padding:'0', margin:'0 auto', display:'flex', justifyContent:'center',}}>
   
 <CommentBox />

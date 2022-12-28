@@ -13,7 +13,7 @@ svgzindex: "0"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-3.jpg
 svgImage: /assets/nebula.svg
-comments: ""
+comments: true
 sharethis: true
 ---
 

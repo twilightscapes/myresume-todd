@@ -19,7 +19,7 @@ youtubecontrols: "0"
 youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
-comments: ""
+comments: true
 sharethis: true
 underlayImage: /assets/PillowTalkBG.png
 featuredImage: /assets/Experiences-Header-8.jpg
