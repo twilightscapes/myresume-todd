@@ -9,16 +9,9 @@ youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
-youtubeshoworiginal: ""
-youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion3: "https://youtu.be/7vz43MYaCA0"
+youtubeshoworiginal: false
 comments: true
-sharethis:
-isnftforsale: "1"
-nftlink: ""
-nftdrop: ""
-nftredeem: ""
+sharethis: true
 featuredImage: /assets/Experiences-Header-4.jpg
 underlayImage: /assets/transparent.png
 youtubeautostart: "1"
@@ -32,7 +25,3 @@ Upon shooting over the course of a couple of hours I returned with a bunch of co
 So, it seemed appropriate to take it to the next level and add some animation to illustrate better what I saw from that night. 
 
 I hope you like it.
-
-
-
-

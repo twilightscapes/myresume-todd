@@ -7,7 +7,7 @@ youtuber: https://youtu.be/XjuLZwlDxh8
 featuredImage: /assets/Experiences-Header-7.jpg
 underlayImage: /assets/transparent.png
 youtubeautostart: "1"
-youtubeshoworiginal: ""
+youtubeshoworiginal: 
 comments: true
 template: blog-post
 title: Mystery Science Theater remade with svg/video

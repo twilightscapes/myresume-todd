@@ -9,13 +9,13 @@ import { getSrc } from "gatsby-plugin-image"
 import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import Countdown from 'react-countdown'
-import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
+// import Countdown from 'react-countdown'
+// import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 import { Footer } from "../components/footer"
-import {CopyToClipboard} from 'react-copy-to-clipboard'
+// import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
-import YouTubed from "../pages/youtube"
+// import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
@@ -124,7 +124,7 @@ function AddSvg(){
 
 
 const IsNft = frontmatter.isnftforsale
-const ShowOriginal = frontmatter.youtubeshoworiginal
+// const ShowOriginal = frontmatter.youtubeshoworiginal
 // const ShareThis = frontmatter.sharethis
 // const Comments = frontmatter.comments
 
@@ -134,125 +134,25 @@ const YouTubeMute = frontmatter.youtubemute
 const YouTubeControls = frontmatter.youtubecontrols
 const YouTubeAutostart = frontmatter.youtubeautostart
 
-const Suggestion1 = frontmatter.youtubersuggestion1
-const Suggestion2 = frontmatter.youtubersuggestion2
-const Suggestion3 = frontmatter.youtubersuggestion3
 
 
-if (Suggestion1) {
-  <ShowSuggestion />
-}
-else{
-
-  
-}
-
-function ShowSuggestion() {
-
-  return (
-<div style={{}}>
-  
-
-  
-<div style={{width:'90%', maxWidth:'400px', margin:'65px auto 0 auto', fontSize:'90%', padding:'5px 0 ', border:'4px dotted', borderRadius:'12px', textAlign:'center', position:'relative', }}>
-<IoArrowRedoSharp style={{position:'absolute', top:'0', left:'0', fontSize:'60px', transform: 'rotate(-45deg)', }} />
-<IoArrowUndoSharp style={{position:'absolute', top:'0', right:'0', fontSize:'60px', transform: 'rotate(45deg)', }} />
-  
-  
-  <span style={{fontSize:'120%', fontWeight:'bold', textTransform:'uppercase'}}>This is interactive!</span> 
-<br />
-
-Recommended Alternatives:
-<br /><br />
-Click to Copy:<br />
-<CopyToClipboard text={Suggestion1}>
-  <button>{Suggestion1} </button>
-</CopyToClipboard><br />
 
 
-  <CopyToClipboard text={Suggestion2}>
-  <button>{Suggestion2} </button>
-</CopyToClipboard><br />
-
-<CopyToClipboard text={Suggestion3}>
-  <button>{Suggestion3} </button>
-</CopyToClipboard><br />
 
 
-</div>
 
-<span style={{fontSize:'150%'}}></span>
-<div className="mobilespace" style={{ border:'0px solid red'}}></div>
-</div>
-  )
-}
 
-const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-// const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-// const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
 const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const YouTube = frontmatter.youtuber
 
 
 
-  if (!YoutuberSuggestion1) {
-    <IframeSuggestions />
-  }
-  else{
+
+
+
+
+
   
-    
-  }
-
-
-
-
-
-  function IframeSuggestions() {
-    
-    return (
-      <div>
-              <ReactPlayer
-              className='react-player66'
-              url={iframeUrl}
-              // url={[
-              //   iframeUrl,
-              //   YoutuberSuggestion1,
-              //   YoutuberSuggestion2,
-              //   YoutuberSuggestion3
-              // ]}
-              width="100%"
-              height="100%"
-              config={{
-                youtube: {
-                  playerVars: { showinfo:0, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
-                },
-              }}
-              loop
-              playing
-              playsinline
-              playIcon={
-                <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-    
-            <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-              
-    
-              <div style={{position:'relative', maxWidth:'30vw', margin:'10% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-      <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxHeight:'200px', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', display:'none'}} />
-    </div>
-          
-              <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-              </div>
-              </button>}
-                light="../assets/transparent.png"
-              />
-
-              
-</div>
-
-    )
-
-  }
 
   function Iframer() {
     const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber
@@ -580,14 +480,7 @@ const { iconimage } = useSiteMetadata()
           )}
 
 
-{Suggestion1 ? (
-            <div style={{position:'absolute', top:'0', zIndex:'0',}}>
-            <YouTubed />
-            </div>
-       
-          ) : (
-            ""
-          )}
+
 
 
 
@@ -626,12 +519,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-{Suggestion1 ? (
-            <ShowSuggestion />
-       
-          ) : (
-            ""
-          )}
+
 
 { !YouTube2 ? (
             ""
@@ -730,15 +618,7 @@ const { iconimage } = useSiteMetadata()
 
 <br />
 
-{Suggestion1 ? (
-            <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
-            Find a good one? Post your link Below and then Share it Above. 
-      
-           </div>
-       
-          ) : (
-            ""
-          )}
+
 
 
 {frontmatter.comments ? (
@@ -756,7 +636,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-{ShowOriginal ? (
+{frontmatter.youtubeshoworiginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'2rem auto 0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>Click to view original video
 <div style={{maxWidth:'70vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px', background:'rgba(78, 74, 74, 0.3)'}}>
   
@@ -861,9 +741,6 @@ export const pageQuery = graphql`
         youtuber
         youtuber2
         youtubeshoworiginal
-        youtubersuggestion1
-        youtubersuggestion2
-        youtubersuggestion3
         youtubestart
         youtubeend
         audiostart

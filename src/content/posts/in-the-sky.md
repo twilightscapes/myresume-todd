@@ -6,10 +6,7 @@ date: 2022-01-01 01:43
 description: A groovy animation floating through the cosmos
 youtuber: "iHxmNzMfDj4"
 youtuber2: "mkYKF5hQQ6M"
-youtubeshoworiginal: ""
-youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/UfWnQuAxa5Y"
-youtubersuggestion3: "https://youtu.be/LE5m5aawuao"
+youtubeshoworiginal: false
 youtubestart: "1"
 youtubeend: ""
 youtubemute: "1"
@@ -17,16 +14,12 @@ audiostart: "33"
 audioend: "5000"
 youtubecontrols: "0"
 youtubeautostart: "1"
-isnftforsale: ""
 svgzindex: "0"
 comments: true
 sharethis: true
 underlayImage: /assets/swd-foreground.png
 featuredImage: /assets/Experiences-Header-5.jpg
 svgImage: /assets/campfire.svg
-nftlink: ""
-nftdrop: ""
-nftredeem: ""
 ---
 Shot in the Valley of the Gods in southern Utah, the original image is comprised of 72 photos shot during time-lapse and then stacked together to illustrate the movement of the earth.
 

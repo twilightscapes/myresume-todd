@@ -6,25 +6,18 @@ date: 2021-10-21 10:43
 description: One of my favorites from John Carpenter
 youtuber: "iOZcb9Otojk"
 youtuber2: "https://youtu.be/yjw_DuNkOUw"
-youtubeshoworiginal: ""
-youtubersuggestion1: 
-youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
+youtubeshoworiginal: false
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 youtubeautostart: "1"
-isnftforsale: ""
 svgzindex: "0"
 comments: true
-sharethis:
+sharethis: true
 underlayImage: /assets/transparent.png
 featuredImage: /assets/TheyLive-Header.jpg
 svgImage: /assets/TheyLive.svg
-nftlink: ""
-nftdrop: ""
-nftredeem: ""
 ---
 Only the BEST MOVIE EVER! My tribute to the cult classic, They Live by one of my favorite Directors: John Carpenter. 
 
