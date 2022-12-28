@@ -624,7 +624,9 @@ const { iconimage } = useSiteMetadata()
 {frontmatter.comments ? (
 <div style={{width:'80%', padding:'0', margin:'0 auto', display:'flex', justifyContent:'center',}}>
   
-<CommentBox />
+{/* <CommentBox /> */}
+
+Comments here
     
        </div>
        
