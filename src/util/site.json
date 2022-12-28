@@ -32,5 +32,8 @@
     "icon512": "/assets/icon.svg",
     "showSkills": true
   },
-  "ga": "G-FRM0PVXTRX"
+  "ga": "G-FRM0PVXTRX",
+  "switches": {
+    "showPosts": true
+  }
 }
