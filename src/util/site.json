@@ -10,7 +10,7 @@
     "twitterUsername": "toddlambert",
     "titleDefault": "Todd Lambert",
     "showSocial": true,
-    "showResume": false,
+    "showResume": true,
     "showInfo": true,
     "showNav2": true,
     "postcount": "1",
@@ -23,14 +23,14 @@
     "menu4": "Skills",
     "showPosts": true,
     "title": "Todd Lambert",
-    "showfooter": false,
-    "showFeature": false,
-    "showCover": false,
+    "showfooter": true,
+    "showFeature": true,
+    "showCover": true,
     "image": "/assets/transparent.png",
     "siteColor": "#ff0000",
     "description": "My Resume and Portfolio - always online and always with me.",
     "icon512": "/assets/tle-icon.png",
-    "showSkills": false
+    "showSkills": true
   },
   "ga": "G-FRM0PVXTRX"
 }
