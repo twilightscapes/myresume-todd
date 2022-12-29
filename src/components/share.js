@@ -29,7 +29,7 @@ const style = {
     color:'#fff !important',
     border:'1px solid red'
   },
-  copyContainerbefore: {
+  copyContainer: {
     content: 'please share this link:',
     position: 'absolute',
     left: '0',

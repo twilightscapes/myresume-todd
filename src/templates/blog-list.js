@@ -196,7 +196,7 @@ class BlogIndex extends React.Component {
 
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'100vh', marginTop:'60px'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'100vh', marginTop:'70px'}}>
 
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>

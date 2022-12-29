@@ -25,6 +25,7 @@ import { AiOutlineClose } from "react-icons/ai"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
 // import Menu from "../components/menu1"
+import Install from "../components/install-discount"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import SiteLogo from "../../static/assets/logo.svg"
@@ -263,18 +264,7 @@ body::after{
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 
-<div id="secondMenu" className="" style={{marginTop:'5rem', display:'none'}}>
-<ul className="sidebarMenuInner post-card" style={{}}>
-{/* <Install /> */}
-{/* <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-Woot
-</li>
-<li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-This is 2nd menu
-</li> */}
 
-</ul>
-</div>
 
 <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
 
@@ -438,6 +428,11 @@ This is 2nd menu
 
   <div style={{marginTop:'5px'}}><CartButton quantity={quantity} /></div> */}
      
+
+     
+
+<div id="secondMenu" className="" style={{}}><Install /></div>
+
 </header>
 
 

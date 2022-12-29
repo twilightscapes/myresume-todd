@@ -5,7 +5,7 @@
     "favicon32x32": "/assets/icon.svg",
     "favicon16x16": "/assets/icon.svg",
     "showNav": true,
-    "showNav2": false,
+    "showNav2": true,
     "companyname": "Todd Lambert",
     "siteUrl": "https://toddlambert.myresume.site/",
     "twitterUsername": "toddlambert",

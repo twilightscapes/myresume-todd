@@ -41,7 +41,7 @@ const NewsletterPage = () => (
 <CustomBox style={{}}> 
 
 
-<form  style={{width:'90%', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center', background: 'rgba(0,0,0,0.50)',
+<form  style={{width:'90%', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center', background: 'rgba(0,0,0,0.90)',
   backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'center', alignSelf:'center', overflow:'hidden', color:'#fff'}}
           className="contact-form"
           action="/signedup/"

@@ -60,7 +60,7 @@ youtubeend: "90"
 sharethis: 
 youtubecontrols: "0"
 template: index-page
-signup: false
+signup: true
 youtubemute: "1"
 description: Todd Lambert - Independent artist, photographer, designer/developer
 svgzindex: ""

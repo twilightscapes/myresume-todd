@@ -10,7 +10,7 @@ import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
 import ScrollAnimation from 'react-animate-on-scroll'
 // import { FaRegPlusSquare } from 'react-icons/fa'
-
+import Install from "../components/install-discount"
 import Theme from "../components/theme"
 
 import { IoShareOutline } from 'react-icons/io5'
@@ -493,7 +493,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 {frontmatter.signup ? (
- <ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'0', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
+ <ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'1', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
  <div style={{position:'relative', bottom:'', margin:'30px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
    <Newsignup />
    </div>
@@ -802,7 +802,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/*  show Resume */}
 {showResume ? (
-<section id="resume" order="" style={{ display:'', minHeight:'100vh', overflow:'', margin:'60px 0 0 0', position:'relative', border:'0px solid blue'}}>
+<section id="resume" order="" style={{ display:'', minHeight:'100vh', overflow:'', margin:'70px 0 0 0', position:'relative', border:'0px solid blue'}}>
 
 
 <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'5px 0 5px 0', }}>
@@ -863,7 +863,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* end show Skills */}
 
 
+
+
+
  </div>{/* end scooch */}
+
 
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>

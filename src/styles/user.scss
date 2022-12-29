@@ -142,6 +142,31 @@ gap:30px;
 
 
 
+#secondMenu {
+	position: fixed;
+	z-index:3;
+  border:0px solid purple !important;
+  border-radius: 12px;
+	padding:0 0 0 0;
+	// transform: translateX(-250px);
+	// transition: transform 250ms ease-in-out;
+  // background:transparent;
+  // overflow:hidden;
+  // border:2px solid purple;
+  background-color: rgba(0, 0, 0, 1);
+  width:100%;
+  max-width: 60vw;
+  margin:0 auto;
+  display:flex;
+  place-self:center; place-content:center; align-content:center; align-items:center; justify-content:center; 
+
+  // opacity:.6;
+
+  top:100px;
+  left:25%;
+  right:25%;
+  // .sidebarMenuInner{	border-radius: 0 12px 12px 0 !important;}
+}
 
 
 
