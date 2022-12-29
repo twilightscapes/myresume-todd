@@ -478,7 +478,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 )}
 {/* end show feature */}
 
-{/* show Info */}
 
 
 
@@ -493,11 +492,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-
-
-
-
-
+{/* show Info */}
 
 {showInfo ? (
 
@@ -607,13 +602,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-
-
-
-
-
-
-
 {UnderlayImage ? (
 
   <div className="nameblock" style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
@@ -634,17 +622,20 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 <br />
 <Link state={{modal: true}} to="/contact" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center' }}>Contact Me</Link>
 
+<br />
+{showCover ? (
+  <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+) : (
+  ""
+)}
+
 {showSocial ? (
            <Social />
           ) : (
             ""
           )}
 
-{showCover ? (
-  <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
-) : (
-  ""
-)}
+
 
 { !YouTube2 ? (
             ""
@@ -845,7 +836,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/*  show Skills */}
 {showSkills ? (
   // <ScrollAnimation animateIn="zoomInDown" animateOnce={false} animatePreScroll={false} delay={100}> 
-  <section className="no-app print" id="skills" order="" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
+<section className="no-app print" id="skills" order="" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'100vw', marginLeft:'', columnGap:'150px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
   </section>
