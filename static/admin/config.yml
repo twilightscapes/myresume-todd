@@ -140,6 +140,9 @@ collections:
           - { label: "Portfolio Quote - Closing", name: "closeQuote", widget: "string",
            required: false }
 
+          - { label: "Sign Up Box", name: "signup", widget: "string",
+           required: false }
+
 
           - { label: "Resume", name: "body", widget: "markdown" }
 

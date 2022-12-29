@@ -92,6 +92,7 @@ export const pageQuery = graphql`
         skillsTitle
         skillsText
         svgzindex
+        signup
         tagline
         featuredImage {
           publicURL
@@ -491,11 +492,17 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-<ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'0', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
-<div style={{position:'relative', bottom:'', margin:'30px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
-  <Newsignup />
-  </div>
-</ScrollAnimation>
+{frontmatter.signup ? (
+ <ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'0', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
+ <div style={{position:'relative', bottom:'', margin:'30px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
+   <Newsignup />
+   </div>
+ </ScrollAnimation>
+      ) : (
+        ""
+      )}
+
+
 
 
 

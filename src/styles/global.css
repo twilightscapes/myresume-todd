@@ -1811,7 +1811,7 @@ blockquote.frontquote {
 	width: 100vw;
 	height: 100%;
 	position: fixed;
-	z-index: 4;
+	z-index: 2;
 	opacity: 1;
 	margin: 0 auto;
 	padding: 0;
