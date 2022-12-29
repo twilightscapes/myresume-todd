@@ -56,6 +56,8 @@ collections:
       - { label: "YouTube End", name: "youtubeend", widget: "string", hint: "This is measured in seconds - 102 would end the video at the 1-min  and 42-second mark", required: false }
       - { label: "Make Post Shareable?", name: "sharethis:", widget: "boolean", default: "true", required: false }
       - { label: "Allow Comments?", name: "comments:", widget: "boolean", default: "true", required: false }
+      - { label: "Sign Up Box", name: "signup", widget: "boolean",
+           default: "false", required: false }
   
 
       
@@ -140,8 +142,7 @@ collections:
           - { label: "Portfolio Quote - Closing", name: "closeQuote", widget: "string",
            required: false }
 
-          - { label: "Sign Up Box", name: "signup", widget: "boolean",
-           default: "false", required: false }
+          
 
 
           - { label: "Resume", name: "body", widget: "markdown" }
