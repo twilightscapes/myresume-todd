@@ -34,7 +34,9 @@ dl {
   max-height:10vh !important;
   border:1px solid red !important; 
  } 
-
+dt {
+  margin-left: 140px !important;
+}
 
 
 
@@ -98,22 +100,24 @@ gap:30px;
    width: 1px;
    margin-bottom: 10px;
    border-radius: 5px;
-   height: 90%;
+   height: 70%;
    position: relative;
    top: 50%;
    transform: translateY(-50%);
    // transition: transform 550ms ease-in-out;
    cursor: pointer;
-   animation: slide 2s forwards;
-   animation-direction: reverse;
-   animation-iteration-count: 1;
+  //  animation: slide 2s reverse;
+  //  animation-direction: reverse;
    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px inset;
  }
  &:hover,
  &:focus {
    &:after {
       background-color: rgba(12, 12, 12, 0.5); 
-      transition: transform 550ms ease-in-out;
+      // transition: transform 550ms ease-in-out;
+      animation: slide 2s reverse;
+      animation-direction: reverse;
+      // animation-delay: 1s;
    }
  }
 }

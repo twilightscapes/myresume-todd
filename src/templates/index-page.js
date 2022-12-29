@@ -8,7 +8,7 @@ import { AiOutlineAudioMuted } from "react-icons/ai"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 // import { FaRegPlusSquare } from 'react-icons/fa'
 
 import Theme from "../components/theme"
@@ -819,25 +819,12 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/*  show Skills */}
 {showSkills ? (
+  <ScrollAnimation animateIn="zoomInDown" animateOnce={false} animatePreScroll={false} delay={100}> 
   <section className="no-app print" id="skills" order="" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
-
-
-
-
-
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'100vw', marginLeft:'', columnGap:'150px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
-
-
-
-
-
-
-
 </div>
-
-
-
   </section>
+</ScrollAnimation>
           ) : (
             ""
           )}
