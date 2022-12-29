@@ -1199,7 +1199,6 @@ body.carto .carta {
 	display: flex;
 	align-items: center;
 	color: #fff;
-	z-index: 0;
 }
 
 .fullscreenButt {
@@ -2531,14 +2530,19 @@ kbd {
 	}
 }
 
-/* .container21{
-  scroll-snap-points-y: repeat(300px);
+body{
   scroll-snap-type: y mandatory;
+  overflow-Y: scroll;
+  height:100vh;
+  overscroll-behavior: contain;
+  scroll-snap-align: center;
+  scroll-padding: 0 5%;
 }
 
-.container21 section{
-  scroll-snap-align: start;
-} */
+body section{
+  scroll-snap-align:center;
+  min-height:100vh;
+}
 
 
 

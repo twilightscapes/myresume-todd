@@ -109,11 +109,9 @@ export function Footer() {
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/">Home</Link> | <Link state={{modal: true}} to="/disclaimer#bottom">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy#bottom">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms#bottom">Terms of Use</Link></div>
   
 
-<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}
+<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright&copy; {(new Date().getFullYear())} {companyname}
 <br /><br />
-<a href="https://myresume.site" target="_blank" rel="noreferrer">Web App by MyResume</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a>
-<br /><br />
-<Link to="/login">Admin</Link>
+<a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a> &nbsp; | &nbsp; <Link to="/login">Admin</Link> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a>
 </div>
 
 

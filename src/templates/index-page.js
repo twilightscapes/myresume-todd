@@ -388,7 +388,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
     <CustomBox style={{}}>
     <Layout>
     <Helmet>
-  <body className="homepage" />
+  <body className="" />
   {/* <link rel="stylesheet" href={frontmatter.portfolio.closeText} /> */}
 </Helmet>
        <Seo
@@ -400,13 +400,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
       />
 
 
-<div name="container21" className="container21" style={{
- 	// overflowY: 'auto',
+<div className="container22" style={{
+ 	// overflowY: 'scroll',
   //  overflowX: 'hidden',
   //  overscrollBehavior: 'contain',
   //  scrollSnapAlign: 'center',
   //  scrollPadding: '0 5%',
   //  scrollSnapType: 'y mandatory',
+  //  height:'100vh',
 
 }}>
 {/* { sitecolor } */}
@@ -498,7 +499,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-<section id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
   <div className="no-app" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
@@ -786,7 +787,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/*  show Resume */}
 {showResume ? (
-<section id="resume" order="" style={{ display:'', minHeight:'100vh', overflow:'', margin:'70px 0 0 0', position:'relative', border:'0px solid blue'}}>
+<section className="vertical" id="resume" order="" style={{ display:'', minHeight:'100vh', overflow:'', margin:'0 0 0 0', position:'relative', border:'0px solid blue'}}>
 
 
 <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'', padding:'5px 0 5px 0', }}>
@@ -836,7 +837,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/*  show Skills */}
 {showSkills ? (
   // <ScrollAnimation animateIn="zoomInDown" animateOnce={false} animatePreScroll={false} delay={100}> 
-<section className="no-app print" id="skills" order="" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', padding:'1rem', display:'grid', placeContent:'center', border:'0px solid green', }}>
+<section className="no-app print vertical" id="skills" order="" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'100vw', marginLeft:'', columnGap:'150px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
   </section>
@@ -856,12 +857,13 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
 <Theme />
+<div id="branding" style={{position:'absolute', right:'3vw', fontSize:'90%'}}><a href=""><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></a></div>
 </div>
 
 
 {/* show footer */}
 {showfooter ? (
-<Footer />
+<Footer className="vertical" />
 ) : (
   ""
 )}
