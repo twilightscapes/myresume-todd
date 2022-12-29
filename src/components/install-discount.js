@@ -57,9 +57,9 @@ const InstallDiscount = () => (
 	debug={false}
 	location="none"
   className=""
-	style={{ display:'flex', flexDirection:'column', color:'inherit',alignItems:'center',  textAlign:'center', justifyContent:'center', margin:'0', top:'', maxWidth:'', position:'', border:'1px solid red',
+	style={{ display:'flex', flexDirection:'column', color:'inherit',alignItems:'center',  textAlign:'center', justifyContent:'center', margin:'0', top:'', maxWidth:'', position:'', border:'0px solid red',
   overflow:'hidden',
-  background:'rgba(0,0,0,.9)',
+  background:'rgba(0,0,0,.7)',
   borderRadius:'12px',
   padding:'0',
   height:'auto',

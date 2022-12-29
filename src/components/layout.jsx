@@ -437,7 +437,7 @@ body::after{
 
 {showPopup ? (
  <ScrollAnimation className="signup" animateIn="bounceInUp" delay={4000} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'1', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
- <div style={{position:'relative', bottom:'', margin:'30px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
+ <div style={{position:'relative', bottom:'', margin:'70px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
  <SignUp />
    </div>
  </ScrollAnimation>
