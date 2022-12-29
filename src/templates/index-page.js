@@ -421,11 +421,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
-  <ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15%', zIndex:'2', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
-<div style={{position:'relative', bottom:'', margin:'0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
-  <Newsignup />
-  </div>
-</ScrollAnimation>
+
 
 {Image ? (
             <GatsbyImage
@@ -493,6 +489,16 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
         ""
       )}
 
+
+
+<ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'0', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
+<div style={{position:'relative', bottom:'', margin:'30px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
+  <Newsignup />
+  </div>
+</ScrollAnimation>
+
+
+
 {showInfo ? (
 
 
@@ -516,6 +522,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
           )}
        
 </div>
+
 
 
 
@@ -731,6 +738,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
   ""
 )}
 {/* end show Info */}
+
+
+
 
 {/* end show Posts */}
 {showPosts ? (

@@ -1856,6 +1856,8 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 	padding: 0 10px;
 }
 
+
+
 @media (min-width: 48em) {
 
 
@@ -1874,6 +1876,11 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 }
 
 @media (max-width: 48rem) {
+
+  .signup{
+    position:relative !important;
+    top:0 !important;
+  }
 
 	.toolbar {
 	flex-direction: column !important;
