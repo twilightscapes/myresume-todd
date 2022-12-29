@@ -8,7 +8,7 @@ import { AiOutlineAudioMuted } from "react-icons/ai"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 // import { FaRegPlusSquare } from 'react-icons/fa'
 
 import Theme from "../components/theme"
@@ -23,7 +23,7 @@ import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import { Social } from "../components/social"
 // import Skills from "../templates/skills-page"
-// import Newsignup from "../components/newssign"
+import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -413,14 +413,15 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/* show feature */}
   {showFeature ? (   
-<section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0'}}>
+
+<section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
+
+
   <article>
-
-
 
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
-    
+  
 
 {Image ? (
             <GatsbyImage
@@ -429,7 +430,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
               className="featured-image1 layer1"
               style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
             />
-            
+
+
+
+
+
           ) : (
 
    
@@ -462,7 +467,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
       </div>
   </article>
+  <ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15%', zIndex:'2', margin:'0 auto', padding:'',  width:'100vw', zIndex:'', textAlign:'',}}>
+<div style={{position:'relative', bottom:'', margin:'0 auto', padding:' 0',  maxWidth:'500px', zIndex:'2', textAlign:'', borderRadius:'12px',}}>
+  <Newsignup />
+  </div>
+</ScrollAnimation>
 </section>
+
+
 ) : (
   ""
 )}

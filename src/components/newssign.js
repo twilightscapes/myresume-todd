@@ -13,10 +13,10 @@ const CustomBox = styled.div`
 
 input::placeholder {
   color: #fff !important;
-  filter: drop-shadow(0px 0px 6px var(--primary-color));
+  // filter: drop-shadow(0px 0px 6px var(--primary-color));
 }
 
-
+input{border:1px solid #fff;}
 
 
 
@@ -90,8 +90,8 @@ const NewsletterPage = () => (
             </div>
 
 
-            <div style={{fontSize: '70%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#ccc'}}>
-            <Link to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link>
+            <div style={{fontSize: '70%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#fff'}}>
+            <Link state={{modal: true}} to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link>
            
             </div>
 </form>
