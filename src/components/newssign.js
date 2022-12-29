@@ -54,7 +54,7 @@ const NewsletterPage = () => (
 
 
             
-              <div className="txtshadow" style={{fontSize:'120%', textAlign:'center', marginTop:'10px'}}><strong>Enter your email to follow</strong></div><br />
+              <div className="txtshadow" style={{fontSize:'120%', textAlign:'center', marginTop:'10px'}}><strong>Enter your email to connect</strong></div><br />
               
               {/* <span className="txtshadow" style={{fontSize:'85%'}}>Current NFT owners will be the only accounts created during initial launch phase<br /><br />Second Phase will open to invite only<br />Reserve Your Spot Below:</span><br /><br /> */}
 
@@ -80,7 +80,7 @@ const NewsletterPage = () => (
               type="submit"
               style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.3vw, 1.5rem)', whiteSpace:'nowrap'}}
             >
-              Follow{" "}
+              connect{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
@@ -91,7 +91,7 @@ const NewsletterPage = () => (
 
 
             <div style={{fontSize: '70%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#fff'}}>
-            <Link state={{modal: true}} to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link>
+            <Link state={{modal: true}} to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy - no spam!</Link>
            
             </div>
 </form>

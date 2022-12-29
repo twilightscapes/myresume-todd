@@ -136,11 +136,11 @@ body::after{
     {({ modal, closeTo }) => (
  
 
-      <div style={{overflow:'', display:'flex', justifyContent:'center'}}>
+      <div style={{overflow:'', display:'flex', justifyContent:'center', border:'1px solid yellow !important'}}>
         {modal ? (
           
           <>
-          <div id="closeicon" style={{position:'fixed', top:'80px', right:'10vw', zIndex:'103005', color:'inherit !important', }}>
+          <div id="closeicon" style={{position:'fixed', top:'80px', right:'10vw', zIndex:'2', color:'inherit !important', }}>
           <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important',  }}>
             <AiOutlineClose style={{fontSize:'', textShadow:'4px 4px 0px #111', filter:'drop-shadow(2px 2px 0px #000)', fontWeight:'bold', border:'2px solid', width:'30px', height:'30px', borderRadius:'100%'}}/>
             {/* <span style={{fontSize:'0px', textShadow:'4px 4px 4px #111', filter:'drop-shadow(2px 2px 4px #000) !important', fontWeight:'bold', border:'2px solid', width:'50px', borderRadius:'100%'}}>X</span> */}

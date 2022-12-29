@@ -133,7 +133,7 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 	position: absolute;
 	top: 200px;
 	background: #222;
-	z-index: 11;
+	/* z-index: 11; */
 }
 
 .player-wrapper::before:hover {
@@ -528,7 +528,7 @@ body.homepage .gatsby-image-wrapper [data-main-image] {
 	position: relative;
 	top: 40px;
 	font-size: 8vw;
-	z-index: 1;
+	z-index: 0;
 }
 
 .letter {
@@ -715,7 +715,7 @@ p {
 
 .mobilefix {
 	margin: -120px 0 30px 0;
-	z-index: 1;
+	z-index: 0;
 	position: relative;
 }
 
@@ -856,7 +856,7 @@ p {
 	font-size: 2vw;
 	position: absolute;
 	top: 20px;
-	z-index: 1;
+	z-index: 0;
 	width: 100%;
 }
 
@@ -1011,7 +1011,7 @@ p {
 .post-content {
 	position: relative;
 	bottom: 0;
-	z-index: 1;
+	z-index: 0;
 	display: flex;
 }
 
@@ -1193,12 +1193,12 @@ body.carto .carta {
 	position: fixed;
 	top: 10px;
 	right: 10px;
-	z-index: 1;
+	z-index: 0;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	color: #fff;
-	z-index: 4;
+	z-index: 0;
 }
 
 .fullscreenButt {
@@ -1208,7 +1208,7 @@ body.carto .carta {
 	text-align: center;
 	align-items: center;
 	color: #ccc;
-	z-index: 4;
+	z-index: 0;
 	font-size: 24px;
 	filter: drop-shadow(0px 0px 4px #999);
  ;
@@ -1280,6 +1280,7 @@ body.carto .carta {
 	.ReactModal__Content {
 	padding: 0 0 !important;
 	/* width: 85vw !important; */
+
 	}
 }
 
@@ -1810,7 +1811,7 @@ blockquote.frontquote {
 	width: 100vw;
 	height: 100%;
 	position: fixed;
-	z-index: 2;
+	z-index: 4;
 	opacity: 1;
 	margin: 0 auto;
 	padding: 0;

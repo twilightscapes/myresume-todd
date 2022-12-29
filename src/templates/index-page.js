@@ -261,7 +261,7 @@ function Iframer() {
       url={Url}
       width="100%"
       height="100%"
-  style={{zIndex:'3'}}
+  style={{zIndex:'1'}}
       config={{
         youtube: {
           playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:true  }
@@ -270,7 +270,7 @@ function Iframer() {
       playing
       playsinline
       playIcon={
-        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
+        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'1', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
 
 
 
@@ -316,7 +316,7 @@ function Iframer() {
   function Iframer3() {
     const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
     return (
-<div style={{marginTop:'10px', position:'relative', zIndex:'4',
+<div style={{marginTop:'10px', position:'relative', zIndex:'1',
 display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'100px', border:'0px solid yellow', width:'100%'
 }}>
 <ReactPlayer
@@ -421,7 +421,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
   <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
-  
+  <ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15%', zIndex:'2', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
+<div style={{position:'relative', bottom:'', margin:'0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
+  <Newsignup />
+  </div>
+</ScrollAnimation>
 
 {Image ? (
             <GatsbyImage
@@ -467,11 +471,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
       </div>
   </article>
-  <ScrollAnimation className="" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15%', zIndex:'2', margin:'0 auto', padding:'',  width:'100vw', zIndex:'', textAlign:'',}}>
-<div style={{position:'relative', bottom:'', margin:'0 auto', padding:' 0',  maxWidth:'500px', zIndex:'2', textAlign:'', borderRadius:'12px',}}>
-  <Newsignup />
-  </div>
-</ScrollAnimation>
+
 </section>
 
 
@@ -481,6 +481,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* end show feature */}
 
 {/* show Info */}
+
+
+
 
 
 
@@ -494,7 +497,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-<section id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'2', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
+<section id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
   <div className="no-app" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
