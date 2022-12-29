@@ -25,7 +25,9 @@ import { AiOutlineClose } from "react-icons/ai"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import Fullscreen from "../components/FullScreen"
 // import Menu from "../components/menu1"
-import Install from "../components/install-discount"
+
+import SignUp from "../components/install-discount"
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import SiteLogo from "../../static/assets/logo.svg"
@@ -80,7 +82,7 @@ export function Layout({ children }) {
   const { showSkills } = useSiteMetadata()
   // const { showCover } = useSiteMetadata()
   // const { showfooter } = useSiteMetadata()
- 
+  const { showPopup } = useSiteMetadata()
   const { menu1 } = useSiteMetadata()
   const { menu2 } = useSiteMetadata()
   const { menu3 } = useSiteMetadata()
@@ -431,7 +433,17 @@ body::after{
 
      
 
-<div id="secondMenu" className="" style={{}}><Install /></div>
+{/* <div id="secondMenu" className="" style={{}}><Install /></div> */}
+
+{showPopup ? (
+ <ScrollAnimation className="signup" animateIn="bounceInUp" delay={4000} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'1', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
+ <div style={{position:'relative', bottom:'', margin:'30px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
+ <SignUp />
+   </div>
+ </ScrollAnimation>
+      ) : (
+        "nope"
+      )}
 
 </header>
 

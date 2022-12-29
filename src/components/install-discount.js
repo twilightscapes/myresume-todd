@@ -5,9 +5,10 @@ import React from 'react'
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import ScrollAnimation from 'react-animate-on-scroll'
 import CookieConsent from "react-cookie-consent"
+import Newsignup from "./newssign"
 // import { StaticImage } from "gatsby-plugin-image"
-import ReactPlayer from 'react-player/lazy'
-import { Link } from "gatsby"
+// import ReactPlayer from 'react-player/lazy'
+// import { Link } from "gatsby"
 // import { AiOutlineAudioMuted } from "react-icons/ai"
 // import Greeter from "./GreetMe"
 import styled from "styled-components";
@@ -53,20 +54,20 @@ const InstallDiscount = () => (
 
 <CookieConsent
   id="consenter"
-	debug={true}
+	debug={false}
 	location="none"
   className=""
-	style={{ display:'flex', flexDirection:'column', color:'inherit',alignItems:'inherit',  textAlign:'center', justifyContent:'center', margin:'0 auto', top:'', maxWidth:'', position:'', border:'0px solid red',
+	style={{ display:'flex', flexDirection:'column', color:'inherit',alignItems:'center',  textAlign:'center', justifyContent:'center', margin:'0', top:'', maxWidth:'', position:'', border:'1px solid red',
   overflow:'hidden',
-  background:'transparent',
+  background:'rgba(0,0,0,.9)',
   borderRadius:'12px',
   padding:'0',
   height:'auto',
   filter:' drop-shadow(0px 0px 10px rgba(0,0,0,.9))',
 }}
-    buttonText="CLOSE"
+    buttonText="Don't show again"
 	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "16px", position:'relative', bottom:'20px',  right:'', display:'flex', flexDirection:'column', justifyContent:'center', margin:'0 auto', color:'#fff', fontWeight:'normal', padding:'4px 50px', border:'0px solid #666'}}
-    expires={1}
+    expires={30}
     cookieName="-app-install-cookie"
 >
 
@@ -87,22 +88,22 @@ const InstallDiscount = () => (
           /> */}
 
 
-<div className="" style={{marginTop:'', padding:'2rem', border:'0px solid #555',  color:'#fff', textAlign:'center', position:'relative',  }}>
+<div className="" style={{marginTop:'', padding:'0', border:'0px solid #555',  color:'#fff', textAlign:'center', position:'relative',  }}>
 
 
 
-	<p style={{fontSize:'clamp(.9rem, 1.5vw, 2rem)', textAlign:'center'}}>
-Looking for innovative design in a top-performing website app?</p>
+	{/* <p style={{fontSize:'clamp(.9rem, 1.5vw, 2rem)', textAlign:'center'}}>
+Looking for innovative design in a top-performing website app?</p> */}
 
-
-
-    
-
-
-
-    
 <p style={{fontSize:'clamp(1.2rem, 2vw, 3.8rem)', fontWeight:'bold', textAlign:'center', textShadow:'1px 1px 0 #666'}}>
   Let's create something <span>great together</span></p>
+<Newsignup />
+    
+
+
+
+    
+
 
 
 
@@ -119,7 +120,7 @@ Looking for innovative design in a top-performing website app?</p>
 
 
   
-  <Link className='button' state={{modal: true}} to="/contact/" style={{color:''}}>HIRE ME!</Link>
+  {/* <Link className='button' state={{modal: true}} to="/contact/" style={{color:''}}>HIRE ME!</Link> */}
   
 
 

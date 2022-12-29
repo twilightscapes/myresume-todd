@@ -8,9 +8,9 @@ import { AiOutlineAudioMuted } from "react-icons/ai"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 // import { FaRegPlusSquare } from 'react-icons/fa'
-import Install from "../components/install-discount"
+// import SignUp from "../components/install-discount"
 import Theme from "../components/theme"
 
 import { IoShareOutline } from 'react-icons/io5'
@@ -23,7 +23,7 @@ import { ImPlay } from "react-icons/im"
 import styled from "styled-components"
 import { Social } from "../components/social"
 // import Skills from "../templates/skills-page"
-import Newsignup from "../components/newssign"
+// import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -62,6 +62,7 @@ export const pageQuery = graphql`
         showSocial
         showSkills
         showNav
+        showPopup
         siteColor
       }
 
@@ -92,7 +93,6 @@ export const pageQuery = graphql`
         skillsTitle
         skillsText
         svgzindex
-        signup
         tagline
         featuredImage {
           publicURL
@@ -200,6 +200,7 @@ const HomePage = ({ data }) => {
     const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
+    // const { showPopup } = useSiteMetadata()
 
 
     // const showCTA = frontmatter.cta.ctaText
@@ -492,15 +493,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-{frontmatter.signup ? (
- <ScrollAnimation className="signup" animateIn="bounceInUp" delay={550} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'1', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
- <div style={{position:'relative', bottom:'', margin:'30px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
-   <Newsignup />
-   </div>
- </ScrollAnimation>
-      ) : (
-        ""
-      )}
+
 
 
 

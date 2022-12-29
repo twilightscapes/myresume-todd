@@ -24,6 +24,7 @@ export const useSiteMetadata = () => {
           showSkills
           showNav
           showNav2
+          showPopup
           menu1
           menu2
           menu3
