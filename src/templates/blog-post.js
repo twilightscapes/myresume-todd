@@ -24,6 +24,7 @@ import ShareSocial from '../components/share'
 import { ImPlay } from "react-icons/im"
 // import TimeAgo from 'react-timeago'
 import styled from "styled-components"
+import Theme from "../components/theme"
 const CustomBox = styled.div`
 @media (max-width: 48rem) {
   .home-posts{flex-direction:column !important; width:90% !important; margin:0 auto !important;}
@@ -701,7 +702,10 @@ Comments here
 Go Back
 </Link></div> */}
 
-
+<div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
+<Theme />
+<div id="branding" style={{position:'absolute', left:'10px', bottom:'5px', fontSize:'90%'}}><a href=""><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></a></div>
+</div>
 
 
    <Footer />

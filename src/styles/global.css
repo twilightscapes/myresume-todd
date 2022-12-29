@@ -2531,7 +2531,7 @@ kbd {
 }
 
 body{
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-Y: scroll;
   height:100vh;
   overscroll-behavior: contain;
