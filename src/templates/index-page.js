@@ -825,34 +825,13 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-<div className="flexbutt" style={{display:'flex', marginLeft:'-15vw', columnGap:'100px', }}>
-<dl className="flexcheek" style={{border:'0px solid',}}>
+<div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'100vw', marginLeft:'', columnGap:'150px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 
-<dt style={{border:'0px solid red'}}>
-<h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>
-</dt>
 
-      <div
-          style={{paddingBottom:'2rem', border:'0px solid yellow'}}
-            className="description"
-            dangerouslySetInnerHTML={{ __html: SkillsText }}
-          />
 
-      </dl>
 
-<dl className="flexcheek" style={{border:'0px solid',marginLeft:''}}>
 
-<dt style={{border:'0px solid red'}}>
-<h2 style={{}}>{frontmatter.skillsTitle}</h2><div>100%</div>
-</dt>
 
-      <div
-          style={{paddingBottom:'2rem', border:'0px solid yellow'}}
-            className="description"
-            dangerouslySetInnerHTML={{ __html: SkillsText }}
-          />
-
-      </dl>
 
 </div>
 

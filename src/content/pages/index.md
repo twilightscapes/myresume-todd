@@ -29,6 +29,9 @@ youtubeautostart: "1"
 addressText2: ""
 skillsTitle: "Mad Skills Yo!"
 skillsText: <dl>
+  <dt>
+  <h2>Overall Skills</h2><div>100%</div>
+  </dt>
   <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
   <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
   <dd class="percentage percentage-85"><span class="text">WordPress</span> <span class="percent">85%</span></dd>
@@ -36,6 +39,19 @@ skillsText: <dl>
   <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
   <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
   </dl>
+
+  <dl>
+  <dt>
+  <h2>Detailed Skills</h2><div>100%</div>
+  </dt>
+  <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
+  <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">WordPress</span> <span class="percent">85%</span></dd>
+  <dd class="percentage percentage-75"><span class="text">Javascript</span> <span class="percent">75%</span></dd>
+  <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
+  </dl>
+  <dl>
 cta:
   ctaText: Contact Me
   ctaLink: ""
