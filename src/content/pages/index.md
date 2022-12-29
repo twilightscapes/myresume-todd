@@ -1,14 +1,6 @@
 ---
-slug: /
-tagline:  An artist, photographer, designer and developer; Todd imagines things & makes them come to life.
-featuredImage: /assets/challenger.webp
-youtuber: "https://youtu.be/ESGJ42zshL8"
-youtuber2: "RGT4V6JmINA"
-audiostart: "1"
-audioend: "5000"
-audiotitle: "The Cure - The Forest"
+title: Digital Product Designer
 secondaryImage: /assets/og-image.png
-underlayImage: /assets/IMG_1019.webp
 profText: <p>Todd Lambert is an award-winning web designer and photographer that
   trained in Southern California and has traveled and lived in over 16 Western
   states.</p> <p>Todd's skills include all facets of online and multimedia
@@ -18,56 +10,57 @@ profText: <p>Todd Lambert is an award-winning web designer and photographer that
   implementations.</p><p>When Todd is not online, he is often found pushing the
   boundaries of night photography. You can usually find him in the middle of the
   night shooting astrophotography which is his favorite subject.</p>
+youtuber2: RGT4V6JmINA
+audiotitle: The Cure - The Forest
 addressText: Gulf Coast, USA
+audioend: "5000"
 portfolio:
   openText: ""
   closeText: Experience has taught me that good design is not created on a spur of
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
+slug: /
+audiostart: "1"
+tagline: An artist, photographer, designer and developer; Todd imagines things &
+  makes them come to life.
+featuredImage: /assets/challenger.webp
+skillsText: >-
+  <dl> <dt> <h2>Overall Skills</h2><div>100%</div> </dt> <dd class="percentage
+  percentage-90"><span class="text">Front End</span> <span
+  class="percent">90%</span></dd> <dd class="percentage percentage-65"><span
+  class="text">Back End</span> <span class="percent">65%</span></dd> <dd
+  class="percentage percentage-85"><span class="text">WordPress</span> <span
+  class="percent">85%</span></dd> <dd class="percentage percentage-75"><span
+  class="text">Javascript</span> <span class="percent">75%</span></dd> <dd
+  class="percentage percentage-80"><span class="text">UI Design</span> <span
+  class="percent">80%</span></dd> <dd class="percentage percentage-85"><span
+  class="text">UX Design</span> <span class="percent">85%</span></dd> </dl>
+
+  <dl> <dt> <h2>Detailed Skills</h2><div>100%</div> </dt> <dd class="percentage percentage-90"><span class="text">HTML</span> <span class="percent">90%</span></dd> <dd class="percentage percentage-85"><span class="text">CSS</span> <span class="percent">85%</span></dd> <dd class="percentage percentage-75"><span class="text">Gatsby</span> <span class="percent">75%</span></dd> <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
+
+  </dl> <dl>
+youtuber: https://youtu.be/ESGJ42zshL8
+underlayImage: /assets/IMG_1019.webp
 youtubeautostart: "1"
 addressText2: ""
-skillsTitle: "Mad Skills Yo!"
-skillsText: <dl>
-  <dt>
-  <h2>Overall Skills</h2><div>100%</div>
-  </dt>
-  <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">WordPress</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Javascript</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
-  </dl>
-
-  <dl>
-  <dt>
-  <h2>Detailed Skills</h2><div>100%</div>
-  </dt>
-  <dd class="percentage percentage-90"><span class="text">HTML</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">CSS</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Gatsby</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
-
-  </dl>
-  <dl>
 cta:
   ctaText: Contact Me
   ctaLink: ""
+skillsTitle: Mad Skills Yo!
 svgImage: /assets/transparent.png
-title: Digital Product Designer
+signup: true
 youtubeend: "90"
-sharethis: 
 youtubecontrols: "0"
 template: index-page
-signup: false
 youtubemute: "1"
 description: Todd Lambert - Independent artist, photographer, designer/developer
 svgzindex: ""
-profTitle: Digital Product Designer
 coverletter:
   coverText: Cover Letter
   coverLink: ""
+sharethis: null
+profTitle: Digital Product Designer
 youtubestart: "42"
 ---
 <!-- Do not delete -->
