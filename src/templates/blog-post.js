@@ -390,13 +390,13 @@ const { iconimage } = useSiteMetadata()
 {/* <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}> */}
 
 
-{showNav ? (
+{/* {showNav ? (
   <div style={{height:'38px'}} />
 ) : (
   ""
-)}
+)} */}
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', paddingTop:'' }}>
 
 
 

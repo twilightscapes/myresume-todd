@@ -388,7 +388,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
     <CustomBox style={{}}>
     <Layout>
     <Helmet>
-  <body className="" />
+  <body className="homepage" />
   {/* <link rel="stylesheet" href={frontmatter.portfolio.closeText} /> */}
 </Helmet>
        <Seo
