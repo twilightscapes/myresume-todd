@@ -436,11 +436,29 @@ body::after{
 {/* <div id="secondMenu" className="" style={{}}><Install /></div> */}
 
 {showPopup ? (
- <ScrollAnimation className="signup" animateIn="bounceInDown" delay={5000} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'1', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
- <div style={{position:'relative', bottom:'', margin:'70px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
- <SignUp />
-   </div>
- </ScrollAnimation>
+//  <ScrollAnimation className="signup" animateIn="bounceInDown" delay={5000} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'1', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
+//  <div style={{position:'relative', bottom:'', margin:'70px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
+//  <SignUp />
+//    </div>
+//  </ScrollAnimation>
+
+<div className="signup popper"
+  style={{
+  position:'fixed',
+  top:'15vh',
+  left:'20vw',
+  right:'20vw',
+  zIndex:'1',
+  margin:'70px auto 0 auto',
+  padding:' 0',
+  maxWidth:'500px',
+  borderRadius:'12px',
+  // display:'grid',
+  // placeSelf:'center',
+  }}>
+<SignUp />
+  </div>
+
       ) : (
         "nope"
       )}

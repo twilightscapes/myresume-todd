@@ -149,7 +149,7 @@ class BlogIndex extends React.Component {
           }
         />
  
-  <div style={{height:'10px', border:'0px solid yellow'}}></div>
+
 
 
 
@@ -196,13 +196,17 @@ class BlogIndex extends React.Component {
 
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'100vh', marginTop:'70px'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'790px', margin:'8vh 0', border:'0px solid red'}}>
 
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
 
  <div className="introspacer" style={{border:'0px solid', width:''}}></div>
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
+ {/* <Pagination className="mobilehide" {...props} /> */}
+
+ {/* <div className="" style={{height:'50%', paddingTop:'50%'}}></div> */}
+
  {posts}
 <Pagination {...props} />
 </div> 

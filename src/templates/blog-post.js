@@ -119,7 +119,7 @@ function AddSvg(){
 
 
   return (
-    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent', aspectRatio:'16 / 9'  }} alt="animated content" title="animated content" >You need a new browser</object>
+    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
 
@@ -390,11 +390,11 @@ const { iconimage } = useSiteMetadata()
 {/* <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}> */}
 
 
-{/* {showNav ? (
+{showNav ? (
   <div style={{height:'38px'}} />
 ) : (
   ""
-)} */}
+)}
 
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', aspectRatio:'16 / 9' }}>
 
@@ -404,7 +404,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div style={{display:'grid', placeContent:'top', width:'100vw', height:'', overflow:'', position:'absolute', aspectRatio:'16 / 9', top:'0', zIndex:'', }}>
+<div style={{display:'grid', placeContent:'top', width:'100vw', height:'', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
 
 
 {Image ? (

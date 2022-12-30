@@ -2,7 +2,7 @@
 template: blog-post
 title: Transcendence
 slug: /transcendence
-date: 2022-01-01 01:43
+date: 2022-12-01 01:43
 description: A groovy animation floating through the cosmos
 youtuber: "1kIihY252eE"
 youtuber2: "mkYKF5hQQ6M"

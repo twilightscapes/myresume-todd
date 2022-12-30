@@ -2,7 +2,7 @@
 template: blog-post
 title: Crude Addiction
 slug: /crude-addiction
-date: 2021-02-01 01:43
+date: 2022-02-01 01:43
 description: Life is not always what it seems
 youtuber: ""
 youtubestart: "0"

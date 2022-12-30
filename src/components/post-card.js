@@ -82,7 +82,7 @@ const PostCard = ({ data }) => (
 <div className="post-content" style={{textAlign:'center'}} >
 
 
-<div className="post-card" style={{border:'0px solid yellow', display:'flex', justifyContent:'space-between', alignContent:'center', alignItems:'center', minWidth:'50vw', margin:'0 auto', textAlign:''}}>
+<div className="post-card" style={{border:'0px solid yellow', display:'flex', justifyContent:'space-between', alignContent:'center', alignItems:'center', minWidth:'50vw', margin:'0 auto', textAlign:'', borderRadius:'0 0 10px 10px', background:'rgba(0, 0, 0, .5)'}}>
 <h2 className="title" style={{width:'100%'}}>
   <Link 
     to={data.frontmatter.slug}
@@ -94,7 +94,7 @@ const PostCard = ({ data }) => (
 
 
 
-<p style={{minWidth:'10vw', position:'relative', display:'flex', justifyContent:'center', alignSelf:"center", textAlign:'center', border:'0px solid red', color:'#fff', margin:'0', padding:'0', textShadow:'2px 0 2px #333'}}>
+<p style={{minWidth:'16vw', position:'relative', display:'flex', justifyContent:'center', alignSelf:"center", textAlign:'center', border:'0px solid red', color:'#fff', margin:'0', padding:'0', textShadow:'2px 0 2px #333'}}>
   <TimeAgo date={data.frontmatter.date}/>
 </p>
 
