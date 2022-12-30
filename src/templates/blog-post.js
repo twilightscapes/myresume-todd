@@ -119,7 +119,7 @@ function AddSvg(){
 
 
   return (
-    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object>
+    <object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto', background:'transparent', aspectRatio:'16 / 9'  }} alt="animated content" title="animated content" >You need a new browser</object>
   )
 }
 
@@ -396,7 +396,7 @@ const { iconimage } = useSiteMetadata()
   ""
 )} */}
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'100%', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', paddingTop:'' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', aspectRatio:'16 / 9' }}>
 
 
 
@@ -404,7 +404,7 @@ const { iconimage } = useSiteMetadata()
 
 
 
-<div style={{display:'grid', placeContent:'top', width:'100vw', height:'100%', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
+<div style={{display:'grid', placeContent:'top', width:'100vw', height:'', overflow:'', position:'absolute', aspectRatio:'16 / 9', top:'0', zIndex:'', }}>
 
 
 {Image ? (
@@ -704,7 +704,7 @@ Go Back
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
 <Theme />
-<div id="branding" style={{position:'absolute', left:'10px', bottom:'5px', fontSize:'90%'}}><a href=""><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></a></div>
+<div id="branding" style={{position:'absolute', left:'10px', bottom:'5px', fontSize:'90%'}}><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></div>
 </div>
 
 

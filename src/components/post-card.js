@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-// import TimeAgo from 'react-timeago'
+import TimeAgo from 'react-timeago'
 
 import Countdown from 'react-countdown'
 
@@ -15,8 +15,8 @@ const PostCard = ({ data }) => (
 <section className="child" style={{position:'relative', height:'', overflow:'hidden'}}>
 
   <article
-    className="post-card"
-    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', fontSize:'clamp(1rem, 1.2vw, 3rem)', background:'transparent', border:'0', }}
+    className="post-card1"
+    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', fontSize:'clamp(1rem, 1.2vw, 3rem)', background:'transparent', border:'0px solid blue', }}
   >
 
 
@@ -25,6 +25,8 @@ const PostCard = ({ data }) => (
 
 
     {data.frontmatter.featuredImage ? (
+
+<div>
       <Link to={data.frontmatter.slug}>
         <GatsbyImage
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
@@ -64,8 +66,13 @@ const PostCard = ({ data }) => (
         </g>
     </g>
 </svg>
+
         </div>
       </Link>
+
+
+
+</div>
       
     ) : (
       <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
@@ -74,6 +81,26 @@ const PostCard = ({ data }) => (
 
 <div className="post-content" style={{textAlign:'center'}} >
 
+
+<div className="post-card" style={{border:'0px solid yellow', display:'flex', justifyContent:'space-between', alignContent:'center', alignItems:'center', minWidth:'50vw', margin:'0 auto', textAlign:''}}>
+<h2 className="title" style={{width:'100%'}}>
+  <Link 
+    to={data.frontmatter.slug}
+  >
+    {data.frontmatter.title}
+    
+  </Link>
+</h2>
+
+
+
+<p style={{minWidth:'10vw', position:'relative', display:'flex', justifyContent:'center', alignSelf:"center", textAlign:'center', border:'0px solid red', color:'#fff', margin:'0', padding:'0', textShadow:'2px 0 2px #333'}}>
+  <TimeAgo date={data.frontmatter.date}/>
+</p>
+
+
+
+</div>
 
 
 { data.frontmatter.nftdrop ? (
@@ -101,18 +128,8 @@ date={Date.now() + 20000} className="countdown"> */}
 
 
 
-<h2 className="title">
-  <Link 
-    to={data.frontmatter.slug}
-  >
-    {data.frontmatter.title}
-    
-  </Link>
-</h2>
 
-{/* <p style={{minWidth:'20vw', position:'relative', textAlign:'center', border:'0px solid red'}}>
-  <TimeAgo date={data.frontmatter.date}/>
-</p> */}
+
 </div>
 
 

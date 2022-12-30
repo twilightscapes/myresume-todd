@@ -27,6 +27,7 @@
     "showFeature": true,
     "showCover": true,
     "showPopup": true,
+    "showDates": true,
     "image": "/assets/transparent.png",
     "siteColor": "#ff0000",
     "description": "My Resume and Portfolio - always online and always with me.",

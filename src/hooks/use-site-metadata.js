@@ -25,6 +25,7 @@ export const useSiteMetadata = () => {
           showNav
           showNav2
           showPopup
+          showDates
           menu1
           menu2
           menu3
