@@ -208,9 +208,9 @@ body::after{
 
 
 
-<li className="has-app" order="5" style={{display:'none',}}>
+{/* <li className="has-app" order="5" style={{display:'none',}}>
  <Link state={{modal: true}} to="/posts" className="navbar-item" style={{paddingRight:'',}}>{menu2}</Link>
- </li>
+ </li> */}
 
 
       {showPosts ? (
