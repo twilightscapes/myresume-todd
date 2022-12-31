@@ -15,7 +15,7 @@
     "showInfo": true,
     "showNav2": false,
     "postcount": "1",
-    "showPopup": true,
+    "showPopup": false,
     "icon192": "/assets/icon.svg",
     "menu1": "Profile",
     "titleTemplate": "%s",
