@@ -180,16 +180,18 @@ body::after{
       
       
 
-   
-            {/* <li className="has-app" style={{position:'relative', display:'none'}}>
+   <ul>
+            <li className="has-app" style={{position:'relative', display:'none'}}>
             <Link to="/login" className="button" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
-              </li> */}
+              </li>
 
 
 
 
-
-
+      <li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
+ </li>
+</ul>
           
           {showInfo ? (
             <li className="" style={{position:'relative',}}>
@@ -202,9 +204,7 @@ body::after{
 )}
       
 
-      {/* <li className="has-app" order="5" style={{display:'none',}}>
- <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
- </li> */}
+
 
 
 
