@@ -1254,7 +1254,8 @@ body.carto .carta {
 }
 
 @media (max-width: 48rem) {
-.spacer{display: none !important;}
+/* .spacer{display: none !important;} */
+/* body.homepage .spacer{display:block !important} */
 
 	}
 
