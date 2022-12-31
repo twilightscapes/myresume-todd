@@ -11,7 +11,7 @@ import { Footer } from "../components/footer"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { FaRegPlusSquare } from 'react-icons/fa'
 // import SignUp from "../components/install-discount"
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
@@ -858,8 +858,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
-<Theme />
-<div id="branding" style={{position:'absolute', left:'10px', bottom:'5px', fontSize:'90%'}}><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></div>
+{/* <Theme /> */}
+<div id="branding" style={{position:'relative', left:'0', bottom:'5px', fontSize:'90%'}}><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></div>
 </div>
 
 

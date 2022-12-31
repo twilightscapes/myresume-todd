@@ -248,6 +248,12 @@ body::after{
               ) : (
   ""
 )}
+
+
+<li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
+  
+  <Theme  style={{padding:'0'}} />
+  </li>
             
            
       
@@ -309,7 +315,7 @@ body::after{
 
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
-    <li className="grad" style={{position:'relative', maxHeight:'100px', width:'auto', display:'flex', justifyContent:'center'}}>
+    {/* <li className="grad" style={{position:'relative', maxHeight:'100px', width:'auto', display:'flex', justifyContent:'center'}}>
             <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
@@ -317,7 +323,7 @@ body::after{
                   companyname
                 )}
             </AnchorLink>
-          </li>
+          </li> */}
       
       
 
