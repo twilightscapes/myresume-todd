@@ -12,36 +12,13 @@ const style = {
   root: {
     background: 'transparent',
     borderRadius: '12px',
-    border: 0,
+    border: '0',
     color: '#fff',
     display:'flex',
     justifyContent:'center',
     flexDirection:'column'
   },
-  copyContainer: {
-    border: '1px solid',
-    background: 'rgb(0,0,0,0.5)',
-    color: 'inherit !important',
-    width:'100%',
-    maxWidth:'50vw'
-  },
-  copyIcon: {
-    color:'#fff !important',
-    border:'1px solid red'
-  },
-  copyContainer: {
-    content: 'please share this link:',
-    position: 'absolute',
-    left: '0',
-    top: '-54px',
-},
- iconContainer: {
-textAlign:'center !important',
-border:'1px solid blue'
- },
- copyUrl: {
-color:'#ff0000'
- },
+
 
 };
 

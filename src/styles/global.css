@@ -2075,20 +2075,23 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 .makeStyles-copyContainer {
 	position: relative;
 	padding: 14px;
-	border: 1px solid grey;
-	color: #263238;
+	border: 0px solid grey;
 	font-family: inherit !important;
+  display: flex;
+  flex-direction: column;
 }
 
-.makeStyles-copyContainer-5:before {
+/* .makeStyles-container-1:before {
 	content: 'please share this link:';
 	font-size: 100%;
-	position: absolute;
-	left: 0;
 	text-align: center;
-	top: -24px;
 	width: 100%;
-	color: #666 !important;
+	color: inherit !important;
+} */
+
+.makeStyles-copyContainer-13{
+  position: relative;
+  top: inherit;
 }
 
 .pagination ul li {

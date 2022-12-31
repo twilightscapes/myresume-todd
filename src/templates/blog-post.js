@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 // import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
-import CommentBox from "../components/commentbox"
+// import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Countdown from 'react-countdown'
@@ -24,7 +24,7 @@ import ShareSocial from '../components/share'
 import { ImPlay } from "react-icons/im"
 // import TimeAgo from 'react-timeago'
 import styled from "styled-components"
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 const CustomBox = styled.div`
 @media (max-width: 48rem) {
   .home-posts{flex-direction:column !important; width:90% !important; margin:0 auto !important;}
@@ -611,9 +611,12 @@ const { iconimage } = useSiteMetadata()
 
 
       {frontmatter.sharethis ? (
-       <div style={{maxWidth:'70vw', padding:'0', margin:'0 auto',display:'flex', alignSelf:'center', justifyContent:'center', borderRadius:'', overflow:'hidden', border:'0px solid red'}}>
+        <span>
+        <div style={{maxWidth:'90vw', padding:'0', margin:'0 auto',display:'flex', flexDirection:'', alignSelf:'center', justifyContent:'center', textAlign:'center', marginBottom:'-40px',  textAlign:''}}>please share this link:</div>
+       <div style={{maxWidth:'70vw', padding:'0', margin:'0 auto',display:'flex', flexDirection:'', alignSelf:'center', justifyContent:'center', textAlign:'center', overflow:'hidden', border:'0px solid red'}}>
        <ShareSocial />
        </div>
+       </span>
           ) : (
             ""
           )}
@@ -704,8 +707,8 @@ Go Back
 </Link></div> */}
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
-<Theme />
-<div id="branding" style={{position:'absolute', left:'10px', bottom:'5px', fontSize:'90%'}}><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></div>
+{/* <Theme /> */}
+<div id="branding" style={{position:'relative', left:'0', bottom:'5px', fontSize:'90%'}}><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></div>
 </div>
 
 
