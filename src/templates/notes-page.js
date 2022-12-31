@@ -30,12 +30,12 @@ const Notes = ({ data }) => {
 
       {showNav ? (
         
-  <div className="spacer1" style={{height:'85px', border:'0px solid yellow'}}></div>
+  <div className="spacer1" style={{height:'100px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
 
-      <div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
+      <div className="container" style={{padding:'0 8%', minHeight:'100vh', maxWidth:'1024px'}}>
 
 
       {/* <div className="mobile"><GoBack /></div> */}
