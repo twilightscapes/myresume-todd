@@ -26,6 +26,8 @@ const Skills = ({ data }) => {
       <Seo title={frontmatter.title} description={excerpt} />
 
 
+      <div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
+      
       <div className="container" style={{padding:'2rem 0', maxWidth:'1024px'}}>
 
 

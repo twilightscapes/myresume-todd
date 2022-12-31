@@ -391,7 +391,8 @@ const { iconimage } = useSiteMetadata()
 
 
 {showNav ? (
-  <div style={{height:'38px'}} />
+  // <div style={{height:'38px'}} />
+  <div className="spacer" style={{height:'60px', border:'0px solid yellow'}}></div>
 ) : (
   ""
 )}

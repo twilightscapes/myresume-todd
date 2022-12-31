@@ -26,7 +26,9 @@ const Notes = ({ data }) => {
       <Seo title={frontmatter.title} description={excerpt} />
 
 
-      <div className="container" style={{padding:'70px 8%', maxWidth:'1024px'}}>
+      <div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
+
+      <div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
 
 
       {/* <div className="mobile"><GoBack /></div> */}

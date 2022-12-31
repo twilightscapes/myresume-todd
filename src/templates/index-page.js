@@ -488,7 +488,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 {showNav ? (
-  <div style={{height:'50px', border:'0px solid yellow'}}></div>
+  <div className="spacer" style={{height:'50px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}

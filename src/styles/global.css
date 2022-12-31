@@ -1251,7 +1251,9 @@ body.carto .carta {
 	height: 99vh;
 }
 
-
+@media (max-width: 48rem) {
+.spacer{display: none !important;}
+	}
 
 
 
