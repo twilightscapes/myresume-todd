@@ -180,15 +180,15 @@ body::after{
       
       
 <li>
-   <ul className="has-app" style={{position:'absolute', right:'1rem', top:'80px', display:'flex', gap:'10px'}}>
+   <ul className="has-app1" style={{position:'', right:'1rem', top:'80px', display:'flex', flexDirection:'column', gap:'4px'}}>
             <li className="has-app1" style={{position:'relative', display:''}}>
-            <Link to="/login" className="button" style={{color:'#fff',  width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
+            <Link to="/login" className="button" style={{color:'#fff',  width:'', justifyContent:'center', fontWeight:'bold', }}>Admin</Link>
               </li>
 
 
 
 
-      <li className="has-app" order="5" style={{display:'',}}>
+      <li className="has-app1" order="5" style={{display:'',}}>
  <Link state={{modal: true}} to="/notes" className="button" style={{paddingRight:'',}}>Notes</Link>
  </li>
 </ul>
@@ -353,13 +353,6 @@ body::after{
       
 
 
-
-
-{/* <li className="has-app" order="5" style={{display:'none',}}>
- <Link state={{modal: true}} to="/posts" className="navbar-item" style={{paddingRight:'',}}>{menu2}</Link>
- </li> */}
-
-
       {showPosts ? (
             <li className="" style={{position:'relative',}}>
             <AnchorLink className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
@@ -407,15 +400,11 @@ body::after{
 
 
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
-  
       <Theme  style={{padding:'0'}} />
    {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link>
-   
    <CartButton quantity={quantity} /> */}
-
-
         </li>
 
     </ul>
@@ -488,14 +477,7 @@ body::after{
 
         {children}
 
-        {/* <Theme  style={{position:'relative', bottom:'4px', zIndex:'2', justifyContent:'', width:'200px', margin:'0', display:'flex', width:'100%', margin:'0 auto', justifyContent:'center', border:'1px solid red'}} /> */}
 
-        
-        {/* <div className="usability" style={{ display:'flex', width:'100%', margin:'0 auto', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
-
-<Theme  style={{}} />
-
-  </div> */}
       
 
         
