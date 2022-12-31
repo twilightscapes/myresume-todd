@@ -738,7 +738,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/* end show Posts */}
 {showPosts ? (
-<section id="posts" order="" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
+<section className="vertical" id="posts" order="" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'600px', margin:'5vh 0', border:'0px solid red'}}>

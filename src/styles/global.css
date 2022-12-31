@@ -983,7 +983,7 @@ p {
 	border: 10px solid yellow !important;
 	}
 
-	#info, #posts, .toolbar {
+	.toolbar {
 	display: none !important;
 	}
 

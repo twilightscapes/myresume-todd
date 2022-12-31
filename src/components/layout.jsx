@@ -470,7 +470,7 @@ body::after{
   </div>
 
       ) : (
-        "nope"
+        ""
       )}
 
 </header>
