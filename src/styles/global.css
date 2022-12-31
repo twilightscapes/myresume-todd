@@ -2004,6 +2004,8 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 	border: 1px solid #555 !important;
 }
 
+.pagination *{color:#fff !important;}
+
 .react-tabs__tab--selected {
 	background: #ff0000;
 }
