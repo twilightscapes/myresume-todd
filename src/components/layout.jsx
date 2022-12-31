@@ -181,9 +181,9 @@ body::after{
       
 
    
-            <li className="has-app" style={{position:'relative', display:'none'}}>
+            {/* <li className="has-app" style={{position:'relative', display:'none'}}>
             <Link to="/login" className="button" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
-              </li>
+              </li> */}
 
 
 
@@ -202,9 +202,9 @@ body::after{
 )}
       
 
-      <li className="has-app" order="5" style={{display:'none',}}>
+      {/* <li className="has-app" order="5" style={{display:'none',}}>
  <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
- </li>
+ </li> */}
 
 
 
@@ -322,9 +322,7 @@ body::after{
       
 
    
-            <li className="has-app" style={{position:'relative', display:'none'}}>
-            <Link to="/login" className="button" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
-              </li>
+            
 
 
 
@@ -343,19 +341,16 @@ body::after{
 )}
       
 
-      <li className="has-app" order="5" style={{display:'none',}}>
- <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
- </li>
 
 
 
-<li className="has-app" order="5" style={{display:'none',}}>
+{/* <li className="has-app" order="5" style={{display:'none',}}>
  <Link state={{modal: true}} to="/posts" className="navbar-item" style={{paddingRight:'',}}>{menu2}</Link>
- </li>
+ </li> */}
 
 
       {showPosts ? (
-            <li className="no-app" style={{position:'relative',}}>
+            <li className="" style={{position:'relative',}}>
             <AnchorLink className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
             {menu2}
             </AnchorLink>
@@ -366,7 +361,7 @@ body::after{
 
        
 {showResume ? (
-            <li className="no-app" style={{position:'relative',}}>
+            <li className="" style={{position:'relative',}}>
               <AnchorLink className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
               {menu3}
               </AnchorLink>
@@ -378,7 +373,7 @@ body::after{
 
 
 {showSkills ? (
-              <li className="no-app" style={{position:'relative',}}>
+              <li className="" style={{position:'relative',}}>
               {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
                 Contact <span className="mobilehide">Me</span>
               </AnchorLink> */}
@@ -389,6 +384,15 @@ body::after{
               ) : (
   ""
 )}
+
+
+
+<li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
+ </li>
+ <li className="has-app" style={{position:'relative', display:'none'}}>
+            <Link to="/login" className="button" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
+              </li>
 
 
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
