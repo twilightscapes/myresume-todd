@@ -180,7 +180,7 @@ body::after{
       
       
 <li>
-   <ul className="has-app1" style={{position:'', right:'1rem', top:'80px', display:'flex', flexDirection:'column', gap:'4px'}}>
+   <ul className="has-app" style={{position:'', right:'1rem', top:'80px', display:'flex', flexDirection:'column', gap:'4px'}}>
             <li className="has-app1" style={{position:'relative', display:''}}>
             <Link to="/login" className="button" style={{color:'#fff',  width:'', justifyContent:'center', fontWeight:'bold', }}>Admin</Link>
               </li>
@@ -188,7 +188,7 @@ body::after{
 
 
 
-      <li className="has-app1" order="5" style={{display:'',}}>
+      <li className="has-app" order="5" style={{display:'',}}>
  <Link state={{modal: true}} to="/notes" className="button" style={{paddingRight:'',}}>Notes</Link>
  </li>
 </ul>
