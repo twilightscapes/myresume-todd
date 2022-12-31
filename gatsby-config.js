@@ -224,7 +224,7 @@ module.exports = {
       options: {
         name: `myresume`,
         short_name: `My Resume`,
-        start_url: `/?user_mode=app`,
+        start_url: `/#resume?user_mode=app`,
         description: `My Resume`,
         background_color: `#ddd`,
         lang: `en`,

@@ -13,7 +13,7 @@
     "showSocial": true,
     "showResume": true,
     "showInfo": true,
-    "showNav2": true,
+    "showNav2": false,
     "postcount": "1",
     "showPopup": true,
     "icon192": "/assets/icon.svg",
