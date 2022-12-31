@@ -5,6 +5,7 @@ import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 // import GoBack from "../components/goBack"
 import { Footer } from "../components/footer"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 export const pageQuery = graphql`
   query notesQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -17,16 +18,22 @@ export const pageQuery = graphql`
     }
   }
 `
+
 const Notes = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
-
+  const { showNav } = useSiteMetadata()
   return (
     <Layout className="page">
       <Seo title={frontmatter.title} description={excerpt} />
 
 
-      <div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
+      {showNav ? (
+        
+  <div className="spacer1" style={{height:'85px', border:'0px solid yellow'}}></div>
+      ) : (
+        ""
+      )}
 
       <div className="container" style={{padding:'0 8%', maxWidth:'1024px'}}>
 
