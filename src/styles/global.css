@@ -986,6 +986,8 @@ p {
 	#info, footer, .toolbar {
 	display: none !important;
 	}
+  
+  body.homepage .spacer{display:block !important}
 
 	#installedbar, #menu .has-app   {
 	display: flex !important;
@@ -1253,7 +1255,7 @@ body.carto .carta {
 
 @media (max-width: 48rem) {
 .spacer{display: none !important;}
-/* body.homepage .spacer{display:block !important} */
+
 	}
 
 

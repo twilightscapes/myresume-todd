@@ -178,7 +178,7 @@ const HomePage = ({ data }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
-    const { iconimage } = useSiteMetadata()
+    // const { iconimage } = useSiteMetadata()
 
     const { companyname } = useSiteMetadata()
     const { siteUrl } = useSiteMetadata()

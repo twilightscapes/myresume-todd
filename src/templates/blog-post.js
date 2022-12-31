@@ -124,7 +124,7 @@ function AddSvg(){
 }
 
 
-const IsNft = frontmatter.isnftforsale
+// const IsNft = frontmatter.isnftforsale
 // const ShowOriginal = frontmatter.youtubeshoworiginal
 // const ShareThis = frontmatter.sharethis
 // const Comments = frontmatter.comments
@@ -143,7 +143,7 @@ const YouTubeAutostart = frontmatter.youtubeautostart
 
 
 
-const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
+// const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
   const YouTube = frontmatter.youtuber
 
 
@@ -353,15 +353,7 @@ const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber + ""
 
   const { siteUrl } = useSiteMetadata()
 
-// const Completionist = () => <div style={{minWidth:'50%', width:'100%', maxWidth:'100vw', }}>
-//   { NftRedeem ? (
-//       ""
-      // <a href={NftRedeem} style={{fontSize:'1.4rem', display:'flex', alignSelf:'center', justifySelf:'center', width:'', maxWidth:'400px',  margin:'10px auto',  textAlign:'center', justifyContent:'center', border:'1px solid', borderRadius:'12px', color:'green', textShadow:'1px 1px 0px #666',}}>REDEEM UNLOCKABLE CONTENT</a>
-      // ) : (
-      //   ""
-      // )}
-  {/* <nft-card style={{}} contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183187330132344833"> </nft-card> */}
-  // </div>
+
 
 const { iconimage } = useSiteMetadata()
 
@@ -371,7 +363,6 @@ const { iconimage } = useSiteMetadata()
 <CustomBox style={{}}>
 <Helmet>
   <body className="blogpost" />
-  {/* <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script> */}
 </Helmet>
 
       <Seo
@@ -612,7 +603,7 @@ const { iconimage } = useSiteMetadata()
 
       {frontmatter.sharethis ? (
         <span>
-        <div style={{maxWidth:'90vw', padding:'0', margin:'0 auto',display:'flex', flexDirection:'', alignSelf:'center', justifyContent:'center', textAlign:'center', marginBottom:'-40px',  textAlign:''}}>please share this link:</div>
+        <div style={{maxWidth:'90vw', padding:'0', margin:'0 auto',display:'flex', flexDirection:'', alignSelf:'center', justifyContent:'center', textAlign:'center', marginBottom:'-40px', }}>please share this link:</div>
        <div style={{maxWidth:'70vw', padding:'0', margin:'0 auto',display:'flex', flexDirection:'', alignSelf:'center', justifyContent:'center', textAlign:'center', overflow:'hidden', border:'0px solid red'}}>
        <ShareSocial />
        </div>

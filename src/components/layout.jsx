@@ -27,7 +27,7 @@ import { AiOutlineClose } from "react-icons/ai"
 // import Menu from "../components/menu1"
 
 import SignUp from "../components/install-discount"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import SiteLogo from "../../static/assets/logo.svg"
@@ -274,11 +274,11 @@ body::after{
 
 
 
-      <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
+      
 
 
 
-<>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
+
 
 
 
@@ -288,7 +288,8 @@ body::after{
 {showNav2 ? (
 
 <>
-  <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /></label>
+<>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
+  <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /><input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" /></label>
 
 <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
