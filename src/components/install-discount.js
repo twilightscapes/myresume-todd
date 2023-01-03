@@ -68,7 +68,7 @@ const InstallDiscount = () => (
     buttonText="Don't show again"
 	buttonStyle={{ background: "transparent", textDecoration:'underline', textAlign:'center', fontSize: "16px", position:'relative', bottom:'20px',  right:'', display:'flex', flexDirection:'column', justifyContent:'center', margin:'0 auto', color:'#fff', fontWeight:'normal', padding:'4px 50px', border:'0px solid #666'}}
     expires={30}
-    cookieName="-app-install-cookie"
+    cookieName="web-app-install-cookie"
 >
 
 
