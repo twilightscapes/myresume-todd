@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import GoBack from "../components/goBack"
 import { Helmet } from "react-helmet"
 export const pageQuery = graphql`
@@ -25,6 +26,7 @@ export const pageQuery = graphql`
 `
 
 const Contact = ({ data }) => {
+  const { showNav } = useSiteMetadata()
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
@@ -42,7 +44,11 @@ const Contact = ({ data }) => {
 
 
 
-<div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
+{showNav ? (
+    <div className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
+        ) : (
+          ""
+        )}
 
       <div className="wrapper" style={{padding:'20px 1rem 0 1rem'}}>
         
