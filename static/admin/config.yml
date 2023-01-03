@@ -55,9 +55,9 @@ collections:
       - { label: "YouTube Start", name: "youtubestart", widget: "string", hint: "This is measured in seconds - 32 would start the video at the 32-second mark", required: false }
       - { label: "YouTube End", name: "youtubeend", widget: "string", hint: "This is measured in seconds - 102 would end the video at the 1-min  and 42-second mark", required: false }
       - { label: "Make Post Shareable?", name: "sharethis:", widget: "boolean", default: "true", required: false }
-      - { label: "Allow Comments?", name: "comments:", widget: "boolean", default: "true", required: false }
-      - { label: "Sign Up Box", name: "signup", widget: "boolean",
-           default: "false", required: false }
+      # - { label: "Allow Comments?", name: "comments:", widget: "boolean", default: "true", required: false }
+      # - { label: "Sign Up Box", name: "signup", widget: "boolean",
+      #      default: "false", required: false }
   
 
       
