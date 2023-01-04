@@ -891,7 +891,7 @@ p {
 	background: rgb(45, 47, 48);
 }
 
-a.navbar-item[aria-current] {
+a[aria-current] {
   cursor: default !important; 
   color:#FA02B7 !important;
   box-shadow: none;
@@ -899,7 +899,7 @@ a.navbar-item[aria-current] {
   pointer-events: none !important;
   text-decoration: none;
   }
-  a.navbar-item[aria-current]:hover{
+  a[aria-current]:hover{
     cursor: default !important; 
     filter: none !important;
     box-shadow: none;

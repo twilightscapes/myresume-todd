@@ -209,7 +209,7 @@ body::after{
       
 
 
- aria-label="Return To Home"
+
 
 
 {/* <li className="has-app" order="5" style={{display:'none',}}>
@@ -219,7 +219,7 @@ body::after{
 
       {showPosts ? (
             <li className="" style={{position:'relative',}}>
-            <AnchorLink aria-label="Menu 2" className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
+            <AnchorLink ariaLabel="Menu 2" className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
             {menu2}
             </AnchorLink>
             </li>
@@ -230,7 +230,7 @@ body::after{
        
 {showResume ? (
             <li className="" style={{position:'relative',}}>
-              <AnchorLink aria-label="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+              <AnchorLink ariaLabel="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
               {menu3}
               </AnchorLink>
               </li>
