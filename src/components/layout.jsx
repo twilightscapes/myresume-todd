@@ -343,7 +343,7 @@ body::after{
 
           
           {showInfo ? (
-            <li className="" style={{position:'relative',}}>
+            <li className="no-app" style={{position:'relative',}}>
               <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
               {menu1}
               </AnchorLink>
@@ -396,7 +396,7 @@ body::after{
  <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
  </li>
  <li className="has-app" style={{position:'relative', display:'none'}}>
-            <Link to="/login" className="button" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
+            <Link to="/login" className="" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
               </li>
 
 
