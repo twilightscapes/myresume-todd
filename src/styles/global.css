@@ -943,6 +943,10 @@ p {
 	display: none !important;
 } */
 
+.themetext div:nth-child(2){display: none;}
+
+#sidebarMenu .themetext div:nth-child(2){display: block !important; border:0px solid green !important}
+
 @media (max-width: 48rem) {
 	.themer {
 	order: 8 !important;
@@ -952,7 +956,9 @@ p {
 	height: 40px !important;
 	}
 
-  li.logo{display: none !important;}
+  li.logo {display: none !important;}
+
+
 
 	/* #info {
 	margin-bottom: 155px !important;

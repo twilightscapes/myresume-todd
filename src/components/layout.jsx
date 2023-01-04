@@ -182,7 +182,7 @@ body::after{
 <li>
    <ul className="has-app" style={{position:'', right:'1rem', top:'80px', display:'flex', flexDirection:'column', gap:'4px'}}>
             <li className="has-app1" style={{position:'relative', display:''}}>
-            <Link to="/login" className="button" style={{color:'#fff',  width:'', justifyContent:'center', fontWeight:'bold', }}>Admin</Link>
+            <Link to="/login" className="" style={{color:'#fff',fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)',  width:'', justifyContent:'center', fontWeight:'', }}>Admin</Link>
               </li>
 
 
@@ -395,13 +395,14 @@ body::after{
 <li className="has-app" order="5" style={{display:'none',}}>
  <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
  </li>
+
  <li className="has-app" style={{position:'relative', display:'none'}}>
-            <Link to="/login" className="" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
+            <Link to="/login" className="navbar-item" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
               </li>
 
 
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
-      <Theme  style={{padding:'0'}} />Theme
+      <Theme  style={{padding:'0'}} />
    {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link>
