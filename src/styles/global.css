@@ -891,7 +891,7 @@ p {
 	background: rgb(45, 47, 48);
 }
 
-/* a[aria-current] {
+a.navbar-item[aria-current] {
   cursor: default !important; 
   color:#FA02B7 !important;
   box-shadow: none;
@@ -899,11 +899,11 @@ p {
   pointer-events: none !important;
   text-decoration: none;
   }
-  a [aria-current]:hover{
+  a.navbar-item[aria-current]:hover{
     cursor: default !important; 
     filter: none !important;
     box-shadow: none;
-    } */
+    }
 
 .button {
 	display: inline-flex;
