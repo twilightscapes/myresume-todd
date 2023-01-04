@@ -4,7 +4,7 @@
     "font1": "Lobster Two",
     "favicon32x32": "/assets/icon.svg",
     "favicon16x16": "/assets/icon.svg",
-    "showNav": false,
+    "showNav": true,
     "companyname": "Todd Lambert",
     "siteUrl": "https://toddlambert.com",
     "showDates": true,
