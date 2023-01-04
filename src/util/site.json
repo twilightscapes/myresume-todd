@@ -6,7 +6,7 @@
     "favicon16x16": "/assets/icon.svg",
     "showNav": true,
     "companyname": "Todd Lambert",
-    "siteUrl": "https://toddlambert.myresume.site/",
+    "siteUrl": "https://toddlambert.com",
     "showDates": true,
     "twitterUsername": "toddlambert",
     "titleDefault": "Todd Lambert",
@@ -30,7 +30,7 @@
     "showCover": true,
     "image": "/assets/transparent.png",
     "siteColor": "#ff0000",
-    "description": "My Resume and Portfolio - always online and always with me.",
+    "description": "Independent artist, photographer, designer/developer",
     "icon512": "/assets/icon.svg",
     "showSkills": true
   },
