@@ -54,7 +54,7 @@ const Pagination = props => (
           </Link>
         </li>
       )}
-       <Link title="Go Back" className="button " to="/#posts" style={{}}>
+       <Link title="Go Back" className="button " to="/" style={{}}>
 Go Back
 </Link>
       {props.next && props.next.frontmatter.template === "blog-post" && (
