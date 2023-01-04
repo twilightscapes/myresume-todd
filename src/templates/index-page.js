@@ -627,7 +627,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <br />
 {showCover ? (
-  <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+  <Link state={{modal: true}} to="/about-todd/" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
 ) : (
   ""
 )}
@@ -696,7 +696,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {showCover? (
 
-<Link state={{modal: true}} to="/cover" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
+<Link state={{modal: true}} to="/about-todd" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
 
 ) : (
   
