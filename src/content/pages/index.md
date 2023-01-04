@@ -65,7 +65,7 @@ description: Todd Lambert - Independent artist, photographer, designer/developer
 svgzindex: ""
 profTitle: Digital Product Designer
 coverletter:
-  coverText: Cover Letter
+  coverText: More about Todd
   coverLink: ""
 youtubestart: "42"
 ---

@@ -191,7 +191,7 @@ const HomePage = ({ data }) => {
     const YouTubeAutostart = frontmatter.youtubeautostart
     // const SkillsTitle = frontmatter.skillsTitle
     const SkillsText = frontmatter.skillsText
-    
+    const coverText = frontmatter.coverletter.coverText
     const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
@@ -627,7 +627,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <br />
 {showCover ? (
-  <Link state={{modal: true}} to="/about-todd/" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+  <Link state={{modal: true}} to="/about-todd/" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{coverText}</Link>
 ) : (
   ""
 )}
