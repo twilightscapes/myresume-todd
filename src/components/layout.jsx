@@ -139,7 +139,7 @@ body::after{
     {({ modal, closeTo }) => (
  
 
-      <div style={{overflow:'', display:'flex', justifyContent:'center', border:'1px solid yellow !important'}}>
+      <div style={{overflow:'', display:'flex', justifyContent:'center', border:'0px solid yellow !important'}}>
         {modal ? (
           
           <>
