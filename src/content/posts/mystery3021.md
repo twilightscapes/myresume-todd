@@ -15,6 +15,7 @@ youtubemute: "1"
 youtubecontrols: "0"
 youtubeend: "266"
 sharethis: true
+showdate: true
 svgImage: /assets/MysteryScience3000.svg
 svgzindex: "0"
 youtubersuggestion1: ""

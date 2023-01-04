@@ -17,6 +17,7 @@ youtubeautostart: "1"
 svgzindex: "0"
 comments: false
 sharethis: true
+showdate: false
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-6.jpg
 svgImage: /assets/transcendence.svg

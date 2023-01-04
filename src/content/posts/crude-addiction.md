@@ -12,6 +12,7 @@ youtubecontrols: "0"
 youtubeshoworiginal: false
 comments: false
 sharethis: true
+showdate: false
 featuredImage: /assets/Experiences-Header-4.jpg
 underlayImage: /assets/transparent.png
 youtubeautostart: "1"

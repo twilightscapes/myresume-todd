@@ -891,7 +891,7 @@ p {
 	background: rgb(45, 47, 48);
 }
 
-a[aria-current] {
+/* a[aria-current] {
   cursor: default !important; 
   color:#FA02B7 !important;
   box-shadow: none;
@@ -903,7 +903,7 @@ a[aria-current] {
     cursor: default !important; 
     filter: none !important;
     box-shadow: none;
-    }
+    } */
 
 .button {
 	display: inline-flex;

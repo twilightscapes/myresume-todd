@@ -15,6 +15,7 @@ youtubeautostart: "1"
 svgzindex: "0"
 comments: false
 sharethis: true
+showdate: true
 underlayImage: /assets/transparent.png
 featuredImage: /assets/TheyLive-Header.jpg
 svgImage: /assets/TheyLive.svg

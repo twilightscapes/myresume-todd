@@ -17,6 +17,7 @@ youtubeautostart: "1"
 svgzindex: "0"
 comments: false
 sharethis: true
+showdate: true
 underlayImage: /assets/swd-foreground.png
 featuredImage: /assets/Experiences-Header-5.jpg
 svgImage: /assets/campfire.svg

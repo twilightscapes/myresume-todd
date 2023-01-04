@@ -22,7 +22,7 @@ import ShareSocial from '../components/share'
 // import GoBack from "../components/goBack"
 // import { BiLeftArrow } from "react-icons/bi"
 import { ImPlay } from "react-icons/im"
-// import TimeAgo from 'react-timeago'
+import TimeAgo from 'react-timeago'
 import styled from "styled-components"
 // import Theme from "../components/theme"
 const CustomBox = styled.div`
@@ -135,7 +135,7 @@ const YouTubeMute = frontmatter.youtubemute
 const YouTubeControls = frontmatter.youtubecontrols
 const YouTubeAutostart = frontmatter.youtubeautostart
 
-
+const ShowDates = frontmatter.showdate
 
 
 
@@ -539,7 +539,18 @@ const { iconimage } = useSiteMetadata()
           
             <h1>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
+
+
+
+            {ShowDates ? (
+              <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} />
+      ) : (
+        ""
+      )}
+
+            
+
+
           </section>
         </header>
         <div style={{padding:'0 5vw', color:'inherit !important'}}>
@@ -751,6 +762,7 @@ export const pageQuery = graphql`
         youtubeautostart
         comments
         sharethis
+        showdate
         svgzindex
         featuredImage {
           childImageSharp {
