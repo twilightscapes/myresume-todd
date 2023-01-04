@@ -195,7 +195,7 @@ const options = {
     <Seo
           title={`About Todd Lambert`}
           description={`Todds story - about Todd Lambert`}
-          image={'https://twilightscapes.com/promo-about-todd.jpg'}
+          image={'https://toddlambert.com/promo-about-todd.jpg'}
         />
 
 

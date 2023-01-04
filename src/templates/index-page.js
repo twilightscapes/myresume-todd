@@ -583,7 +583,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
         
 
 
-      <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'0vh', borderRadius:'0 0 10px 10px',
+      <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'2vh', borderRadius:'0 0 10px 10px',
       // textShadow:'0 2px 7px #000', 
       }}>
 
