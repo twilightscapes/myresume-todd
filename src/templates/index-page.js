@@ -781,6 +781,16 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 <div style={{display:'grid', placeContent:'center'}}
               className="featured mobilesize1">
+              <object id="iframe3" class="igetter" data="https://tron.allin60.com/#homestart" width="980" height="550" style={{resize:'both', overflow:'auto',  width:'70vw', height:'70vh'}}> 
+              Error: Embedded data could not be displayed. 
+              </object>
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Test without iframe </div>
+            </div>
+
+
+
+<div style={{display:'grid', placeContent:'center'}}
+              className="featured mobilesize1">
               <iframe id="iframe3" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://tron.allin60.com/#homestart" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Maximum Interface - Maximum Punk </div>
