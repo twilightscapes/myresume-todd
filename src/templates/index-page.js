@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+import { ImPlay, ImDisplay, ImMobile2 } from "react-icons/im"
 
 import styled from "styled-components"
 import { Social } from "../components/social"
@@ -216,6 +216,19 @@ const HomePage = ({ data }) => {
     const openQuote = frontmatter.portfolio.openText
     const closeQuote = frontmatter.portfolio.closeText
     
+
+    const resizeMobile = ()=>{
+      document.getElementById("iframe1").style.width = '400px'
+      document.getElementById("iframe2").style.width = '400px'
+      document.getElementById("iframe3").style.width = '400px'
+      document.getElementById("iframe4").style.width = '400px'
+    }
+    const resizeDesk = ()=>{
+      document.getElementById("iframe1").style.width = 'inherit'
+      document.getElementById("iframe2").style.width = 'inherit'
+      document.getElementById("iframe3").style.width = 'inherit'
+      document.getElementById("iframe4").style.width = 'inherit'
+    }
 
     
     // const { siteColor } = useSiteMetadata()
@@ -742,6 +755,12 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'600px', margin:'5vh 0', border:'0px solid red'}}>
+
+<div  style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .7)', color:'#fff', height:'30vh', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+  alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', border:'1px solid #999 !important', borderLeft:'none !important', padding:'1rem',
+textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
+
+
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
@@ -756,6 +775,49 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
           )}
 
 <div className="introspacer" style={{border:'0px solid', width:''}}></div>
+
+
+
+
+<div style={{display:'grid', placeContent:'center'}}
+              className="featured mobilesize1">
+              <iframe id="iframe3" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://tron.allin60.com/#homestart" frameBorder="0" allowFullScreen></iframe>
+              
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Maximum Interface - Maximum Punk </div>
+            </div>
+
+
+
+            <div style={{display:'grid', placeContent:'center'}}
+              className="featured">
+              <iframe id="iframe2" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://urbanfetish.com" frameBorder="0" allowFullScreen></iframe>
+
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Photographer Portfolio Site </div>
+            </div>
+
+
+<div style={{display:'grid', placeContent:'center'}}
+              className="featured">
+              <iframe id="iframe4" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://vidsocks.com" frameBorder="0" allowFullScreen></iframe>
+
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Small Business Websites </div>
+            </div>
+
+
+
+<div style={{display:'grid', placeContent:'center'}}
+              className="featured mobilesize1">
+              <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://twilightscapes.com/sky-with-diamonds" frameBorder="0" allowFullScreen></iframe>
+              
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Next level blending of multimedia</div>
+            </div>
+
+            
+
+
+
+
+
 
 
 
