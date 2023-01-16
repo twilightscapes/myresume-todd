@@ -3308,26 +3308,21 @@ animation-delay: .5s;
 
 
 @media (max-width: 48rem) {
-	.horizontal-holder{height:70vh !important; border:0px solid yellow !important;}
-
-	.horizontal-scroll {  overflow-y: visible !important;}
-
-//   #feature .stack-layout{max-height:50vh;}
-
-	#resizer{display: none !important;}
-
-	.horizontal-scroll {
-	margin: 0 auto 0 auto !important;
-	width: calc(70vh + 1px) !important;
-	height: 90vh !important;
-	transform: rotate(-90deg) translateY(-70vh) !important;
-	// border-left:1px solid green !important;
-	// border-right:1px solid blue !important;
-	// border-bottom:1px solid yellow !important;
-	// border-top:1px solid red !important;
+	.sliderholder {
+	height: 45vh !important;
 	}
-	.horizontal-scroll iframe {width: 90vw !important;}
 
+  #feature .stack-layout{max-height:50vh;}
+
+	.horizontal-scroll-wrapper {
+	margin: 0 auto 0 auto !important;
+	width: calc(50vh + 1px) !important;
+	transform: rotate(-90deg) translateY(-50vh) !important;
+	}
+
+	.squares > * {
+	max-height: 35vh !important;
+	}
 
 	.mob {
 	order: 2;
@@ -3343,7 +3338,7 @@ animation-delay: .5s;
 
 @media (pointer: coarse) {
 	.RArrow span::before {
-	content: "\276E swipe " !important;
+	content: "\276E \276E swipe" !important;
 	}
 }
 
@@ -3374,68 +3369,68 @@ animation-delay: .5s;
 
 
 .horizontal-scroll::before{
-  content:'\2329 swipe ';
-  position:absolute;
-  z-index: 1;
-  display: inline-block;
-  margin:auto;
-  padding:0 10px;
-  background:rgba(0, 0, 0, .4);
-  opacity:.7;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  border-radius:12px;
-  bottom:50px; right:-30px;
-  color:#ccc;
-  transform: rotate(90deg);
-  font-size:clamp(1rem, 2vw, 2.8rem);
-  text-shadow:2px 2px 2px #333;
-
-}
-.horizontal-scroll:hover::before{
-animation: move 1.2s forwards; 
-/* animation-delay:1s; */
-}
-
-.sliderholder1:hover::before{
-animation: fadeout .5s forwards; 
-}
-
-
-@media (hover: hover) {
-.horizontal-scroll::before, .sliderholder1::before{
-  content:' scroll \276F \276F ' !important;
-}
-
-}
-
-
-
-
-
-.horizontal-scroll::after{
-  content:'\276E \276E  scroll';
-  position:relative;
-  z-index: 1;
-  display: inline-block;
-  margin:auto;
-  padding:10px 10px;
-  background:rgba(0, 0, 0, .7);
-  opacity:.7;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  border-radius:12px;
-  bottom:50vh; right:12vh;
-  color:#fff;
-  transform: rotate(90deg);
-  font-size:clamp(2rem, 3vw, 3rem);
-  text-shadow:2px 2px 2px #333;
-  top:375px;
-  left:30vw;
-
-}
+	content:'\276E \276E swipe ';
+	position:absolute;
+	z-index: 1;
+	display: inline-block;
+	margin:auto;
+	padding:0 10px;
+	background:rgba(0, 0, 0, .4);
+	opacity:.7;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	border-radius:12px;
+	bottom:50px; right:-30px;
+	color:#ccc;
+	transform: rotate(90deg);
+	font-size:clamp(1rem, 2vw, 2.8rem);
+	text-shadow:2px 2px 2px #333;
+  
+  }
+  .horizontal-scroll:hover::before{
+  animation: move 1.2s forwards; 
+  /* animation-delay:1s; */
+  }
+  
+  .sliderholder1:hover::before{
+  animation: fadeout .5s forwards; 
+  }
+  
+  
+  @media (hover: hover) {
+  .horizontal-scroll::before, .sliderholder1::before{
+	content:' scroll \276F \276F ' !important;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  .horizontal-scroll::after{
+	content:'\276E \276E  scroll';
+	position:relative;
+	z-index: 1;
+	display: inline-block;
+	margin:auto;
+	padding:10px 10px;
+	background:rgba(0, 0, 0, .7);
+	opacity:.7;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	border-radius:12px;
+	bottom:50vh; right:12vh;
+	color:#fff;
+	transform: rotate(90deg);
+	font-size:clamp(2rem, 3vw, 3rem);
+	text-shadow:2px 2px 2px #333;
+	top:375px;
+	left:30vw;
+  
+  }
 
 
 @media print {

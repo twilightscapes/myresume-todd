@@ -754,7 +754,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 <section className="vertical" id="posts" order="" name="posts" style={{ margin:'10vh 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:'5vh 0', border:'0px solid red'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
 
 <div  style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .7)', color:'#fff', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
   alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', border:'1px solid #999 !important', borderLeft:'none !important', padding:'1rem',
