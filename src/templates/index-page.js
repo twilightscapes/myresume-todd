@@ -224,10 +224,10 @@ const HomePage = ({ data }) => {
       document.getElementById("iframe4").style.width = '400px'
     }
     const resizeDesk = ()=>{
-      document.getElementById("iframe1").style.width = 'inherit'
-      document.getElementById("iframe2").style.width = 'inherit'
-      document.getElementById("iframe3").style.width = 'inherit'
-      document.getElementById("iframe4").style.width = 'inherit'
+      document.getElementById("iframe1").style.width = 'initial'
+      document.getElementById("iframe2").style.width = 'initial'
+      document.getElementById("iframe3").style.width = 'initial'
+      document.getElementById("iframe4").style.width = 'initial'
     }
 
     
@@ -415,7 +415,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
       />
 
 
-<div className="container22" style={{
+<div id="top" className="container22" style={{
  	// overflowY: 'scroll',
   //  overflowX: 'hidden',
   //  overscrollBehavior: 'contain',
@@ -501,7 +501,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 {showNav ? (
-  <div className="spacer" style={{height:'50px', border:'0px solid yellow'}}></div>
+  <div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
@@ -751,7 +751,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/* end show Posts */}
 {showPosts ? (
-<section className="vertical" id="posts" order="" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
+<section className="vertical" id="posts" order="" name="posts" style={{ margin:'10vh 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:'5vh 0', border:'0px solid red'}}>
@@ -789,37 +789,37 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-<div style={{display:'grid', placeContent:'center'}}
+<div style={{}}
               className="featured mobilesize1">
-              <iframe id="iframe3" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://tron.allin60.com/#homestart" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe3" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://tron.allin60.com/#homestart" frameBorder="0" allowFullScreen></iframe>
               
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Maximum Interface - Maximum Punk </div>
+              <div className="sitelabel" style={{}}>Maximum Interface - Maximum Punk </div>
             </div>
 
 
 
-            <div style={{display:'grid', placeContent:'center'}}
+            <div style={{}}
               className="featured">
-              <iframe id="iframe2" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://urbanfetish.com" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe2" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://urbanfetish.com" frameBorder="0" allowFullScreen></iframe>
 
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Photographer Portfolio Site </div>
+              <div className="sitelabel" style={{}}>Photographer Portfolio Site </div>
             </div>
 
 
-<div style={{display:'grid', placeContent:'center'}}
+<div style={{}}
               className="featured">
-              <iframe id="iframe4" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://vidsocks.com" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe4" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://vidsocks.com" frameBorder="0" allowFullScreen></iframe>
 
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Small Business Websites </div>
+              <div className="sitelabel" style={{}}>Small Business Websites </div>
             </div>
 
 
 
-<div style={{display:'grid', placeContent:'center'}}
+<div style={{}}
               className="featured mobilesize1">
-              <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://twilightscapes.com/sky-with-diamonds" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://twilightscapes.com/sky-with-diamonds" frameBorder="0" allowFullScreen></iframe>
               
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Next level blending of multimedia</div>
+              <div className="sitelabel" style={{}}>Next level blending of multimedia</div>
             </div>
 
             

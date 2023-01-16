@@ -1,3 +1,6 @@
 {
-  "siteColor": "#444"
+  "siteColor": "rgba(0, 0, 0, 0.9)",
+  "bodyBg": "rgba(0, 0, 0, 0.99)",
+  "bodyColor": "#eee",
+  "fontFamily": "Lobster Two"
 }

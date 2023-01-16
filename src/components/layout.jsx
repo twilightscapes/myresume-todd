@@ -1,4 +1,6 @@
-import React, { } from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+// import React, { } from "react"
 // import { SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
 // import { Footer } from "./footer"
@@ -8,11 +10,11 @@ import React, { } from "react"
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
 // import Theme from "../components/theme"
 import { Seo } from "./seo"
-import "../styles/reset.css"
+import "../assets/scss/reset.css"
 // import "../styles/variables.css"
-import "../styles/global.css"
-import "../styles/user.scss"
-// import "../assets/scss/style.scss"
+// import "../styles/global.css"
+// import "../styles/user.scss"
+import "../assets/scss/style.scss"
 // import LogoText from "../../static/assets/logotext.svg"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
@@ -90,6 +92,12 @@ export function Layout({ children }) {
   const { font1 } = useSiteMetadata()
   // const { siteColor } = useSiteMetadata()
   
+  const navStyle = {
+
+    bg: "siteColor",
+
+}
+
 
   const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=swap"
 
@@ -100,7 +108,7 @@ export function Layout({ children }) {
 
   return (
 <CustomBox style={{}}>
-<>
+
 <Helmet>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" /> 
@@ -142,15 +150,14 @@ body::after{
       <div style={{overflow:'', display:'flex', justifyContent:'center', border:'0px solid yellow !important'}}>
         {modal ? (
           
-          <>
+     
           <div id="closeicon" style={{position:'fixed', top:'80px', right:'10vw', zIndex:'2', color:'inherit !important', }}>
           <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important',  }}>
             <AiOutlineClose style={{fontSize:'', textShadow:'4px 4px 0px #111', filter:'drop-shadow(2px 2px 0px #000)', fontWeight:'bold', border:'2px solid', width:'30px', height:'30px', borderRadius:'100%'}}/>
             {/* <span style={{fontSize:'0px', textShadow:'4px 4px 4px #111', filter:'drop-shadow(2px 2px 4px #000) !important', fontWeight:'bold', border:'2px solid', width:'50px', borderRadius:'100%'}}>X</span> */}
           </Link>
           </div>
-          {/* <Link to="../" className="print" style={{position:'fixed', bottom:'40px', border:'0px solid red', background:'rgba(0,0,0,0.70) ', width:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link> */}
-          </>
+
         ) : (
 ""
         )}
@@ -166,14 +173,14 @@ body::after{
 
 {showNav ? (
 
-<ul id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center', background:'radial-gradient(#111 14%,#222 140%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px'}}>
+<ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px'}}>
       
       <li className="grad no-app logo" style={{position:'relative', maxHeight:'60px', width:'auto', display:'flex', justifyContent:'center'}}>
             <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
                 ) : (
-                  companyname
+                  <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
             </AnchorLink>
           </li>
@@ -268,7 +275,7 @@ body::after{
   ""
 )}
 
-<header id="top" className="print" name="pagetop" style={{}} >
+<header className="print" style={{}} >
 
 
 
@@ -293,13 +300,13 @@ body::after{
   <label htmlFor="openSidebarMenu" className="backdrop1" ></label>
 
 <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', fontWeight:'bold', border:'0px solid blue'}}>
 
 {/* <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'none' }}/>  */}
 {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', maxWidth:'120px', border:'none'}} />
                 ) : (
-                  companyname
+                  <div style={{fontWeight:'bold', color:'yellow'}}>companyname</div>
                 )}
 
 </div>
@@ -326,7 +333,7 @@ body::after{
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
                 ) : (
-                  companyname
+                  <div style={{fontWeight:'bold'}}>companyname</div>
                 )}
             </AnchorLink>
           </li>
@@ -483,7 +490,7 @@ body::after{
       
 
         
-  </>
+ 
   </CustomBox>
   )
 }
