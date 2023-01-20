@@ -21,7 +21,7 @@ import ReactPlayer from 'react-player/lazy'
 import { ImPlay, ImDisplay, ImMobile2 } from "react-icons/im"
 
 import Popup from '../components/Popup'
-import GoogleMap from '../components/GoogleMap'
+// import GoogleMap from '../components/GoogleMap'
 import ContactInc from '../components/newssign'
 
 import styled from "styled-components"
@@ -762,10 +762,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
      
      
-<Popup>
+{/* <Popup>
  <Section1 />
 </Popup>
-<br />
+<br /> */}
 
 
 
@@ -778,7 +778,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/* end show Posts */}
 {showPosts ? (
-<section className="vertical" id="posts" order="3" name="posts" style={{ margin:'0', background:'inherit', minHeight:'', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:''}}>
+<section className="vertical" id="posts" order="3" name="posts" style={{ margin:'10vh 0 0 0', background:'inherit', minHeight:'', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:''}}>
 
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
@@ -918,7 +918,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
- <GoogleMap />
+ {/* <GoogleMap /> */}
 
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
