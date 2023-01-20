@@ -1,11 +1,11 @@
 ---
 template: blog-post
-title: Transcendence
-slug: /transcendence
-date: 2022-12-01 01:43
-description: A groovy animation floating through the cosmos
-youtuber: "1kIihY252eE"
-youtuber2: "mkYKF5hQQ6M"
+title: Twilightscapes
+slug: /website2
+date: 2022-12-25 01:43
+description: Multimedia photographer portfolio site
+youtuber: ""
+youtuber2: ""
 youtubeshoworiginal: false
 youtubestart: "1"
 youtubeend: ""
@@ -21,10 +21,10 @@ showdate: false
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-6.jpg
 svgImage: /assets/transcendence.svg
+nftlink: "https://twilightscapes.com"
+isnftforsale: false
 ---
-Shot in the Valley of the Gods in southern Utah, the original image is comprised of 72 photos shot during time-lapse and then stacked together to illustrate the movement of the earth.
 
-May peace always be with you.
 
 
 

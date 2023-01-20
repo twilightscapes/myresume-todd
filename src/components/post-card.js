@@ -12,21 +12,27 @@ const Completionist = () => ""
 
 const PostCard = ({ data }) => {
 
-  const ShowDates = data.frontmatter.showdate
+  // const ShowDates = data.frontmatter.showdate
 
   return (
 
 <section className="child" style={{position:'relative', height:'', overflow:'hidden'}}>
 
   <article
-    className="post-card1"
-    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', fontSize:'clamp(1rem, 1.2vw, 3rem)', background:'transparent', border:'0px solid blue', }}
+    className="post-card"
+    style={{display:'', alignItems:'center', justifyContent:'center', width:'', height:'', position:'relative', fontSize:'clamp(1rem, 1.2vw, 3rem)', background:'transparent', border:'0px solid blue', }}
   >
 
 
+{data.frontmatter.nftlink ? (
 
+              <iframe id="" style={{width:'80%', height:'80vh', margin:'0 auto'}} title="iFrame" className="iframe boom" width="980" height="550" src={data.frontmatter.nftlink} frameBorder="0" allowFullScreen></iframe>
 
+              ) : (
+  
+              
 
+<div>
 
     {data.frontmatter.featuredImage ? (
 
@@ -79,22 +85,47 @@ const PostCard = ({ data }) => {
 </div>
       
     ) : (
-      <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
+      <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-background.webp" alt="Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
+</div>
+
+)}
+
 
 
 <div className="post-content" style={{textAlign:'center'}} >
 
 
 <div className="post-card" style={{border:'0px solid yellow', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', width:'50vw', margin:'0 auto', textAlign:'center', borderRadius:'0 0 10px 10px', background:'rgba(0, 0, 0, .5)'}}>
-<h2 className="title" style={{width:'100%'}}>
-  <Link 
-    to={data.frontmatter.slug}
-  >
+
+
+{data.frontmatter.nftlink ? (
+
+<div>
+{data.frontmatter.isnftforsale ? (
+  <h2 className="title" style={{width:'100%'}}>
+<Link to={data.frontmatter.slug}>
     {data.frontmatter.title}
-    
-  </Link>
+     - <span style={{fontSize:'80%'}}>View Case Study</span>
+</Link>
 </h2>
+) : (
+  <h2 className="title" style={{width:'100%'}}>
+
+    {data.frontmatter.title}
+
+</h2>
+  )}
+</div>
+) : (
+<Link to={data.frontmatter.slug}>
+<h2 className="title" style={{width:'100%'}}>
+    {data.frontmatter.title}
+</h2>
+</Link>
+  )}
+
+
 
 
 

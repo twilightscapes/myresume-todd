@@ -12,11 +12,11 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Countdown from 'react-countdown'
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
-import { Footer } from "../components/footer"
+import {Footer} from "../components/footer"
 // import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 // import YouTubed from "../pages/youtube"
-import { Seo } from "../components/seo"
+import {Seo} from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
 // import GoBack from "../components/goBack"
@@ -99,7 +99,7 @@ const Post = ({ data, pageContext }) => {
     : ""
 
     const { showNav } = useSiteMetadata()
-    // const NftLink = frontmatter.nftlink
+    const NftLink = frontmatter.nftlink
     // const NftRedeem = frontmatter.nftredeem
     // const NftDrop = frontmatter.nftdrop
 
@@ -217,7 +217,7 @@ const ShowDates = frontmatter.showdate
     
               {/* <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important', minHeight:'', border:'2px solid red !important'}}> */}
 
-              {/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
+              {/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
 
 
       {/* <img className="homepage-bg1" src={iconimage} width="" height="" alt="MyResume" style={{ width:'', height:'', maxHeight:'45vh',  background:'transparent !important',}} /> */}
@@ -388,13 +388,17 @@ const { iconimage } = useSiteMetadata()
   ""
 )}
 
+
+
+
+
+{frontmatter.nftlink ? (
+
+<iframe id="" style={{width:'100%', height:'85vh', margin:'0 auto'}} title="iFrame" className="iframe boom" width="980" height="550" src={frontmatter.nftlink} frameBorder="0" allowFullScreen></iframe>
+
+) : (
+
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'auto', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)', aspectRatio:'16 / 9' }}>
-
-
-
-
-
-
 
 <div style={{display:'grid', placeContent:'top', width:'100vw', height:'', overflow:'', position:'absolute', top:'0', zIndex:'', }}>
 
@@ -423,22 +427,6 @@ const { iconimage } = useSiteMetadata()
 </div>
 
 
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
 {/* {Svg2 ? (
             <AddSvg2 />
        
@@ -458,24 +446,12 @@ const { iconimage } = useSiteMetadata()
           )} */}
 
 
-
-
-
-
-
-
-
 { !YouTube ? (
             ""
        
           ) : (
             <Iframer />
           )}
-
-
-
-
-
 
 
 {UnderlayImage ? (
@@ -498,18 +474,10 @@ const { iconimage } = useSiteMetadata()
             ""
           )}
 
+</div>
+          )}
 
-
-      </div>
-
-
-
-
-
-{/* <br />
-<br /> */}
-
-
+      
 
 
 
@@ -757,6 +725,8 @@ export const pageQuery = graphql`
         youtubeend
         audiostart
         audioend
+        nftlink
+        isnftforsale
         youtubemute
         youtubecontrols
         youtubeautostart

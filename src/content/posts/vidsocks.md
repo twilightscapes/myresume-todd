@@ -1,11 +1,11 @@
 ---
 template: blog-post
-title: In The Sky
-slug: /in-the-sky
-date: 2022-12-10 01:43
-description: A groovy animation floating through the cosmos
-youtuber: "iHxmNzMfDj4"
-youtuber2: "mkYKF5hQQ6M"
+title: VidSocks
+slug: /website3
+date: 2022-12-25 01:41
+description: Small business site
+youtuber: ""
+youtuber2: ""
 youtubeshoworiginal: false
 youtubestart: "1"
 youtubeend: ""
@@ -17,14 +17,14 @@ youtubeautostart: "1"
 svgzindex: "0"
 comments: false
 sharethis: true
-showdate: true
-underlayImage: /assets/swd-foreground.png
-featuredImage: /assets/Experiences-Header-5.jpg
-svgImage: /assets/campfire.svg
+showdate: false
+underlayImage: /assets/transparent.png
+featuredImage: /assets/Experiences-Header-6.jpg
+svgImage: /assets/transcendence.svg
+nftlink: "https://vidsocks.com"
+isnftforsale: false
 ---
-Shot in the Valley of the Gods in southern Utah, the original image is comprised of 72 photos shot during time-lapse and then stacked together to illustrate the movement of the earth.
 
-May peace be with you, always.
 
 
 

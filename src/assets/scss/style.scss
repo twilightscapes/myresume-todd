@@ -2880,7 +2880,7 @@ article img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-height: 550px;
+	// max-height: 550px;
 }
 
 .blog-post-content blockquote, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5 {
@@ -3311,6 +3311,8 @@ animation-delay: .5s;
 	.sliderholder {
 	height: 45vh !important;
 	}
+
+	#resizer{display: none !important;}
 
   #feature .stack-layout{max-height:50vh;}
 

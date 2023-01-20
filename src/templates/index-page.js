@@ -146,6 +146,8 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
+            nftlink
+            isnftforsale
             featuredImage {
               publicURL
               childImageSharp {
@@ -217,18 +219,15 @@ const HomePage = ({ data }) => {
     const closeQuote = frontmatter.portfolio.closeText
     
 
-    const resizeMobile = ()=>{
-      document.getElementById("iframe1").style.width = '400px'
-      document.getElementById("iframe2").style.width = '400px'
-      document.getElementById("iframe3").style.width = '400px'
-      document.getElementById("iframe4").style.width = '400px'
+    const resizeMobile = () => {
+      const elements = document.querySelectorAll('.boom');
+      elements.forEach(el => el.style.width = '400px');
     }
-    const resizeDesk = ()=>{
-      document.getElementById("iframe1").style.width = 'initial'
-      document.getElementById("iframe2").style.width = 'initial'
-      document.getElementById("iframe3").style.width = 'initial'
-      document.getElementById("iframe4").style.width = 'initial'
-    }
+
+  const resizeDesk = () => {
+    const elements = document.querySelectorAll('.boom');
+    elements.forEach(el => el.style.width = '80%');
+  }
 
     
     // const { siteColor } = useSiteMetadata()
@@ -756,9 +755,20 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
 
-<div  style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .7)', color:'#fff', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+{/* <div  style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .7)', color:'#fff', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
   alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', border:'1px solid #999 !important', borderLeft:'none !important', padding:'1rem',
-textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
+textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div> */}
+
+
+
+<div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+  alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', borderLeft:'none !important', padding:'1rem',
+textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button>
+
+{/* <i id="my-icon" class="icon-default fas fa-heart">tood</i>
+<button id="icon-button" onClick={toggleIcon}>Toggle Icon</button> */}
+
+</div>
 
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
@@ -789,7 +799,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-<div style={{}}
+{/* <div style={{}}
               className="featured mobilesize1">
               <iframe id="iframe3" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://tron.allin60.com/#homestart" frameBorder="0" allowFullScreen></iframe>
               
@@ -820,7 +830,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
               <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://twilightscapes.com/sky-with-diamonds" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{}}>Next level blending of multimedia</div>
-            </div>
+            </div> */}
 
             
 
