@@ -31,7 +31,7 @@ import { Social } from "../components/social"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import Section1 from "../pages/disclaimer"
+import Section1 from "../pages/test2"
 
 
 
