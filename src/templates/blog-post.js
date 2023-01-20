@@ -99,7 +99,7 @@ const Post = ({ data, pageContext }) => {
     : ""
 
     const { showNav } = useSiteMetadata()
-    const NftLink = frontmatter.nftlink
+    // const NftLink = frontmatter.nftlink
     // const NftRedeem = frontmatter.nftredeem
     // const NftDrop = frontmatter.nftdrop
 

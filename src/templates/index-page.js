@@ -431,7 +431,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* show feature */}
   {showFeature ? (   
 
-<section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
+<section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
 
 
   <article>
@@ -750,7 +750,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {/* end show Posts */}
 {showPosts ? (
-<section className="vertical" id="posts" order="" name="posts" style={{ margin:'10vh 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
+<section className="vertical" id="posts" order="3" name="posts" style={{ margin:'0', background:'inherit', minHeight:'', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:''}}>
 
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
@@ -788,59 +788,6 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-
-{/* <div style={{display:'grid', placeContent:'center'}}
-              className="featured mobilesize1">
-              <object id="iframe3" class="igetter" data="https://coastweb.com" width="980" height="550" style={{resize:'both', overflow:'auto',  width:'70vw', height:'70vh'}}> 
-              Error: Embedded data could not be displayed. 
-              </object>
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Test without iframe </div>
-            </div> */}
-
-
-
-{/* <div style={{}}
-              className="featured mobilesize1">
-              <iframe id="iframe3" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://tron.allin60.com/#homestart" frameBorder="0" allowFullScreen></iframe>
-              
-              <div className="sitelabel" style={{}}>Maximum Interface - Maximum Punk </div>
-            </div>
-
-
-
-            <div style={{}}
-              className="featured">
-              <iframe id="iframe2" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://urbanfetish.com" frameBorder="0" allowFullScreen></iframe>
-
-              <div className="sitelabel" style={{}}>Photographer Portfolio Site </div>
-            </div>
-
-
-<div style={{}}
-              className="featured">
-              <iframe id="iframe4" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://vidsocks.com" frameBorder="0" allowFullScreen></iframe>
-
-              <div className="sitelabel" style={{}}>Small Business Websites </div>
-            </div>
-
-
-
-<div style={{}}
-              className="featured mobilesize1">
-              <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://twilightscapes.com/sky-with-diamonds" frameBorder="0" allowFullScreen></iframe>
-              
-              <div className="sitelabel" style={{}}>Next level blending of multimedia</div>
-            </div> */}
-
-            
-
-
-
-
-
-
-
-
         <BlogListHome data={posts} />
 
         <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
@@ -871,7 +818,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 {/*  show Resume */}
 {showResume ? (
-<section className="vertical" id="resume" order="" style={{ display:'', minHeight:'100vh', overflow:'', margin:'0 0 0 0', position:'relative', border:'0px solid blue'}}>
+<section className="vertical" id="resume" order="4" style={{ display:'', minHeight:'', overflow:'', margin:'5vh 0 0 0', position:'relative', border:'0px solid blue'}}>
 
 
 <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'12px', padding:'5px 0 5px 0', }}>
@@ -888,11 +835,11 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 {frontmatter.addressText2}
 </div>
 
-<div id="resume" className="">
+<div id="" className="">
 
 <span
           style={{  columnCount:'2',
-            columnGap:'20px',
+            columnGap:'40px',
             columnWidth:'100%'}}
             className=""
             dangerouslySetInnerHTML={{ __html: html }}
@@ -921,7 +868,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 {/*  show Skills */}
 {showSkills ? (
   // <ScrollAnimation animateIn="zoomInDown" animateOnce={false} animatePreScroll={false} delay={100}> 
-<section className="print vertical" id="skills" order="" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
+<section className="print vertical" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'100vw', marginLeft:'', columnGap:'150px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>

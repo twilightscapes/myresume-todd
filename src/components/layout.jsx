@@ -175,7 +175,7 @@ body::after{
 
 <ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px'}}>
       
-      <li className="grad no-app logo" style={{position:'relative', maxHeight:'60px', width:'auto', display:'flex', justifyContent:'center'}}>
+      <li className="grad logo" style={{position:'relative', maxHeight:'60px', width:'auto', display:'flex', justifyContent:'center'}}>
             <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
@@ -186,7 +186,7 @@ body::after{
           </li>
       
       
-<li>
+{/* <li>
    <ul className="has-app" style={{position:'', right:'1rem', top:'80px', display:'flex', flexDirection:'column', gap:'4px'}}>
             <li className="has-app1" style={{position:'relative', display:''}}>
             <Link to="/login" className="" style={{color:'#fff',fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)',  width:'', justifyContent:'center', fontWeight:'', }}>Admin</Link>
@@ -199,13 +199,13 @@ body::after{
  <Link state={{modal: true}} to="/notes" className="" style={{fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)',}}>Notes</Link>
  </li>
 </ul>
-</li>    
+</li>     */}
 
 
 
 
           {showInfo ? (
-            <li className="no-app" style={{position:'relative',}}>
+            <li className="" style={{position:'relative',}}>
               <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
               {menu1}
               </AnchorLink>

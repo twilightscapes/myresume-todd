@@ -822,17 +822,17 @@ p {
 	width: 100% !important;
 	}
 
-	// #resume span {
-	// display: flex;
-	// position: sticky;
-	// top: 0;
-	// gap: 20px;
-	// flex-direction: column;
-	// }
+	#resume span {
+	display: flex;
+	position: sticky;
+	top: 0;
+	gap: 20px;
+	flex-direction: column;
+	}
 
 	.nameblock {
-	/* background: transparent !important; */
-	/* color: inherit !important; */
+	background: transparent !important;
+	color: inherit !important;
 	text-shadow: none !important;
 	}
 }
@@ -1066,15 +1066,15 @@ background: rgba(21, 25, 28, 0.7);
 	border: 10px solid #213237 !important;
 	}
 
-	#info, footer, .toolbar {
-	display: none !important;
-	}
+	// #info, footer, .toolbar {
+	// display: none !important;
+	// }
   
   body.homepage .spacer{display:block !important}
 
-	#installedbar, #menu .has-app   {
-	display: flex !important;
-	}
+	// #installedbar, #menu .has-app   {
+	// display: flex !important;
+	// }
 }
 
 .searchboxer {
@@ -2274,6 +2274,15 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 	box-shadow: none;
 }
 
+
+
+.scaled-frame {
+	transform: scale(1.5);
+	transform-origin: center center;
+  }
+
+
+  
 @media (max-width: 58rem) {
 	.galmenu {
 	display: flex;
@@ -2314,9 +2323,9 @@ body.homepage footer {
 
 
 
-#info{order:3;}
+#info{order:1;}
 #feature{order:2;}
-#posts{order: 1;}
+#posts{order:3;}
 #resume{order:4;}
 #skills{order:5;}
 
