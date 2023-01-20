@@ -520,7 +520,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-<section className="vertical" id="info" order="2" name="info" style={{ display:'',  minHeight:'', position:'relative', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100vh',  minHeight:'', position:'relative', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
   <div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
