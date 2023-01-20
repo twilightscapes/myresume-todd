@@ -17,7 +17,7 @@ const CustomBox = styled.div`
 .infomenu{
 
    border-radius:12px;
-   filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
+  //  filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
    background:rgba(0,0,0,0.08) !important;
 }
 

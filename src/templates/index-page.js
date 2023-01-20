@@ -20,6 +20,10 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay, ImDisplay, ImMobile2 } from "react-icons/im"
 
+import Popup from '../components/Popup'
+import GoogleMap from '../components/GoogleMap'
+import ContactInc from '../components/newssign'
+
 import styled from "styled-components"
 import { Social } from "../components/social"
 // import Skills from "../templates/skills-page"
@@ -27,7 +31,7 @@ import { Social } from "../components/social"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-
+import Section1 from "../pages/disclaimer"
 
 
 
@@ -507,6 +511,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
+
+
+
 {/* show Info */}
 
 {showInfo ? (
@@ -748,6 +755,27 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
+
+
+
+
+
+     
+     
+<Popup>
+ <Section1 />
+</Popup>
+<br />
+
+
+
+
+
+
+
+
+
+
 {/* end show Posts */}
 {showPosts ? (
 <section className="vertical" id="posts" order="3" name="posts" style={{ margin:'0', background:'inherit', minHeight:'', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:''}}>
@@ -793,7 +821,9 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
         <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
 
           <Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>View More </Link>
-
+          <Popup>
+          <ContactInc />
+        </Popup>
         </div>
 
 {closeQuote ? (
@@ -885,6 +915,10 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
  </div>{/* end scooch */}
 
+
+
+
+ <GoogleMap />
 
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>

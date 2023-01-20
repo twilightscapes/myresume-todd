@@ -1,0 +1,53 @@
+.Popup-Overlay {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border:0px solid yellow;
+}
+.Popup-Background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .2);
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  overflow: hidden;
+  border:0px solid red;
+  
+}
+
+.Popup-Inner {
+  background: transparent;
+  margin-top:10vh;
+  width: 80vw;
+  height: 90vh;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border:0px solid blue;
+  background: rgba(0, 0, 0, .7);
+  color:#eee;
+  border-radius: 10px;
+}
+
+.Popup-Close {
+  position: fixed;
+  top: 12vh;
+  right: 12vw;
+}
