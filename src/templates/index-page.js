@@ -805,19 +805,31 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 </ScrollAnimation>
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
- <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
+ <div className="" style={{height:'50%', paddingTop:'70%'}}></div>
+
+
+ <div className="introspacer" style={{border:'0px solid', width:''}}></div>
+
 
 {openQuote ? (
             
-            <div style={{display:'grid', placeContent:'center'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)', }}><div style={{padding:'2rem 10% 0px', }}>{openQuote}</div>
-        {/* <div className="logofirst" style={{textAlign:'right', margin:'2rem 30% 0px 0px'}}>- Todd Lambert</div> */}
-        </blockquote></div>
+            <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', width:'100vw', height:'50vh', color:'#ccc'}}>
+<div className="" style={{width:'60vw', paddingTop:'20vh', borderRadius: '12px', fontSize:'clamp(2rem, 2.8vw, 2.8rem)'}}>
+Please check out my portfolio
+&#x276F;&#10095;
+</div>
+
+          {/* <Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>View More </Link> */}
+          {/* <Popup>
+          <ContactInc />
+        </Popup> */}
+        </div>
 
           ) : (
             ""
           )}
 
-<div className="introspacer" style={{border:'0px solid', width:''}}></div>
+
 
 
 
