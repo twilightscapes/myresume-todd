@@ -8,7 +8,7 @@ import { AiOutlineAudioMuted } from "react-icons/ai"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { Footer } from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 // import { FaRegPlusSquare } from 'react-icons/fa'
 // import SignUp from "../components/install-discount"
 // import Theme from "../components/theme"
@@ -567,7 +567,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
-  
+  <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
   <h1 className="title1" style={{fontSize:'clamp(2.5rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             {/* <h2 className="tagline1">
               {frontmatter.tagline}
@@ -576,8 +576,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
             style={{paddingBottom:'2rem'}}
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
-            />
+            /></ScrollAnimation>
             </div>
+       
   
             ) : (
           
@@ -636,8 +637,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
   }} >
-
+<ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{marginTop:'10px'}}> 
 <span style={{marginTop:'10px', fontSize:'160%'}}>{companyname}</span>
+<br />
 {frontmatter.addressText}
 <br />
 {frontmatter.addressText2}
@@ -667,8 +669,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
             <Iframer3 />
             
           )}
-          <br />
-</div> // end nameblock
+          <br /></ScrollAnimation>
+</div>
+
+
+ // end nameblock
 
 
 
@@ -788,8 +793,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div> */}
 
 
-
-<div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+<ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'',}}> 
+<div id="resizer" style={{display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
   alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', borderLeft:'none !important', padding:'1rem',
 textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button>
 
@@ -797,7 +802,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 <button id="icon-button" onClick={toggleIcon}>Toggle Icon</button> */}
 
 </div>
-
+</ScrollAnimation>
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
@@ -866,7 +871,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 </div>
 
 <div id="" className="">
-
+<ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
 <span
           style={{  columnCount:'2',
             columnGap:'40px',
@@ -874,7 +879,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
             className=""
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          
+          </ScrollAnimation>
 </div>
 
 <div className="toolbar print" style={{display:'flex', flexDirection:'', gap:'', width:'', border:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'12px', padding:'5px 0 5px 0', margin:'5vh 0 0 0' }}>
@@ -900,8 +905,10 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
   // <ScrollAnimation animateIn="zoomInDown" animateOnce={false} animatePreScroll={false} delay={100}> 
 <section className="print vertical" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
+<ScrollAnimation animateIn="bounceInUp" animateOut="BounceOutDown" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'100vw', marginLeft:'', columnGap:'150px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
+</ScrollAnimation>
   </section>
 // </ScrollAnimation>
           ) : (
