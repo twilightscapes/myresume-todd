@@ -368,9 +368,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
           
     
 
-          <div className="popped" style={{display:'flex', minWidth:'200px', margin:'0 auto', fontWeight:'bold', padding:'.2rem .4rem', fontSize:'2rem', background:'rgba(0,0,0,0.30)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)',}}>
+          <div className="popped" style={{display:'flex', width:'80%', minWidth:'340px', margin:'0 auto', fontWeight:'bold', padding:'.2rem .4rem', fontSize:'2rem', background:'rgba(0,0,0,0.30)', borderRadius:'12px', border:'1px solid #333', filter:'drop-shadow(2px 2px 2px #000)', textAlign:'center'}}>
             
-            <div style={{fontSize:'.8rem', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', textAlign:'center'}}>
+            <div style={{fontSize:'.8rem', fontWeight:'', width:'100%', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', textAlign:'center'}}>
             I just listened to:<br />
 
 
@@ -568,7 +568,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
   
-  <h1 className="title1">{frontmatter.profTitle}</h1>
+  <h1 className="title1" style={{fontSize:'clamp(2.5rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             {/* <h2 className="tagline1">
               {frontmatter.tagline}
             </h2> */}
@@ -583,10 +583,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
           
             <div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
   
-              <h1 className="title1">{frontmatter.profTitle}</h1>
-            <h2 className="tagline1">
+              <h1 className="title1" style={{fontSize:'clamp(2rem, 4.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
+            {/* <h2 className="tagline1">
               {frontmatter.tagline}
-            </h2>
+            </h2> */}
   
             <div
             style={{}}

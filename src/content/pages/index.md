@@ -11,8 +11,8 @@ audiotitle: "Pillowfight - Get Your Sh*t Together"
 secondaryImage: /assets/og-image.png
 underlayImage: /assets/IMG_1019.webp
 profText: 
- <h2 class="tagline1 font" style="text-align:center;">an artist, photographer, designer and developer<br />
-  todd imagines things & makes them come to life.</h2>
+ <h5 class="" style="text-align:center;">An artist, photographer, designer and developer<br />
+  Todd imagines things & makes them come to life.</h5><br />
   <p>Todd Lambert is an award-winning web designer and photographer that
   trained in Southern California and has traveled and lived in over 16 Western
   states.</p> <p>Todd's skills include all facets of online and multimedia
