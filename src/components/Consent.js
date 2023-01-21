@@ -29,7 +29,7 @@ const Consent = () => (
     declineButtonStyle={{fontSize: "13px", }}
     
     buttonText="Accept"
-	buttonStyle={{justifyContent:'center', textAlign:'center', fontSize: "16px", fontWeight:'bold', borderRadius:'5px', color:'', top:'10px', position:'relative', margin:'0 0 0 0', padding:'.8rem 1rem', background:'transparent', border:'1px solid',
+	buttonStyle={{justifyContent:'center', textAlign:'center', fontSize: "16px", fontWeight:'bold', borderRadius:'5px', color:'', top:'0px', position:'relative', margin:'0 0 0 0', padding:'.8rem 1rem', background:'transparent', border:'1px solid',
     // filter:'drop-shadow(1px 1px 10rem #fff)',
     boxShadow:' 0px 1px 6px 1px black',
     backdropFilter: 'blur(10px)',
