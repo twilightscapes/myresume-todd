@@ -5,14 +5,8 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { AiOutlineAudioMuted } from "react-icons/ai"
-// import { RiArrowRightSLine } from "react-icons/ri"
 import { Footer } from "../components/footer"
-// import { GoArrowDown } from "react-icons/go"
 import ScrollAnimation from 'react-animate-on-scroll'
-// import { FaRegPlusSquare } from 'react-icons/fa'
-// import SignUp from "../components/install-discount"
-// import Theme from "../components/theme"
-
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -23,12 +17,11 @@ import { ImPlay, ImDisplay, ImMobile2 } from "react-icons/im"
 // import Popup from '../components/Popup'
 // import GoogleMap from '../components/GoogleMap'
 // import ContactInc from '../components/newssign'
+// import Newsignup from "../components/newssign"
 // import Section1 from "../pages/test2"
 
 import styled from "styled-components"
 import { Social } from "../components/social"
-// import Skills from "../templates/skills-page"
-// import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -185,7 +178,6 @@ const HomePage = ({ data }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
-    // const { iconimage } = useSiteMetadata()
 
     const { companyname } = useSiteMetadata()
     const { siteUrl } = useSiteMetadata()
@@ -196,7 +188,6 @@ const HomePage = ({ data }) => {
     const YouTubeMute = frontmatter.youtubemute
     const YouTubeControls = frontmatter.youtubecontrols
     const YouTubeAutostart = frontmatter.youtubeautostart
-    // const SkillsTitle = frontmatter.skillsTitle
     const SkillsText = frontmatter.skillsText
     const coverText = frontmatter.coverletter.coverText
     const { showNav } = useSiteMetadata()
@@ -208,13 +199,12 @@ const HomePage = ({ data }) => {
     const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
-    // const { showDates } = useSiteMetadata()
-    // const { showPopup } = useSiteMetadata()
 
 
-    // const showCTA = frontmatter.cta.ctaText
+
+
     const CtaLink = frontmatter.cta.ctaLink
-    // const coverLink = frontmatter.coverletter.coverLink
+
     
     
     const ProfText = frontmatter.profText
@@ -234,10 +224,6 @@ const HomePage = ({ data }) => {
     elements.forEach(el => el.style.width = '80%');
   }
 
-    
-    // const { siteColor } = useSiteMetadata()
-
-    // const SiteColor = sitecolor
 
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
@@ -297,20 +283,7 @@ function Iframer() {
 
     <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', height:'90vh', margin:'5vh auto', border:'0px solid red', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', flexDirection:'column'}}>
     
-    {/* <div style={{position:'relative', maxWidth:'100vw', margin:'0', zIndex:'0', background:'transparent !important',}}>
 
-
-
-    {iconimage ? (
-        
-        <img className="homepage-bg" src={iconimage} width="" height="" alt="Logo" style={{ width:'50vw', maxWidth:'30vw', maxHeight:'', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', objectFit:'contain', backgroundSize:'contain'}} />
-                  ) : (
-                    ""
-                  )}
-
-
-
-</div> */}
 
 
 <div style={{display:'flex', justifyContent:'center', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
@@ -343,12 +316,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <ReactPlayer
           className='react-player67'
           url={iframeUrl3}
-          // url={[
-          //   iframeUrl,
-          //   Suggestion1,
-          //   Suggestion2,
-          //   Suggestion3
-          // ]}
           width="250px"
           height="100%"
           style={{
@@ -408,7 +375,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
     <Layout>
     <Helmet>
   <body className="homepage" />
-  {/* <link rel="stylesheet" href={frontmatter.portfolio.closeText} /> */}
 </Helmet>
        <Seo
         title={frontmatter.title}
@@ -422,14 +388,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <div id="top" className="container22" style={{
  	overflowY: 'scroll',
    overflowX: 'hidden',
-  //  overscrollBehavior: 'contain',
-  //  scrollSnapAlign: 'center',
-  //  scrollPadding: '0 5%',
-  //  scrollSnapType: 'y mandatory',
-  //  height:'100vh',
   width:'100vw'
 }}>
-{/* { sitecolor } */}
+
 
 
 
@@ -543,19 +504,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-
-{/* {UnderlayImage ? (
-""
-) : (
-  ""
-)} */}
              
-             <div id="profiletop" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 0',
-  padding:'0 4% 0 4%',
-  // textShadow:'0 2px 3px #000',
-  //  background:'rgba(0,0,0,0.70)',
-  //  color:'#fff', 
-   borderRadius:'0 0 10px 10px',}}>
+<div id="profiletop" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 0',
+  padding:'0 4% 0 4%', borderRadius:'0 0 10px 10px',}}>
 
 
 
@@ -605,7 +556,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
       <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'2vh', borderRadius:'0 0 10px 10px',
-      // textShadow:'0 2px 7px #000', 
       }}>
 
 
@@ -750,7 +700,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 </div>
 </div> 
-{/* <div style={{height:'100px', border:'1px solid red'}}>&nbsp;</div> */}
 </article>
 </section>
 ) : (
@@ -789,17 +738,13 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
 
-{/* <div  style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .7)', color:'#fff', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
-  alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', border:'1px solid #999 !important', borderLeft:'none !important', padding:'1rem',
-textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div> */}
 
 
 <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={false} animateOnce={false} animatePreScroll={false} style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', borderRadius:'0 12px 12px 0', borderLeft:'none !important',}}> 
 <div id="resizer" style={{display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
   alignItems:'center', alignContent:'center', textAlign:'center',  padding:'1rem', textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button>
 
-{/* <i id="my-icon" class="icon-default fas fa-heart">tood</i>
-<button id="icon-button" onClick={toggleIcon}>Toggle Icon</button> */}
+
 
 </div>
 </ScrollAnimation>
@@ -838,15 +783,11 @@ Please check out my portfolio
         <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
 
           <Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>View More </Link>
-          {/* <Popup>
-          <ContactInc />
-        </Popup> */}
         </div>
 
 {closeQuote ? (
 
         <div style={{display:'grid', placeContent:'center'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)',}}><div style={{padding:'2rem 10% 0px', color:'#fff'}}>{closeQuote}</div>
-        {/* <div className="logofirst" style={{textAlign:'right', margin:'2rem 30% 0px 0px'}}>- Todd Lambert</div> */}
         </blockquote></div>
 
         ) : (
@@ -870,7 +811,6 @@ Please check out my portfolio
 
 <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'12px', padding:'5px 0 5px 0', }}>
 <div className="keyboard" order="" style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0',}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> &nbsp;OR&nbsp; <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
-{/* <div order="" className="themer" style={{display:'flex', justifyContent:'center', border:'0px solid red', minWidth:'400px', margin:'0 auto', verticalAlign:'center'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important',}} /></span></div> */}
   <div order="" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'auto !important', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
   </div>
 <br />
@@ -896,7 +836,6 @@ Please check out my portfolio
 
 <div className="toolbar print" style={{display:'flex', flexDirection:'', gap:'', width:'', border:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'12px', padding:'5px 0 5px 0', margin:'5vh 0 0 0' }}>
 <div className="keyboard" order="" style={{display:'flex', justifyContent:'', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0',}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> &nbsp;OR&nbsp; <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
-{/* <div order="" className="themer" style={{display:'flex', justifyContent:'center', border:'0px solid red', minWidth:'400px', margin:'0 auto', verticalAlign:'center'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}><Theme  style={{color:'inherit !important',}} /></span></div> */}
   <div order="" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'auto !important', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'30px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
   </div>
 
@@ -914,15 +853,15 @@ Please check out my portfolio
 
 {/*  show Skills */}
 {showSkills ? (
-  // <ScrollAnimation animateIn="zoomInDown" animateOnce={false} animatePreScroll={false} delay={100}> 
+
 <section className="print vertical" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
 <ScrollAnimation animateIn="bounceInUp" animateOut="BounceOutDown" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
-<div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'100vw', marginLeft:'', columnGap:'150px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
+<div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'', padding:'0 2%', columnGap:'50px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
 </ScrollAnimation>
   </section>
-// </ScrollAnimation>
+
           ) : (
             ""
           )}
@@ -941,7 +880,6 @@ Please check out my portfolio
 
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
-{/* <Theme /> */}
 <div id="branding" style={{position:'relative', left:'0', bottom:'5px', fontSize:'90%'}}><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></div>
 </div>
 

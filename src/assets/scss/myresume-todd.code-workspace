@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"explorer.openEditors.minVisible": 2,
+		"workbench.editor.enablePreviewFromQuickOpen": true,
+		"workbench.colorTheme": "Default Dark+",
+		"workbench.startupEditor": "none"
+	}
+}

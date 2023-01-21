@@ -54,7 +54,6 @@ skillsText: <dl>
   <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
 
   </dl>
-  <dl>
 cta:
   ctaText: Contact Me
   ctaLink: ""
