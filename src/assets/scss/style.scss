@@ -2404,20 +2404,22 @@ body.homepage footer {
 	}
 }
 
-kbd {
-	display: inline-block;
-	border: 0px solid #ccc;
-	border-radius: 4px;
-	padding: 0 0.5em;
-	margin: 1px 0.2em !important;
-	box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 1px inset;
 
- ;
+
+
+.kbd, kbd {
+    font-size: clamp(1.2rem, 1vw, 1rem);
+    padding: 0.0625rem 0.5rem;
+    border-radius: 0.115rem;
+    border: 1px solid ;
+	height:30px;
+    box-shadow: 1px 1px #777, 1px 1px #666;
+    margin: 2px 0.25rem;
+    font-family: monospace;
+	line-height: calc(1em + .4vw);
 }
 
-.keyboard {
-	height: 30px;
-}
+
 
 
 
