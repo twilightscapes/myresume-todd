@@ -1,15 +1,19 @@
 ---
 slug: /
-tagline:  An artist, photographer, designer and developer; Todd imagines things & makes them come to life.
+tagline:  an artist, photographer, designer and developer; 
+  todd imagines things & makes them come to life.
 featuredImage: /assets/challenger.webp
 youtuber: "https://youtu.be/ESGJ42zshL8"
-youtuber2: "RGT4V6JmINA"
-audiostart: "1"
+youtuber2: "https://youtu.be/2q-tpDxJ-MI"
+audiostart: "20"
 audioend: "5000"
-audiotitle: "The Cure - The Forest"
+audiotitle: "Pillowfight - Get Your Sh*t Together"
 secondaryImage: /assets/og-image.png
 underlayImage: /assets/IMG_1019.webp
-profText: <p>Todd Lambert is an award-winning web designer and photographer that
+profText: 
+ <h2 class="tagline1 font" style="text-align:center;">an artist, photographer, designer and developer<br />
+  todd imagines things & makes them come to life.</h2>
+  <p>Todd Lambert is an award-winning web designer and photographer that
   trained in Southern California and has traveled and lived in over 16 Western
   states.</p> <p>Todd's skills include all facets of online and multimedia
   creation including HTML emails, online ads, user interface design, information
@@ -63,7 +67,7 @@ template: index-page
 youtubemute: "1"
 description: Todd Lambert - Independent artist, photographer, designer/developer
 svgzindex: ""
-profTitle: Digital Product Designer
+profTitle: digital product designer
 coverletter:
   coverText: More about Todd
   coverLink: ""

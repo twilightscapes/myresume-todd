@@ -1510,7 +1510,7 @@ body.homepage .mobilespace {
 }
 
 .social-icons {
-	font-size: 3rem;
+	font-size: clamp(2rem, 2.8vw, 3.2rem);
 	display: flex;
 	gap: 16px;
 	margin-top: 30px;
@@ -2024,6 +2024,8 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 	#installedbar * {
 	min-width: 100px;
 	}
+
+	#profiletop{padding: 25vh 0 0 0 !important; border:0px solid red !important;}
 }
 
 .touchup {
@@ -2309,6 +2311,8 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 	border: 0px solid red !important;
 	width: 100% !important;
 	}
+
+
 }
 
 body.homepage footer {
