@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import TimeAgo from 'react-timeago'
-
+// import ScrollAnimation from "react-animate-on-scroll"
 import Countdown from 'react-countdown'
 
 const Completionist = () => ""
@@ -27,6 +27,7 @@ const PostCard = ({ data }) => {
 {data.frontmatter.nftlink ? (
 
               <iframe id="" style={{width:'80%', height:'80vh', margin:'0 auto'}} title="iFrame" className="iframe boom" width="980" height="550" src={data.frontmatter.nftlink} frameBorder="0" allowFullScreen></iframe>
+              
 
               ) : (
   
@@ -175,6 +176,7 @@ date={Date.now() + 20000} className="countdown"> */}
 
 
   </article>
+  
   </section>
   )
   
