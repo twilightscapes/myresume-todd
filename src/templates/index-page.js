@@ -419,14 +419,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 <div id="top" className="container22" style={{
- 	// overflowY: 'scroll',
-  //  overflowX: 'hidden',
+ 	overflowY: 'scroll',
+   overflowX: 'hidden',
   //  overscrollBehavior: 'contain',
   //  scrollSnapAlign: 'center',
   //  scrollPadding: '0 5%',
   //  scrollSnapType: 'y mandatory',
   //  height:'100vh',
-
+  width:'100vw'
 }}>
 {/* { sitecolor } */}
 
