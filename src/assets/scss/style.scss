@@ -2026,6 +2026,9 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 	}
 
 	#profiletop{padding: 25vh 0 0 0 !important; border:0px solid red !important;}
+
+	.navbar-item{font-family: sans-serif !important; font-size: 140%;}
+
 }
 
 .touchup {
@@ -2170,25 +2173,6 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 
 
 
-
-
-
-
-
-
-
-
-.galgrad:hover {
-	background: rgb(126,209,234);
-
-	background: -moz-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%, rgba(65,145,186,1) 40%, rgba(3,73,127,1) 100%);
-
-	background: -webkit-radial-gradient(center, ellipse cover, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
-
-	background: radial-gradient(ellipse at center, rgba(126,209,234,1) 0%,rgba(65,145,186,1) 40%,rgba(3,73,127,1) 100%);
- ;
-}
-
 .makeStyles-copyContainer {
 	position: relative;
 	padding: 14px;
@@ -2198,13 +2182,7 @@ input[type="checkbox"]:checked ~ .backdrop1 {
   flex-direction: column;
 }
 
-/* .makeStyles-container-1:before {
-	content: 'please share this link:';
-	font-size: 100%;
-	text-align: center;
-	width: 100%;
-	color: inherit !important;
-} */
+
 
 .makeStyles-copyContainer-13{
   position: relative;
@@ -2228,53 +2206,7 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 
 
 
-.galmenu {
-	display: flex;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-	justify-content: center;
-	background: #111;
-	width: auto;
-}
 
-.galmenu li {
-	height: 100%;
-	padding: 0;
-	color: #fff;
-	margin: 0 3px;
-	text-align: center;
-	list-style-type: none;
-}
-
-.galmenu .galgrad {
-	display: block;
-	padding: 0;
-	border-radius: 6px;
-	text-shadow: 1px 1px 1px black;
-	height: 100%;
-}
-
-.galmenu .galgrad {
-	background: #333;
- ;
-}
-
-.galmenu [aria-current] {
-	background: #000;
-	cursor: default !important;
-	color: #666;
-	box-shadow: none;
-
-	filter: none !important;
-	pointer-events: none;
-}
-
-.galmenu [aria-current]:hover {
-	cursor: default !important;
-	filter: none !important;
-	box-shadow: none;
-}
 
 
 
@@ -2338,9 +2270,6 @@ body.homepage footer {
 
 
 
-.intro {
-	border: 0px solid orange !important;
-}
 
 
 
@@ -2360,31 +2289,9 @@ body.homepage footer {
   }
 
 
-@media (max-width: 58rem) {
-
-// 	#greeting {
-// 	order: 2;
-// 	}
-
-// 	#intro {
-// 	order: 1;
-// 	}
 
 
 
-
-}
-
-#logointro {
-	padding-top: 80vh;
-}
-
-@media (max-width: 58rem) {
-
-	#logointro {
-	padding-top: 300px;
-	}
-}
 
 @keyframes poof {
 	0% {
