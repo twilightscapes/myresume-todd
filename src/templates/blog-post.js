@@ -156,7 +156,7 @@ const ShowDates = frontmatter.showdate
   
 
   function Iframer() {
-    const iframeUrl = "https://www.youtube.com/embed/" + frontmatter.youtuber
+    const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber
 
     return (
 
@@ -245,7 +245,7 @@ const ShowDates = frontmatter.showdate
 
 
   function Iframer2() {
-    const iframeUrl2 = "https://www.youtube.com/embed/" + frontmatter.youtuber
+    const iframeUrl2 = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber
     return (
 
 <div>
@@ -292,7 +292,7 @@ const ShowDates = frontmatter.showdate
   const AudioEnd = frontmatter.audioend
 
   function Iframer3() {
-    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
+    const iframeUrl3 = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber2
     return (
 
 <ReactPlayer
@@ -394,7 +394,7 @@ const { iconimage } = useSiteMetadata()
 
 {frontmatter.nftlink ? (
 
-<iframe id="" style={{width:'100%', height:'85vh', margin:'0 auto'}} title="iFrame" className="iframe boom" width="980" height="550" src={frontmatter.nftlink} frameBorder="0" allowFullScreen></iframe>
+<iframe loading="lazy" id="" style={{width:'100%', height:'85vh', margin:'0 auto'}} title="iFrame" className="iframe boom" width="980" height="550" src={frontmatter.nftlink} frameBorder="0" allowFullScreen></iframe>
 
 ) : (
 

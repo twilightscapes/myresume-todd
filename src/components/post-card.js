@@ -26,7 +26,7 @@ const PostCard = ({ data }) => {
 
 {data.frontmatter.nftlink ? (
 
-              <iframe id="" style={{width:'80%', height:'80vh', margin:'0 auto'}} title="iFrame" className="iframe boom" width="980" height="550" src={data.frontmatter.nftlink} frameBorder="0" allowFullScreen></iframe>
+              <iframe loading="lazy" id="" style={{width:'80%', height:'80vh', margin:'0 auto'}} title="iFrame" className="iframe boom" width="980" height="550" src={data.frontmatter.nftlink} frameBorder="0" allowFullScreen></iframe>
               
 
               ) : (
