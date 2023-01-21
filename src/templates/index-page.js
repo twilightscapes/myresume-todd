@@ -758,7 +758,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 {openQuote ? (
             
-            <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', width:'100vw', height:'50vh', color:'#ccc'}}>
+            <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', width:'100vw', height:'50vh', color:''}}>
 <div className="" style={{width:'60vw', paddingTop:'20vh', borderRadius: '12px', fontSize:'clamp(2rem, 2.8vw, 2.8rem)'}}>
 Please check out my portfolio
 &#x276F;&#10095;
@@ -787,7 +787,7 @@ Please check out my portfolio
 
 {closeQuote ? (
 
-        <div style={{display:'grid', placeContent:'center'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)',}}><div style={{padding:'2rem 10% 0px', color:'#fff'}}>{closeQuote}</div>
+        <div style={{display:'grid', placeContent:'center', paddingTop:'10vh'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)', }}><div style={{padding:'0 10% 0px', color:''}}>{closeQuote}</div>
         </blockquote></div>
 
         ) : (
