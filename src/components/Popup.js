@@ -46,24 +46,24 @@ class Popup extends Component {
         {this.state.showPopup ? (
           <div className="Popup-Overlay">
 
-            <button
+            <div
               className="Popup-Background"
               onClick={this.togglePopup.bind(this)}
               onKeyDown={this.handleKeyDown}
               tabIndex={0}
               aria-label="Toggle Popup"
               role="button"
-            ></button>
+            ></div>
 
             <div className="Popup-Inner">
-              <button
+              <div
                 className="Popup-Close"
                 onClick={this.togglePopup.bind(this)}
                 onKeyDown={this.handleKeyDown}
                 tabIndex={0}
                 aria-label="Toggle Popup"
                 role="button"
-              >Close</button>
+              >Close</div>
               {children}
             </div>
 

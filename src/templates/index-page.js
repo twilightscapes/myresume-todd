@@ -20,9 +20,10 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay, ImDisplay, ImMobile2 } from "react-icons/im"
 
-import Popup from '../components/Popup'
+// import Popup from '../components/Popup'
 // import GoogleMap from '../components/GoogleMap'
-import ContactInc from '../components/newssign'
+// import ContactInc from '../components/newssign'
+// import Section1 from "../pages/test2"
 
 import styled from "styled-components"
 import { Social } from "../components/social"
@@ -31,7 +32,7 @@ import { Social } from "../components/social"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
-import Section1 from "../pages/test2"
+
 
 
 
