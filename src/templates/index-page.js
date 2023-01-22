@@ -40,123 +40,116 @@ const CustomBox = styled.div`
 
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String! ) {
-    
-    site {
-      siteMetadata {
-        title
-        titleDefault
-        siteUrl
-        description
-        image
-        twitterUsername
-        companyname
-        showfooter
-        showInfo
-        showCover
-        showFeature
-        showPosts
-        showResume
-        showSocial
-        showSkills
-        showNav
-        showPopup
-        siteColor
-        showDates
-      }
-
+query HomeQuery($id: String!) {
+  site {
+    siteMetadata {
+      title
+      titleDefault
+      siteUrl
+      description
+      image
+      twitterUsername
+      companyname
+      showfooter
+      showInfo
+      showCover
+      showFeature
+      showPosts
+      showResume
+      showSocial
+      showSkills
+      showNav
+      showPopup
+      siteColor
+      showDates
     }
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 148)
-      frontmatter {
-        date(formatString: "YYYY-MM-DD-HH-MM-SS")
-        slug
-        title
-        description
-        youtuber
-        youtuber2
-        youtubestart
-        youtubeend
-        audiostart
-        audiotitle
-        audioend
-        youtubemute
-        youtubecontrols
-        youtubeautostart
-        profTitle
-        profText
-        addressText
-        addressText2
-        skillsTitle
-        skillsText
-        svgzindex
-        tagline
-        featuredImage {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        secondaryImage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        underlayImage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        cta {
-          ctaText
-          ctaLink
-        }
-        coverletter {
-          coverText
-          coverLink
-        }
-        portfolio{
-          openText
-          closeText
-        }
-        svgImage{
-          relativePath
+  }
+  markdownRemark(id: {eq: $id}) {
+    id
+    html
+    excerpt(pruneLength: 148)
+    frontmatter {
+      date(formatString: "YYYY-MM-DD-HH-MM-SS")
+      slug
+      title
+      description
+      youtuber
+      youtuber2
+      youtubestart
+      youtubeend
+      audiostart
+      audiotitle
+      audioend
+      youtubemute
+      youtubecontrols
+      youtubeautostart
+      profTitle
+      profText
+      addressText
+      addressText2
+      skillsTitle
+      skillsText
+      svgzindex
+      tagline
+      featuredImage {
+        publicURL
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
+      secondaryImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      underlayImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      cta {
+        ctaText
+        ctaLink
+      }
+      coverletter {
+        coverText
+        coverLink
+      }
+      portfolio {
+        openText
+        closeText
+      }
+      svgImage {
+        relativePath
+      }
     }
-
-
- 
-    
-
-    posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 5
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "YYYY-MM-DD-HH-MM-SS")
-            slug
-            title
-            nftlink
-            isnftforsale
-            featuredImage {
-              publicURL
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
+  }
+  posts: allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {template: {eq: "blog-post"}}}
+    limit: 5
+  ) {
+    edges {
+      node {
+        id
+        excerpt(pruneLength: 250)
+        frontmatter {
+          date(formatString: "YYYY-MM-DD-HH-MM-SS")
+          slug
+          title
+          nftlink
+          isnftforsale
+          featuredImage {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }
       }
     }
   }
+}
 `
 
 

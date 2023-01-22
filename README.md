@@ -1,4 +1,4 @@
-> **Update** My Resume is now built with the latest version of Gatsby
+> **Update** My Resume is now built with the latest version of Gatsby(v5.4.2) and now uses Static CMS rather than Netlify CMS since it gets more frequent updates.
 
 ---
 
@@ -53,5 +53,5 @@ We really appreciate you choosing to build your resume and portfolio with MyResu
 
 [myresume]: https://myresume.site
 [gatsby]: https://gatsbyjs.org
-[netlifycms]: https://www.netlifycms.org
-[custom-domain]: https:/myresume.site/adding-custom-domain-netlify
+[netlifycms]: https://www.staticcms.org
+<!-- [custom-domain]: https:/myresume.site/adding-custom-domain-netlify -->

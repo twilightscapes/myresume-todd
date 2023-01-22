@@ -16,9 +16,9 @@ import "../assets/scss/reset.css"
 // import "../styles/user.scss"
 import "../assets/scss/style.scss"
 // import LogoText from "../../static/assets/logotext.svg"
-import { Link } from 'gatsby-plugin-modal-routing-3'
-import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
-import { AiOutlineClose } from "react-icons/ai"
+import { Link } from 'gatsby'
+// import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
+// import { AiOutlineClose } from "react-icons/ai"
 // import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { FaHandPointDown } from "react-icons/fa"
 // import Bug from "../../static/assets/icon-512x512.png"
@@ -143,28 +143,21 @@ body::after{
 
 
 
-      <ModalRoutingContext.Consumer closeTimeoutMS={300}>
+  {/* <ModalRoutingContext.Consumer closeTimeoutMS={300}>
     {({ modal, closeTo }) => (
- 
-
       <div style={{overflow:'', display:'flex', justifyContent:'center', border:'0px solid yellow !important'}}>
         {modal ? (
-          
-     
           <div id="closeicon" style={{position:'fixed', top:'80px', right:'10vw', zIndex:'2', color:'inherit !important', }}>
           <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important',  }}>
             <AiOutlineClose style={{fontSize:'', textShadow:'4px 4px 0px #111', filter:'drop-shadow(2px 2px 0px #000)', fontWeight:'bold', border:'2px solid', width:'30px', height:'30px', borderRadius:'100%'}}/>
-            {/* <span style={{fontSize:'0px', textShadow:'4px 4px 4px #111', filter:'drop-shadow(2px 2px 4px #000) !important', fontWeight:'bold', border:'2px solid', width:'50px', borderRadius:'100%'}}>X</span> */}
           </Link>
           </div>
-
         ) : (
 ""
         )}
-
       </div>
     )}
-  </ModalRoutingContext.Consumer>
+  </ModalRoutingContext.Consumer> */}
 
 
 
