@@ -49,7 +49,7 @@ const Test = () => (
     <StaticImage className="" src="../../static/assets/spoutiblle-promo.webp" alt="Code Example" style={{ width:'50%', maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
 
 
-<figure style={{maxWidth:'70vw', margin:'10vh auto',}}>
+<figure style={{maxWidth:'70vw', margin:'3vh auto',}}>
   <figcaption style={{background:'#111', padding:'1vh 2vw'}}>Spoutible MaxWidth with No Sidebar</figcaption>
  <div style={{ padding:'1vh 2vw', display:'flex', gap:'2vw'}}>
 
