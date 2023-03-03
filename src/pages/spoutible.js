@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-
+import { Seo } from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 // import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -38,7 +38,16 @@ const Test = () => (
 
 <Layout>
 
-    <CustomBox style={{paddingTop:'70px', textAlign:'center'}}>
+<Seo
+          title={`Spoutible User Styles`}
+          description={`Change Spoutible with custom css`}
+          image={'https://toddlambert.com/assets/spoutiblle-promo.webp'}
+        />
+
+    <CustomBox style={{paddingTop:'80px', textAlign:'center'}}>
+
+    <StaticImage className="" src="../../static/assets/spoutiblle-promo.webp" alt="Code Example" style={{ width:'50%', maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
+
 
 <figure style={{maxWidth:'70vw', margin:'10vh auto',}}>
   <figcaption style={{background:'#111', padding:'1vh 2vw'}}>Spoutible MaxWidth with No Sidebar</figcaption>
@@ -79,7 +88,8 @@ On Chrome:
 Download User CSS  <br /> <a href="https://chrome.google.com/webstore/detail/user-css/okpjlejfhacmgjkmknjhadmkdbcldfcb?hl=en">https://chrome.google.com/webstore/detail/user-css/okpjlejfhacmgjkmknjhadmkdbcldfcb?hl=en</a>
 
 
-
+<br /><br />
+<br /><br />
 
 </CustomBox>
 </Layout>
