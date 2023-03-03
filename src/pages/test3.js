@@ -141,7 +141,7 @@ header {
 //   shareDialog.classList.remove('is-open')
 // })
 
-const Test = () => (
+const Test3 = () => (
 
 <>
 
@@ -223,4 +223,4 @@ const Test = () => (
 
 )
 
-export default Test
+export default Test3
