@@ -127,7 +127,7 @@ query HomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 7
+    limit: 9
   ) {
     edges {
       node {
