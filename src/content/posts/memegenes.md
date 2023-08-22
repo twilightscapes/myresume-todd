@@ -1,8 +1,8 @@
 ---
 template: blog-post
-title: Coast Web
-slug: /website3
-date: 2022-12-25 01:42
+title: Meme Genes
+slug: /website11
+date: 2023-12-25 01:42
 description: Small business site
 youtuber: ""
 youtuber2: ""
@@ -21,7 +21,7 @@ showdate: false
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-6.jpg
 svgImage: /assets/transcendence.svg
-nftlink: "https://coastweb.site"
+nftlink: "https://memegenes.com"
 isnftforsale: false
 ---
 

@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: VidSocks
-slug: /website3
-date: 2022-12-25 01:41
-description: Small business site
+title: Complete Web
+slug: /website4
+date: 2022-12-25 02:43
+description: A high impact multimedia website with video, svg and css.
 youtuber: ""
 youtuber2: ""
 youtubeshoworiginal: false
@@ -21,10 +21,12 @@ showdate: false
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-6.jpg
 svgImage: /assets/transcendence.svg
-nftlink: "https://vidsocks.com"
+nftlink: "https://completeweb.site"
 isnftforsale: false
 ---
+Shot in the Valley of the Gods in southern Utah, the original image is comprised of 72 photos shot during time-lapse and then stacked together to illustrate the movement of the earth.
 
+May peace always be with you.
 
 
 

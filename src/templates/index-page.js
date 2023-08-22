@@ -127,7 +127,7 @@ query HomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 5
+    limit: 7
   ) {
     edges {
       node {
@@ -512,7 +512,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
-  <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+  {/* <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}>  */}
   <h1 className="title1" style={{fontSize:'clamp(2.5rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             {/* <h2 className="tagline1">
               {frontmatter.tagline}
@@ -521,7 +521,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
             style={{paddingBottom:'2rem'}}
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
-            /></ScrollAnimation>
+            />
+            {/* </ScrollAnimation> */}
             </div>
        
   
@@ -581,7 +582,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
   }} >
-<ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{marginTop:'10px'}}> 
+{/* <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{marginTop:'10px'}}>  */}
 <span style={{marginTop:'10px', fontSize:'160%'}}>{companyname}</span>
 <br />
 {frontmatter.addressText}
@@ -613,7 +614,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
             <Iframer3 />
             
           )}
-          <br /></ScrollAnimation>
+          <br />
+          {/* </ScrollAnimation> */}
 </div>
 
 
@@ -773,10 +775,10 @@ Please check out my portfolio
 
         <BlogListHome data={posts} />
 
-        <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
+        {/* <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
 
           <Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>View More </Link>
-        </div>
+        </div> */}
 
 {closeQuote ? (
 
@@ -816,7 +818,7 @@ Please check out my portfolio
 </div>
 
 <div id="" className="">
-<ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+{/* <ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}>  */}
 <span
           style={{  columnCount:'2',
             columnGap:'40px',
@@ -824,7 +826,7 @@ Please check out my portfolio
             className=""
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
 </div>
 
 <br />
@@ -850,10 +852,10 @@ Please check out my portfolio
 
 <section className="print vertical" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
-<ScrollAnimation animateIn="bounceInUp" animateOut="BounceOutDown" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+{/* <ScrollAnimation animateIn="bounceInUp" animateOut="BounceOutDown" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}>  */}
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'', padding:'0 2%', columnGap:'50px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
-</ScrollAnimation>
+{/* </ScrollAnimation> */}
   </section>
 
           ) : (

@@ -4,10 +4,10 @@ tagline:  an artist, photographer, designer and developer;
   todd imagines things & makes them come to life.
 featuredImage: /assets/challenger.webp
 youtuber: "https://youtu.be/ESGJ42zshL8"
-youtuber2: "https://youtu.be/2q-tpDxJ-MI"
+youtuber2: "https://youtu.be/EvuL5jyCHOw"
 audiostart: "20"
 audioend: "5000"
-audiotitle: "Pillowfight - Get Your Sh*t Together"
+audiotitle: "Lenny Kravitz - Fly Away"
 secondaryImage: /assets/og-image.png
 underlayImage: /assets/IMG_1019.webp
 profText: 
