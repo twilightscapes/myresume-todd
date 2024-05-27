@@ -21,7 +21,7 @@ showdate: false
 underlayImage: /assets/transparent.png
 featuredImage: /assets/Experiences-Header-6.jpg
 svgImage: /assets/transcendence.svg
-nftlink: "https://piratesocial.org"
+nftlink: "https://piratevideo.org"
 isnftforsale: false
 ---
 
