@@ -4,7 +4,7 @@ tagline:  an artist, photographer, designer and developer;
   todd imagines things & makes them come to life.
 featuredImage: /assets/homeshot.webp
 youtuber: "https://youtu.be/ESGJ42zshL8"
-youtuber2: "https://youtu.be/EvuL5jyCHOw"
+youtuber2: ""
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Lenny Kravitz - Fly Away"
@@ -52,6 +52,7 @@ skillsText: <dl>
   <dd class="percentage percentage-85"><span class="text">CSS</span> <span class="percent">85%</span></dd>
   <dd class="percentage percentage-75"><span class="text">Gatsby</span> <span class="percent">75%</span></dd>
   <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
+  <dd class="percentage percentage-50"><span class="text">Astro</span> <span class="percent">50%</span></dd>
 
   </dl>
 cta:
@@ -79,7 +80,7 @@ youtubestart: "42"
 
 ## **Highlights**
 
-**Product Designer - Skilled web designer/developer with 21 years of professional experience.**
+**Digital Product Designer - Skilled web designer/developer with 20+ years of professional experience.**
 
 Successful product designer able to integrate both technical and creative skills to create cross-browser and cross-platform solutions with modern web architecture and navigation systems.
 
@@ -91,12 +92,14 @@ Industry experience including semiconductor, hospitality, entertainment, health,
 
 * Veteran WordPress Theme/Plugin Developer
 * React JS Frontend Designer/Developer
+* Gatsby
+* Astro
 
 Responsive, Reactive, Adaptive Design, progressive enhancement, PWA development, object oriented CSS animation.
 
 Analytics, SEO, UI design, Information Architecture & Content Management System integrations. Photo and Video production.
 
-**I prefer JAM stack, React, Gatsby, Canon, Subaru and my Mac.**
+**I prefer Astro, React, Canon, Subaru and my Mac.**
 
 ## **Education**
 
